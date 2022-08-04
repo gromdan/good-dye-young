@@ -1,0 +1,353 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "And optional subtext",
+            "link": "shopify:\/\/collections\/all",
+            "link_text": "Shop this",
+            "link_2": "shopify:\/\/collections\/all",
+            "link_text_2": "Shop all",
+            "color_accent": "#000000",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "top center"
+          }
+        },
+        "slideshow-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "Two line\ntitle slide.",
+            "title_size": 80,
+            "subheading": "And optional subtext",
+            "link": "shopify:\/\/collections\/all",
+            "link_text": "Shop all",
+            "link_2": "shopify:\/\/collections\/all",
+            "link_text_2": "Shop all",
+            "color_accent": "#000000",
+            "text_align": "vertical-bottom horizontal-left",
+            "overlay_opacity": 0,
+            "focal_point": "top center"
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-0",
+        "slideshow-1"
+      ],
+      "settings": {
+        "section_height": "550px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "16590398202f57583c": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/home-page-second-section.webp",
+        "image_width": 700,
+        "subtitle": "",
+        "title": "I STREAKED IT",
+        "text": "<p>Introducing Streaks & Strands: On Tour! With 6 BRAND new, concert inspired GDY shades available at Target! STREAK out and STRAND out from the crowd. Rock your new look with these 2oz semi-permanent hair dyes. These new and exclusive shades are perfect for money pieces, buzzcuts, bangs, dip-dyes, and anything in between!<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "shopify:\/\/collections\/shop",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "NEW!!!",
+        "home_featured_products": "new",
+        "per_row": 5,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "16590403355d4f9fe8": {
+      "type": "background-video-text",
+      "settings": {
+        "subtitle": "",
+        "title": "\"The world is your oyster —paint yourself gorgeous!\"",
+        "text": "<p><strong>Brian O’Connor<\/strong><em><br\/>Co-Founder & Master Stylist, Good Dye Young<\/em><\/p>",
+        "button_label": "Shop Streaks & Strands",
+        "button_link": "shopify:\/\/collections\/streaks-strands",
+        "video_url": "https:\/\/youtu.be\/S1chmvBISCQ",
+        "color_border": "#f4f4f4",
+        "layout": "left",
+        "height": 550
+      }
+    },
+    "1659040096f8fdfc25": {
+      "type": "slideshow",
+      "blocks": {
+        "1659040096d50e93aa-0": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "\"Switching up your hair\nis a fun and easy way \nto step into a new \nera of your life.\"",
+            "title_size": 40,
+            "subheading": "Hayley Williams Co-Founder of Good Dye Young",
+            "link": "",
+            "link_text": "About Us",
+            "link_2": "#",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-07-28_at_1.30.52_PM.png",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "1659040096d50e93aa-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "top_subheading": "",
+            "title": "Two line\ntitle slide.",
+            "title_size": 80,
+            "subheading": "And big, beautiful imagery",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "1659040096d50e93aa-0",
+        "1659040096d50e93aa-1"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "disabled": true,
+      "blocks": {
+        "featured-collections-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "featured-collections-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "featured-collections-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": "",
+            "focal_point": "center center"
+          }
+        },
+        "featured-collections-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": "",
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "featured-collections-0",
+        "featured-collections-1",
+        "featured-collections-2",
+        "featured-collections-3"
+      ],
+      "settings": {
+        "title": "Shop by category",
+        "divider": false,
+        "per_row": 4,
+        "enable_gutter": true
+      }
+    },
+    "1659040570511e10df": {
+      "type": "logo-list",
+      "blocks": {
+        "165904057075338511-0": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "165904057075338511-1": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "165904057075338511-2": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "165904057075338511-3": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "37a8a0bf-66bc-4af4-bb5a-0d119a0eebe3": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "535312d5-6061-4ab6-8de5-7d5c29b9cd16": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "a33bb76f-4265-4698-bf09-230210ece8e5": {
+          "type": "logo_image",
+          "disabled": true,
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "165904057075338511-0",
+        "165904057075338511-1",
+        "165904057075338511-2",
+        "165904057075338511-3",
+        "37a8a0bf-66bc-4af4-bb5a-0d119a0eebe3",
+        "535312d5-6061-4ab6-8de5-7d5c29b9cd16",
+        "a33bb76f-4265-4698-bf09-230210ece8e5"
+      ],
+      "settings": {
+        "title": "",
+        "logo_opacity": 76,
+        "divider": false
+      }
+    },
+    "165904075540d7a89d": {
+      "type": "newsletter",
+      "blocks": {
+        "1659040755125e9f1a-0": {
+          "type": "title",
+          "settings": {
+            "title": "Join the list"
+          }
+        },
+        "1659040755125e9f1a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Get exclusive access to deals, inspo, giveaways and more!<\/p>"
+          }
+        },
+        "1659040755125e9f1a-2": {
+          "type": "form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "1659040755125e9f1a-0",
+        "1659040755125e9f1a-1",
+        "1659040755125e9f1a-2"
+      ],
+      "settings": {
+        "color_background": "#dbe1e0",
+        "color_text": "#1c1d1d"
+      }
+    },
+    "16590407240c56251a": {
+      "type": "apps",
+      "blocks": {
+        "d5c3d907-d98d-4a12-9412-7b4bea66c977": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": ""
+          }
+        }
+      },
+      "block_order": [
+        "d5c3d907-d98d-4a12-9412-7b4bea66c977"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "165904111494e6d1b6": {
+      "type": "advanced-content",
+      "blocks": {
+        "1659041114eba7694f-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "1659041114eba7694f-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div style=\"display:flex;\">\n<div class=\"left\">\n@GOODDYEYOUNG\n<\/div>\n<div class=\"right\"><a href=\"https:\/\/www.instagram.com\/gooddyeyoung\/\">Follow Us On Instagram<\/a><\/div>\n<\/div>\n<script async src='https:\/\/snapppt.com\/widgets\/widget_loader\/07c6e667-103f-485b-d243-07be47b022ed\/sauce_homepage.js' class='snapppt-widget'><\/script>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1659041114eba7694f-0",
+        "1659041114eba7694f-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "16590398202f57583c",
+    "featured-collection",
+    "16590403355d4f9fe8",
+    "1659040096f8fdfc25",
+    "featured-collections",
+    "1659040570511e10df",
+    "165904075540d7a89d",
+    "16590407240c56251a",
+    "165904111494e6d1b6"
+  ]
+}

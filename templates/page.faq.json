@@ -1,0 +1,1066 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "faq-0": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Buying GDY",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "faq-1": {
+          "type": "question",
+          "settings": {
+            "title": "Can I purchase Good Dye Young at a retailer?",
+            "text": "<p>You can purchase GDY products on gooddyeyoung.com, sallybeauty.com, all Sally Beauty stores, <a href=\"https:\/\/www.sephora.com\/brand\/good-dye-young\" target=\"_blank\">sephora.com\/good-dye-young<\/a>, and sephora.ca for Canadian residents. We are also online at Beauty Bay for customers in the UK! To find a store near you, please use our <a href=\"https:\/\/gooddyeyoung.com\/find-stores\/\">Find Us in Stores<\/a> tool.<\/p><p>Fashion and certain accessories are exclusively sold on gooddyeyoung.com.<\/p>"
+          }
+        },
+        "faq-2": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer professional stylist discounts?",
+            "text": "<p>Yes! If you’re a licensed salon professional, please check out details for <a href=\"https:\/\/gooddyeyoung.com\/pro-account\/\">Pro Accounts<\/a>.<\/p>"
+          }
+        },
+        "59e092ea-b544-4e85-828f-e910ad3f332c": {
+          "type": "question",
+          "settings": {
+            "title": "Does GDY have coupons?",
+            "text": "<p>We sure do! To ensure that you know about our next offer or sale, be sure to sign up for our email list, text messaging and follow us on socials!<\/p><p><em>Coupons cannot be used on discounted items or limited edition collaborations. <\/em><\/p>"
+          }
+        },
+        "faq-3": {
+          "type": "rich-text",
+          "settings": {
+            "title": "DYEPOSIT",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "faq-4": {
+          "type": "question",
+          "settings": {
+            "title": "Can I apply DYEposit to dry hair?",
+            "text": "<p>DYEposit is meant to be used on wet hair. If you’re looking for a product to use on dry hair we suggest our semi-permanent dyes!<\/p>"
+          }
+        },
+        "f0dcab43-ffd3-4756-8013-7c254e38280f": {
+          "type": "question",
+          "settings": {
+            "title": "Do I need to lighten my hair before applying DYEposit?",
+            "text": "<p>It depends on what you’re looking for!<\/p><p>For maintaining your vibrant color, there is no need to re-lighten your hair before applying. <\/p><p>For a bold new look, you can use DYEposit on freshly lightened hair. For the most vibrant and long lasting results, we also suggest trying a semi-permanent dye. <\/p><p>Try picking a DYEposit shade that will work with your natural hair color  If you have light brown hair, try Red or Chocolate! If you are a natural redhead, Copper or Red will look amazing! <\/p><p>Need some expert advice? Shoot us an email at <a href=\"mailto:hey@gooddyeyoung.com\">hey@gooddyeyoung.com<\/a>!<\/p>"
+          }
+        },
+        "11ce9dd4-b074-4630-bff1-128ccffbb7f2": {
+          "type": "question",
+          "settings": {
+            "title": "Do I need to Lighten my hair before applying DYEposit?",
+            "text": "<p>It depends on what you’re looking for!<\/p><p>-For maintaining your vibrant color, there is no need to re-lighten your hair before applying. <br\/>-For a bold new look, you can use DYEposit on freshly lightened hair. -For the most vibrant and long lasting results, we also suggest trying a semi-permanent dye. <br\/>-Try picking a DYEposit shade that will work with your natural hair color  If you have light brown hair, try Red or Chocolate! If you are a natural redhead, Copper or Red will look amazing! <\/p><p>Need some expert advice? Shoot us an email at <a href=\"mailto:hey@gooddyeyoung.com\">hey@gooddyeyoung.com<\/a>!<\/p>"
+          }
+        },
+        "54be6b91-3ada-46aa-bae0-f53650fdde44": {
+          "type": "question",
+          "settings": {
+            "title": "How do I apply DYEposit?",
+            "text": "<p>Apply to wet hair weekly or as needed. It’s best to comb it through for even distribution. Let sit for 5-10 minutes depending on desired intensity. Rinse until water runs clear.<\/p><p>Pro Tips!<br\/>– Use after shampooing in place of conditioner once a week. No need to condition after!<br\/>– Comb through with a comb or brush for even distribution.<br\/>– Squeeze excess water out of hair before applying.<br\/>– Rinse with cool water to lock in color.<\/p>"
+          }
+        },
+        "cbfab523-fada-4059-bae7-6e6bb4f40e15": {
+          "type": "question",
+          "settings": {
+            "title": "How is DYEposit different from your semi-permanent dyes?",
+            "text": "<p>DYEposit contains a lighter pigment load, for just a kiss of color! Semi-permanent dyes will yield a longer and more vivid result due to a higher pigment concentration. DYEposit also contains a bonding agent called Fiberhance! Fiberhance penetrates deep into the cortex to create new hydrogen and ionic bonds which support the damaged internal keratin structure and strengthen and provide manageability back to the hair.<\/p>"
+          }
+        },
+        "a8c95672-30b1-4ca7-86ce-316be3b638dc": {
+          "type": "question",
+          "settings": {
+            "title": "How is DYEposit different from your semi-permanent dyes?",
+            "text": "<p>DYEposit contains a lighter pigment load, for just a kiss of color! Semi-permanent dyes will yield a longer and more vivid result due to a higher pigment concentration. DYEposit also contains a bonding agent called Fiberhance! Fiberhance penetrates deep into the cortex to create new hydrogen and ionic bonds which support the damaged internal keratin structure and strengthen and provide manageability back to the hair.<\/p>"
+          }
+        },
+        "db7732f4-a393-47ce-86d5-a524c7acf1a4": {
+          "type": "question",
+          "settings": {
+            "title": "How long does DYEposit last?",
+            "text": "<p>DYEposit lasts 10-15 washes! We suggest rinsing your hair with cool water to lock in the pigment.<\/p>"
+          }
+        },
+        "bf849fe3-6120-48e4-8907-eebdb04d4093": {
+          "type": "question",
+          "settings": {
+            "title": "How long does DYEposit last?",
+            "text": "<p>After one use on natural hair, DYEposit will wash out in 10-15 washes. <\/p><p>After one use on hair that has been recently lightened, DYEposit may last over 15 washes depending on which shade you choose (blues and green last longer!). <\/p><p>With vivid hair, when you notice your hair starting to fade, it’s time for DYEposit! <\/p><p>Everyone’s hair and self care routine is different, so results may vary! For best results, remember to wash your hair in cool water and with color safe products.<\/p>"
+          }
+        },
+        "f8d092c3-bfc9-475b-aeb5-6f76fcdcfb0a": {
+          "type": "question",
+          "settings": {
+            "title": "How long should I leave DYEposit on?",
+            "text": "<p>For a quick color refresh, we suggest leaving DYEposit on for 5-10 minutes. For a more vibrant look, you can leave it on for longer!<\/p>"
+          }
+        },
+        "7f68a158-beb2-451e-b8c8-ccb3f4531d8c": {
+          "type": "question",
+          "settings": {
+            "title": "How often should I use DYEposit?",
+            "text": "<p>We suggest using DYEposit once or twice a week in place of conditioner! We don’t suggest using DYEposit more than two times a week.<\/p>"
+          }
+        },
+        "76aa74f8-7854-4a24-a4b7-d4ab07c4b488": {
+          "type": "question",
+          "settings": {
+            "title": "Is DYEposit safe for all hair types?",
+            "text": "<p>Yes! DYEposit is safe for all hair types and textures.<\/p>"
+          }
+        },
+        "eb1db6ff-2883-409a-9ee5-0101eb544fdd": {
+          "type": "question",
+          "settings": {
+            "title": "Is DYEposit safe for kids?",
+            "text": "<p>Yes! DYEposit is safe for all ages!<\/p>"
+          }
+        },
+        "0773b5ba-7e84-442e-8235-89d051ceab01": {
+          "type": "question",
+          "settings": {
+            "title": "Should I use Platinum DYEposit after lightening my hair to tone my hair before applying a GDY semi-permanent color?",
+            "text": "<p>Yes! If your hair lifts with yellow or gold tones, Platinum DYEposit will help to neutralize those, leaving you with a whiter, brighter base for your semi-perm dye! Pro tip: if your hair is SUPER yellow, put DYEposit on dry hair for a better result!<\/p>"
+          }
+        },
+        "a3106813-3305-48d9-9d87-d54ba1064d62": {
+          "type": "question",
+          "settings": {
+            "title": "What do you mean by a cleansing product?",
+            "text": "<p>DYEposit is meant to be used all over your hair and will not leave your roots with any buildup or greasy residue.<\/p>"
+          }
+        },
+        "6d78ae5d-ead5-4c7b-a21a-857402ee0707": {
+          "type": "question",
+          "settings": {
+            "title": "What does DYEposit smell like?",
+            "text": "<p>Coconut and Driftwood!<\/p>"
+          }
+        },
+        "a334a990-b08d-4cd8-864c-561213945f15": {
+          "type": "question",
+          "settings": {
+            "title": "What is DYEposit?",
+            "text": "<p>DYEposit is a 4-in-1 color depositing mask! It cleanses, tones, hydrates, and contains a bond builder to repair damaged hair. Whether you’re blonde, brunette, or any color of the rainbow, we have a hue for you.<\/p>"
+          }
+        },
+        "a788c2e5-1b17-4feb-8804-4b5e8cb69e11": {
+          "type": "question",
+          "settings": {
+            "title": "What is Fiberhance?",
+            "text": "<p>Fiberhance is a bonding agent that penetrates deep into the cortex to create new hydrogen and ionic bonds which support the damaged internal keratin structure and strengthen and provide manageability back to the hair.<\/p>"
+          }
+        },
+        "323fd1c2-fdbf-4c76-9f81-4f1e9ea2fe53": {
+          "type": "question",
+          "settings": {
+            "title": "Will chocolate DYEposit cover my vibrant color?",
+            "text": "<p>No, since DYEposit has a lighter pigment load, it would not cover a vibrant color. We suggest removing the semi-permanent color and using a permanent color for best results.<\/p>"
+          }
+        },
+        "7dfd7433-48e6-450c-ac22-b5a984ed88d4": {
+          "type": "question",
+          "settings": {
+            "title": "Will DYEposit cover Gray hair?",
+            "text": "<p>Silver and platinum DYEposit are the perfect choice to enhance your gorgeous grays and tone out any brassiness or discoloration.<\/p><p>If you’re looking for a vibrant pop of color, it’s important to know that Gray hair can be stubborn about holding onto pigments in dyes. Since DYEposit contains a lighter pigment load, it may only contain enough pigment to add a tint to gray hair. Red DYEposit will look more pink, and our other shades will look more pastel. We do not suggest using Chocolate DYEposit for a natural brown shade. If you are looking for a natural color to cover your grays, we suggest chatting with a professional stylist about a permanent dye.<\/p>"
+          }
+        },
+        "ca9d5b27-9a24-4dc2-bd48-75b107bf8613": {
+          "type": "question",
+          "settings": {
+            "title": "Will DYEposit show up on dark hair?",
+            "text": "<p>It depends on what you’re looking for!<\/p><p>For a bold pop of color that lasts, we’d suggest pre-lightening your hair to a level 10 and using a semi-permanent dye. DYEposit can be used in between dye jobs to help keep your vibrant color bright!<\/p><p>If you’re looking for a slight tint to your dark hair, you can either use some of our bolder shades of DYEposit (red, blue, or purple!) to add a slight tint. For even more of a tint, try our semi-permanent shades Rock Lobster, Blue Ruin, PPL Eater, or Live Laugh Love! Do know that without lightening your hair, results may vary. <\/p><p>Our Chocolate DYEposit works GREAT for Brunettes looking to warm up their brown.<\/p>"
+          }
+        },
+        "65392e51-2349-4f90-b9a4-08d2c84e338c": {
+          "type": "question",
+          "settings": {
+            "title": "Will DYEposit show up on dark hair?",
+            "text": "<p>If you’re looking for a bold pop of color, we suggest pre-lightening your hair to a level 10 for best results. While DYEposit will deposit pigment, for the best results we suggest using a semi-permanent dye after lightening.<\/p><p>If you’re looking to add a slight tint to dark hair, due to the lighter pigment load in DYEposit we would suggest using a semi-permanent dye.<\/p>"
+          }
+        },
+        "0ad74851-6781-44bb-80e2-a8e844571341": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Hair Care",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "7eed0cb9-d5b1-4c02-82fc-254044a3d62d": {
+          "type": "question",
+          "settings": {
+            "title": "Avoiding Allergic Reactions:",
+            "text": "<p>GDY WASH and RINSE are formulated with Bergamot Essential Oil, Orange Essential Oil, Lemon Essential Oil, Coriander Fruit Oil, Cedar Oil, Coconut Oil, Olive Oil, Hibiscus Extracts, Sunflower Seed Oil, L-Arginine, and Shea Butter.<\/p><p>IF YOU ARE ALLERGIC TO ANY OF THESE, DO NOT USE WASH OR RINSE.<\/p><p>If you are unsure about any allergies, try performing a patch test by using the following method:<\/p><p>• Choose a small area of skin roughly the size of a penny for the test.<br\/>• Wash the test area with water and soap and dab dry with a clean towel.<br\/>• Place a thin coating of WASH or RINSE on the test area.Leave on test area for about an hour.<br\/>• Examine the test area for any signs of irritation. If there is a negative reaction, then the product should not be used by that person under any circumstances.<\/p><p><strong>Safety Notes:<\/strong><\/p><p>• Not for internal use, avoid ingestion. Keep out of the reach of small children.<br\/>• Avoid contact with eyes, and do not use GDY WASH or RINSE on face. If contact with eyes occurs, rinse out with cool water and contact a doctor.<\/p>"
+          }
+        },
+        "1fc3a029-b713-43c0-9b27-27f5f4a5d0ce": {
+          "type": "question",
+          "settings": {
+            "title": "Do I use PRIME on wet or dry hair?",
+            "text": "<p>Both! Use PRIME fresh out of the shower before blow drying or air drying to help detangle and cut down your dry time. Use PRIME on dry hair before heat styling or spray it on natural hair for an extra boost of protection!<\/p>"
+          }
+        },
+        "4f459639-4ed0-46c9-ac8c-d7611a9e1cae": {
+          "type": "question",
+          "settings": {
+            "title": "How do I use GDY Rinse Color Kind Conditioner?",
+            "text": "<p>Begin with clean, wet hair. Let sit for 1-2 minutes. Rinse. Feel the softness and see the shine!<\/p><p><strong>Tips:<\/strong><\/p><p>• Rinsing out GDY Color Kind Conditioner with cool or cold water helps your hair hold more shine! And, if you’re a semi-perm user, washing and rinsing in cool or cold water helps to retain your color for longer.<br\/><br\/>• Mix a bit of our Fader with a bit of RINSE Color Kind Conditioner to create a replenishing hair mask. Apply to clean, dry hair for 10-15 minutes and rinse with cool water. Enjoy the softness & shine of your replenished locks!<\/p>"
+          }
+        },
+        "a62300c6-734d-4beb-881f-b04e9561b5ea": {
+          "type": "question",
+          "settings": {
+            "title": "How do I use GDY WASH Color Kind Shampoo?",
+            "text": "<p>Begin with wet hair. Work small amount into wet hair. Rinse and feel cleansed, not stripped. Follow with GDY RINSE Color Kind Conditioner.<\/p><p><em>*Note that GDY WASH is a sulfate free shampoo so it will not lather up as much as shampoos with sulfates.<\/em><\/p>"
+          }
+        },
+        "b3cd8ea5-20b2-45a9-aabd-1e67facfd3ff": {
+          "type": "question",
+          "settings": {
+            "title": "How often should I use Pre Wash?",
+            "text": "<p>Pre Wash should be used once a week. If you put a lot of product in your hair (dry shampoo, gel, hairspray) you can use Pre Wash up to twice a week.<\/p>"
+          }
+        },
+        "a98d8c30-f43a-4b4e-bc18-aff8d6a9fb0d": {
+          "type": "question",
+          "settings": {
+            "title": "What are the ingredients in the shampoo and conditioner?",
+            "text": "<p>Just like our Semi-Permanent dyes and our Poser Paste, Good Dye Young’s WASH and RINSE are vegan hair care products which are sulfate-free, paraben-free, cruelty-free and formulated with no harmful ingredients. GDY is not tested on animals.<\/p><p><strong>WASH Color Kind Shampoo Ingredients:<\/strong><\/p><p>Water\/EAU\/Aqua, Sodium Cocoyl Isethionate, Sodium Lauroyl Methyl Isehionate, Cocamide MEA, Glycerin, Sodium Lautoamphoacetate, Acrylates Copolymer, Polyglyceryl-3 Laurate, Alanine, Amodimethicone, Arginine, Aspartic Acid, BHT, C12-13 Pareth-23, C12-13 Pareth-3, Caprylyl Glycol, Cetrimonium Chloride, Citric Acid, Citrus Aurantium Beramia (Bergamot) Fruit Oil, Citrus Aurantiumdulcis (Orange) Peel Oil, Citrus Limon (Lemon) Peel Oil, Cocamide Mipa, Coco-Glucoside, Cocos Nucifera (Coconut) Oil, Coriandrum Sativum (Coriander) Fruit Oil, Decyl Glucoside, Dimethicone, Disodium EDTA, Disteareth-75 IPDI, Divinyldimethicone\/Dimethicone Copolymer, Ethylhexyl Olivate (Olive Oil), Fragarance (Parfum), Glyceryl Oleate, Clycine, Glycol Distearate, Guar Hydroxypropyltrimonium Chloride, Histidine, Hydrolyzed Hibiscus Esculentus Extract, Isoleucine, Juniperus Virginiana (Cedar) Oil, Laureth-23, Laureth-4, Lauryl Glucoside, Palmitam-Idopropyltrimonium Chloride, Panthenol, PCA, Phenoxyethanol, Phenylalanine, Polyquarternium-7, Potassium Hydroxide, Proline, Serine, Sodium Lactate, Sodium PCA, Squalane, Threonine, Trideceth-15, Trideceth-3, Valine, Limonene, Linalool.<\/p><p><strong>RINSE Color Kind Conditioner Ingredients:<\/strong><\/p><p>Water\/EAU\/Aqua, Cetaryl Alcohol, Behentrimonium Chloride, Stearamidopropyl Dimethylamine, Cetyl Alcohol, Cetyl Esters, Hydrogenated Ethylhexyl Olivate, Isododecane, Alanine, Amodimethicone, Aginine, Aspartic Acid, BT, Butyrospermum Parkii (Shea) Butter, C11-15 Pareth-7, Caprylyl Glycol, Cetrimonium Chloride, Citric Acid, Citrus Aurantium Beramia (Bergamot) Fruit Oil, Citrus Aurantium Dulcis (Orange) Peel Oil Citrus Limon (Lemon) Peel Oil, Coriandrum Sativum (Coriander) Fruit Oil, Dimethicone, Dimethiconol, Disodium EDTA, Fragrance (Parfum), Glycerin, Glycine, Guar Hydroxypropyltrimonium Chloride, Helianthus Annuus (Sunflower) Seed Oil, Hisitidine, Hydrogenated Olive Oil Unsaponifiables, Hydrolyzed Hibiscus Esculentus Extract, Hydrolyzed Jojoba Protein, Hydroxyethylcellulose, Isoleucine, Jojoba Esters, Juniperus Virginiana (Cedar) Oil, Laureth-9, Panthenol, PCA, Pentaerythrityl Tetra-Di-T-Butyl, Hydroxyhydocinnamate, Phenoxyethanol, Phenylalanine, Polysilicone-15, Polysorbate 60, Proline, Propanediol, Serine, Sodium Hydroxide, Sodium Lactate, Sodium PCA, Threonine, Trideceth-12, Trideceth-15, Trideceth-3, Valine, Limonene, Linalool.<\/p>"
+          }
+        },
+        "a05595bd-5911-4f32-9d66-555089720085": {
+          "type": "question",
+          "settings": {
+            "title": "What do WASH and RINSE smell like?",
+            "text": "<p>GDY WASH and RINSE are both formulated with the same scent of a blend of five essential oils. These essential oils are Bergamot Essential Oil, Orange Essential Oil, Lemon Essential Oil, Coriander Essential Oil, and Cedar Essential Oil. Imagine your favorite GDY semi-perm or Poser Paste scent with a lil extra oomph.<\/p>"
+          }
+        },
+        "e1aabfc4-2979-4fd7-98bb-c95ba6863af4": {
+          "type": "question",
+          "settings": {
+            "title": "What does Pre Wash do?",
+            "text": "<p>Pre Wash is a pre-shampoo scalp scrub that removes product buildup, fortifies the scalp and leaves hair shinier and smoother.<\/p>"
+          }
+        },
+        "7a0bf435-efe1-4443-a180-466efe5eaba1": {
+          "type": "question",
+          "settings": {
+            "title": "What is PRIME?",
+            "text": "<p>PRIME is a color and heat protector that cuts down dry time, detangles, reduces frizz, and leaves your hair soft and shiny!<\/p>"
+          }
+        },
+        "12d4e91c-12bf-4d61-89b8-9a8795cad299": {
+          "type": "question",
+          "settings": {
+            "title": "What makes GDY RINSE Color Kind Conditioner different?",
+            "text": "<p>GDY RINSE Color Kind Conditioner is infused with a blend of Olive Oil, Shea Butter, and Hibiscus Extract. GDY RINSE is sulfate-free, paraben-free, cruelty-free, and vegan. It gently softens color-treated and all hair types! Sunflower Seed Oil helps to strengthen hair while also adding shine. L-Arginine helps retain hair color. This conditioner is also formulated with a modern, self-care scent that’s made of a blend of five essential oils.<\/p>"
+          }
+        },
+        "1be547c3-5e56-406d-b486-2e967092e5c0": {
+          "type": "question",
+          "settings": {
+            "title": "What makes GDY WASH Color Kind Shampoo different?",
+            "text": "<p>GDY WASH Color Kind Shampoo is infused with a blend of Coconut Oil, Olive Oil, and Hibiscus Extracts. GDY WASH is sulfate-free, paraben-free, cruelty-free, and vegan. It softens hair while gently cleansing color-treated and all hair types! This shampoo is also formulated with a modern, self-care scent that’s made of a blend of five essential oils.<\/p>"
+          }
+        },
+        "bcb95857-a2a8-4b5c-bd47-a3ae8eea3fe3": {
+          "type": "question",
+          "settings": {
+            "title": "What type of hair can Color Kind Shampoo and Conditioner be used on?",
+            "text": "<p>Good Dye Young WASH Color Kind Shampoo and RINSE Color Kind Conditioner can be used on dyed hair, natural hair, or anything in between!<\/p>"
+          }
+        },
+        "ede4862d-dfd2-484e-a9a1-7d3c0768e853": {
+          "type": "question",
+          "settings": {
+            "title": "Why should I use Pre Wash?",
+            "text": "<p>It is important to take care of your scalp! Pre Wash cleanses your scalp of product build up, giving your hair follicle the proper nutrition it needs to grow healthy hair.<\/p>"
+          }
+        },
+        "0c39a7eb-6b4a-4447-a0fa-0597d15851f1": {
+          "type": "question",
+          "settings": {
+            "title": "Why should I use PRIME?",
+            "text": "<p>You invest in your hair color, why not take care of it? The leading cause of color fading comes from heat. Heat styling tools like blow dryers, curling irons, and flat irons are harsh on color. Prime coats your hair cuticle to put a barrier of protection between your color and your heat source!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq-0",
+        "faq-1",
+        "faq-2",
+        "59e092ea-b544-4e85-828f-e910ad3f332c",
+        "faq-3",
+        "faq-4",
+        "f0dcab43-ffd3-4756-8013-7c254e38280f",
+        "11ce9dd4-b074-4630-bff1-128ccffbb7f2",
+        "54be6b91-3ada-46aa-bae0-f53650fdde44",
+        "cbfab523-fada-4059-bae7-6e6bb4f40e15",
+        "a8c95672-30b1-4ca7-86ce-316be3b638dc",
+        "db7732f4-a393-47ce-86d5-a524c7acf1a4",
+        "bf849fe3-6120-48e4-8907-eebdb04d4093",
+        "f8d092c3-bfc9-475b-aeb5-6f76fcdcfb0a",
+        "7f68a158-beb2-451e-b8c8-ccb3f4531d8c",
+        "76aa74f8-7854-4a24-a4b7-d4ab07c4b488",
+        "eb1db6ff-2883-409a-9ee5-0101eb544fdd",
+        "0773b5ba-7e84-442e-8235-89d051ceab01",
+        "a3106813-3305-48d9-9d87-d54ba1064d62",
+        "6d78ae5d-ead5-4c7b-a21a-857402ee0707",
+        "a334a990-b08d-4cd8-864c-561213945f15",
+        "a788c2e5-1b17-4feb-8804-4b5e8cb69e11",
+        "323fd1c2-fdbf-4c76-9f81-4f1e9ea2fe53",
+        "7dfd7433-48e6-450c-ac22-b5a984ed88d4",
+        "ca9d5b27-9a24-4dc2-bd48-75b107bf8613",
+        "65392e51-2349-4f90-b9a4-08d2c84e338c",
+        "0ad74851-6781-44bb-80e2-a8e844571341",
+        "7eed0cb9-d5b1-4c02-82fc-254044a3d62d",
+        "1fc3a029-b713-43c0-9b27-27f5f4a5d0ce",
+        "4f459639-4ed0-46c9-ac8c-d7611a9e1cae",
+        "a62300c6-734d-4beb-881f-b04e9561b5ea",
+        "b3cd8ea5-20b2-45a9-aabd-1e67facfd3ff",
+        "a98d8c30-f43a-4b4e-bc18-aff8d6a9fb0d",
+        "a05595bd-5911-4f32-9d66-555089720085",
+        "e1aabfc4-2979-4fd7-98bb-c95ba6863af4",
+        "7a0bf435-efe1-4443-a180-466efe5eaba1",
+        "12d4e91c-12bf-4d61-89b8-9a8795cad299",
+        "1be547c3-5e56-406d-b486-2e967092e5c0",
+        "bcb95857-a2a8-4b5c-bd47-a3ae8eea3fe3",
+        "ede4862d-dfd2-484e-a9a1-7d3c0768e853",
+        "0c39a7eb-6b4a-4447-a0fa-0597d15851f1"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "16590356737cbfbb3e": {
+      "type": "faq",
+      "blocks": {
+        "92eb3c8e-1641-4fb7-8476-142280ea7905": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Lightening Kit",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "1659035673b2acbb0d-0": {
+          "type": "question",
+          "settings": {
+            "title": "Can I use lightening kit on relaxed hair?",
+            "text": "<p>We do not recommend using our lightening kit on relaxed hair as the hair has already undergone a chemical process. We recommend seeking a professional’s help if you are considering lightening your relaxed hair.<\/p>"
+          }
+        },
+        "1659035673b2acbb0d-1": {
+          "type": "question",
+          "settings": {
+            "title": "Can I use lightening kit on textured hair?",
+            "text": "<p>Yes, you can use our lightening kit on naturally textured hair. Just be aware that textured hair will lift and lighten differently than non- textured hair so always keep on eye on your hair while it’s processing. Please note, we do not recommend using our lightening kit on chemically textured hair, such as perms.<\/p>"
+          }
+        },
+        "6dbe08b5-6249-43a3-b615-da25d9d24889": {
+          "type": "question",
+          "settings": {
+            "title": "Can I use lightening kit to go platinum?",
+            "text": "<p>We always recommend seeking a professional when making a dramatic hair transformation such as going platinum in order to maintain the integrity of your hair.<\/p>"
+          }
+        },
+        "8c83c78c-7536-4074-b1ff-276103ef1d27": {
+          "type": "question",
+          "settings": {
+            "title": "Do I have to pre lighten my hair before coloring with GDY?",
+            "text": "<p>To ensure you get the most vibrant and colorful results from GDY, we recommend that you pre-lighten your hair using our Lightening Kit.<\/p>"
+          }
+        },
+        "e540d08b-92b5-4b2e-9245-45527f6d5f3a": {
+          "type": "question",
+          "settings": {
+            "title": "How does the Lightening Kit work?",
+            "text": "<p>We at GDY have made this easy for you! We’ve measured both the Creme Developer and the Powder Lightener already and you simply mix one bottle of the Creme Developer with one packet of Powder Lightener, making sure to mix to a nice even cream consistency. <strong>Make sure you get professional advice when lightening or removing color.<\/strong><\/p>"
+          }
+        },
+        "168db393-bf64-48ed-a054-c530621a7365": {
+          "type": "question",
+          "settings": {
+            "title": "How many Lightening Kits will I need?",
+            "text": "<p>This depends on whether you are simply doing a small section of your hair or the entire head. If you’re just doing a small section, check out our new Mini Lightening Kit! An entire head could require between 2-5 Lightening Kits. Just remember, it’s always better to be safe than sorry and have extra on hand just in case. We suggest mixing one bottle and one packet at a time,  that way if you don’t need the others you can save them for next time! Our lightening kits are good for over a year!<\/p>"
+          }
+        },
+        "74fa4ccf-181d-47f5-a544-ec9a7e19aeec": {
+          "type": "question",
+          "settings": {
+            "title": "I’ve never used lightener before, what should I do?",
+            "text": "<p>It’s always recommended you seek the help and advice of a professional hair stylist when for the first time you are coloring, and especially when you are lightening your hair. Good Dye Young is always here to help guide your stylist on the use of GDY products if your stylist is not familiar with our line! Feel free to check out the rest of our FAQ for step by step instructions and helpful tips!<\/p>"
+          }
+        },
+        "eb055111-a8d6-4f31-8a59-30bf8511d6ef": {
+          "type": "question",
+          "settings": {
+            "title": "Is there a specific amount of time I should leave the Lightener on my hair?",
+            "text": "<p>You can leave it on up to 50 minutes and then rinse out, shampoo and dry. We do suggest checking your hair after 30 minutes to see if you have achieved a high enough level of lift! If upon rinsing out the lightening kit you think you need to go even lighter, we suggest waiting 2-4 days and then lightening again.  We sure to monitor your hair closely as not to over process the hair. Since that would be your second time lightening, we suggest only leaving the lightening kit on for a max of 30 minutes and checking frequently!<\/p>"
+          }
+        },
+        "4aca9925-dabe-47be-8ed5-7cd3d8f45f63": {
+          "type": "question",
+          "settings": {
+            "title": "Step by step guide to lighten your hair using GDY Lightening Kit",
+            "text": "<p>The very best way to apply a lightener to  hair is as follows:<\/p><p>1. Do a strand test to make sure your hair can take a lightener and also a patch test if you plan on applying the GDY Lightening Kit to your scalp.<br\/><br\/>2. Section and clip your hair into 4 sections by parting your hair down the middle and then side to side from top of crown to bottom of ear.<br\/><br\/>3. Start with the bottom sections first and apply GDY Lightening Kit away from the root area. The bottom of your hair is usually darker and more stubborn, that’s why you want to start there. <em><strong>TIP: <\/strong><\/em><em>Did you know that the heat from the scalp will make the Lightener swell, and it will process much more quickly at the root due to the heat from the scalp?  Hold off on applying the root area AFTER you are done processing the rest of your hair if you want to avoid hot roots.<br\/><br\/><\/em>4. Methodically apply the GDY Lightener mixture in small sections, remembering to leave the roots out. If you take too thick of sections, you may miss spots, and end up with a splotchy base. Saturate the strand of hair by working the GDY Lightening Kit evenly into each section with a gloved hand  <em><strong>TIP<\/strong><\/em><em>: If the ends of your hair are lighter naturally, leave them out for now until after you have applied the Lightening Kit to all the sections. Then go back and apply the Lightener to the ends. This will help prevent the ends of your hair from over processing ( aka: turning to mush).<br\/><br\/><\/em>5. Once you apply your lightener to the mids and ends of your hair, go back through each section and apply the lightener to your roots.<br\/><br\/>6. A good idea is to wrap each strand into tinfoil to help the Lightener lift faster and keep it from drying out. When Lightener dries out, it quits working. <em><strong>TIP<\/strong><\/em><em>: If you do not have tinfoil, after you finish each quadrant, wrap it in plastic wrap. After you have completed the application, wrap your entire hair with plastic wrap.<br\/><br\/><\/em>7. Let your hair process for no more than 50 minutes, until you achieve the desired tone. Check consistently (every 5-10 minutes) to evaluate the color lift. (Darker hair may need to be lightened more than once to reach your perfect base.)<br\/><br\/>8. After you have achieved the desired result, rinse the Lightener out thoroughly and shampoo. <em><strong>TIP<\/strong><\/em><em>: If you plan on using a semi-permanent dye afterwards, do not condition! Conditioner coats the hair cuticle and prevents the color from taking as well as it could.<br\/><br\/><\/em>9. Now you can apply your favorite GDY hair color!<\/p>"
+          }
+        },
+        "024132a8-d772-4a71-8f78-1b5fca342956": {
+          "type": "question",
+          "settings": {
+            "title": "What if after using the GDY Powder Lightener and 25 Volume Creme Developer, my hair still has a lot of gold and orange in it and is not a pale blonde? What do I do?",
+            "text": "<p>You may need to do another round of lightening. First take a strand test to ensure that your hair is able to take another round of lightening. If so, apply GDY Hair Lightener as directed, or go to our step-by-step guide.<\/p>"
+          }
+        },
+        "19355c3b-f9b5-4374-a4e3-ceb83ae48800": {
+          "type": "question",
+          "settings": {
+            "title": "What if I dyed my hair with permanent black color, and want to lighten it with GDY Powder Lightener?",
+            "text": "<p>It’s dangerous to use GDY Powder Lightener on hair that has been treated with permanent black color. Lightening permanently colored black hair can be highly damaging to your hair and can cause severe breakage.<\/p><p>Do not attempt without consulting a professional hair stylist who can remove the black color for you.<\/p><p>If dyed black, try a Good Dye Young red or pink shade that will create great highlights, complement your hair color and add condition and shine to your hair without damaging it.<\/p>"
+          }
+        },
+        "9146dd49-736f-40db-a8c5-4654814959d1": {
+          "type": "question",
+          "settings": {
+            "title": "What if I have dye already in my hair? How do I lighten it with GDY Lightening Kit?",
+            "text": "<p>If you have color on your hair now, and you have LESS than ½ of regrowth showing, put the GDY Lightener from root to end following the directions above for sectioning and application.<\/p><p>If you have color on your hair now and you have MORE than ½ of regrowth, apply the Lightener to your regrowth last, after you have applied the Lightener to the rest of your hair. Virgin hair (hair without dye), lightens faster than color treated hair.<\/p>"
+          }
+        },
+        "0eba79fd-2491-44fd-9416-4f1614940750": {
+          "type": "question",
+          "settings": {
+            "title": "What is GDY’s Lightening Kit?",
+            "text": "<p>The Good Dye Young Lightening Kit allows you to lighten your hair to a level 9 or 10 light blonde so when you apply the GDY colors, they will show up as vibrant as possible.<\/p><p>We use 25 Volume Creme Developer so that your hair is left in good condition while offering just the right amount of lift to achieve lighter results.<\/p>"
+          }
+        },
+        "36b667a6-836a-4f71-bdc5-f9b69e629e38": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Orders and Shipping",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "26ea99be-80c1-408c-847c-c92c3e4b1710": {
+          "type": "question",
+          "settings": {
+            "title": "Can I add an item to my order or cancel my order once I’ve placed it?",
+            "text": "<p>Once an order is placed, we cannot add or remove any items. If you need to cancel your order, please email orders@gooddyeyoung.com with your order number or email used to place the order.<\/p><p><strong>While we will make every effort to accommodate your need, we cannot guarantee your request. Please make sure your order is complete and accurate before placing it.<\/strong><\/p>"
+          }
+        },
+        "623ebd49-e420-42f8-a066-664c67391226": {
+          "type": "question",
+          "settings": {
+            "title": "Can I edit or change my address information for my order?",
+            "text": "<p>If you need to edit or change any part of your address on your order, please immediately email orders@gooddyeyoung.com. Be sure to include your order number and correct address.<\/p><p><strong>While we will make every effort to update your address, orders are shipped out quickly from our fulfillment center.  We cannot guarantee that we can update your information. We ask that you  review your order information in its entirety before you submit your order.<\/strong><\/p><p>If we are unable to update your address, please reach out to your local post office with your tracking number to see if they are able to intercept the package.<\/p><p>Good Dye Young is not responsible for lost orders due to insufficient or incorrect address information. Please double check your order information before placing your order.<\/p>"
+          }
+        },
+        "5ba2503d-e470-432f-b288-abbbb7b337df": {
+          "type": "question",
+          "settings": {
+            "title": "Can I exchange my dye for a different color?",
+            "text": "<p>We do not offer direct product exchanges. To exchange the unused product for a different color or product, please purchase the items you are looking for and return your <strong>unused<\/strong> items. <a href=\"https:\/\/gooddyeyoung.com\/ufaq\/what-is-your-return-exchange-policy\/\">You can find our return instructions here.<\/a><\/p><p><strong>Please note: your original shipping charges and return shipping charges will not be refunded.<\/strong><\/p><p>Need to generate a return shipping label? Simply go to <a href=\"https:\/\/reg.usps.com\/entreg\/RegistrationAction_input\">USPS Print & Ship<\/a> to purchase and print a shipping label or find a mailing location near you <a href=\"https:\/\/tools.usps.com\/go\/POLocatorAction!input.action\">HERE<\/a>.<\/p>"
+          }
+        },
+        "f9fd4ebe-639a-47c4-a5f7-e63be487e480": {
+          "type": "question",
+          "settings": {
+            "title": "Do you ship to (insert international country that we ship to)?",
+            "text": "<p>We ship to most countries outside the US. If you have a question about where we do or do not ship, please send us an email at info@gooddyeyoung.com!<\/p><p><strong>All international customers will be responsible for customs, duties, & VAT charges.<\/strong><\/p>"
+          }
+        },
+        "36abda5c-8102-4775-998d-f462a2bff217": {
+          "type": "question",
+          "settings": {
+            "title": "How do I file a claim for a lost, stolen, or damaged package?",
+            "text": "<p>You can file a claim with <a href=\"http:\/\/claims.route.com\/\">Route Shipping Protection by going here.<\/a> Please note that claims must be filed within 7-30 days from the last shipping update. <\/p><p>For more information about Route’s policies regarding lost, stolen, or damaged packages <a href=\"https:\/\/help.route.com\/hc\/en-us\/articles\/360041131194-Route-Package-Protection-Policies\">please check out their policies here.<\/a><\/p>"
+          }
+        },
+        "143ee7c2-ec31-4b97-b939-d723825b8afe": {
+          "type": "question",
+          "settings": {
+            "title": "How do I track my order?",
+            "text": "<p>Orders process right away, but depending on your location, they may take 7-10 days to arrive. International shipments may take longer.<\/p><p>Domestic Orders leave our fulfillment center within 1-3 days after being placed<\/p><p>International Orders leave our fulfillment center within 4-5 days after being placed<\/p><p>Once your order ships, you will receive an email including your tracking number. If you do not received an email with this information,  please check your spam\/junk folder. If you still have not received your tracking information, please email <a href=\"mailto:orders@gooddyeyoung.com\">orders@gooddyeyoung.com<\/a> with your order number or email address used to place the order. <\/p><p>GDY uses the US Postal Service to ship all domestic orders. Your order will be shipped via USPS and can be tracked <a href=\"https:\/\/www.usps.com\/\">here<\/a>. GDY uses APC to ship all international orders. Your order will be shipped via APC and can be tracked <a href=\"https:\/\/us.mytracking.net\/APC\/track\/Track.aspx\">here<\/a>.<\/p>"
+          }
+        },
+        "e2be0c1a-3796-49c9-b585-d261f23f8726": {
+          "type": "question",
+          "settings": {
+            "title": "How Does EcoCart Work?",
+            "text": "<p>EcoCart directs the carbon offset funds to certified carbon offset projects like planting trees or building wind farms. They have scoured the globe for carbon offset projects that are truly additive (meaning new), permanent, and without unintended consequences. All of their projects are independently certified to internationally recognized standards.  All of their projects also include an element of social good such as protecting an endangered species of animal, or creating local jobs!<\/p>"
+          }
+        },
+        "01fe10de-3a05-45f2-a7c8-3fa6571184eb": {
+          "type": "question",
+          "settings": {
+            "title": "How much is shipping?",
+            "text": "<p>Shipping to the United States is a standard flat rate of $12 and orders over $30 ship free.<\/p><p>Shipping to Canada is a standard flat rate of $15.<\/p><p>International shipping charges vary based on the weight of your order and your shipping destination. <strong>All international customers will be responsible for customs, duties, & VAT charges.<\/strong><\/p>"
+          }
+        },
+        "e839b14d-cfad-4d62-afa9-49bc223c62d8": {
+          "type": "question",
+          "settings": {
+            "title": "I would like to be a distributor in xyz country.",
+            "text": "<p>GDY has partnered with Faire to sell our wholesale products online!<a href=\"https:\/\/www.faire.com\/brand\/b_2z9jzywzf8\"> For more information, please check out this page<\/a>. If you have any additional questions, please email us at info@gooddyeyoung.com.<\/p>"
+          }
+        },
+        "c9200c16-5fdc-4980-b62b-dd0f04aca55b": {
+          "type": "question",
+          "settings": {
+            "title": "What is Route Shipping Protection?",
+            "text": "<p>At GDY, we partner with Route Shipping Protection to offer shipping insurance. This covers packages that are lost, stolen, or damaged during transit. For a small fee, Route Shipping Protection ensures you will receive your items or be able to reorder them with one simple click. All orders are automatically enrolled in Route Shipping Protection, unless otherwise determined by the customer.<a href=\"https:\/\/help.route.com\/hc\/en-us\/articles\/360041131194-Route-Package-Protection-Policies\">For more information about Route’s Policies, you can review them here!<\/a><\/p>"
+          }
+        },
+        "9cebdc39-9cf6-4f04-aff6-1987ffe3aa28": {
+          "type": "question",
+          "settings": {
+            "title": "Will EcoCart delay my shipping?",
+            "text": "<p>Nope! You can still except your order in a timely matter! When purchased, EcoCart will eliminate, capture, or otherwise mitigate all of the carbon emissions created from shipping.<\/p>"
+          }
+        },
+        "0a9a83bf-b5ff-4c6d-abf4-7c4232b4c9d0": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Our Products",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "4b137195-7117-40d0-a1dc-3a8a99225c05": {
+          "type": "question",
+          "settings": {
+            "title": "Are your products vegan and cruelty-free?",
+            "text": "<p>Yes! All Good Dye Young products are cruelty-free and vegan. We are Leaping Bunny Certified!<\/p>"
+          }
+        },
+        "a6fff3f5-0d2f-43da-aa6e-16b5881547e7": {
+          "type": "question",
+          "settings": {
+            "title": "Is your brand safe?",
+            "text": "<p>Yes, Good Dye Young products are safe to use for all ages and hair types. Our dyes contain salon grade pigments, and high quality ingredients. All of our products are cruelty free and vegan. If you have any questions about ingredients or other safety concerns, please emailinfo@gooddyeyoung.com<\/p>"
+          }
+        },
+        "80f5d2c4-6378-466d-b28d-f55e98229c2e": {
+          "type": "question",
+          "settings": {
+            "title": "When will you be offering more colors and new products?",
+            "text": "<p>We’re creating new colors and new products right now! Sign up for our newsletter on the footer of our site to get updates and be the first to know about all things GDY.<\/p>"
+          }
+        },
+        "b47cdf6c-ba4e-46b3-8b02-b16f3f3b8c5f": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Poser Paste",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "a2567d4a-ce90-43b8-aa82-e0bbdbeb384e": {
+          "type": "question",
+          "settings": {
+            "title": "Can I mix colors?",
+            "text": "<p>YES! We love color mixing! Some of Brian’s favorite combos are:<\/p><p>Pink and blue for purple<br\/>Blue and yellow for green<br\/>Orange and pink for peachy\/coral<\/p>"
+          }
+        },
+        "560d1b03-515b-4594-b5b3-46e3fde49e76": {
+          "type": "question",
+          "settings": {
+            "title": "Can I use it on dyed hair?",
+            "text": "<p>Yes! Depending on the color of your hair, sometimes Poser Paste is a great way to create a new and temporary hair color for the day. For instance, applying Ex-Girl Poser Paste over Riot hair can give you a pretty peachy color!<\/p>"
+          }
+        },
+        "9671a04e-dfed-4535-bb5a-94096d6e68c8": {
+          "type": "question",
+          "settings": {
+            "title": "Can I use it on my brows or lashes?",
+            "text": "<p>No, our Poser Paste, semi-permanent dyes, and hair care products are <strong>not<\/strong> intended for use in the eye area.<\/p>"
+          }
+        },
+        "7541c29a-7dac-43a9-8ad7-52d24659fc5d": {
+          "type": "question",
+          "settings": {
+            "title": "Can I use it on wet or dry hair?",
+            "text": "<p>Poser Paste must be used on dry hair for best results.<\/p>"
+          }
+        },
+        "b9d42429-d924-4da8-887e-0b2d366eaf7f": {
+          "type": "question",
+          "settings": {
+            "title": "Do I need to lighten my hair first?",
+            "text": "<p>Nope! Poser Paste can be used on any hair color.<\/p>"
+          }
+        },
+        "2481c5c0-926d-4707-bab9-953d715d1829": {
+          "type": "question",
+          "settings": {
+            "title": "Do I need to mix Poser Paste?",
+            "text": "<p>Poser Paste is packed with essential oils that may separate during shipping. For best results, simply stir your product to mix the oils back into the color and you’ll be ready to start applying!<\/p>"
+          }
+        },
+        "7e6d3028-edaa-4944-a080-43843baa2957": {
+          "type": "question",
+          "settings": {
+            "title": "How do I apply Poser Paste Hair Makeup?",
+            "text": "<p>Applying Poser Paste is fun and easy. Depending on your hair type, there’s a variety of ways to apply. We suggest heading over to our library on <a href=\"https:\/\/www.youtube.com\/gooddyeyoung\">Youtube<\/a> to find the best way to apply for your desired look.<\/p>"
+          }
+        },
+        "263f4f8a-035a-4fcd-90a7-63e8ee293f11": {
+          "type": "question",
+          "settings": {
+            "title": "How do I store Poser Paste?",
+            "text": "<p>Store Poser Paste between 45-75 degrees (Fahrenheit).<\/p>"
+          }
+        },
+        "1fd894d4-7e2e-477c-859b-53c670c1b144": {
+          "type": "question",
+          "settings": {
+            "title": "How do I wash it out?",
+            "text": "<p>You can easily remove Poser Paste with shampoo. For even faster removal, use our Pre Wash scalp scrub first to break up the product, then shampoo.<\/p>"
+          }
+        },
+        "19d7ff75-245c-42a3-86d7-dcf7c541b9f1": {
+          "type": "question",
+          "settings": {
+            "title": "How long does it take to dry?",
+            "text": "<p>Poser Paste dries quickly, so make sure to apply only as much as you can style or work into your hair at one time.<\/p>"
+          }
+        },
+        "320b2439-47c5-474c-bfa2-64ece173ec51": {
+          "type": "question",
+          "settings": {
+            "title": "How long will the color stay in?",
+            "text": "<p>Poser Paste will last until you wash it out.<\/p>"
+          }
+        },
+        "5b0b76ce-aad5-41b0-a7fd-211f6d5fcac7": {
+          "type": "question",
+          "settings": {
+            "title": "Should I apply before or after styling hair?",
+            "text": "<p>You can do either depending on the look you want to achieve. For a color pop after styling, apply when look is complete. For a more lived-in look, apply product and then heat style.<\/p>"
+          }
+        },
+        "97e63a23-f1e8-4f67-b70f-6de1e499a723": {
+          "type": "question",
+          "settings": {
+            "title": "What are the Poser Paste Ingredients?",
+            "text": "<p>Isododecane, Alcohol Denat., Bismuth Oxychloride, Mica, Silica, Cera Microcrystalline, Helianthus Annuus (Sunflower) Seed Cera, Ascorbyl Palmitate, Tocopherol, Dicaprylyl Carbonate, Myristyl Myristate, Synthetic Beeswax, Synthetic Flurophlogopite, AMP-Acrylates Diacetoneacrylamide Copolymer, Phenoxyethanol, Capryl Glycol, Ethylhexyglycerin, Citrus Aurantium Bergamia (Bergamot) Oil, Citrus Aurantium Dulcis (Sweet Orange) Oil, Glycerin, Aqua, Croton Lechleri Resin Extract, Punica Granatum (Pomegranate) Seed Extract. May also contain: D&C Red 6 Barium Lake, D&C Red 7 Lake, Ultramarine Blue (CI 77007), D&C Yellow 11, D&C Red 28, D&C Red 22, D&C Yellow 10.<\/p><p>If you have any questions concerning ingredients for any of our products, please send an email to info@gooddyeyoung.com and we’d be happy to provide more information!<\/p>"
+          }
+        },
+        "221b277f-8390-4c51-9b85-014a0c354e54": {
+          "type": "question",
+          "settings": {
+            "title": "Will it stain clothing?",
+            "text": "<p>No, Poser Paste is a non-staining formula.<\/p>"
+          }
+        },
+        "0c13933c-4378-41ef-a54e-25cd8abce5f7": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Public Relations",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "0e364f5b-6c41-468b-9b29-9147f210cc26": {
+          "type": "question",
+          "settings": {
+            "title": "I love GDY and Hayley and want to know how I can work for you.",
+            "text": "<p>Thank you for your interest and enthusiasm. We currently do not have any openings, but keep checking back!<\/p>"
+          }
+        },
+        "cb9cf2d7-7703-4d71-b0e8-4f87b1c23c6a": {
+          "type": "question",
+          "settings": {
+            "title": "I would like to interview Hayley and Brian.",
+            "text": "<p>Please send any inquiries to press@gooddyeyoung.com. Thank you for reaching out and for your support.<\/p>"
+          }
+        },
+        "2158a023-0d6f-4478-9f2e-4e1078d52b0c": {
+          "type": "question",
+          "settings": {
+            "title": "I’m an Influencer\/Blogger\/Vlogger and would like to review your product.",
+            "text": "<p>Thank you for your interest in our products. Please send any inquiries to press@gooddyeyoung.com<\/p>"
+          }
+        },
+        "26a3f778-f984-4fe4-87e4-855626138057": {
+          "type": "rich-text",
+          "disabled": true,
+          "settings": {
+            "title": "Returns",
+            "text": "",
+            "align_text": "left"
+          }
+        }
+      },
+      "block_order": [
+        "92eb3c8e-1641-4fb7-8476-142280ea7905",
+        "1659035673b2acbb0d-0",
+        "1659035673b2acbb0d-1",
+        "6dbe08b5-6249-43a3-b615-da25d9d24889",
+        "8c83c78c-7536-4074-b1ff-276103ef1d27",
+        "e540d08b-92b5-4b2e-9245-45527f6d5f3a",
+        "168db393-bf64-48ed-a054-c530621a7365",
+        "74fa4ccf-181d-47f5-a544-ec9a7e19aeec",
+        "eb055111-a8d6-4f31-8a59-30bf8511d6ef",
+        "4aca9925-dabe-47be-8ed5-7cd3d8f45f63",
+        "024132a8-d772-4a71-8f78-1b5fca342956",
+        "19355c3b-f9b5-4374-a4e3-ceb83ae48800",
+        "9146dd49-736f-40db-a8c5-4654814959d1",
+        "0eba79fd-2491-44fd-9416-4f1614940750",
+        "36b667a6-836a-4f71-bdc5-f9b69e629e38",
+        "26ea99be-80c1-408c-847c-c92c3e4b1710",
+        "623ebd49-e420-42f8-a066-664c67391226",
+        "5ba2503d-e470-432f-b288-abbbb7b337df",
+        "f9fd4ebe-639a-47c4-a5f7-e63be487e480",
+        "36abda5c-8102-4775-998d-f462a2bff217",
+        "143ee7c2-ec31-4b97-b939-d723825b8afe",
+        "e2be0c1a-3796-49c9-b585-d261f23f8726",
+        "01fe10de-3a05-45f2-a7c8-3fa6571184eb",
+        "e839b14d-cfad-4d62-afa9-49bc223c62d8",
+        "c9200c16-5fdc-4980-b62b-dd0f04aca55b",
+        "9cebdc39-9cf6-4f04-aff6-1987ffe3aa28",
+        "0a9a83bf-b5ff-4c6d-abf4-7c4232b4c9d0",
+        "4b137195-7117-40d0-a1dc-3a8a99225c05",
+        "a6fff3f5-0d2f-43da-aa6e-16b5881547e7",
+        "80f5d2c4-6378-466d-b28d-f55e98229c2e",
+        "b47cdf6c-ba4e-46b3-8b02-b16f3f3b8c5f",
+        "a2567d4a-ce90-43b8-aa82-e0bbdbeb384e",
+        "560d1b03-515b-4594-b5b3-46e3fde49e76",
+        "9671a04e-dfed-4535-bb5a-94096d6e68c8",
+        "7541c29a-7dac-43a9-8ad7-52d24659fc5d",
+        "b9d42429-d924-4da8-887e-0b2d366eaf7f",
+        "2481c5c0-926d-4707-bab9-953d715d1829",
+        "7e6d3028-edaa-4944-a080-43843baa2957",
+        "263f4f8a-035a-4fcd-90a7-63e8ee293f11",
+        "1fd894d4-7e2e-477c-859b-53c670c1b144",
+        "19d7ff75-245c-42a3-86d7-dcf7c541b9f1",
+        "320b2439-47c5-474c-bfa2-64ece173ec51",
+        "5b0b76ce-aad5-41b0-a7fd-211f6d5fcac7",
+        "97e63a23-f1e8-4f67-b70f-6de1e499a723",
+        "221b277f-8390-4c51-9b85-014a0c354e54",
+        "0c13933c-4378-41ef-a54e-25cd8abce5f7",
+        "0e364f5b-6c41-468b-9b29-9147f210cc26",
+        "cb9cf2d7-7703-4d71-b0e8-4f87b1c23c6a",
+        "2158a023-0d6f-4478-9f2e-4e1078d52b0c",
+        "26a3f778-f984-4fe4-87e4-855626138057"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "165903677055f5e098": {
+      "type": "faq",
+      "blocks": {
+        "d4748eef-d060-40d3-96f7-d9501827ad01": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Returns",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "1659036770595a291c-0": {
+          "type": "question",
+          "settings": {
+            "title": "What is your return policy?",
+            "text": "<p>We accept returns for unopened and unused products within 30 days of the original purchase date.<\/p><p>Please email us at orders@gooddyeyoung.com with the following information:<\/p><p>• Name<br\/>• Order Number<br\/>• Products you would like to return<\/p><p>We do not accept returns for other clothing, merchandise items, or gift cards.<\/p><p>Good Dye Young is not responsible for return shipping costs. <\/p><p>Please address and ship all returns too:<\/p><p>Good Dye Young<br\/>1501 County Hospital Road<br\/>Nashville, TN 37218<\/p><p>Once we have received your order back at our fulfillment center, we will process your refund. It may take up to 2-3 weeks for orders to make it back to our fulfillment center. Once processed, refunds take anywhere from 5-7 business days to be applied to the original payment method.<\/p><p><strong>Please note: your original shipping charges and return shipping charges will not be refunded.<\/strong><\/p><p>Need to generate a return shipping label? Simply go to <a href=\"https:\/\/reg.usps.com\/entreg\/RegistrationAction_input\">USPS Print & Ship<\/a> to purchase and print a shipping label or find a mailing location near you <a href=\"https:\/\/tools.usps.com\/go\/POLocatorAction!input.action\">HERE<\/a>.<\/p>"
+          }
+        },
+        "17f4daa0-ff00-4485-a401-587147bfc0cb": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Semi-Perm",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "1659036770595a291c-1": {
+          "type": "question",
+          "settings": {
+            "title": "Can I mix colors to achieve a different color not currently offered on the website?",
+            "text": "<p>Absolutely!! We at GDY believe in creative freedom and have made it easy for you to express yourself. You can use our Fader to make any of your favorite shades a pastel or a less pigmented and intense color if that’s what you’re looking for. You can also use our None More Black, to deepen any of our colors. Watch some instructional videos on how to create some of our favorite custom colors on <a href=\"https:\/\/www.youtube.com\/gooddyeyoung\"><strong>YouTube<\/strong><\/a>! If you use GDY to create your own custom color, share photos of your final results and let us know how you did it!<\/p>"
+          }
+        },
+        "1910f978-1bfd-457d-9a63-73277a9639fa": {
+          "type": "question",
+          "settings": {
+            "title": "Can I reuse my leftover hair dye?",
+            "text": "<p>Yes, simply seal up your unused portion and store in a cool, dry place. The product will last up to 12 months after being opened.<\/p>"
+          }
+        },
+        "62330f61-b909-47a5-ab7a-16a7f7f7fdba": {
+          "type": "question",
+          "settings": {
+            "title": "Can your dyes be used on skin, eyelashes, or eyebrows?",
+            "text": "<p>We do not recommend using our dyes on your skin, eyelashes, eyebrows or facial hair. However, our dyes are heavily pigmented and may stain around your hairline or ears.<\/p>"
+          }
+        },
+        "a7cd0068-6c5f-415f-a062-5e2b4ccc243a": {
+          "type": "question",
+          "settings": {
+            "title": "Do I have to pre lighten my hair before coloring with GDY?",
+            "text": "<p>To ensure you get the most vibrant and colorful results from GDY, we recommend that you pre-lighten your hair using our Lightening Kit. If you are planing to use any of the shades from our Lighter Daze line, your hair will need to be a level 10 (platinum blonde) for the color to appear on the hair.<\/p>"
+          }
+        },
+        "6c935c8e-4863-4809-ab70-cb90554c6164": {
+          "type": "question",
+          "settings": {
+            "title": "Do I have to pre lighten my hair before coloring with GDY?",
+            "text": "<p>To ensure you get the most vibrant and colorful results from GDY, we recommend that you pre-lighten your hair using our Lightening Kit. If you are planing to use any of the shades from our Lighter Daze line, your hair will need to be a level 10 (platinum blonde) for the color to appear on the hair.<\/p>"
+          }
+        },
+        "180c7841-1d2f-4732-ba68-d87a986bcfba": {
+          "type": "question",
+          "settings": {
+            "title": "Do the colors need to be mixed with developer? Can I seal the unused portion and use it later or does it have an expiration date?",
+            "text": "<p>Our colors do not need to be mixed with a developer. You can use the color straight from the tube. You may seal the unused portion and use it later. The product will last up to 12 months after opened.<\/p>"
+          }
+        },
+        "741f3ed9-eb16-4e88-be64-a5498710059c": {
+          "type": "question",
+          "settings": {
+            "title": "Does GDY cover gray hair?",
+            "text": "<p>Some of our darker colors may add a tint to grey hair, but for the most part semi-permanent dye does not cover grey hair. Grey hair tends to be stubborn, therefore the dye will not take as well as it does on pre-lightened hair.<\/p>"
+          }
+        },
+        "8d2748b1-b599-4439-8cd1-df7db01f6945": {
+          "type": "question",
+          "settings": {
+            "title": "Facts about Good Dye Young",
+            "text": "<p>GDY hair dye does not damage hair and contains conditioning properties that rehydrate and correct porosity (roughness) in hair that is compromised when bleaching, heat styling, or using damaging hair products.<br\/>GDY hair color should be used exactly as supplied and described on the packaging. Do not add peroxide or other permanent hair colorants.<br\/>GDY hair colorants may temporarily stain skin and permanently stain the fabric of clothes, towels and bedding etc., so be careful when applying!<br\/>Do not use with alkaline-based products as these will upset the pH balance needed for maximum absorption of color by the hair. Low pH or non-alcohol hair products are recommended.<br\/>Not for internal use, DO NOT INGEST. Keep out of the reach of small children.<br\/>For the best results, please use on porous, bleached, tinted or naturally light blonde hair.When applied to darker untreated hair, results may vary depending on hair shade and texture.<br\/>Protect your skin from staining by applying shea butter, coconut oil, or thick hair conditioner to your hairline and over the ears.If you get a little GDY on your skin, try rubbing toothpaste or baking soda paste (baking soda mixed with a little bit of water) onto the stain with a toothbrush and gently scrub in circular motions.<br\/>Remember to keep your GDY color out of direct sunlight and in a cool, dry place. Direct sunlight or extreme heat can cause them to fade and change color.<\/p>"
+          }
+        },
+        "5dcf57cc-9ff1-4357-a529-dfc4d0b8d854": {
+          "type": "question",
+          "settings": {
+            "title": "How can I get a pastel shade?",
+            "text": "<p>We created a new line just for pastel colors called Lighter Daze! They are a softer version of our original vibrant colors. If you want to to create your own pastel shade, use our fader and the dye color of your choosing. We recommend starting with fader as your base and then mixing in a few squirts of your desired color. Always start with less color and then add more until you get your desired shade. You can test your color by applying a small amount to a piece of paper or tissue.<\/p>"
+          }
+        },
+        "f594b2bb-54dc-4836-ad05-0a4509c17db4": {
+          "type": "question",
+          "settings": {
+            "title": "How do I determine if I need more than one bottle of dye?",
+            "text": "<p>This depends on the length, thickness and texture of your hair. The average person will probably need 2 bottles of dye for their hair. If you have what you would consider to be more than average hair in length or thickness then adjust accordingly.<\/p>"
+          }
+        },
+        "5d086b0e-2295-44e5-9cbe-ff5e604003d5": {
+          "type": "question",
+          "settings": {
+            "title": "How do I extend the life of my GDY color?",
+            "text": "<p>Try these tips:<\/p><p>Skip shampoos! The more you wash your hair, the more your color will fade.<br\/>Rinse with cool or cold water when you do shampoo.<br\/>Conditioning treatments! You can actually use our Fader or Rinse as a hair mask! Leave it in for 10-15 minutes and reap the benefits of Sunflower Oil and Bergamot which can help to stimulate hair growth and the overall health and look of your hair.<br\/>Put a few drops of your GDY color into your shampoo and conditioner. This will put pigment back into the hair anytime you shampoo and condition.<\/p><p>And avoid these:<\/p><p>Washing your hair excessively<br\/>Hot oil treatments<br\/>Alcohol-based hair products such as hairspray, gel or mousse<br\/>Washing hair with strong shampoos such as anti-dandruff, deep cleansing, clarifying and all-purpose varieties<br\/>Prolonged exposure to salt water and harsh sunlight<br\/>Chemicals in swimming pools<\/p>"
+          }
+        },
+        "3d967577-94c6-4b0f-9876-ad7ab0116969": {
+          "type": "question",
+          "settings": {
+            "title": "How do I make XYZ color?",
+            "text": "<p>We love mixing colors and our dyes were made to be mixed with each other! For a pastel color, mix Fader and your color of choice. For a darker look, mix None More Black with your favorite color.<\/p><p>Our Most Popular Combos:<\/p><p>• Navy: Blue Ruin + a couple drops of None More Black<br\/>• Emerald: Kowabunga + a couple drops of None More Black<br\/>• Coral: 2 parts Ex-Girl + 1 part Riot<br\/>• Neon Green: 1 part Kowabunga + 1 part Steal My Sunshine<\/p>"
+          }
+        },
+        "9c766d4b-aaa8-4097-8d90-97e85ded6f85": {
+          "type": "question",
+          "settings": {
+            "title": "How long do you keep GDY on your hair? And is it applied to dry hair?",
+            "text": "<p>Apply GDY to dry hair. Leave GDY dye on for at least 30 minutes. You can leave the color on for up to one hour for more vibrant results.<\/p>"
+          }
+        },
+        "475fac03-7be2-4af7-8d6c-b60f95718b6d": {
+          "type": "question",
+          "settings": {
+            "title": "How long does GDY last?",
+            "text": "<p>Color fade varies from person to person, but in general, darker colors tend to last longer than lighter shades because they have a heavier pigment load. If well taken care of, GDY color can last between 4 to 6 weeks.<\/p>"
+          }
+        },
+        "344d539a-212c-4165-bc53-32e822860ff7": {
+          "type": "question",
+          "settings": {
+            "title": "How long should I wait to wash my hair after I dye it?",
+            "text": "<p>We recommend waiting as long as you can before the first wash. However, if you must wash right away, we suggest using cool or cold water. This keeps the color locked into the hair.<\/p>"
+          }
+        },
+        "21bd69a2-3880-4c19-b792-2b55b1b85ce1": {
+          "type": "question",
+          "settings": {
+            "title": "I dyed my hair xyz color and it won’t stop bleeding. What can I do?",
+            "text": "<p>Bright hair colors can tend to bleed more than natural colors. Our semi-permanent hair dyes were created to give intense, long lasting color and are packed with pigment.<\/p><p>Tips:<\/p><p>• When rinsing your hair for the first time, apply a generous amount of conditioner to hair to help remove all of the dye.<br\/>• Wash in cool water and wait as long as possible in between washes. Frequent washing will strip the hair of color.<br\/>• When washing your hair, use a sulfate-free shampoo. The suds from typical shampoos will remove the color. Only use enough shampoo to clean your scalp and scrub as little as possible. The shampoo from your scalp will rinse down and clean the rest of your hair.<br\/>• Avoid contact with salt such as ocean water, chlorine, sea salt sprays and water softeners as these can cause bleeding.<\/p>"
+          }
+        },
+        "17ca1c7b-43e2-404d-8325-cc8fbf3d04ab": {
+          "type": "question",
+          "settings": {
+            "title": "Safety Notes",
+            "text": "<p>• Not for internal use, do not ingest. Keep out of the reach of small children.<br\/>• Protect your skin from staining by applying shea butter, coconut oil, or thick hair conditioner to your hairline and over the ears. Wear gloves when applying.<br\/>• Avoid contact with eyes, and do not use GDY color for eyebrows or eyelashes. If contact with eyes occurs, rinse out with warm water and contact a doctor immediately.<\/p>"
+          }
+        },
+        "d5a77eeb-d19a-4877-806d-5a7924feb2c2": {
+          "type": "question",
+          "settings": {
+            "title": "What advice can you give to avoid allergic reactions?",
+            "text": "<p>Good Dye Young hair color is PPD free to minimize the risk of adverse reactions, but it’s still recommended you perform a patch test by using the following method:<\/p><p>• Choose a small area of skin roughly the size of a penny for the test, preferably somewhere discreet such as behind the ear or in the inner fold of your elbow.<br\/>• Wash the test area with water and soap and dab dry with a clean towel.<br\/>• Place a thin coating of your chosen GDY dye upon the test area.Allow the dye to dry and leave it undisturbed and uncovered for 24 hours.<br\/>• Examine the test area for any signs of irritation. If there is a negative reaction, then the product should not be used by that person under any circumstances.<\/p>"
+          }
+        },
+        "cc2d0313-000e-476e-9fc2-92aad1c4a43e": {
+          "type": "question",
+          "settings": {
+            "title": "What colors can be used on unbleached hair?",
+            "text": "<p>Your original hair color will determine your final result. Rock Lobster, Blue Ruin, PPL Eater and None More Black are the only colors we recommend using on dark hair. On dark brown hair your results will be:<\/p><p>Rock Lobster – Cherry Cola<\/p><p>Blue Ruin – Navy<\/p><p>PPL Eater – Eggplant<\/p><p>None More Black – Lots of shine but will fade out to the original base color.<\/p>"
+          }
+        },
+        "b2ddf4a9-d023-428f-add5-b98d323c9658": {
+          "type": "question",
+          "settings": {
+            "title": "What if I have to remove GDY color?",
+            "text": "<p>Darker colors may take a longer time to fade and can leave behind a slight halo of tint during the removal process. The results of hair color removal and fading vary from person to person.<\/p><p><strong>If you need to fade your color FAST, it’s always best to go to a professional. <\/strong>If this isn’t an option, you can purchase a color removing product and follow the manufacturer’s instructions. Using warm water and a clarifying shampoo may also speed up the fading process.<\/p>"
+          }
+        },
+        "53a5f6f7-1112-43f3-b0f1-882b4c206bde": {
+          "type": "question",
+          "settings": {
+            "title": "What is GDY Fader?",
+            "text": "<p>Our Fader is the ultimate customization tool in our current line-up. GDY dyes are pretty intense and just in case that’s not the look you’re going for, our Fader helps to control the intensity of whatever color(s) you mix it with. Use it to create pastel shades by mixing it with any of the GDY dyes and create your own custom hair color<\/p>"
+          }
+        },
+        "3d504c49-8e99-40f8-a09e-d476681eedde": {
+          "type": "question",
+          "settings": {
+            "title": "What is the best way to get started with dyeing my hair? How do I do a strand test?",
+            "text": "<p>You should always perform a strand test first to see how your hair will react to the dye.<\/p><p>Directions:<\/p><p>• Put plastic gloves on to protect your hands from the dye.<br\/>• Choose a small group of strands on the under layer of your hair that are easy to access, but will not be visible after the test. Make sure the strand is thick enough to see the results clearly.<br\/>• Squeeze out one teaspoon of your preferred GDY shade, and apply it to the strand saturating the strand completely.<br\/>• Wrap tinfoil around the saturated strand to protect it from bleeding into the rest of your hair.<br\/>• Leave strand test on for at least 30 minutes to 1 hour.<br\/>• Rinse well with cold water.<br\/>• Check out the results!<\/p>"
+          }
+        },
+        "9a5a3dd0-a6a2-4647-a156-c19f2438ea2e": {
+          "type": "question",
+          "settings": {
+            "title": "What is your best advice for coloring your hair?",
+            "text": "<p>• Always perform a strand test and patch test before using hair dye.<br\/>• Perform strand test before mixing GDY!<br\/>• Always wear a pair of protective gloves when dyeing.<br\/>• Use petroleum jelly or a thick conditioner around your hairline to prevent staining your skin. If staining occurs, try using a baking soda paste or toothpaste to remove the stain.<br\/>• Wear old clothes and use a towel that you don’t mind staining.Place newspaper or towels around where you’re dyeing to protect surfaces from staining.<br\/>• Use mirrors both in front and behind you when applying GDY hair dye. If you are doing it yourself this will help you not miss any spots!<br\/>• Rinse your hair in the sink rather than the shower to avoid staining surfaces such as your bathtub.<br\/>• Always use cold water when rinsing out GDY hair dye.<br\/>• It’s recommended you don’t wash your hair with shampoo or conditioner for at least a week after dyeing.<\/p>"
+          }
+        },
+        "f09d3080-164c-4034-9e4a-b655638a278a": {
+          "type": "question",
+          "settings": {
+            "title": "What shampoo and conditioner do you recommend?",
+            "text": "<p>We always recommend using our color kind shampoo and conditioner, Wash and Rinse. Or any other shampoo and conditioners that are sulfate, paraben and silicone-free.<\/p>"
+          }
+        },
+        "11a398fc-4afe-4d05-b291-30f66658a389": {
+          "type": "question",
+          "settings": {
+            "title": "What type of hair dye is Good Dye Young?",
+            "text": "<p>Good Dye Young is a semi-permanent vegan hair dye with no PPD, no peroxide, no ammonia and no other harmful ingredients. GDY is not tested on animals.<\/p>"
+          }
+        },
+        "464b6aae-63ad-49c3-ad4a-a66e56a6fa9a": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Streaks and Strands",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "8dfda927-2185-4bc4-8e91-18f678d8b488": {
+          "type": "question",
+          "settings": {
+            "title": "Are Streaks and Strands the same shades as their larger sizes?",
+            "text": "<p>Yes! Streaks and Strands are 2oz sizes of all of your favorite shades. Same formula, same results you’ll love, now the perfect size for a streak or strand!<\/p>"
+          }
+        },
+        "ee4857ae-86d7-43fa-af88-b8ca4f8719ca": {
+          "type": "question",
+          "settings": {
+            "title": "Hey Team GDY! I want to show you my look! How can I do that?",
+            "text": "<p>We can’t wait to see your hair! Post a pic or video and tag us @gooddyeyoung on all socials!<\/p>"
+          }
+        },
+        "0e264fb4-630e-4bf6-a806-7fe75fe15bec": {
+          "type": "question",
+          "settings": {
+            "title": "I just created an amazing Streaks and Strands look! How do I avoid bleeding?",
+            "text": "<p>The best way to avoid bleeding is to wash your dye out in sections and use cool water! The cool water helps lock the color in. You might want to try to wash your hair in sections the first couple times just to ensure they don’t bleed on each other. As long as you’re using cool water, you should be good to go!<\/p>"
+          }
+        },
+        "928ef019-8018-4ca4-a2ce-2a6f8ac1d822": {
+          "type": "question",
+          "settings": {
+            "title": "What looks can I create with Streaks and Strands?",
+            "text": "<p>The possibilities are endless! Some of our favorite looks are money pieces, rainbow bangs, or dyeing just the tips! Check us out on instagram @gooddyeyoung for more inspo!<\/p>"
+          }
+        },
+        "8b8eb27c-e5ff-411c-aca2-dc9d97ea3738": {
+          "type": "question",
+          "settings": {
+            "title": "What size is the lightning kit?",
+            "text": "<p>Our NEW mini Lightening Kit contains 2 oz of 25 vol creme developer, and 1 part powder bleach. It’s the same as our GDY Hair Lightening Kit and contains soy proteins and coconut oil to condition and strengthen your hair! There is no measuring, just combine and mix!<\/p>"
+          }
+        },
+        "90c5f685-6060-42e3-b82e-64f48016e3cd": {
+          "type": "question",
+          "settings": {
+            "title": "Why 2oz tubes?",
+            "text": "<p>Our NEW 2 oz tubes of semi-permanent hair dye and lightening kit have the perfect amount of product for money pieces, buzzcuts, bangs, dip-dyes, and everything in between! Grab some shades and get creative!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "d4748eef-d060-40d3-96f7-d9501827ad01",
+        "1659036770595a291c-0",
+        "17f4daa0-ff00-4485-a401-587147bfc0cb",
+        "1659036770595a291c-1",
+        "1910f978-1bfd-457d-9a63-73277a9639fa",
+        "62330f61-b909-47a5-ab7a-16a7f7f7fdba",
+        "a7cd0068-6c5f-415f-a062-5e2b4ccc243a",
+        "6c935c8e-4863-4809-ab70-cb90554c6164",
+        "180c7841-1d2f-4732-ba68-d87a986bcfba",
+        "741f3ed9-eb16-4e88-be64-a5498710059c",
+        "8d2748b1-b599-4439-8cd1-df7db01f6945",
+        "5dcf57cc-9ff1-4357-a529-dfc4d0b8d854",
+        "f594b2bb-54dc-4836-ad05-0a4509c17db4",
+        "5d086b0e-2295-44e5-9cbe-ff5e604003d5",
+        "3d967577-94c6-4b0f-9876-ad7ab0116969",
+        "9c766d4b-aaa8-4097-8d90-97e85ded6f85",
+        "475fac03-7be2-4af7-8d6c-b60f95718b6d",
+        "344d539a-212c-4165-bc53-32e822860ff7",
+        "21bd69a2-3880-4c19-b792-2b55b1b85ce1",
+        "17ca1c7b-43e2-404d-8325-cc8fbf3d04ab",
+        "d5a77eeb-d19a-4877-806d-5a7924feb2c2",
+        "cc2d0313-000e-476e-9fc2-92aad1c4a43e",
+        "b2ddf4a9-d023-428f-add5-b98d323c9658",
+        "53a5f6f7-1112-43f3-b0f1-882b4c206bde",
+        "3d504c49-8e99-40f8-a09e-d476681eedde",
+        "9a5a3dd0-a6a2-4647-a156-c19f2438ea2e",
+        "f09d3080-164c-4034-9e4a-b655638a278a",
+        "11a398fc-4afe-4d05-b291-30f66658a389",
+        "464b6aae-63ad-49c3-ad4a-a66e56a6fa9a",
+        "8dfda927-2185-4bc4-8e91-18f678d8b488",
+        "ee4857ae-86d7-43fa-af88-b8ca4f8719ca",
+        "0e264fb4-630e-4bf6-a806-7fe75fe15bec",
+        "928ef019-8018-4ca4-a2ce-2a6f8ac1d822",
+        "8b8eb27c-e5ff-411c-aca2-dc9d97ea3738",
+        "90c5f685-6060-42e3-b82e-64f48016e3cd"
+      ],
+      "settings": {
+        "title": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "faq",
+    "16590356737cbfbb3e",
+    "165903677055f5e098"
+  ]
+}
