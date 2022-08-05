@@ -1,0 +1,56 @@
+<div class="full-width">
+    <div class="grid-main-content">
+        <div class="row">
+            {% for block in section.blocks %}
+                <div class="item column">
+                    {% if block.settings.image != blank %}
+                        <div class="img-wrap">
+                            <img class="desktop-image" src="{{ block.settings.image | image_url: width: 800 }}" alt="Original Image">
+                        </div>
+                    {% endif %}
+                    {% if block.settings.button_link != blank %}
+                        <div class="button-wrap">
+                            <a href="{{ block.settings.button_link }}" class="text-link">{{ block.settings.button_label }}</a>
+                        </div>
+                    {% endif %}
+                </div>  
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Image Grid",
+    "tag": "section",
+    "class": "image-grid",
+    "blocks": [
+        {
+            "name": "grid",
+            "type": "grid",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                },
+                {
+                    "type": "text",
+                    "id": "button_label",
+                    "label": "Button Lavel"
+                },
+                {
+                    "type": "text",
+                    "id": "button_link",
+                    "label": "Button Link"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Image Grid"
+        }
+    ]
+}
+{% endschema %}

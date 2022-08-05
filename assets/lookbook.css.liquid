@@ -2,6 +2,7 @@
 .right-image-with-text {
     margin-top: 96px;
     margin-bottom: 50px;
+    min-height: 865px;
 }
 
 .right-image-with-text .elementor-text {
@@ -29,6 +30,9 @@
     .right-image-with-text .elementor-image {
         width: 65%;
     }
+    .right-image-with-text {
+        min-height: auto;
+    }
 }
 @media (max-width: 1023px) {
     .right-image-with-text .elementor-text {
@@ -49,5 +53,41 @@
 /* End right-image-with-text Section Custom Style CSS */
 
 /* Begin image-gallery Custom Style CSS */
-
+section.image-grid .grid-main-content .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+section.image-grid .grid-main-content .row .column{
+    width: 33.33%;
+    padding: 0px 4px;
+    margin-bottom: 20px;
+}
+section.image-grid .grid-main-content .row .column .img-wrap {
+    display: flex;
+}
+section.image-grid .grid-main-content .row .column .button-wrap {
+    padding: 24px;
+}
+@media (max-width: 768px) {
+    section.image-grid .grid-main-content .row .column{
+        width: 50%;
+    }
+    section.image-grid .grid-main-content .row .column .button-wrap {
+        padding: 0px;
+    }
+}
+@media (max-width: 425px) {
+    section.image-grid .grid-main-content .row .column{
+        width: 100%;
+    }
+    section.image-grid .grid-main-content .row .column {
+        margin-bottom: 0px;
+        padding: 0;
+    }
+}
 /* End image-gallery Custom Style CSS */
+
+/* Begin three-image-gallery Custom Style CSS */
+
+/* End three-image-gallery Custom Style CSS */
+

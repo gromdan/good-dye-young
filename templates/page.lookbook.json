@@ -1,11 +1,21 @@
 {
     "sections": {
-      "hero": {
+      "right_image_with_text": {
         "type": "right_image_with_text",
+        "settings": {}
+      },
+      "image_grid": {
+        "type": "image_grid",
+        "settings": {}
+      },
+      "three_image_gallery": {
+        "type": "three_image_gallery",
         "settings": {}
       }
     },
     "order": [
-      "hero"
+      "right_image_with_text",
+      "image_grid",
+      "three_image_gallery"
     ]
 }
