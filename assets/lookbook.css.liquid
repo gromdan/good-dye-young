@@ -1,0 +1,53 @@
+/* Begin right-image-with-text Section Custom Style CSS */
+.right-image-with-text {
+    margin-top: 96px;
+    margin-bottom: 50px;
+}
+
+.right-image-with-text .elementor-text {
+    width: 410px;
+    padding-right: 95px;
+}
+.right-image-with-text .elementor-image img {
+    width: 100%;
+    display: block;
+}
+.right-image-with-text .main-content {
+    position: relative;
+}
+.right-image-with-text .elementor-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+@media (min-width: 1500px) {
+    .right-image-with-text .elementor-image {
+        width: calc(100% - (100% - 1500px) / 2 - 40px - 410px);
+    }
+}
+@media (max-width: 1499px) {
+    .right-image-with-text .elementor-image {
+        width: 65%;
+    }
+}
+@media (max-width: 1023px) {
+    .right-image-with-text .elementor-text {
+        width: 100%;
+        padding: 0px;
+    }
+    .right-image-with-text .elementor-image {
+        width: 100%;
+        position: initial;
+        padding: 0px 40px;
+    }
+}
+@media (max-width: 768px) {
+    .right-image-with-text .elementor-image {
+        padding: 0px 15px;
+    }
+}
+/* End right-image-with-text Section Custom Style CSS */
+
+/* Begin image-gallery Custom Style CSS */
+
+/* End image-gallery Custom Style CSS */

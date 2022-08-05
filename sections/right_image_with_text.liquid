@@ -1,0 +1,56 @@
+<div class="full-width main-content">
+    <div class="page-width">
+        <div class="elementor-text">
+            <h1 class="heading-title">{{ section.settings.heading }}</h1>
+            <p class="description">{{ section.settings.text }}</p>
+        </div>
+    </div>
+    <div class="elementor-image">
+        {% if section.settings.image != blank %}
+            <img class="desktop-image" src="{{ section.settings.image | image_url: width: 1600 }}" alt="Original Image">
+        {% endif %}
+        {% if section.settings.button_link != blank %}
+            <a href="{{ section.settings.button_link }}" class="text-link">{{ section.settings.button_label }}</a>
+        {% endif %}
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Right Image With Text",
+    "class": "right-image-with-text",
+    "tag": "section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+        },
+        {
+            "type": "textarea",
+            "id": "text",
+            "label": "Text"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button Label"
+        },
+        {
+            "type": "text",
+            "id": "button_link",
+            "label": "Button Link"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Right Image With Text"
+        }
+    ]
+}
+{% endschema %}

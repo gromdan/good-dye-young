@@ -1,0 +1,11 @@
+{
+    "sections": {
+      "hero": {
+        "type": "right_image_with_text",
+        "settings": {}
+      }
+    },
+    "order": [
+      "hero"
+    ]
+}

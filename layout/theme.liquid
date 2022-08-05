@@ -29,6 +29,14 @@
   {{ 'theme.css' | asset_url | stylesheet_tag }}
   {%- render 'css-variables' -%}
 
+  <!-- Begin Include Custom Style CSS -->
+  {{ 'common.css' | asset_url | stylesheet_tag }}
+
+  {% if template == "page.lookbook" %}
+    {{ 'lookbook.css' | asset_url | stylesheet_tag }}
+  {% endif %}
+  <!-- End Include Custom Style CSS -->
+
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 

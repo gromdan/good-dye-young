@@ -1,0 +1,68 @@
+/* Begin Text Style CSS */
+h1.heading-title {
+  font-family: integral cf,Sans-serif;
+  font-size: 3em;
+  font-weight: 800;
+  line-height: 1.12em;
+  letter-spacing: 1.08px;
+  margin-bottom: 40px;
+}
+p.description {
+  font-size: 1.49em;
+  font-weight: 400;
+  line-height: 1.28em;
+}
+a.text-link {
+  font-size: .833em;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin: 24px;
+  display: block;
+  text-decoration: underline;
+}
+@media (max-width: 1024px) {
+  h1.heading-title {
+    font-size: 2.778em;
+    margin-bottom: 16px;
+  }
+  p.description {
+    font-size: 1em;
+    line-height: 1.33em;
+  }
+}
+/* End Text Style CSS */
+
+/* Begin header Style CSS */
+.announcement-bar .flickity-viewport {
+    height: 23.4062px !important;
+}
+.announcement-bar .flickity-viewport .marquee {
+    width: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+  
+.announcement-bar .flickity-viewport .marquee .announcement-text {
+    display: inline-block;
+    text-indent: 0;
+    animation: marquee 8s linear infinite;
+    text-transform: uppercase;
+    color: #f2f2f2;
+    margin-left: 15px;
+}
+@keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+  
+    100% {
+      transform: translate(-100%, 0);
+    }
+}
+/* End header Style CSS */
+

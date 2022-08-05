@@ -9,7 +9,7 @@
 
 {% if show_announcement %}
   <div class="announcement-bar">
-    <div class="page-width">
+    <div class="">
       <div class="slideshow-wrapper">
         <button type="button" class="visually-hidden slideshow__pause" data-id="{{ section.id }}" aria-live="polite">
           <span class="slideshow__pause-stop">
@@ -39,7 +39,19 @@
                   <a class="announcement-link" href="{{ block.settings.link }}">
                 {%- endif -%}
                   {%- if block.settings.text != blank -%}
-                    <span class="announcement-text">{{ block.settings.text }}</span>
+                    {%- if block.settings.announcement_marquee == 'no' -%}
+                      <span class="announcement-text">{{ block.settings.text }}</span>
+                    {%- else -%}
+                      <section class="marquee">
+                        <span class="announcement-text">{{ block.settings.text }}</span>
+                        <span class="announcement-text">{{ block.settings.text }}</span>
+                        <span class="announcement-text">{{ block.settings.text }}</span>
+                        <span class="announcement-text">{{ block.settings.text }}</span>
+                        <span class="announcement-text">{{ block.settings.text }}</span>
+                        <span class="announcement-text">{{ block.settings.text }}</span>
+                        <span class="announcement-text">{{ block.settings.text }}</span>
+                      </section>
+                    {%- endif -%}
                   {%- endif -%}
                   {%- if block.settings.link_text != blank -%}
                     <span class="announcement-link-text">{{ block.settings.link_text }}</span>
