@@ -1,1 +1,128 @@
-<h1>Three Image Gallery</h1>
+<div class="full-width">
+    <div class="main-content">
+        {% for block in section.blocks %}
+            {% if block.type ==  'left_image' %}
+                <div class="item left-image">
+                    {% if block.settings.image != blank %}
+                        <div class="img-wrap">
+                            <img class="desktop-image" src="{{ block.settings.image | image_url: width: 800 }}" alt="Left Image">
+                        </div>
+                    {% endif %}
+                    {% if block.settings.button_link != blank %}
+                        <div class="button-wrap">
+                            <a href="{{ block.settings.button_link }}" class="text-link">{{ block.settings.button_label }}</a>
+                        </div>
+                    {% endif %}
+                </div>
+            {% endif %}
+            {% if block.type ==  'center_image' %}
+                <div class="item center-image">
+                    {% if block.settings.image != blank %}
+                        <div class="img-wrap">
+                            <img class="desktop-image" src="{{ block.settings.image | image_url: width: 800 }}" alt="Left Image">
+                        </div>
+                    {% endif %}
+                    {% if block.settings.button_link != blank %}
+                        <div class="button-wrap">
+                            <a href="{{ block.settings.button_link }}" class="text-link">{{ block.settings.button_label }}</a>
+                        </div>
+                    {% endif %}
+                </div>
+            {% endif %}
+            {% if block.type ==  'right_image' %}
+                <div class="item right-image">
+                    {% if block.settings.image != blank %}
+                        <div class="img-wrap">
+                            <img class="desktop-image" src="{{ block.settings.image | image_url: width: 800 }}" alt="Left Image">
+                        </div>
+                    {% endif %}
+                    {% if block.settings.button_link != blank %}
+                        <div class="button-wrap">
+                            <a href="{{ block.settings.button_link }}" class="text-link">{{ block.settings.button_label }}</a>
+                        </div>
+                    {% endif %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+
+{% schema %}
+{
+    "name": "Three Image Gallery",
+    "tag": "section",
+    "class": "three-iamge-gallery",
+    "max_blocks": 3,
+    "blocks": [
+        {
+            "type": "left_image",
+            "name": "Left Image",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                },
+                {
+                "id": "button_label",
+                "type": "text",
+                "label": "Button Label"
+                },
+                {
+                    "id": "button_link",
+                    "type": "text",
+                    "label": "Button Link"
+                }
+            ]
+        },
+        {
+            "type": "center_image",
+            "name": "Center Image",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                },
+                {
+                "id": "button_label",
+                "type": "text",
+                "label": "Button Label"
+                },
+                {
+                    "id": "button_link",
+                    "type": "text",
+                    "label": "Button Link"
+                }
+            ]
+        },
+        {
+            "type": "right_image",
+            "name": "Right Image",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                },
+                {
+                "id": "button_label",
+                "type": "text",
+                "label": "Button Label"
+                },
+                {
+                    "id": "button_link",
+                    "type": "text",
+                    "label": "Button Link"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Three Image Gallery"
+        }
+    ]
+}
+{% endschema %}

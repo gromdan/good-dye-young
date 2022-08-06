@@ -11,11 +11,16 @@
       "three_image_gallery": {
         "type": "three_image_gallery",
         "settings": {}
+      },
+      "video_with_text": {
+        "type": "video_with_text",
+        "settings": {}
       }
     },
     "order": [
       "right_image_with_text",
       "image_grid",
-      "three_image_gallery"
+      "three_image_gallery",
+      "video_with_text"
     ]
 }
