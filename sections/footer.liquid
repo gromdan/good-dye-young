@@ -134,20 +134,20 @@
         {%- endunless -%}
       {%- endif -%}
 
-      {%- if section.settings.show_copyright -%}
+      <!-- {%- if section.settings.show_copyright -%}
         <p class="footer__small-text">
           &copy; {{ 'now' | date: '%Y' }} {{ shop.name }}
           {%- if section.settings.copyright_text != blank -%}
             {{ section.settings.copyright_text }}
           {%- endif -%}
         </p>
-      {%- endif -%}
+      {%- endif -%} -->
 
     </div>
   </footer>
   <section class="footer-label page-width">
-    <div class="copyright">©2022 Good Dye Young | All Rights Reserved</div>
-    <div class="side-design">Site design by Luum Studio</div>
+    <div class="copyright">©{{ 'now' | date: '%Y' }} {{ section.settings.copyright_text }}</div>
+    <div class="side-design">{{ section.settings.footer_right_text }}</div>
   </section>
 </div>
 {% schema %}
@@ -202,6 +202,11 @@
         "type": "text",
         "id": "copyright_text",
         "label": "Additional copyright text"
+      },
+      {
+        "type": "text",
+        "id": "footer_right_text",
+        "label": "Footer right text"
       }
     ],
     "blocks": [
