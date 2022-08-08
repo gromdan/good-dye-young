@@ -67,15 +67,50 @@ a.text-link {
 /* End header Style CSS */
 
 /* Begin footer custom style css */
+footer.site-footer
+{
+    padding: 0px;
+}
+section.footer-label {
+    padding: 35px 0px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+section.footer-social-list {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-social-list ul.btn-social-list {
+    list-style: none;
+    margin: 0;
+    display: flex;
+}
+.footer-social-list ul.btn-social-list li{
+    padding: 20px;
+}
+.footer-social-list ul.btn-social-list svg{
+    width: 25px;
+    height: 25px;
+}
 footer.site-footer .page-width {
   border-top: solid 2px #fff;
   border-bottom: solid 2px #fff;
   padding: 30px 0px 30px 0px;
 }
 @media (max-width: 768px) {
+  section.footer-label {
+      flex-direction: column;
+  }
+  section.footer-label .side-design {
+      margin-top: 10px;
+  }   
   footer.site-footer {
     padding: 0px 15px;
   }
 }
+
 /* End footer custom style css */
 
