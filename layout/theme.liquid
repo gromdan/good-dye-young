@@ -31,9 +31,9 @@
 
   <!-- Begin Include Custom Style CSS -->
   {{ 'common.css' | asset_url | stylesheet_tag }}
-
+  {{ 'section_style.css' | asset_url | stylesheet_tag }}
+  
   {% if template == "page.lookbook" %}
-    {{ 'lookbook.css' | asset_url | stylesheet_tag }}
   {% endif %}
   <!-- End Include Custom Style CSS -->
 
