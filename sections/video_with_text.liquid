@@ -2,19 +2,19 @@
 <div class="page-width">
     <div class="main-content">
         <div class="video-wrapper">
-            {%- if section.settings.video_url == blank and section.settings.image != blank -%}
+            <!-- {%- if section.settings.video_url == blank and section.settings.image != blank -%}
                 <img src="{{ section.settings.image | image_url: width: 800 }}" frameborder="0" allowfullscreen>
-            {%- else -%}
+            {%- else -%} -->
                 {%- if section.settings.video_url.type == "youtube" -%}
                 <iframe src="//www.youtube.com/embed/{{ section.settings.video_url.id }}?rel=0&showinfo=0&vq=720" frameborder="0" allowfullscreen></iframe>
                 {%- endif -%}
                 {%- if section.settings.video_url.type == "vimeo" -%}
                 <iframe src="//player.vimeo.com/video/{{ section.settings.video_url.id }}?color={{ settings.color_button | remove: "#" }}&byline=0&portrait=0&badge=0" frameborder="0" allowfullscreen></iframe>
                 {%- endif -%}
-            {%- endif -%}
-            <a href="Javascript:;" class="btn-video-play">
+            <!-- {%- endif -%} -->
+            <!-- <a href="Javascript:;" class="btn-video-play">
                 <img src="{{ "video-play-btn.png" | asset_img_url }}">
-            </a>
+            </a> -->
         </div>
         {%- if section.settings.text != blank -%}
             <div class="section-text">
@@ -36,11 +36,6 @@
                 "label": "Video link",
                 "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
                 "accept": ["youtube", "vimeo"]
-            },
-            {
-                "type": "image_picker",
-                "id": "image",
-                "label": "Video Background Image"
             },
             {
                 "type": "textarea",
