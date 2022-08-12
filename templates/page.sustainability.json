@@ -1,0 +1,288 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1659972123cd389a8c": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/sustainability-1.jpg",
+        "image_width": 700,
+        "pretitle": "",
+        "title": "",
+        "subtitle": "“Good Dye Young is incredibly fortunate to have socially and eco-conscious customers who make up our colorful community.This is just a first step for us toward being able to provide more sustainable options for self-care and self-expression!”",
+        "text": "<p><\/p><p><strong>Hayley Williams<\/strong><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "1659742034700d6f7e": {
+      "type": "text-with-slider",
+      "blocks": {
+        "8a27297d-914a-4491-95ba-99e76a47d9da": {
+          "type": "product-selector",
+          "settings": {
+            "product": "",
+            "override-image": "shopify:\/\/shop_images\/SEMI-PERM-BOX-1.gif",
+            "content": "<p><strong>Step 1: <\/strong>Break down folding carton<\/p>"
+          }
+        },
+        "6235933e-0b01-403e-9fee-658949028154": {
+          "type": "product-selector",
+          "settings": {
+            "product": "",
+            "override-image": "shopify:\/\/shop_images\/GIF8.gif",
+            "content": "<p><strong>Step 2: <\/strong>Separate the tube and cap<\/p>"
+          }
+        },
+        "747e03af-65db-409a-8562-83a4da2befcb": {
+          "type": "product-selector",
+          "settings": {
+            "product": "",
+            "override-image": "shopify:\/\/shop_images\/TEXTURE-SHOTS-157-scaled.jpg",
+            "content": "<p><strong>Step 3: <\/strong> Recycle<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "8a27297d-914a-4491-95ba-99e76a47d9da",
+        "6235933e-0b01-403e-9fee-658949028154",
+        "747e03af-65db-409a-8562-83a4da2befcb"
+      ],
+      "settings": {
+        "pretitle": "",
+        "title": "Semi-Perm",
+        "subtitle": "",
+        "text": "<p>Follow a these few steps to recycle your Semi-permanent box, tube, and cap.<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "shopify:\/\/collections\/semi-perm",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "165997334209556b50": {
+      "type": "text-with-slider",
+      "blocks": {
+        "24946f07-e033-49e6-b436-74f1c4c14e64": {
+          "type": "product-selector",
+          "settings": {
+            "product": "",
+            "override-image": "shopify:\/\/shop_images\/GIF3.gif",
+            "content": "<p><strong>Step 1:<\/strong> Separate lid film<\/p>"
+          }
+        },
+        "e91f9471-79fe-40f4-9d4a-5fc0d0ebee93": {
+          "type": "product-selector",
+          "settings": {
+            "product": "",
+            "override-image": "shopify:\/\/shop_images\/GIF2.gif",
+            "content": "<p><strong>Step 2: <\/strong>Wash out jar<\/p>"
+          }
+        },
+        "ac50dd1c-532e-4ad1-8894-77f309619c07": {
+          "type": "product-selector",
+          "settings": {
+            "product": "",
+            "override-image": "shopify:\/\/shop_images\/TEXTURE-SHOTS-158-scaled.jpg",
+            "content": "<p><strong>Step 3: <\/strong>Recycle<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "24946f07-e033-49e6-b436-74f1c4c14e64",
+        "e91f9471-79fe-40f4-9d4a-5fc0d0ebee93",
+        "ac50dd1c-532e-4ad1-8894-77f309619c07"
+      ],
+      "settings": {
+        "pretitle": "",
+        "title": "Poser Paste",
+        "subtitle": "",
+        "text": "<p>Follow a these few steps to recycle your Poser Paste box, jar, and lid.<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "shopify:\/\/collections\/poser-paste",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "1659973488946f8687": {
+      "type": "text-with-slider",
+      "blocks": {
+        "8e499833-686d-41f4-9c64-eb858724fb99": {
+          "type": "product-selector",
+          "settings": {
+            "product": "",
+            "override-image": "shopify:\/\/shop_images\/ezgif.com-gif-maker-1.gif",
+            "content": "<p><strong>Step 1:<\/strong> Take apart peices <\/p>"
+          }
+        },
+        "7cd6b48b-e0a5-4947-a8c5-14f8deac98e9": {
+          "type": "product-selector",
+          "settings": {
+            "product": "",
+            "override-image": "shopify:\/\/shop_images\/ezgif.com-gif-maker.gif",
+            "content": "<p><strong>Step 2:<\/strong> Peel Label<\/p>"
+          }
+        },
+        "9b83ae6b-60bd-4b35-b5f8-112750610593": {
+          "type": "product-selector",
+          "settings": {
+            "product": "",
+            "override-image": "shopify:\/\/shop_images\/TEXTURE-SHOTS-156-scaled.jpg",
+            "content": "<p><strong>Step 3:<\/strong> Recycle<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "8e499833-686d-41f4-9c64-eb858724fb99",
+        "7cd6b48b-e0a5-4947-a8c5-14f8deac98e9",
+        "9b83ae6b-60bd-4b35-b5f8-112750610593"
+      ],
+      "settings": {
+        "pretitle": "",
+        "title": "I'm Bored",
+        "subtitle": "",
+        "text": "<p>Follow a these few steps to recycle your I’m Bored pump and tube<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "shopify:\/\/collections\/im-bored",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "16599736230000877c": {
+      "type": "text-with-slider",
+      "blocks": {
+        "57917931-1c3f-4459-bd00-5cf911ec5e01": {
+          "type": "product-selector",
+          "settings": {
+            "product": "",
+            "override-image": "shopify:\/\/shop_images\/GIF5.gif",
+            "content": "<p>Step 1: Separate the top from the bottle<\/p>"
+          }
+        },
+        "e052796e-cde9-4a12-bea9-d126bbb6a9b1": {
+          "type": "product-selector",
+          "settings": {
+            "product": "",
+            "override-image": "shopify:\/\/shop_images\/TEXTURE-SHOTS-154-scaled.jpg",
+            "content": "<p><strong>Step 2:<\/strong> Recycle<\/p>"
+          }
+        },
+        "7cee7819-83b7-4819-91c3-ae5a8d36b4a6": {
+          "type": "product-selector",
+          "settings": {
+            "product": "",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "57917931-1c3f-4459-bd00-5cf911ec5e01",
+        "e052796e-cde9-4a12-bea9-d126bbb6a9b1",
+        "7cee7819-83b7-4819-91c3-ae5a8d36b4a6"
+      ],
+      "settings": {
+        "pretitle": "",
+        "title": "Prime",
+        "subtitle": "",
+        "text": "<p>Follow a these few steps to recycle your Prime pump and tube<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "shopify:\/\/products\/prime-color-kind-primer",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "165997375207d7de29": {
+      "type": "text-with-slider",
+      "blocks": {
+        "3e6e02d1-5488-4977-a5c6-e8bdce0e4f4e": {
+          "type": "product-selector",
+          "settings": {
+            "product": "",
+            "override-image": "shopify:\/\/shop_images\/GIF4.gif",
+            "content": "<p><strong>Step 1:<\/strong> Separate tube and lid<\/p>"
+          }
+        },
+        "209bca3c-0aad-45eb-8d8b-d3128b1ea882": {
+          "type": "product-selector",
+          "settings": {
+            "product": "",
+            "override-image": "shopify:\/\/shop_images\/TEXTURE-SHOTS-155-scaled.jpg",
+            "content": "<p><strong>Step 2:<\/strong> Recycle<\/p>"
+          }
+        },
+        "54a2908f-a9ca-4afc-ab84-f21a4a591672": {
+          "type": "product-selector",
+          "settings": {
+            "product": "",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "3e6e02d1-5488-4977-a5c6-e8bdce0e4f4e",
+        "209bca3c-0aad-45eb-8d8b-d3128b1ea882",
+        "54a2908f-a9ca-4afc-ab84-f21a4a591672"
+      ],
+      "settings": {
+        "pretitle": "",
+        "title": "Color Kind",
+        "subtitle": "",
+        "text": "<p>Follow a these few steps to recycle your Color Kind tube, and cap.<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "shopify:\/\/collections\/shop",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "1659973885cf53f0e9": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Image-4-22-22-at-8.32-AM.jpg",
+        "image_width": 700,
+        "pretitle": "",
+        "title": "EcoCart",
+        "subtitle": "",
+        "text": "<p>We’re partnering with EcoCart to empower the Good Dye Young community to offset the carbon footprint of your order.<\/p><p>That means the emissions from manufacturing and shipping your favorite GDY products can be made 100% carbon neutral!<\/p><p>Just check the EcoCart box at checkout.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1659972123cd389a8c",
+    "1659742034700d6f7e",
+    "165997334209556b50",
+    "1659973488946f8687",
+    "16599736230000877c",
+    "165997375207d7de29",
+    "1659973885cf53f0e9"
+  ]
+}

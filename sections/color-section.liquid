@@ -1,0 +1,72 @@
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<div class="color">
+
+ 
+      
+        <div class="slider">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              {% for block in section.blocks %}
+                    <div class="swiper-slide">
+                        <a href="{{ block.settings.product.url }}">
+                            <div class="img">
+                              {% if block.settings.override-image != blank %}
+                                <img src="{{ block.settings.override-image | img_url:"400x400", crop: 'top' }}" alt="" />
+                              {% else %}
+                                  {% for img in block.settings.product.images limit:1 offset:1 %}
+                                    <img src="{{ img | img_url:"400x400", crop: 'top' }}" alt="">
+                                  {% endfor %}
+                             {% endif %}
+                            </div>
+                            <h4>{{ block.settings.product.title }}</h4>
+                        </a>
+                    </div>
+                {% endfor %}
+                </div>
+        
+            <!-- pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div> 
+        </div>   
+
+
+</div>
+
+
+{% schema %}
+  {
+    "name": "Color Section",
+    "class": "index-section color-section",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "color-selector",
+        "name": "Products",
+        "settings": [
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Choose Product"
+          },
+          {
+            "type": "image_picker",
+            "id": "override-image",
+            "label": "Image override (optional)"
+          }
+        ]
+      }
+    ],
+    "presets": [{
+      "name": "Color Page Section"
+    }]
+  }
+{% endschema %}
+

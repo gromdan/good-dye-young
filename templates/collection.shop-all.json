@@ -77,6 +77,7 @@
         },
         "subcollections": {
           "type": "subcollections",
+          "disabled": true,
           "settings": {
             "subcollections_per_row": 5
           }
@@ -84,7 +85,7 @@
         "product_grid": {
           "type": "product_grid",
           "settings": {
-            "enable_collection_count": true,
+            "enable_collection_count": false,
             "per_row": 3,
             "rows_per_page": 7,
             "mobile_flush_grid": false
@@ -101,7 +102,7 @@
         "collapsed": true,
         "filter_style": "sidebar",
         "enable_color_swatches": false,
-        "enable_sort": true
+        "enable_sort": false
       }
     },
     "1659031937ad5bbeae": {

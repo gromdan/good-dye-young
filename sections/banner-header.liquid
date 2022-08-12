@@ -1,0 +1,75 @@
+<div class="banner-header page-width">
+  {% if section.settings.align_text == 'top' %}
+    {% if section.settings.headline != blank %}
+      <h1 class="headline">{{ section.settings.headline }}</h1>
+    {% endif %}
+  {% endif %}
+  <div class="inner">
+      <div class="img-left">
+          <img src="https://cdn.shopify.com/s/files/1/0590/4957/4536/files/Primary-Home-Page-Image.jpg?v=1659738528" />
+      </div>
+    <div class="img-right">
+      <img src="https://cdn.shopify.com/s/files/1/0590/4957/4536/files/Secondary-Image-Home-Page.jpg?v=1659738528" />
+      <a href="#" class="btn btn--full">Shop NOw</a>
+    </div>
+  </div>
+  {% if section.settings.align_text == 'bottom' %}
+    {% if section.settings.headline != blank %}
+      <h1 class="headline">{{ section.settings.headline }}</h1>
+    {% endif %}
+  {% endif %}
+</div>
+
+
+{% schema %}
+  {
+    "name": "Banner Header",
+    "class": "index-section",
+    "settings": [
+          {
+            "type": "text",
+            "id": "headline",
+            "label": "Headline",
+            "default":"Headline"
+          },
+          {
+            "type": "select",
+            "id": "align_text",
+            "label": "Text alignment",
+            "default": "top",
+            "options": [
+              {
+                "value": "top",
+                "label": "Top"
+              },
+              {
+                "value": "bottom",
+                "label": "Bottom"
+              }
+            ]
+          }
+    ],
+    "blocks": [
+      {
+        "type": "color-selector",
+        "name": "Products",
+        "settings": [
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Choose Product"
+          },
+          {
+            "type": "image_picker",
+            "id": "override-image",
+            "label": "Image override (optional)"
+          }
+        ]
+      }
+    ],
+    "presets": [{
+      "name": "Banner Header"
+    }]
+  }
+{% endschema %}
+

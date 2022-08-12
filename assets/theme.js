@@ -6988,10 +6988,11 @@ lazySizesConfig.expFactor = 4;
         // If variant argument exists, slideshow is reinitializing because of the
         // image set feature enabled and switching to a new group.
         // currentSlideIndex
-        if (!variant) {
+        // commented out because we are using collection items as "variants"
+        /* if (!variant) {
           var activeSlide = this.cache.mainSlider.querySelector(selectors.startingSlide);
           this.settings.currentSlideIndex = this._slideIndex(activeSlide);
-        }
+        } */
   
         var mainSliderArgs = {
           adaptiveHeight: true,
@@ -7686,6 +7687,90 @@ lazySizesConfig.expFactor = 4;
     }
 
     document.dispatchEvent(new CustomEvent('page:loaded'));
+
+    var $swiperSelector = $('.swiper-container');
+    var $swiperSelector2 = $('.swiper-container');
+
+    $swiperSelector.each(function(index) {
+        var $this = $(this);
+        $this.addClass('swiper-slider-' + index);
+        
+        var dragSize = $this.data('drag-size') ? $this.data('drag-size') : 50;
+        var freeMode = $this.data('free-mode') ? $this.data('free-mode') : false;
+        var loop = $this.data('loop') ? $this.data('loop') : false;
+        var slidesDesktop = $this.data('slides-desktop') ? $this.data('slides-desktop') : 5.5;
+        var slidesTablet = $this.data('slides-tablet') ? $this.data('slides-tablet') : 3;
+        var slidesMobile = $this.data('slides-mobile') ? $this.data('slides-mobile') : 2.5;
+        var spaceBetween = $this.data('space-between') ? $this.data('space-between'): 50;
+        var watchOverflow = $this.data('watch-overflow') ? $this.data('watch-overflow') : true;
+      
+        var swiper = new Swiper('.swiper-slider-' + index, {
+          direction: 'horizontal',
+          loop: loop,
+          freeMode: freeMode,
+          watchOverflow: watchOverflow,
+          spaceBetween: spaceBetween,
+          breakpoints: {
+            1920: {
+              slidesPerView: slidesDesktop
+            },
+            992: {
+              slidesPerView: slidesTablet
+            },
+            480: {
+               slidesPerView: slidesMobile
+            }
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+          },
+          scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true
+          }
+       });
+    });
+        $swiperSelector2.each(function(index) {
+        var $this = $(this);
+        $this.addClass('swiper-slider-' + index);
+        
+        var dragSize = $this.data('drag-size') ? $this.data('drag-size') : 50;
+        var freeMode = $this.data('free-mode') ? $this.data('free-mode') : false;
+        var loop = $this.data('loop') ? $this.data('loop') : false;
+        var slidesDesktop = $this.data('slides-desktop') ? $this.data('slides-desktop') : 1.5;
+        var slidesTablet = $this.data('slides-tablet') ? $this.data('slides-tablet') : 1.5;
+        var slidesMobile = $this.data('slides-mobile') ? $this.data('slides-mobile') : 2.5;
+        var spaceBetween = $this.data('space-between') ? $this.data('space-between'): 50;
+        var watchOverflow = $this.data('watch-overflow') ? $this.data('watch-overflow') : true;
+      
+        var swiper = new Swiper('.swiper-slider-' + index, {
+          direction: 'horizontal',
+          loop: loop,
+          freeMode: freeMode,
+          watchOverflow: watchOverflow,
+          spaceBetween: spaceBetween,
+          breakpoints: {
+            1920: {
+              slidesPerView: slidesDesktop
+            },
+            992: {
+              slidesPerView: slidesTablet
+            },
+            480: {
+               slidesPerView: slidesMobile
+            }
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+          },
+          scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true
+          }
+       });
+    });
   });
 
 })();

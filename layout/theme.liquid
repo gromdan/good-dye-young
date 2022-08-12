@@ -26,16 +26,67 @@
   {%- render 'social-meta-tags' -%}
 
   {%- render 'font-face' -%}
-  {{ 'theme.css' | asset_url | stylesheet_tag }}
-  {%- render 'css-variables' -%}
+  <style>
 
-  <!-- Begin Include Custom Style CSS -->
-  {{ 'common.css' | asset_url | stylesheet_tag }}
-  {{ 'section_style.css' | asset_url | stylesheet_tag }}
-  
-  {% if template == "page.lookbook" %}
-  {% endif %}
-  <!-- End Include Custom Style CSS -->
+    :root{
+      --colorBtnPrimary:{{ settings.color_button | default: "#000" }};
+      --colorBtnPrimaryLight:{{ settings.color_button | default: "#000" | color_lighten: 10 }};
+      --colorBtnPrimaryDim:{{ settings.color_button | default: "#000" | color_darken: 5 }};
+      --colorBtnPrimaryText:{{ settings.color_button_text | default: "#fff" }};
+      --colorCartDot:{{ settings.color_cart_dot | default: "#ff4f33" }};
+    
+      --colorLink:{{ settings.color_body_text | default: "#1c1d1d" }};
+    
+      --colorTextBody:{{ settings.color_body_text | default: "#1c1d1d" }};
+      --colorPrice:{{ settings.color_price | default: "#1c1d1d" }};
+      --colorTextSavings:{{ settings.color_savings_text | default: "#1c1d1d" }};
+      --colorSaleTag:{{ settings.color_sale_tag | default: "#1c1d1d" }};
+      --colorSaleTagText:{{ settings.color_sale_tag_text | default: "#ffffff" }};
+    
+      --colorBody:{{ settings.color_body_bg | default: "#fff" }};
+      --colorBodyDim:{{ settings.color_body_bg | default: "#1c1d1d" | color_darken: 5 }};
+    
+      --colorFooter:{{ settings.color_footer | default: "#111" }};
+      --colorFooterText:{{ settings.color_footer_text | default: "#fff" }};
+    
+      --colorBorder:{{ settings.color_borders | default: "#1c1d1d" }};
+    
+      --colorNav:{{ settings.color_header | default: "#fff" }};
+      --colorNavText:{{ settings.color_header_text | default: "#000" }};
+      --colorAnnouncement:{{ settings.color_announcement | default: "#1c1d1d" }};
+      --colorAnnouncementText:{{ settings.color_announcement_text | default: "#fff" }};
+    
+      --colorHeroText:{{ settings.color_image_text | default: "#fff" }};
+    
+      --colorModalBg:{{ settings.color_modal_overlays | default: "#000" }};
+    
+      --colorImageOverlay:{{ settings.color_image_overlay | default: "#000" }};
+      --colorImageOverlayOpacity:{{ settings.color_image_overlay_opacity | divided_by: 100.0 }};
+      --colorImageOverlayTextShadow:{{ settings.color_image_overlay_text_shadow | divided_by: 100.0 }};
+    
+      --colorSmallImageBg:{{ settings.color_small_image_bg | default: "#eee" }};
+      --colorLargeImageBg:{{ settings.color_large_image_bg | default: "#1c1d1d" }};
+      --colorGridOverlay:{{ settings.collection_grid_tint | default: "#000" }};
+      --colorGridOverlayOpacity:0.1;
+    
+      --colorDrawers:{{ settings.color_drawer_background | default: "#1c1d1d" }};
+      --colorDrawersDim:{{ settings.color_drawer_background | default: "#1c1d1d" | color_darken: 5 }};
+      --colorDrawerBorder:{{ settings.color_drawer_border | default: "#343535" }};
+      --colorDrawerText:{{ settings.color_drawer_text | default: "#fff" }};
+      --colorDrawerTextDark:{{ settings.color_drawer_text | default: "#fff" | color_darken: 15 }};
+      --colorDrawerButton:{{ settings.color_drawer_button | default: "#a26b25" }};
+      --colorDrawerButtonText:{{ settings.color_drawer_button_text | default: "#fff" }};
+    
+      --grid-gutter:17px;
+      --drawer-gutter:20px;
+      --color-body-text:{{ settings.color_body_text | default: "#1c1d1d" }};
+      --color-body:{{ settings.color_body_bg | default: "#fff" }};
+      --color-bg:{{ settings.color_body_bg | default: "#fff" }};
+    }
+  </style>
+  {{ 'theme.css' | asset_url | stylesheet_tag }}
+  {{ 'custom.css' | asset_url | stylesheet_tag }}
+  {%- render 'css-variables' -%}
 
   <script>
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
@@ -89,6 +140,14 @@
     <link rel="stylesheet" href="{{ 'currency-flags.css' | asset_url | split: '?' | first }}">
   {%- endif -%}
 
+  <!-- Begin Include Custom Style CSS -->
+  {{ 'common.css' | asset_url | stylesheet_tag }}
+  {{ 'section_style.css' | asset_url | stylesheet_tag }}
+  
+  {% if template == "page.lookbook" %}
+  {% endif %}
+  <!-- End Include Custom Style CSS -->
+  
   <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
 
   {%- if request.page_type contains 'customers/' -%}

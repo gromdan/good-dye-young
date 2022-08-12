@@ -1,7 +1,15 @@
 {
   "sections": {
+    "165973843591c5bf46": {
+      "type": "banner-header",
+      "settings": {
+        "headline": "Cleanse. tone. hydrate. bond.",
+        "align_text": "bottom"
+      }
+    },
     "slideshow": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "slideshow-0": {
           "type": "image",
@@ -57,12 +65,14 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/home-page-second-section.webp",
         "image_width": 700,
-        "subtitle": "",
+        "pretitle": "",
         "title": "I STREAKED IT",
+        "subtitle": "",
         "text": "<p>Introducing Streaks & Strands: On Tour! With 6 BRAND new, concert inspired GDY shades available at Target! STREAK out and STRAND out from the crowd. Rock your new look with these 2oz semi-permanent hair dyes. These new and exclusive shades are perfect for money pieces, buzzcuts, bangs, dip-dyes, and anything in between!<\/p>",
         "button_label": "Shop Now",
         "button_link": "shopify:\/\/collections\/shop",
-        "button_style": "primary",
+        "button_color": "",
+        "button_style": "secondary",
         "align_text": "left",
         "layout": "right",
         "divider": false
@@ -339,6 +349,7 @@
     }
   },
   "order": [
+    "165973843591c5bf46",
     "slideshow",
     "16590398202f57583c",
     "featured-collection",

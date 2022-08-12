@@ -18,20 +18,12 @@
 }
 
 
-/* @font-face {
+@font-face {
   font-family: "acumin-pro";
   src: url("https://cdn.shopify.com/s/files/1/0590/4957/4536/files/acuminpro-regular.woff2?v=1659028271") format("woff2"),
        url("https://cdn.shopify.com/s/files/1/0590/4957/4536/files/acuminpro-regular.woff?v=1659028246") format("woff");
-} */
+}
 
-@font-face {
-  font-family: "acumin-pro";
-  src: url("Acumin-RPro.woff") format("woff");
-}
-@font-face {
-  font-family: "acumin-pro-bold";
-  src: url("Acumin-BdPro.woff") format("woff");
-}
 
 :root{
   --colorBtnPrimary:{{ settings.color_button | default: "#000" }};
@@ -1478,8 +1470,8 @@ label{
 }
 
 .h4,h4{
-  text-transform:uppercase;
-  letter-spacing:0.3em;
+  /*text-transform:uppercase;
+  letter-spacing:0.3em;*/
   font-size:0.8em;
 }
 
@@ -1498,8 +1490,9 @@ label{
   }
 
 .subheading{
-  text-transform:uppercase;
-  letter-spacing:0.3em;
+  /*text-transform:uppercase;
+  letter-spacing:0.3em;*/
+  font-size:30px;
 }
 
 .text-spacing,.text-spacing.rte:last-child{
@@ -11326,4 +11319,99 @@ html[dir=rtl] .product-single__meta .rte{
 
 .login .section-header h1 {
   font-size:3.0em;
+}
+.color{
+      display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.color .inner {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.swiper-container{
+position:relative;
+  
+}
+.slider {
+    display: block;
+    overflow: hidden;
+    /* max-width: 1360px; */
+    margin-left: 240px;
+    float: right;
+    height: 100%;
+    clear: both;
+}
+
+.slider2 {
+    display: block;
+    overflow: hidden;
+    /* max-width: 1360px; */
+    float: right;
+    height: 100%;
+    clear: both;
+}
+
+
+.swiper-container {
+  padding-bottom: 20px;
+}
+
+.swiper-slide h4 {
+  font-size:21px;
+  font-weight:400;
+}
+
+.swiper-scrollbar {
+  background: #d6d6d6;
+}
+
+.swiper-wrapper img {
+  width: 100%;
+}
+
+.color-section {
+  border-bottom:2px solid #000;
+  padding:0 0 75px 0;
+  margin:0;
+}
+
+.feature-row__item p {
+font-size: 21px;
+    line-height: 1.28;
+    /* padding: 10px 0; */
+    margin: 10px 0;
+}
+
+.feature-row__item p br {
+  padding:5px 0;
+}
+
+#CollectionAjaxContent {
+  border-top:2px solid #000;
+}
+
+.banner-header .inner {
+  display:flex;
+}
+
+.banner-header .img-left {
+  width:67%;
+}
+.banner-header .img-left img {
+  width:100%;
+}
+.banner-header .img-right {
+  width:33%;
+  padding: 0 0 0 32px;
+}
+
+@media only screen and (max-width:768px){
+  .banner-header .img-left {
+    width:100%;
+  }
+  .banner-header .img-right {
+    display:none;
+  }
 }

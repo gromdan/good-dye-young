@@ -1,0 +1,553 @@
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection-header",
+      "disabled": true,
+      "settings": {
+        "enable": true,
+        "collection_image_enable": true,
+        "parallax": false
+      }
+    },
+    "1659719991ef0fe78b": {
+      "type": "color-top-section",
+      "blocks": {
+        "4c1ea117-2810-4eee-8fbc-ab0babf208a6": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#17abdd",
+            "product": "gdy-blue-ruin"
+          }
+        },
+        "aeefc69a-a3ed-4347-a8f0-31c74b49129e": {
+          "type": "color-selector",
+          "disabled": true,
+          "settings": {
+            "color": "#df1995",
+            "product": "gdy-ex-girl"
+          }
+        }
+      },
+      "block_order": [
+        "4c1ea117-2810-4eee-8fbc-ab0babf208a6",
+        "aeefc69a-a3ed-4347-a8f0-31c74b49129e"
+      ],
+      "settings": {
+        "title": "Shop By Color"
+      }
+    },
+    "16597222955b3f3161": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/SSGallery_Riot_Angled.png",
+        "image_width": 360,
+        "pretitle": "15-24+ Washes",
+        "title": "STREAKS & STRANDS",
+        "subtitle": "There's no limit to your creativity",
+        "text": "<p>+ The same bold, hair-healthy Semi-Perm formula you know and love.<\/p><p>+ Perfect for touch-ups, money pieces, buzz cuts, dip dyes, peek-a-boos, color blocks, and so much more!<\/p><p>+ Still vegan, cruelty-free, ammonia free, formaldehyde free, peroxide free, and PPD free.<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "button_color": "#ff2a0b",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "16597199971713a1cf": {
+      "type": "color-section",
+      "blocks": {
+        "6e2b6192-d498-49eb-8b86-b977af9e08b5": {
+          "type": "color-selector",
+          "settings": {
+            "product": "streaks-strands-encore-neon-coral"
+          }
+        },
+        "8adb6d48-c1f1-4941-8e5c-c1c0aa0b382a": {
+          "type": "color-selector",
+          "settings": {
+            "product": "streaks-strands-on-the-list-bubblegum-pink"
+          }
+        },
+        "8baa8972-7b29-4e99-bbf8-3c5936fd8910": {
+          "type": "color-selector",
+          "settings": {
+            "product": "streaks-strands-stage-dive-denim-blue"
+          }
+        },
+        "729fe522-f69e-4040-9dc9-d6acfc87e714": {
+          "type": "color-selector",
+          "settings": {
+            "product": "streaks-strands-front-row-electric-purple"
+          }
+        },
+        "464c25a5-ffc5-4aa2-a779-995ac95e19f5": {
+          "type": "color-selector",
+          "settings": {
+            "product": "streaks-strands-biz-neon-orange"
+          }
+        },
+        "361918ce-422a-47fc-9ceb-a974219892b4": {
+          "type": "color-selector",
+          "settings": {
+            "product": "streaks-strands-all-access-dusty-rose"
+          }
+        },
+        "6e74bcff-5ddc-4ba4-9227-d8fb9c56cd34": {
+          "type": "color-selector",
+          "settings": {
+            "product": "streaks-strands-blue-ruin-blue"
+          }
+        },
+        "f2e37d57-f539-4099-9c12-cc9c89a27368": {
+          "type": "color-selector",
+          "settings": {
+            "product": "streaks-strands-ex-girl-pink"
+          }
+        },
+        "657f3943-f0de-451f-bd1d-c03a3b89466d": {
+          "type": "color-selector",
+          "settings": {
+            "product": "streaks-strands-rock-lobster-red"
+          }
+        },
+        "493cb6da-fce3-4bc9-a19d-fb36ea35d7fb": {
+          "type": "color-selector",
+          "settings": {
+            "product": "streaks-strands-ppl-eater-purple"
+          }
+        }
+      },
+      "block_order": [
+        "6e2b6192-d498-49eb-8b86-b977af9e08b5",
+        "8adb6d48-c1f1-4941-8e5c-c1c0aa0b382a",
+        "8baa8972-7b29-4e99-bbf8-3c5936fd8910",
+        "729fe522-f69e-4040-9dc9-d6acfc87e714",
+        "464c25a5-ffc5-4aa2-a779-995ac95e19f5",
+        "361918ce-422a-47fc-9ceb-a974219892b4",
+        "6e74bcff-5ddc-4ba4-9227-d8fb9c56cd34",
+        "f2e37d57-f539-4099-9c12-cc9c89a27368",
+        "657f3943-f0de-451f-bd1d-c03a3b89466d",
+        "493cb6da-fce3-4bc9-a19d-fb36ea35d7fb"
+      ],
+      "settings": {}
+    },
+    "165972433220eced69": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/DYEposit-Copper-Front.jpg",
+        "image_width": 280,
+        "pretitle": "7-24+ Washes",
+        "title": "DYEposit",
+        "subtitle": "4-in-1 Color Depositing Mask",
+        "text": "<p>+ Cleanse, tone, hydrate, and bond those locks.<\/p><p>+  Packed with salon quality ingredients for deep conditioning, shine, and Fiberhance™ bonding technology to repair damaged hair from the inside out.<\/p><p>+ Still vegan, cruelty-free, ammonia free, formaldehyde free, peroxide free, and PPD free.<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "button_color": "#f56e25",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "1659724363949b6ebd": {
+      "type": "color-section",
+      "blocks": {
+        "ac0b4b44-622a-4e16-88c7-2f12e0751193": {
+          "type": "color-selector",
+          "settings": {
+            "product": "dyeposit-platinum",
+            "override-image": "shopify:\/\/shop_images\/HOVER-PLATINUM-DYEPOSIT.jpg"
+          }
+        },
+        "caefde1a-f7cb-43db-bc28-70d28091eb76": {
+          "type": "color-selector",
+          "settings": {
+            "product": "dyeposit-blue"
+          }
+        },
+        "7f329569-c77f-4c6b-bf37-4ef367961419": {
+          "type": "color-selector",
+          "settings": {
+            "product": "dyeposit-champagne"
+          }
+        },
+        "f2dd2cc4-bcaa-4f63-99e6-2c2fbaf2adcb": {
+          "type": "color-selector",
+          "settings": {
+            "product": "dyeposit-green"
+          }
+        },
+        "72868572-5774-4285-8eeb-115884e233a3": {
+          "type": "color-selector",
+          "settings": {
+            "product": "dyeposit-pink"
+          }
+        },
+        "40b6d26d-b68a-47ec-9038-465294a6b2bd": {
+          "type": "color-selector",
+          "settings": {
+            "product": "dyeposit-red"
+          }
+        },
+        "cf7c1c4f-d294-47eb-883b-fe64a22e3fb8": {
+          "type": "color-selector",
+          "settings": {
+            "product": "dyeposit-silver"
+          }
+        }
+      },
+      "block_order": [
+        "ac0b4b44-622a-4e16-88c7-2f12e0751193",
+        "caefde1a-f7cb-43db-bc28-70d28091eb76",
+        "7f329569-c77f-4c6b-bf37-4ef367961419",
+        "f2dd2cc4-bcaa-4f63-99e6-2c2fbaf2adcb",
+        "72868572-5774-4285-8eeb-115884e233a3",
+        "40b6d26d-b68a-47ec-9038-465294a6b2bd",
+        "cf7c1c4f-d294-47eb-883b-fe64a22e3fb8"
+      ],
+      "settings": {}
+    },
+    "1659725194d1b33f12": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Color-Poser-Paste-PPL-Eater-Tilt.png",
+        "image_width": 350,
+        "pretitle": "1 Wash",
+        "title": "Poser Paste",
+        "subtitle": "Wear and wash, bold one day color!",
+        "text": "<p>+ As easy as applying a new shade of lipstick!<\/p><p>+ Versatile and easy to work with.<\/p><p>+ Transfer-proof while you wear it and washes out with your favorite shampoo.<\/p><p>+ Safe for all hair types, all hair colors and all ages.<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "button_color": "#7525af",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "16597252845eb4a46f": {
+      "type": "color-section",
+      "blocks": {
+        "9e117806-b9a8-47b3-ba53-4a9255a760e3": {
+          "type": "color-selector",
+          "settings": {
+            "product": "narwhal-hair-makeup"
+          }
+        },
+        "01364ad1-4e79-448e-8141-8d262a3a1d4b": {
+          "type": "color-selector",
+          "settings": {
+            "product": "blue-ruin-poser-paste"
+          }
+        },
+        "524b243f-0392-42d1-bcb1-88f770a4b0d2": {
+          "type": "color-selector",
+          "settings": {
+            "product": "ex-girl-poser-paste"
+          }
+        },
+        "a5a74157-c123-4e52-bb8b-933d18037f12": {
+          "type": "color-selector",
+          "settings": {
+            "product": "kowabunga-hair-makeup"
+          }
+        },
+        "8a1fad80-c9e1-44a3-b598-fc1812f71649": {
+          "type": "color-selector",
+          "settings": {
+            "product": "ppl-eater-hair-makeup"
+          }
+        },
+        "2e2dc312-e067-4a81-9d6e-ddada2e66b4a": {
+          "type": "color-selector",
+          "settings": {
+            "product": "riot-poser-paste"
+          }
+        },
+        "f0ad51e3-d194-4447-b05c-5f84fd887ea3": {
+          "type": "color-selector",
+          "settings": {
+            "product": "rock-lobster-hair-makeup"
+          }
+        },
+        "bd0d60e6-0018-41c2-9f0d-5a0d9bbd1018": {
+          "type": "color-selector",
+          "settings": {
+            "product": "steal-my-sunshine-poser-paste"
+          }
+        }
+      },
+      "block_order": [
+        "9e117806-b9a8-47b3-ba53-4a9255a760e3",
+        "01364ad1-4e79-448e-8141-8d262a3a1d4b",
+        "524b243f-0392-42d1-bcb1-88f770a4b0d2",
+        "a5a74157-c123-4e52-bb8b-933d18037f12",
+        "8a1fad80-c9e1-44a3-b598-fc1812f71649",
+        "2e2dc312-e067-4a81-9d6e-ddada2e66b4a",
+        "f0ad51e3-d194-4447-b05c-5f84fd887ea3",
+        "bd0d60e6-0018-41c2-9f0d-5a0d9bbd1018"
+      ],
+      "settings": {}
+    },
+    "16597254210be7d05e": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Color-Im-Bored-Binge-Watch-Tilt.png",
+        "image_width": 240,
+        "pretitle": "2-6 Washes",
+        "title": "I’m Bored",
+        "subtitle": "Add pigment without a lasting commitment.",
+        "text": "<p>+ Fun and easy way to shake up your self-expression.<\/p><p>+ Use as an accessory to your hair to add a pop of color to your look!<\/p><p>+ Contains aloe vera and soy protein to condition and strengthen hair.<\/p><p>+ Safe for all hair types, all hair colors, and all ages.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_color": "#d53241",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "16597254248c5fa287": {
+      "type": "color-section",
+      "blocks": {
+        "79fffa69-aaec-47c0-853a-2ad7bcfca747": {
+          "type": "color-selector",
+          "settings": {
+            "product": "add-to-cart-periwinkle-im-bored-hair-makeup"
+          }
+        },
+        "487ed8d1-2af8-45d4-97ee-5783f3e91556": {
+          "type": "color-selector",
+          "settings": {
+            "product": "binge-watch-cherry-cola-im-bored-hair-makeup"
+          }
+        },
+        "967ce137-b572-473c-b195-9fcd8e9b2682": {
+          "type": "color-selector",
+          "settings": {
+            "product": "swipe-left-grey-im-bored-hair-makeup"
+          }
+        },
+        "cda3a577-49c4-4f0e-ad97-fbc4aab0b233": {
+          "type": "color-selector",
+          "settings": {
+            "product": "imbored-texturex-rosegold"
+          }
+        },
+        "ef1b3bd6-a0f3-4609-aedb-a6318aafd828": {
+          "type": "color-selector",
+          "settings": {
+            "product": "thirst-trap-eggplant-im-bored-hair-makeup"
+          }
+        }
+      },
+      "block_order": [
+        "79fffa69-aaec-47c0-853a-2ad7bcfca747",
+        "487ed8d1-2af8-45d4-97ee-5783f3e91556",
+        "967ce137-b572-473c-b195-9fcd8e9b2682",
+        "cda3a577-49c4-4f0e-ad97-fbc4aab0b233",
+        "ef1b3bd6-a0f3-4609-aedb-a6318aafd828"
+      ],
+      "settings": {}
+    },
+    "16597256160966e4f9": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Semi-Perm-Metal-Heads-Ex-Girl-Tilt.png",
+        "image_width": 270,
+        "pretitle": "15-24+ Washes",
+        "title": "Semi-perm",
+        "subtitle": "Ultra bright professional pigments.",
+        "text": "<p>+ Creamy Vegan & Cruelty Free Formula<\/p><p>+ Botanically Infused with Natural Sunflower Extract<\/p><p>+ Ammonia Free, Formaldehyde Free, Peroxide Free, PPD Free<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "button_color": "#f72b8f",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
+    },
+    "1659725680d0d39077": {
+      "type": "color-section",
+      "blocks": {
+        "5cc44aa8-22de-4c28-91c0-cdac4eaef172": {
+          "type": "color-selector",
+          "settings": {
+            "product": "gdy-ex-girl"
+          }
+        },
+        "749723f7-1681-4c38-ad3d-5582a9bfe199": {
+          "type": "color-selector",
+          "settings": {
+            "product": "gdy-riot"
+          }
+        },
+        "4c2d00f6-461e-4e40-ae0c-0adda44bc25f": {
+          "type": "color-selector",
+          "settings": {
+            "product": "gdy-kowabunga"
+          }
+        },
+        "6360af06-7a4d-4e4b-b23d-37f03636cdd6": {
+          "type": "color-selector",
+          "settings": {
+            "product": "gdy-ppl-eater"
+          }
+        },
+        "6627579c-5498-43ed-8dda-a409cff62ab3": {
+          "type": "color-selector",
+          "settings": {
+            "product": "gdy-rock-lobster"
+          }
+        },
+        "b3ef2aee-9e87-4c52-b063-ebf5ca99fd5e": {
+          "type": "color-selector",
+          "settings": {
+            "product": "gdy-blue-ruin"
+          }
+        },
+        "75a83d6e-7ee8-43e3-8739-24c47678d60a": {
+          "type": "color-selector",
+          "settings": {
+            "product": "gdy-steal-my-sunshine"
+          }
+        },
+        "d4d860c9-cda8-40ff-a4f2-2a9d7e22fdfe": {
+          "type": "color-selector",
+          "settings": {
+            "product": "live-laugh-love"
+          }
+        },
+        "d79f2a61-0bee-4750-907d-3a3996c0b95b": {
+          "type": "color-selector",
+          "settings": {
+            "product": "make-it-happen"
+          }
+        },
+        "228b83b7-f3c9-46dc-bb00-99642cbb6674": {
+          "type": "color-selector",
+          "settings": {
+            "product": "all-in-this-together"
+          }
+        }
+      },
+      "block_order": [
+        "5cc44aa8-22de-4c28-91c0-cdac4eaef172",
+        "749723f7-1681-4c38-ad3d-5582a9bfe199",
+        "4c2d00f6-461e-4e40-ae0c-0adda44bc25f",
+        "6360af06-7a4d-4e4b-b23d-37f03636cdd6",
+        "6627579c-5498-43ed-8dda-a409cff62ab3",
+        "b3ef2aee-9e87-4c52-b063-ebf5ca99fd5e",
+        "75a83d6e-7ee8-43e3-8739-24c47678d60a",
+        "d4d860c9-cda8-40ff-a4f2-2a9d7e22fdfe",
+        "d79f2a61-0bee-4750-907d-3a3996c0b95b",
+        "228b83b7-f3c9-46dc-bb00-99642cbb6674"
+      ],
+      "settings": {}
+    },
+    "1659726632793c94bb": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/semi-perm-additives.png",
+        "image_width": 700,
+        "pretitle": "15-24+ Washes",
+        "title": "Semi-Perm Additives",
+        "subtitle": "Customize a shade all your own with mixable, unapologetically loud colors.",
+        "text": "<p>+ Bergamot essential oil offers a sweet citrus scent.<\/p><p>+ Botanically infused with natural sunflower extract.<\/p><p>+ Vegan & cruelty free cream formula.<\/p><p>+ Safe for all hair types.<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
+    },
+    "1659726095805c9fff": {
+      "type": "advanced-content",
+      "blocks": {
+        "1659726095d56814be-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "1659726095d56814be-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div style=\"display:flex;\">\n<div class=\"left\">\n@GOODDYEYOUNG\n<\/div>\n<div class=\"right\"><a href=\"https:\/\/www.instagram.com\/gooddyeyoung\/\">Follow Us On Instagram<\/a><\/div>\n<\/div>\n<script async src='https:\/\/snapppt.com\/widgets\/widget_loader\/07c6e667-103f-485b-d243-07be47b022ed\/sauce_homepage.js' class='snapppt-widget'><\/script>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1659726095d56814be-0",
+        "1659726095d56814be-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "disabled": true,
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 3,
+            "rows_per_page": 10,
+            "mobile_flush_grid": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "1659719991ef0fe78b",
+    "16597222955b3f3161",
+    "16597199971713a1cf",
+    "165972433220eced69",
+    "1659724363949b6ebd",
+    "1659725194d1b33f12",
+    "16597252845eb4a46f",
+    "16597254210be7d05e",
+    "16597254248c5fa287",
+    "16597256160966e4f9",
+    "1659725680d0d39077",
+    "1659726632793c94bb",
+    "1659726095805c9fff",
+    "main-collection"
+  ]
+}

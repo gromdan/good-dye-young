@@ -1,3 +1,11 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
 {%- liquid
@@ -9,57 +17,50 @@
 
 <div class="index-section image-text">
 
-  <div class="page-width feature-row-wrapper">
+  <div class="feature-row-wrapper">
     {%- capture image_layout -%}
-      <div class="feature-row__item{% if overlap_images %} feature-row__item--overlap-images{% endif %}" style="max-width: {{ section.settings.image_width }}px" data-aos>
-          {%- if section.settings.image != blank -%}
-            <div>
-              {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}<a href="{{ section.settings.button_link }}">{%- endif -%}
-                <div class="image-wrap" style="height: 0; padding-bottom: {{ 100 | divided_by: section.settings.image.aspect_ratio }}%;">
-                  {%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                  <img class="feature-row__image lazyload"
-                    data-src="{{ img_url }}"
-                    data-widths="[180, 360, 540, 750, 900, 1080]"
-                    data-aspectratio="{{ section.settings.image.aspect_ratio }}"
-                    data-sizes="auto"
-                    alt="{{ section.settings.image.alt }}">
-                </div>
-              {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}</a>{%- endif -%}
+      <div class="slider2">
+  <div class="swiper-container">
+<div class="swiper-wrapper">
+{%for block in section.blocks%}
+            <div class="swiper-slide">
+                <a href="{{block.settings.product.url}}">
+                    <div class="img">
+                        {% if block.settings.override-image != blank %}
+                                <img src="{{ block.settings.override-image | img_url:"400x400", crop: 'top' }}" alt="" />
+                              {% else %}
+                                  {% for img in block.settings.product.images limit:1 offset:1 %}
+                                    <img src="{{ img | img_url:"400x400", crop: 'top' }}" alt="">
+                                  {% endfor %}
+                             {% endif %}
+                    </div>
+                    {{block.settings.content}}
+                </a>
             </div>
-          {%- endif -%}
-          {%- if section.settings.image2 != blank -%}
-            <div>
-              {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}<a href="{{ section.settings.button_link }}">{%- endif -%}
-                <div class="image-wrap" style="height: 0; padding-bottom: {{ 100 | divided_by: section.settings.image2.aspect_ratio }}%;">
-                  {%- assign img_url = section.settings.image2 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                  <img class="feature-row__image lazyload"
-                    data-src="{{ img_url }}"
-                    data-widths="[180, 360, 540, 750, 900, 1080]"
-                    data-aspectratio="{{ section.settings.image2.aspect_ratio }}"
-                    data-sizes="auto"
-                    alt="{{ section.settings.image2.alt }}">
-                </div>
-              {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}</a>{%- endif -%}
-            </div>
-          {%- endif -%}
-          {%- if section.settings.image == blank and section.settings.image2 == blank -%}
-            <div>
-              <div class="image-wrap">
-                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-              </div>
-            </div>
-            <div>
-              <div class="image-wrap">
-                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-              </div>
-            </div>
-          {%- endif -%}
-      </div>
+{%endfor%}
+            
+        </div>
+
+    <!-- pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div> 
+</div>
     {%- endcapture -%}
 
-    <div class="feature-row">
+    <div class="feature-row featured-row-slider">
       {%- if section.settings.layout == 'left' -%}
         {{ image_layout }}
+        <style>
+          .featured-row-slider {
+            margin: 0 50px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        </style>
       {%- endif -%}
 
       <div class="feature-row__item feature-row__text feature-row__text--{{ section.settings.layout }} text-{{ section.settings.align_text }}" data-aos>
@@ -86,6 +87,14 @@
 
       {%- if section.settings.layout == 'right' -%}
         {{ image_layout }}
+        <style>
+          .featured-row-slider {
+            margin: 0 0 0 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        </style>
       {%- endif -%}
     </div>
   </div>
@@ -96,28 +105,8 @@
 
 {% schema %}
   {
-    "name": "Image with text",
+    "name": "Text with Slider",
     "settings": [
-      {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Image"
-      },
-      {
-        "type": "image_picker",
-        "id": "image2",
-        "label": "Image 2"
-      },
-      {
-        "type": "range",
-        "id": "image_width",
-        "label": "Image width",
-        "default": 700,
-        "min": 200,
-        "max": 700,
-        "step": 10,
-        "unit": "px"
-      },
       {
         "type": "text",
         "id": "pretitle",
@@ -199,11 +188,11 @@
         "options": [
           {
             "value": "left",
-            "label": "Image on left"
+            "label": "Images on left"
           },
           {
             "value": "right",
-            "label": "Image on right"
+            "label": "Images on right"
           }
         ]
       },
@@ -214,9 +203,32 @@
         "default": false
       }
     ],
+    "blocks": [
+      {
+        "type": "product-selector",
+        "name": "Products",
+        "settings": [
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Choose Product"
+          },
+          {
+            "type": "image_picker",
+            "id": "override-image",
+            "label": "Image override (optional)"
+          },          
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "Description"
+          }
+        ]
+      }
+    ],
     "presets": [
       {
-        "name": "Image with text"
+        "name": "Text with Slider"
       }
     ]
   }

@@ -5,82 +5,65 @@
       "disabled": true,
       "settings": {}
     },
-    "slideshow": {
-      "type": "slideshow",
-      "blocks": {
-        "slideshow-0": {
-          "type": "image",
-          "settings": {
-            "link_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "slideshow-0"
-      ],
-      "settings": {}
+    "16597370125d0b2d59": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/About-PageHBduo.jpg",
+        "image_width": 700,
+        "pretitle": "",
+        "title": "about good dye young",
+        "subtitle": "",
+        "text": "<p>Good Dye Young was created by Hayley Williams, lead singer of the Grammy Award winning band Paramore, and her longtime hair stylist and makeup artist, Brian O’Connor.<\/p><p>The two became best friends through years of creative collaboration and developed GDY as a hair color brand with a vision to create a community around self-expression, color and happiness about being who you are.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
     },
-    "rich-text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {}
-        },
-        "text": {
-          "type": "text",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {}
+    "16597370563f7e0ed6": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1-1.jpg",
+        "image_width": 700,
+        "pretitle": "",
+        "title": "Hayley & Brian",
+        "subtitle": "",
+        "text": "<p><strong>GDY is an extension of Hayley & Brian’s shared passion to provide a brand that breaks down that wall of just being a company, and creating a community you can be a part of, empowered by tools that encourage your freedom of self-expression.<\/strong><\/p><p>“Hair is one of the coolest and easiest tools that we have for self-expression. It’s your own personal megaphone and it’s attached to your head! Our purpose is to create an all-inclusive culture that inspires creativity and empowers everyone’s journey through self-discovery with a whole lot more fun so we can all dye happy.”<\/p><p>– Hayley Williams<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false
+      }
     },
-    "map": {
-      "type": "map",
-      "settings": {}
-    },
-    "text-columns": {
-      "type": "text-columns",
-      "blocks": {
-        "column1": {
-          "type": "text_block",
-          "settings": {}
-        },
-        "column2": {
-          "type": "text_block",
-          "settings": {}
-        },
-        "column3": {
-          "type": "text_block",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {}
-    },
-    "featured-collection": {
-      "type": "featured-collection",
-      "settings": {}
-    },
-    "form": {
-      "type": "contact-form",
-      "settings": {}
+    "165973713930796eba": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2-1.jpg",
+        "image_width": 700,
+        "pretitle": "",
+        "title": "",
+        "subtitle": "",
+        "text": "<p>Brian O’ Connor is a staple in the styling scene in the South’s entertainment capital, Nashville. His expertise in color and style has helped shape GDY’s products.<\/p><p>Focused on quality ingredients and product performance, Brian sets a high standard for all of the brand’s offerings.<\/p><p>“Hair! The accessory you wear everyday and the first thing people notice. Your hair says a lot about who you are and exactly what you want to say to the world. I say the brighter the better and don’t ever let someone dull that shine.”– Brian O’ Connor Artistic Director<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false
+      }
     }
   },
   "order": [
     "main",
-    "slideshow",
-    "rich-text",
-    "text-columns",
-    "map",
-    "featured-collection",
-    "form"
+    "16597370125d0b2d59",
+    "16597370563f7e0ed6",
+    "165973713930796eba"
   ]
 }

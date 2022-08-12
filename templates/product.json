@@ -49,8 +49,9 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
-            "surface_pickup_enable": true
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true,
+            "enable_qty": true
           }
         },
         "tab": {
@@ -137,11 +138,13 @@
       "disabled": true,
       "settings": {
         "image_width": 700,
-        "subtitle": "",
+        "pretitle": "",
         "title": "About your brand",
+        "subtitle": "",
         "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
         "button_label": "",
         "button_link": "",
+        "button_color": "",
         "button_style": "primary",
         "align_text": "left",
         "layout": "right",
@@ -153,11 +156,13 @@
       "disabled": true,
       "settings": {
         "image_width": 700,
-        "subtitle": "",
+        "pretitle": "",
         "title": "About your brand",
+        "subtitle": "",
         "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
         "button_label": "",
         "button_link": "",
+        "button_color": "",
         "button_style": "primary",
         "align_text": "left",
         "layout": "left",
@@ -211,6 +216,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "show_product_recommendations": true,
         "product_recommendations_heading": "You may also like",
@@ -219,12 +225,14 @@
     },
     "recently-viewed": {
       "type": "recently-viewed",
+      "disabled": true,
       "settings": {
         "recent_count": 5
       }
     },
     "collection-return": {
       "type": "collection-return",
+      "disabled": true,
       "settings": {}
     },
     "1658935411df7a745e": {
