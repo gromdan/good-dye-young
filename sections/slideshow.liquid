@@ -214,14 +214,14 @@
                     <div class="hero__text-content {{ block.settings.text_align }}">
                       <div class="hero__text-shadow">
                         {%- unless block.settings.top_subheading == blank -%}
-                          <div class="hero__top-subtitle">
+                          <div class="hero__top-subtitle {% if block.settings.use_dark_text %}use_dark_text{% endif %}">
                             <div class="animation-cropper"><div class="animation-contents">
                               {{ block.settings.top_subheading | escape }}
                             </div></div>
                           </div>
                         {%- endunless -%}
                         {%- unless block.settings.title == blank -%}
-                          <h2 class="h1 hero__title">
+                          <h2 class="h1 hero__title {% if block.settings.use_dark_text %}use_dark_text{% endif %}">
                             <div class="animation-cropper"><div class="animation-contents">
                             {{ block.settings.title | newline_to_br }}
                             </div></div>
@@ -229,7 +229,7 @@
                         {%- endunless -%}
                         {%- if block.settings.subheading or block.settings.link or block.settings.link_2 -%}
                           {%- unless block.settings.subheading == blank -%}
-                            <div class="hero__subtitle">
+                            <div class="hero__subtitle {% if block.settings.use_dark_text %}use_dark_text{% endif %}">
                               <div class="animation-cropper"><div class="animation-contents">
                                 {{ block.settings.subheading | escape }}
                               </div></div>
@@ -391,6 +391,12 @@
         "type": "image",
         "name": "Slide",
         "settings": [
+          {
+            "type": "checkbox",
+            "id": "use_dark_text",
+            "label": "Use dark text?",
+            "info": "Does not affect buttons"
+          },
           {
             "type": "text",
             "id": "top_subheading",

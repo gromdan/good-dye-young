@@ -1,0 +1,293 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1660164948299fa1c9": {
+      "type": "rich-text",
+      "blocks": {
+        "16601649483fa2a275-0": {
+          "type": "heading",
+          "settings": {
+            "title": "get Into the Routine"
+          }
+        },
+        "16601649483fa2a275-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>We’ve got a regimen your hair will thank you for.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16601649483fa2a275-0",
+        "16601649483fa2a275-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "1660164931854df135": {
+      "type": "product-highlight-list",
+      "blocks": {
+        "dba6dde8-d3e3-4f19-a8ad-7f81da5c82c9": {
+          "type": "product",
+          "settings": {
+            "prod": "pre-wash-weekly-detox-and-scalp-treatment"
+          }
+        },
+        "780f53c3-ffee-478b-bbdf-dfa92356203e": {
+          "type": "product",
+          "settings": {
+            "prod": "wash-color-kind-shampoo"
+          }
+        },
+        "e5957aca-1e81-4885-bca4-a30ef9f0a65a": {
+          "type": "product",
+          "settings": {
+            "prod": "rinse-color-kind-conditioner"
+          }
+        },
+        "da3b88a0-22da-46c8-992e-8c50481b7d36": {
+          "type": "product",
+          "settings": {
+            "prod": "prime-color-kind-primer"
+          }
+        }
+      },
+      "block_order": [
+        "dba6dde8-d3e3-4f19-a8ad-7f81da5c82c9",
+        "780f53c3-ffee-478b-bbdf-dfa92356203e",
+        "e5957aca-1e81-4885-bca4-a30ef9f0a65a",
+        "da3b88a0-22da-46c8-992e-8c50481b7d36"
+      ],
+      "settings": {}
+    },
+    "16601659574a4c34ef": {
+      "type": "advanced-content",
+      "blocks": {
+        "1660165957a1135dd0-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "1660165957a1135dd0-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<article>\n  <div class=\"wrapper\">\n    <ul class=\"marquee\">\n      <li>L<\/li>\n      <li>*KEEP HAIR VIBRANT LONGER*<\/li>\n      <li>*KEEP HAIR VIBRANT LONGER*<\/li>\n      <li>*KEEP HAIR VIBRANT LONGER*<\/li>\n      <li>*KEEP HAIR VIBRANT LONGER*<\/li>\n      <li>*KEEP HAIR VIBRANT LONGER*<\/li>\n            <li>*KEEP HAIR VIBRANT LONGER*<\/li>\n            <li>*KEEP HAIR VIBRANT LONGER*<\/li>\n    <\/ul>\n  <\/div>\n<\/article>\n<style>\narticle {\n  overflow: hidden;\n  white-space: nowrap;\n  width: 100%;\n  background:#000;\n  color:#fff;\n  display: flex;\npadding:15px 0;\n}\n\n.wrapper {\n  position: relative;\n}\n\n.marquee {\n  animation: marquee 100s linear infinite;\n}\n\n.marquee2 {\n  animation: marquee2 5s linear infinite;\n  position: absolute;\n  top: 0;\n}\n\n.wrapper ul {\n  display: flex;\n  list-style: none;\n  padding-left: 0;\n}\n\n.wrapper  li {\n  margin: 8px;\n}\n\n@keyframes marquee {\n  from {\n    transform: translateX(0%);\n  }\n  to {\n    transform: translateX(-100%);\n  }\n}\n\n@keyframes marquee2 {\n  from {\n    transform: translateX(100%);\n  }\n  to {\n    transform: translateX(0%);\n  }\n}\n.wrapper ul li {\n    font-size: 1.778em;\n    letter-spacing: .05em;\n    font-weight: 700;\n    text-transform: uppercase;\n    color: #fff;\n    font-family: integral cf;\n    display: inline-block;\n}\n<\/style>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1660165957a1135dd0-0",
+        "1660165957a1135dd0-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "bg_color": "",
+        "text_color": "",
+        "bg_color_contained": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "space_around": true,
+        "show_top_border": false,
+        "show_bottom_border": false
+      }
+    },
+    "16601653310440d2e7": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/care-1.png",
+        "image_attr": "",
+        "image_attr_link": "",
+        "image_width": 300,
+        "pretitle": "",
+        "title": "pre-wash",
+        "bigger_title": false,
+        "subtitle": "Weekly detox and scalp scrub!",
+        "text": "<p>+ Gentle exfoliators loosen product build up.<\/p><p>+ Thyme, Rosemary, Grapefruit and Witch Hazel extracts fortify the scalp, stimulating circulation and creating an optimal environment for hair.<\/p><p>+ Sulfate free. Paraben free. Vegan. Cruelty free.<\/p><p>+ Safe for all hair types and all hair colors.<\/p>",
+        "use_larger_text": false,
+        "button_label": "Learn More",
+        "button_link": "shopify:\/\/products\/pre-wash-weekly-detox-and-scalp-treatment",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false,
+        "collection_dye_duration": "none"
+      }
+    },
+    "1660165482bb3be47a": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/care-2.png",
+        "image_attr": "",
+        "image_attr_link": "",
+        "image_width": 290,
+        "pretitle": "",
+        "title": "WASH",
+        "bigger_title": false,
+        "subtitle": "Color Kind Shampoo",
+        "text": "<p>+ Infused with a blend of Coconut Oil, Olive Oil and Hibiscus Extract to soften while gently cleansing.<\/p><p>+ Provides color protection and retention.<\/p><p>+ Sulfate free. Paraben free. Vegan. Cruelty free.<\/p><p>+ Safe for all hair types and all hair colors.<\/p>",
+        "use_larger_text": false,
+        "button_label": "Learn More",
+        "button_link": "shopify:\/\/products\/wash-color-kind-shampoo",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": true,
+        "collection_dye_duration": "none"
+      }
+    },
+    "1660165574ae614008": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/care-3.png",
+        "image_attr": "",
+        "image_attr_link": "",
+        "image_width": 260,
+        "pretitle": "",
+        "title": "Rinse",
+        "bigger_title": false,
+        "subtitle": "Color Kind Conditioner",
+        "text": "<p>+ Infused with a blend of natural ingredients that work to impart shine while retaining color.<\/p><p>+ Provides color protection and retention.<\/p><p>+ Sulfate free. Paraben free. Vegan. Cruelty free.<\/p><p>+ Safe for all hair type and all hair colors.<\/p>",
+        "use_larger_text": false,
+        "button_label": "Learn More",
+        "button_link": "shopify:\/\/products\/rinse-color-kind-conditioner",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": true,
+        "collection_dye_duration": "none"
+      }
+    },
+    "16601656442e70090f": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/care-4.png",
+        "image_attr": "",
+        "image_attr_link": "",
+        "image_width": 250,
+        "pretitle": "",
+        "title": "Prime",
+        "bigger_title": false,
+        "subtitle": "Color Kind Hair Primer",
+        "text": "<p>+ Use to cut down dry time, reduce frizz and help with detangling.<\/p><p>+ Infused with Aloe Leaf juice for smooth and silky hair.<\/p><p>+ Sulfate free. Paraben free. Vegan. Cruelty free.<\/p><p>+ Safe for all hair type and all hair colors.<\/p>",
+        "use_larger_text": false,
+        "button_label": "Learn More",
+        "button_link": "shopify:\/\/products\/prime-color-kind-primer",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": true,
+        "collection_dye_duration": "none"
+      }
+    },
+    "1660165703494e5cf2": {
+      "type": "advanced-content",
+      "blocks": {
+        "16601657030db6bcbf-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "16601657030db6bcbf-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"instagram-hdrs\">\n<div class=\"left\">\n<a href=\"https:\/\/www.instagram.com\/gooddyeyoung\/\" class=\"h2\">@GOODDYEYOUNG<\/a>\n<\/div>\n<div class=\"right\"><a href=\"https:\/\/www.instagram.com\/gooddyeyoung\/\" class=\"h3\">Follow Us On Instagram<\/a><\/div>\n<\/div>\n<script async src='https:\/\/snapppt.com\/widgets\/widget_loader\/07c6e667-103f-485b-d243-07be47b022ed\/sauce_homepage.js' class='snapppt-widget'><\/script>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "16601657030db6bcbf-0",
+        "16601657030db6bcbf-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "bg_color": "",
+        "text_color": "",
+        "bg_color_contained": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "space_around": true,
+        "show_top_border": false,
+        "show_bottom_border": false
+      }
+    },
+    "d9e7c9b4-a1d2-4384-8dd1-7d33d3398354": {
+      "type": "newsletter",
+      "blocks": {
+        "template--15154562859144__d9e7c9b4-a1d2-4384-8dd1-7d33d3398354-1665500010d8ac3320-0": {
+          "type": "title",
+          "settings": {
+            "title": "Join The List"
+          }
+        },
+        "template--15154562859144__d9e7c9b4-a1d2-4384-8dd1-7d33d3398354-1665500010d8ac3320-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Get exclusive access to deals, inspo, giveaways and more!<\/p>"
+          }
+        },
+        "625bd2c8-5750-4d1e-bea0-935cae4e9d02": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "Ucn3jj"
+          }
+        },
+        "template--15154562859144__d9e7c9b4-a1d2-4384-8dd1-7d33d3398354-1665500010d8ac3320-2": {
+          "type": "form",
+          "disabled": true,
+          "settings": {
+            "show_name_fields": false,
+            "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15154562859144__d9e7c9b4-a1d2-4384-8dd1-7d33d3398354-1665500010d8ac3320-0",
+        "template--15154562859144__d9e7c9b4-a1d2-4384-8dd1-7d33d3398354-1665500010d8ac3320-1",
+        "625bd2c8-5750-4d1e-bea0-935cae4e9d02",
+        "template--15154562859144__d9e7c9b4-a1d2-4384-8dd1-7d33d3398354-1665500010d8ac3320-2"
+      ],
+      "settings": {
+        "color_background": "#dbe1e0",
+        "color_text": "#1c1d1d",
+        "narrow_width": false,
+        "text_align": "left"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1660164948299fa1c9",
+    "1660164931854df135",
+    "16601659574a4c34ef",
+    "16601653310440d2e7",
+    "1660165482bb3be47a",
+    "1660165574ae614008",
+    "16601656442e70090f",
+    "1660165703494e5cf2",
+    "d9e7c9b4-a1d2-4384-8dd1-7d33d3398354"
+  ]
+}

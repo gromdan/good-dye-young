@@ -1,0 +1,425 @@
+{
+  "sections": {
+    "collection-header-landing": {
+      "type": "collection-header-landing",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": true,
+        "parallax": false,
+        "image": "shopify:\/\/shop_images\/horizontal_gradient.png",
+        "image_m": "shopify:\/\/shop_images\/horizontal_gradient.png",
+        "title": "The Gift Guide",
+        "subtitle": "",
+        "btn_text": "",
+        "btn_link": "",
+        "btn_bg_color": "#000000",
+        "btn_text_color": "#ffffff",
+        "bigger_btn": true,
+        "vertical_alignment": "center"
+      }
+    },
+    "b0f00a5c-f613-4aec-9954-839816e0d304": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15322308542600__b0f00a5c-f613-4aec-9954-839816e0d304-1670262218d533d484-0": {
+          "type": "heading",
+          "settings": {
+            "title": ""
+          }
+        },
+        "template--15322308542600__b0f00a5c-f613-4aec-9954-839816e0d304-1670262218d533d484-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Unique gift ideas for the unique ride or dyes in your life. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15322308542600__b0f00a5c-f613-4aec-9954-839816e0d304-1670262218d533d484-0",
+        "template--15322308542600__b0f00a5c-f613-4aec-9954-839816e0d304-1670262218d533d484-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "b63d0362-5ac2-4699-be93-1b0580647b2e": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "For the MetalHeads",
+        "subtitle": "",
+        "home_featured_products": "metalheads",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "b686687f-7a67-4765-9359-fb70e1e27493": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "FOR THE AT-HOME STYLIST",
+        "subtitle": "",
+        "home_featured_products": "tools-accessories",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "a16ba2d6-6db4-46d3-b2b7-85e1fb1a3a77": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "FOR THE MAIN CHArACTER",
+        "subtitle": "",
+        "home_featured_products": "og-colors",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "3b6b1870-4cf2-4692-aef3-323f10e76961": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "FOR THE FASHION ICON",
+        "subtitle": "",
+        "home_featured_products": "merch",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "9a617cfd-4536-40fe-9ed0-80931d7544f0": {
+      "type": "fifty-fifty",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/HAYLEY_LANDING_PAGE_4.png",
+        "bg_color": "",
+        "text_color": "",
+        "use_crazy_bg": false,
+        "pretitle": "",
+        "title": "FOR THE HAYLEY FANS",
+        "subtitle": "",
+        "text": "<p>Give them Hayleys' concert look.<\/p>",
+        "button_label": "SHOP NOW",
+        "button_link": "",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right"
+      }
+    },
+    "e7286656-7380-48c0-bff7-a1876ddc219c": {
+      "type": "text-columns",
+      "blocks": {
+        "template--15322308542600__e7286656-7380-48c0-bff7-a1876ddc219c-1670262292dcb8f94c-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/6.jpg",
+            "image_width": 650,
+            "title": "GDY Candle",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "",
+            "text_color_1": "#000000",
+            "text_2": "",
+            "text_color_2": "#000000",
+            "text_3": "",
+            "text_color_3": "#000000",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/products\/gdy-candle"
+          }
+        },
+        "template--15322308542600__e7286656-7380-48c0-bff7-a1876ddc219c-1670262292dcb8f94c-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/7.jpg",
+            "image_width": 650,
+            "title": "Darker Daze Candle",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "",
+            "text_color_1": "#000000",
+            "text_2": "",
+            "text_color_2": "#000000",
+            "text_3": "",
+            "text_color_3": "#000000",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/products\/darker-daze-candle"
+          }
+        },
+        "template--15322308542600__e7286656-7380-48c0-bff7-a1876ddc219c-1670262292dcb8f94c-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/8.jpg",
+            "image_width": 650,
+            "title": "Metalheads Candle",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "",
+            "text_color_1": "#000000",
+            "text_2": "",
+            "text_color_2": "#000000",
+            "text_3": "",
+            "text_color_3": "#000000",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/products\/metalheads-candle"
+          }
+        }
+      },
+      "block_order": [
+        "template--15322308542600__e7286656-7380-48c0-bff7-a1876ddc219c-1670262292dcb8f94c-0",
+        "template--15322308542600__e7286656-7380-48c0-bff7-a1876ddc219c-1670262292dcb8f94c-2",
+        "template--15322308542600__e7286656-7380-48c0-bff7-a1876ddc219c-1670262292dcb8f94c-1"
+      ],
+      "settings": {
+        "bg_color": "",
+        "title": "FOR THE SELF-CARER",
+        "subtitle": "",
+        "align_text": "center",
+        "button_label": "",
+        "button_link": "",
+        "btn_bg_color": "",
+        "bigger_btn": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "space_around": true,
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padded_columns": false,
+        "use_mobile_slider": false
+      }
+    },
+    "8809fec8-03e9-4f9a-b345-97589005d9ce": {
+      "type": "text-columns",
+      "blocks": {
+        "template--15322308542600__8809fec8-03e9-4f9a-b345-97589005d9ce-1670262292dcb8f94c-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/DPM_1-119.jpg",
+            "image_width": 650,
+            "title": "Poser Paste",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "<p> For the person who wants their hair to match their outfit, give them the gift of temporary color! <\/p>",
+            "text_color_1": "#000000",
+            "text_2": "",
+            "text_color_2": "#000000",
+            "text_3": "",
+            "text_color_3": "#000000",
+            "button_label": "shop now",
+            "button_link": "shopify:\/\/collections\/poser-paste"
+          }
+        },
+        "template--15322308542600__8809fec8-03e9-4f9a-b345-97589005d9ce-1670262292dcb8f94c-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/DPM_1-80.jpg",
+            "image_width": 650,
+            "title": "I'm Bored",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "<p>For the person who’s down to commit…but only a little ;) I’M BORED lasts 2-6 washes!<\/p>",
+            "text_color_1": "#000000",
+            "text_2": "",
+            "text_color_2": "#000000",
+            "text_3": "",
+            "text_color_3": "#000000",
+            "button_label": "shop now",
+            "button_link": "shopify:\/\/collections\/im-bored"
+          }
+        },
+        "template--15322308542600__8809fec8-03e9-4f9a-b345-97589005d9ce-1670262292dcb8f94c-2": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image_width": 650,
+            "title": "Example title",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.<\/p>",
+            "text_color_1": "#000000",
+            "text_2": "<p><\/p>",
+            "text_color_2": "#000000",
+            "text_3": "<p><\/p>",
+            "text_color_3": "#000000",
+            "button_label": "Optional button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15322308542600__8809fec8-03e9-4f9a-b345-97589005d9ce-1670262292dcb8f94c-0",
+        "template--15322308542600__8809fec8-03e9-4f9a-b345-97589005d9ce-1670262292dcb8f94c-1",
+        "template--15322308542600__8809fec8-03e9-4f9a-b345-97589005d9ce-1670262292dcb8f94c-2"
+      ],
+      "settings": {
+        "bg_color": "",
+        "title": "For the Party Animals",
+        "subtitle": "",
+        "align_text": "center",
+        "button_label": "",
+        "button_link": "",
+        "btn_bg_color": "",
+        "bigger_btn": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "space_around": true,
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padded_columns": false,
+        "use_mobile_slider": false
+      }
+    },
+    "a0923a2c-ddd8-48de-811c-0f57b504948b": {
+      "type": "text-columns",
+      "blocks": {
+        "template--15322308542600__a0923a2c-ddd8-48de-811c-0f57b504948b-1670262292dcb8f94c-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Gift-Ready_Sets_3.jpg",
+            "image_width": 650,
+            "title": "Awsten Box",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "<p>For the DYE-hard Awsten Knight Fan! Shop our two limited edition collab boxes before they’re gone!<\/p>",
+            "text_color_1": "#000000",
+            "text_2": "<p><\/p>",
+            "text_color_2": "#000000",
+            "text_3": "<p><\/p>",
+            "text_color_3": "#000000",
+            "button_label": "shop now",
+            "button_link": "shopify:\/\/collections\/collabs"
+          }
+        },
+        "template--15322308542600__a0923a2c-ddd8-48de-811c-0f57b504948b-1670262292dcb8f94c-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Gift-Ready_Sets.jpg",
+            "image_width": 650,
+            "title": "Rainbow Hair Color Kit",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "<p>For the indecisive person looking to rock a rainbow, our Rainbow Hair Color Kit has everything you need to mix and create your perfect rainbow look!<\/p>",
+            "text_color_1": "#000000",
+            "text_2": "<p><\/p>",
+            "text_color_2": "#000000",
+            "text_3": "<p><\/p>",
+            "text_color_3": "#000000",
+            "button_label": "Shop now",
+            "button_link": "shopify:\/\/products\/rainbow-kit"
+          }
+        },
+        "0f4f6956-c490-4dc4-8d36-301fd84b3655": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Gift-Ready_Sets_2.jpg",
+            "image_width": 650,
+            "title": "ON TOUR BUNDLE",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "<p>For the concert goer looking to do their hair for their next show! Featuring your choice of Streaks & Strands On Tour shade and exclusive merch.<\/p>",
+            "text_color_1": "#000000",
+            "text_2": "<p><\/p>",
+            "text_color_2": "#000000",
+            "text_3": "<p><\/p>",
+            "text_color_3": "#000000",
+            "button_label": "shop now",
+            "button_link": "shopify:\/\/products\/on-tour-bundle"
+          }
+        }
+      },
+      "block_order": [
+        "template--15322308542600__a0923a2c-ddd8-48de-811c-0f57b504948b-1670262292dcb8f94c-0",
+        "template--15322308542600__a0923a2c-ddd8-48de-811c-0f57b504948b-1670262292dcb8f94c-1",
+        "0f4f6956-c490-4dc4-8d36-301fd84b3655"
+      ],
+      "settings": {
+        "bg_color": "",
+        "title": "Gift-Ready Sets",
+        "subtitle": "",
+        "align_text": "center",
+        "button_label": "",
+        "button_link": "",
+        "btn_bg_color": "",
+        "bigger_btn": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "space_around": true,
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padded_columns": false,
+        "use_mobile_slider": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "disabled": true,
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 3,
+            "rows_per_page": 7,
+            "mobile_flush_grid": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "title": "Shop GDY",
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": false,
+        "custom_btn_color": "#bf00ff"
+      }
+    }
+  },
+  "order": [
+    "collection-header-landing",
+    "b0f00a5c-f613-4aec-9954-839816e0d304",
+    "b63d0362-5ac2-4699-be93-1b0580647b2e",
+    "b686687f-7a67-4765-9359-fb70e1e27493",
+    "a16ba2d6-6db4-46d3-b2b7-85e1fb1a3a77",
+    "3b6b1870-4cf2-4692-aef3-323f10e76961",
+    "9a617cfd-4536-40fe-9ed0-80931d7544f0",
+    "e7286656-7380-48c0-bff7-a1876ddc219c",
+    "8809fec8-03e9-4f9a-b345-97589005d9ce",
+    "a0923a2c-ddd8-48de-811c-0f57b504948b",
+    "main-collection"
+  ]
+}

@@ -1,0 +1,473 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "d1faed86-ecce-430b-b927-1ca155526948": {
+      "type": "slideshow-animated",
+      "blocks": {
+        "template--15372998049928__d1faed86-ecce-430b-b927-1ca155526948-167665034897af32a4-0": {
+          "type": "image",
+          "settings": {
+            "use_dark_text": false,
+            "top_subheading": "",
+            "title": "",
+            "title_size": 60,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify:\/\/shop_images\/ad_banner.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/ad_banner_mobile.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "top center"
+          }
+        },
+        "template--15372998049928__d1faed86-ecce-430b-b927-1ca155526948-167665034897af32a4-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "use_dark_text": false,
+            "top_subheading": "",
+            "title": "Two line\ntitle slide.",
+            "title_size": 80,
+            "subheading": "And big, beautiful imagery",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15372998049928__d1faed86-ecce-430b-b927-1ca155526948-167665034897af32a4-0",
+        "template--15372998049928__d1faed86-ecce-430b-b927-1ca155526948-167665034897af32a4-1"
+      ],
+      "settings": {
+        "section_height": "550px",
+        "mobile_height": "250px",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "1664893013d6aa9463": {
+      "type": "rich-text",
+      "blocks": {
+        "1664893013bbd4a571-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Vibrant Color. Hair Healthy. #DYEHAPPY"
+          }
+        },
+        "1664893013bbd4a571-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Bold colors that last.<\/p><p>Non-toxic, salon-quality formulas.<\/p><p>Express yourself.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1664893013bbd4a571-0",
+        "1664893013bbd4a571-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "d72d2a88-aaee-4be5-b2f1-535e14076208": {
+      "type": "logo-slider",
+      "blocks": {
+        "template--15372998049928__d72d2a88-aaee-4be5-b2f1-535e14076208-16766505008f874037-0": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-allure.png",
+            "title": ""
+          }
+        },
+        "template--15372998049928__d72d2a88-aaee-4be5-b2f1-535e14076208-16766505008f874037-1": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-mane-addicts.png",
+            "title": ""
+          }
+        },
+        "template--15372998049928__d72d2a88-aaee-4be5-b2f1-535e14076208-16766505008f874037-2": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-nylon.png",
+            "title": ""
+          }
+        },
+        "template--15372998049928__d72d2a88-aaee-4be5-b2f1-535e14076208-16766505008f874037-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-instyle.png",
+            "title": ""
+          }
+        },
+        "62abaf46-4957-429f-af76-2bcf45825b67": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-racked.png",
+            "title": ""
+          }
+        },
+        "2a968e0d-ba17-4d6b-a32f-801a4929d2b5": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-elle.png",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15372998049928__d72d2a88-aaee-4be5-b2f1-535e14076208-16766505008f874037-0",
+        "template--15372998049928__d72d2a88-aaee-4be5-b2f1-535e14076208-16766505008f874037-1",
+        "template--15372998049928__d72d2a88-aaee-4be5-b2f1-535e14076208-16766505008f874037-2",
+        "template--15372998049928__d72d2a88-aaee-4be5-b2f1-535e14076208-16766505008f874037-3",
+        "62abaf46-4957-429f-af76-2bcf45825b67",
+        "2a968e0d-ba17-4d6b-a32f-801a4929d2b5"
+      ],
+      "settings": {
+        "bg_color": "#000000",
+        "text_color": "#000000",
+        "title": "",
+        "text": "",
+        "text_align": "center",
+        "content_width": 600,
+        "logo_opacity": 100,
+        "single_mobile_image": false,
+        "divider": false,
+        "margin_top": 50,
+        "margin_bottom": 50,
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "e413b8df-9660-4414-a5a8-07c17cf16e10": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "The lastest trend: purple",
+        "text": "<p>Coming to a feed near you. Look like royalty with bold, powerful purple.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/ppleater.png",
+        "focal_point": "top",
+        "layout": "left",
+        "height": 450,
+        "framed": false,
+        "parallax": false
+      }
+    },
+    "c44a4829-4e82-44b7-9b85-c3954dd9111b": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "home_featured_products": "purple-hair-dye",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "c2371645-7a20-43ec-a262-dabcf3632cac": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "Orange is the new...orange",
+        "text": "<p>From gorgeous copper tones to bright neon, we’ve got the orange hue for you.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/Copy_of_PEACH_FUZZ_LIGHTER_DAZE.jpg",
+        "focal_point": "center",
+        "layout": "right",
+        "height": 450,
+        "framed": false,
+        "parallax": false
+      }
+    },
+    "bd8c942c-9e23-403b-8b41-05f1db3d9772": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "home_featured_products": "orange-hair-dye",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "c3dd3504-2919-4aab-81f2-3d0befcdb876": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "Blushing Pinks",
+        "text": "<p>Soft and dreamy to dark and bold. Our pinks prove that love is in the hair.<\/p>",
+        "button_label": "",
+        "button_link": "shopify:\/\/collections\/pink-hair-dye",
+        "image": "shopify:\/\/shop_images\/livelaughlove.jpg",
+        "focal_point": "top",
+        "layout": "left",
+        "height": 450,
+        "framed": false,
+        "parallax": false
+      }
+    },
+    "0683c7c9-9c36-4aeb-b9be-74dc8d1ee2d0": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "home_featured_products": "pink-hair-dye",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "0e125b15-6653-4980-83cb-a39d449dc2f0": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "left on red",
+        "text": "<p>Show off your fiery side with our collection of red dyes. <\/p>",
+        "button_label": "",
+        "button_link": "shopify:\/\/collections\/red-hair-dye",
+        "image": "shopify:\/\/shop_images\/rock_lob_715125f2-ae83-460e-8085-e3bb104e31bb.jpg",
+        "focal_point": "top",
+        "layout": "right",
+        "height": 450,
+        "framed": false,
+        "parallax": false
+      }
+    },
+    "d7b38f3f-d3ce-4750-bf79-6b835c87e961": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "home_featured_products": "red-hair-dye",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "455b51be-03bf-4d37-8832-ade29b8251e4": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "for your winter blues...",
+        "text": "<p>There’s nothing sad about our ultra-cool blue hues.<\/p>",
+        "button_label": "",
+        "button_link": "shopify:\/\/collections\/blue-hair-dye",
+        "image": "shopify:\/\/shop_images\/blue_ruin.jpg",
+        "focal_point": "top",
+        "layout": "left",
+        "height": 450,
+        "framed": false,
+        "parallax": false
+      }
+    },
+    "82309d78-b63b-4a84-abaf-27ed30e7e666": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "home_featured_products": "blue-hair-dye",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "add76c82-02f5-475a-87a4-41bca7c74cff": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "green machine",
+        "text": "<p>Our lush greens will keep you turning heads.<\/p>",
+        "button_label": "",
+        "button_link": "shopify:\/\/collections\/green-hair-dye",
+        "image": "shopify:\/\/shop_images\/kow.jpg",
+        "focal_point": "top",
+        "layout": "right",
+        "height": 450,
+        "framed": false,
+        "parallax": false
+      }
+    },
+    "947acc44-7577-40e1-aee1-986683e16b48": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "home_featured_products": "green-hair-dye",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "8ed3b153-62c8-4174-99a5-f85c42ebb09b": {
+      "type": "logo-list",
+      "blocks": {
+        "template--15372998049928__8ed3b153-62c8-4174-99a5-f85c42ebb09b-16766507992e186e46-0": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-rabbit",
+            "title": "Cruelty-free",
+            "link": ""
+          }
+        },
+        "template--15372998049928__8ed3b153-62c8-4174-99a5-f85c42ebb09b-16766507992e186e46-1": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-leaf",
+            "title": "Vegan",
+            "link": ""
+          }
+        },
+        "template--15372998049928__8ed3b153-62c8-4174-99a5-f85c42ebb09b-16766507992e186e46-2": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-chemicals",
+            "title": "Free of a lot of gross chemicals",
+            "link": ""
+          }
+        },
+        "template--15372998049928__8ed3b153-62c8-4174-99a5-f85c42ebb09b-16766507992e186e46-3": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-sunflower",
+            "title": "Natural Sunflower Extract",
+            "link": ""
+          }
+        },
+        "70ed4fd8-d101-4b39-9166-fe8a53033eae": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-hearts",
+            "title": "Made with love in the USA or Canada",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15372998049928__8ed3b153-62c8-4174-99a5-f85c42ebb09b-16766507992e186e46-0",
+        "template--15372998049928__8ed3b153-62c8-4174-99a5-f85c42ebb09b-16766507992e186e46-1",
+        "template--15372998049928__8ed3b153-62c8-4174-99a5-f85c42ebb09b-16766507992e186e46-2",
+        "template--15372998049928__8ed3b153-62c8-4174-99a5-f85c42ebb09b-16766507992e186e46-3",
+        "70ed4fd8-d101-4b39-9166-fe8a53033eae"
+      ],
+      "settings": {
+        "bg_color": "#ceebef",
+        "text_color": "#000000",
+        "title": "",
+        "text": "<p><strong>Good Dye Young cultivates a safe and inclusive community that values vibrant self-expression and creativity.<\/strong><\/p><p><strong>We also make bad a** hair products.<\/strong><\/p>",
+        "text_align": "center",
+        "content_width": 600,
+        "side_by_side": false,
+        "hdr_width": 30,
+        "logo_opacity": 100,
+        "divider": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 40,
+        "padding_bottom": 35,
+        "borders": "border-y"
+      }
+    },
+    "ca848922-db74-44f6-a0ba-bbb27b3498c9": {
+      "type": "newsletter",
+      "blocks": {
+        "template--15372998049928__ca848922-db74-44f6-a0ba-bbb27b3498c9-167665080360a9624a-0": {
+          "type": "title",
+          "settings": {
+            "title": "Join The List"
+          }
+        },
+        "template--15372998049928__ca848922-db74-44f6-a0ba-bbb27b3498c9-167665080360a9624a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Get exclusive access to deals, inspo, giveaways and more!<\/p>"
+          }
+        },
+        "template--15372998049928__ca848922-db74-44f6-a0ba-bbb27b3498c9-167665080360a9624a-2": {
+          "type": "form",
+          "disabled": true,
+          "settings": {
+            "show_name_fields": false,
+            "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>"
+          }
+        },
+        "d84d7b3a-9e54-4ff4-8741-e0082b92f7c1": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "Ucn3jj"
+          }
+        }
+      },
+      "block_order": [
+        "template--15372998049928__ca848922-db74-44f6-a0ba-bbb27b3498c9-167665080360a9624a-0",
+        "template--15372998049928__ca848922-db74-44f6-a0ba-bbb27b3498c9-167665080360a9624a-1",
+        "template--15372998049928__ca848922-db74-44f6-a0ba-bbb27b3498c9-167665080360a9624a-2",
+        "d84d7b3a-9e54-4ff4-8741-e0082b92f7c1"
+      ],
+      "settings": {
+        "color_background": "#dbe1e0",
+        "color_text": "#1c1d1d",
+        "narrow_width": true,
+        "text_align": "left"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "d1faed86-ecce-430b-b927-1ca155526948",
+    "1664893013d6aa9463",
+    "d72d2a88-aaee-4be5-b2f1-535e14076208",
+    "e413b8df-9660-4414-a5a8-07c17cf16e10",
+    "c44a4829-4e82-44b7-9b85-c3954dd9111b",
+    "c2371645-7a20-43ec-a262-dabcf3632cac",
+    "bd8c942c-9e23-403b-8b41-05f1db3d9772",
+    "c3dd3504-2919-4aab-81f2-3d0befcdb876",
+    "0683c7c9-9c36-4aeb-b9be-74dc8d1ee2d0",
+    "0e125b15-6653-4980-83cb-a39d449dc2f0",
+    "d7b38f3f-d3ce-4750-bf79-6b835c87e961",
+    "455b51be-03bf-4d37-8832-ade29b8251e4",
+    "82309d78-b63b-4a84-abaf-27ed30e7e666",
+    "add76c82-02f5-475a-87a4-41bca7c74cff",
+    "947acc44-7577-40e1-aee1-986683e16b48",
+    "8ed3b153-62c8-4174-99a5-f85c42ebb09b",
+    "ca848922-db74-44f6-a0ba-bbb27b3498c9"
+  ]
+}

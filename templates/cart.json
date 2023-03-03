@@ -6,12 +6,22 @@
     },
     "recently-viewed": {
       "type": "recently-viewed",
-      "settings": {}
+      "disabled": true,
+      "settings": {
+        "recent_count": 5
+      }
     },
     "featured-collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
-        "title": "Popular picks"
+        "title": "Popular picks",
+        "home_featured_products": "",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
       }
     }
   },

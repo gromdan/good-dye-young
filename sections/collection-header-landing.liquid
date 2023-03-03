@@ -1,0 +1,211 @@
+{%- assign disable_sticky_header = false -%}
+
+{%- if section.settings.enable -%}
+  {%- if section.settings.collection_image_enable -%}
+    <div class="section-{{ section.id }}"
+      id="CollectionHeaderSection"
+      data-section-id="{{ section.id }}"
+      data-section-type="collection-header"
+      {% if section.settings.parallax %}data-parallax="true"{% endif %}>
+
+      {%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+      <div class="collection-hero">
+
+        {%- if section.settings.parallax -%}
+          <div class="parallax-container">
+            <div class="parallax-image">
+        {%- endif -%}
+
+          <img class="collection-hero__image image-fit lazyload {% if section.settings.image_m != blank %}show-tablet-up{% endif %}"
+            src=""
+            data-src="{{ img_url }}"
+            data-aspectratio="{{ section.settings.image.aspect_ratio }}"
+            data-widths="[720, 900, 1080, 1800, 2400]"
+            data-sizes="auto"
+            alt="{{ section.settings.image.alt | escape }}">
+
+
+
+			{% if section.settings.image_m != blank %}
+				{%- assign img_url_m = section.settings.image_m | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+				<img class="collection-hero__image image-fit lazyload show-mobile-only"
+				src=""
+				data-src="{{ img_url_m }}"
+				data-aspectratio="{{ section.settings.image_m.aspect_ratio }}"
+				data-widths="[720, 900, 1080, 1800, 2400]"
+				data-sizes="auto"
+				alt="{{ section.settings.image_m.alt | escape }}">
+			{% endif %}
+
+          <noscript>
+            <img class="collection-hero__image image-fit"
+              src="{{ section.settings.image | img_url: '1400x' }}"
+              alt="{{ section.settings.image.alt | escape }}">
+          </noscript>
+
+        {%- if section.settings.parallax -%}
+            </div>
+          </div>
+        {%- endif -%}
+
+        <div class="collection-hero__content collection-media-landing">
+          <div class="page-width" style="position: relative;">
+            <header class="section-header section-header--hero">
+              <div class="section-header__shadow">
+                {%- render 'breadcrumbs' -%}
+                <h1 class="section-header__title">
+                  {{ section.settings.title | newline_to_br }}
+                </h1>
+
+				{% if section.settings.subtitle != blank %}
+					<h3 class="">
+						{{ section.settings.subtitle }}
+					</h3>
+				{% endif %}
+
+				{% if section.settings.btn_text != blank %}
+					<a href="{{ section.settings.btn_link }}" class="button btn {% if section.settings.bigger_btn %}bigger_btn{% endif %}">
+						{{ section.settings.btn_text }}
+					</a>
+				{% endif %}
+              </div>
+            </header>
+          </div>
+        </div>
+      </div>
+    </div>
+  {%- else -%}
+    {%- assign disable_sticky_header = true -%}
+    <div class="page-width page-content page-content--top">
+      <header class="section-header section-header--flush">
+        {%- render 'breadcrumbs' -%}
+        <h1 class="section-header__title">
+          {{ collection.title }}
+        </h1>
+
+		
+      </header>
+    </div>
+  {%- endif -%}
+{% else %}
+  {%- assign disable_sticky_header = true -%}
+{%- endif -%}
+
+{%- if disable_sticky_header -%}
+  {% comment %}
+    Div to trigger theme.CollectionHeader JS
+  {% endcomment %}
+  <div
+    id="CollectionHeaderSection"
+    data-section-id="{{ section.id }}"
+    data-section-type="collection-header">
+  </div>
+{%- endif -%}
+
+{% style %}
+
+.section-{{ section.id }} .collection-hero__content {
+	align-items: {{ section.settings.vertical_alignment }};
+}
+
+.section-{{ section.id }} .button.btn {
+	background-color: {{ section.settings.btn_bg_color }};
+	color: {{ section.settings.btn_text_color }};
+}
+
+{% endstyle %}
+
+{% schema %}
+  {
+    "name": "Collection header-landing",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable",
+        "label": "Enable header",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "collection_image_enable",
+        "label": "Show hero image",
+        "info": "Use image inputs below",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "parallax",
+        "label": "Parallax image",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Hero image"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_m",
+        "label": "Hero image - mobile"
+      },
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "textarea",
+        "id": "subtitle",
+        "label": "Subtitle"
+      },
+      {
+        "type": "text",
+        "id": "btn_text",
+        "label": "Button text",
+        "default": "Shop Now"
+      },
+      {
+        "type": "url",
+        "id": "btn_link",
+        "label": "Button link"
+      },
+      {
+        "type": "color",
+        "id": "btn_bg_color",
+        "label": "Button background color"
+      },
+      {
+        "type": "color",
+        "id": "btn_text_color",
+        "label": "Button text color"
+      },
+      {
+        "type": "checkbox",
+        "id": "bigger_btn",
+        "label": "Enhanced button",
+        "info": "Slightly bigger button"
+      },
+	  {
+		"type": "select",
+		"id": "vertical_alignment",
+		"label": "Vertical alignment",
+		"options": [
+		  {
+			"value": "flex-start",
+			"label": "Top"
+		  },
+		  {
+			"value": "center",
+			"label": "Middle"
+		  },
+		  {
+			"value": "flex-end",
+			"label": "Bottom"
+		  }
+		],
+		"default": "center"
+	  }
+    ]
+  }
+{% endschema %}

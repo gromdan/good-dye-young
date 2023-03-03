@@ -1,38 +1,56 @@
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+{% style %}
+    #shopify-section-{{section.id}} .border {
+        width: 100%;
+        background: linear-gradient(90deg,#b10f29 0%,#ea6f31 16.67%,#c59602 40.62%,#a3c0d1 62.5%,#345f86 80.73%,#000000 100%);
+    }
+    #shopify-section-{{section.id}} .border-top {
+        height: {{ section.settings.border_top }}px;
+    }
+    #shopify-section-{{section.id}} .border-bottom {
+        height: {{ section.settings.border_bottom }}px;
+    }
+{% endstyle %}
 
 <div class="text-{{ section.settings.align_text }} page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %}">
-  {%- for block in section.blocks -%}
-    <div class="theme-block" {{ block.shopify_attributes }}>
-      {%- case block.type -%}
-        {%- when 'heading' -%}
-          <h2>{{ block.settings.title | escape }}</h2>
-        {%- when 'page' -%}
-          <div class="rte">
-            {%- if block.settings.page_text != blank -%}
-              {{ pages[block.settings.page_text].content }}
-            {%- else -%}
-              {{ 'home_page.onboarding.no_content' | t }}
-            {%- endif -%}
-          </div>
-        {%- when 'text' -%}
-          <div class="rte">
-            {%- if block.settings.text != blank -%}
-              {%- if block.settings.enlarge_text %}<div class="enlarge-text">{% endif -%}
-              {{ block.settings.text }}
-              {%- if block.settings.enlarge_text %}</div>{% endif -%}
-            {%- else -%}
-              {{ 'home_page.onboarding.no_content' | t }}
-            {%- endif -%}
-          </div>
-        {%- when 'button' -%}
-          <div class="rte">
-            <a href="{{ block.settings.link }}" class="btn">
-              {{ block.settings.link_text }}
-            </a>
-          </div>
-      {%- endcase -%}
-    </div>
-  {%- endfor -%}
+    {% if section.settings.border_top != 0 %}
+        <div class="border border-top"></div>
+    {% endif %}
+    {%- for block in section.blocks -%}
+        <div class="theme-block" {{ block.shopify_attributes }}>
+        {%- case block.type -%}
+            {%- when 'heading' -%}
+            <h2>{{ block.settings.title | escape }}</h2>
+            {%- when 'page' -%}
+            <div class="rte">
+                {%- if block.settings.page_text != blank -%}
+                {{ pages[block.settings.page_text].content }}
+                {%- else -%}
+                {{ 'home_page.onboarding.no_content' | t }}
+                {%- endif -%}
+            </div>
+            {%- when 'text' -%}
+            <div class="rte">
+                {%- if block.settings.text != blank -%}
+                {%- if block.settings.enlarge_text %}<div class="enlarge-text">{% endif -%}
+                {{ block.settings.text }}
+                {%- if block.settings.enlarge_text %}</div>{% endif -%}
+                {%- else -%}
+                {{ 'home_page.onboarding.no_content' | t }}
+                {%- endif -%}
+            </div>
+            {%- when 'button' -%}
+            <div class="rte">
+                <a href="{{ block.settings.link }}" class="btn">
+                {{ block.settings.link_text }}
+                </a>
+            </div>
+        {%- endcase -%}
+        </div>
+    {%- endfor -%}
+    {% if section.settings.border_bottom != 0 %}
+        <div class="border border-bottom"></div>
+    {% endif %}
 </div>
 
 {%- if section.settings.divider -%}</div>{%- endif -%}
@@ -42,38 +60,58 @@
     "name": "Rich text",
     "class": "index-section",
     "settings": [
-      {
-        "type": "select",
-        "id": "align_text",
-        "label": "Text alignment",
-        "default": "center",
-        "options": [
-          {
-            "value": "left",
-            "label": "Left"
-          },
-          {
-            "value": "center",
-            "label": "Centered"
-          },
-          {
-            "value": "right",
-            "label": "Right"
-          }
-        ]
-      },
-      {
-        "type": "checkbox",
-        "id": "narrow_column",
-        "label": "Narrow column",
-        "default": true
-      },
-      {
-        "type": "checkbox",
-        "id": "divider",
-        "label": "Show section divider",
-        "default": false
-      }
+        {
+            "type": "select",
+            "id": "align_text",
+            "label": "Text alignment",
+            "default": "center",
+            "options": [
+            {
+                "value": "left",
+                "label": "Left"
+            },
+            {
+                "value": "center",
+                "label": "Centered"
+            },
+            {
+                "value": "right",
+                "label": "Right"
+            }
+            ]
+        },
+        {
+            "type": "checkbox",
+            "id": "narrow_column",
+            "label": "Narrow column",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "divider",
+            "label": "Show section divider",
+            "default": false
+        },
+        {
+            "type": "range",
+            "id": "border_top",
+            "label": "Border top",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 3,
+            "unit": "px"
+        },
+        {
+            "type": "range",
+            "id": "border_bottom",
+            "label": "Border bottom",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 3,
+            "unit": "px"
+        }
     ],
     "blocks" : [
       {

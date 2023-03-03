@@ -1,5 +1,14 @@
 {
   "current": {
+    "free_shipping_activate": true,
+    "free_shipping_threshold": 40,
+    "gwp_activate": false,
+    "gwp_headline": "Score! Choose your Free Gift!",
+    "gwp_threshold": 60,
+    "gwp_collection": "gwp",
+    "gwp_activate_auto": false,
+    "gwp_threshold_auto": 55,
+    "gwp_product_auto": "microfiber-hair-towel-free-gift",
     "color_body_bg": "#ffffff",
     "color_body_text": "#000000",
     "color_price": "#1c1d1d",
@@ -18,7 +27,7 @@
     "color_footer_text": "#ffffff",
     "color_drawer_background": "#ffffff",
     "color_drawer_text": "#000000",
-    "color_drawer_border": "#e8e8e1",
+    "color_drawer_border": "#000000",
     "color_drawer_button": "#111111",
     "color_drawer_button_text": "#ffffff",
     "color_modal_overlays": "#e6e6e6",
@@ -26,8 +35,8 @@
     "color_image_overlay_text_shadow": 20,
     "type_header_font_family": "tenor_sans_n4",
     "type_header_spacing": "0",
-    "type_header_base_size": 36,
-    "type_header_line_height": 1,
+    "type_header_base_size": 38,
+    "type_header_line_height": 1.2,
     "type_header_capitalize": true,
     "type_headers_align_text": false,
     "type_base_font_family": "twentieth_century_n4",
@@ -46,7 +55,7 @@
     "icon_weight": "4px",
     "icon_linecaps": "miter",
     "vendor_enable": false,
-    "quick_shop_enable": true,
+    "quick_shop_enable": false,
     "quick_shop_text": "Shop Now",
     "product_grid_image_size": "square",
     "product_hover_image": true,
@@ -59,13 +68,20 @@
     "collection_grid_opacity": 10,
     "collection_grid_gutter": true,
     "cart_type": "drawer",
+    "cart_icon": "bag",
     "cart_notes_enable": false,
     "cart_terms_conditions_enable": false,
+    "social_facebook_link": "https:\/\/www.facebook.com\/gooddyeyoung\/",
+    "social_twitter_link": "https:\/\/twitter.com\/gooddyeyoung",
+    "social_instagram_link": "https:\/\/www.instagram.com\/gooddyeyoung\/",
+    "social_tiktok_link": "https:\/\/www.tiktok.com\/@gooddyeyoung",
+    "social_youtube_link": "https:\/\/www.youtube.com\/c\/GoodDyeYoung",
     "share_facebook": false,
     "share_twitter": false,
     "share_pinterest": false,
     "favicon": "shopify:\/\/shop_images\/gdy-favicon.jpg",
     "show_breadcrumbs": false,
+    "checkout_logo_image": "shopify:\/\/shop_images\/GDY-Logo.jpg",
     "checkout_logo_position": "left",
     "checkout_logo_size": "small",
     "checkout_body_background_color": "#ffffff",
@@ -82,17 +98,17 @@
           "1524770014057": {
             "type": "logo",
             "settings": {
-              "logo": "shopify:\/\/shop_images\/GDY-Logo.jpg",
-              "desktop_logo_width": 330,
-              "mobile_logo_width": 110
+              "logo": "shopify:\/\/shop_images\/gdy_logo-icon-blk_final.png",
+              "desktop_logo_width": 60,
+              "logo-mobile": "shopify:\/\/shop_images\/gdy_logo-icon-blk_final.png",
+              "mobile_logo_width": 60
             }
           },
           "1524770292306": {
             "type": "announcement",
             "settings": {
-              "text": "FREE SHIPPING ON ORDERS $30+ (USA ORDERS)",
-              "link_text": "",
-              "link": ""
+              "text": "FREE SHIPPING ON U.S. ORDERS $45+",
+              "announcement_marquee": "yes"
             }
           },
           "1524770296206": {
@@ -100,8 +116,7 @@
             "disabled": true,
             "settings": {
               "text": "Hassle-free returns",
-              "link_text": "30-day postage paid returns",
-              "link": ""
+              "announcement_marquee": "yes"
             }
           }
         },
@@ -111,19 +126,19 @@
           "1524770296206"
         ],
         "settings": {
-          "main_menu_link_list": "main-menu",
+          "main_menu_link_list": "new-menu",
           "mega_menu_images": true,
-          "main_menu_alignment": "left",
+          "main_menu_alignment": "center-left",
           "header_style": "sticky",
           "sticky_index": false,
           "sticky_collection": false,
           "announcement_compact": true,
           "announcement_above_header": true,
           "toolbar_menu": "",
-          "toolbar_social": true,
-          "show_locale_selector": true,
-          "show_currency_selector": true,
-          "show_currency_flags": true
+          "toolbar_social": false,
+          "show_locale_selector": false,
+          "show_currency_selector": false,
+          "show_currency_flags": false
         }
       },
       "footer": {
@@ -131,6 +146,7 @@
         "blocks": {
           "1494301487049": {
             "type": "menu",
+            "disabled": true,
             "settings": {
               "show_footer_title": true,
               "menu": "color",
@@ -141,32 +157,42 @@
             "type": "menu",
             "settings": {
               "show_footer_title": true,
-              "menu": "care",
-              "container_width": 22
+              "menu": "get-help",
+              "container_width": 33
             }
           },
           "e180accf-2d71-4fc8-8067-783c50e74432": {
             "type": "menu",
             "settings": {
               "show_footer_title": true,
-              "menu": "about",
-              "container_width": 22
+              "menu": "meet-us",
+              "container_width": 33
             }
           },
           "4cb3a516-d122-4e9a-a74a-74eedbac456f": {
             "type": "menu",
             "settings": {
               "show_footer_title": true,
-              "menu": "service",
-              "container_width": 22
+              "menu": "gdy-life",
+              "container_width": 33
             }
           },
           "540a7a45-0a07-4b19-a043-718c73e44aca": {
             "type": "menu",
+            "disabled": true,
             "settings": {
               "show_footer_title": true,
               "menu": "connect",
               "container_width": 15
+            }
+          },
+          "36c8dcea-66ff-402a-a526-41f7f3cd2125": {
+            "type": "html",
+            "disabled": true,
+            "settings": {
+              "title": "Connect",
+              "html_list": "<ul class=\"no-bullets site-footer__linklist\">\n<li class=\"klaviyo_form_trigger\"><a href=\"\">Email Sign up<\/a><\/li>\n<li><a href=\"\/pages\/quiz\">Quiz<\/a><\/li>\n<a href=\"\/pages\/store-locator\">Find a Retailer<\/a>\n<li><a href=\"\/pages\/pro-accounts\">Pro Accounts\n<\/a><\/li>\n<li><a href=\"\/pages\/become-a-wholesaler\">Become a Wholesaler\n<\/a><\/li>\n<\/ul>\n<script type=\"text\/javascript\">\n\tdocument.querySelector('.klaviyo_form_trigger').addEventListener('click', function (){\n\nwindow._klOnsite = window._klOnsite || [];\nwindow._klOnsite.push(['openForm', 'SnSEYX']);\n\t});\n<\/script>",
+              "container_width": 17
             }
           },
           "1494292487693": {
@@ -194,6 +220,7 @@
           "e180accf-2d71-4fc8-8067-783c50e74432",
           "4cb3a516-d122-4e9a-a74a-74eedbac456f",
           "540a7a45-0a07-4b19-a043-718c73e44aca",
+          "36c8dcea-66ff-402a-a526-41f7f3cd2125",
           "1494292487693",
           "1494301487048"
         ],
@@ -203,7 +230,8 @@
           "show_currency_flags": true,
           "show_payment_icons": false,
           "show_copyright": false,
-          "copyright_text": ""
+          "copyright_text": "Good Dye Young, Inc. | All Rights Reserved",
+          "footer_right_text": "<a href=\"https:\/\/gooddyeyoung.com\/pages\/privacy-policy\" target=\"_blank\">Privacy Policy<\/a> | <a href=\"https:\/\/gooddyeyoung.com\/pages\/terms-conditions\" target=\"_blank\">Terms of Use<\/a>"
         }
       },
       "newsletter-popup": {
@@ -279,10 +307,28 @@
     },
     "content_for_index": [],
     "blocks": {
-      "7570552984445421165": {
-        "type": "shopify:\/\/apps\/yotpo-product-reviews-photos\/blocks\/settings\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {}
+      },
+      "7570552984445421165": {
+        "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/settings\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+        "disabled": false,
+        "settings": {}
+      },
+      "2153490007123654574": {
+        "type": "shopify:\/\/apps\/gdpr-ccpa-cookie-management\/blocks\/gdpr_cookie_consent\/4fbe573f-a377-4fea-9801-3ee0858cae41",
+        "disabled": false,
+        "settings": {}
+      },
+      "8962992520437913685": {
+        "type": "shopify:\/\/apps\/yotpo-loyalty-rewards\/blocks\/loader-app-embed-block\/2f9660df-5018-4e02-9868-ee1fb88d6ccd",
+        "disabled": false,
+        "settings": {
+          "inject_modules_loader": true,
+          "inject_sdk_loader": true
+        }
       }
     }
   },
@@ -292,7 +338,7 @@
       "button_style": "square",
       "cart_notes_enable": false,
       "cart_terms_conditions_enable": false,
-      "cart_type": "drawer",
+      "cart_type": "page",
       "checkout_accent_color": "#111111",
       "checkout_body_background_color": "#ffffff",
       "checkout_button_color": "#111111",
@@ -368,15 +414,13 @@
             "1524770292306": {
               "type": "announcement",
               "settings": {
-                "text": "Free shipping",
-                "link_text": "On all orders over $100"
+                "text": "Free shipping"
               }
             },
             "1524770296206": {
               "type": "announcement",
               "settings": {
-                "text": "Hassle-free returns",
-                "link_text": "30-day postage paid returns"
+                "text": "Hassle-free returns"
               }
             }
           },
@@ -499,7 +543,7 @@
       "collection_grid_tint": "#000000",
       "collection_grid_opacity": 20,
       "collection_grid_gutter": true,
-      "cart_type": "drawer",
+      "cart_type": "page",
       "cart_notes_enable": false,
       "cart_terms_conditions_enable": false,
       "checkout_logo_position": "left",
@@ -527,17 +571,13 @@
             "1521051841065": {
               "type": "announcement",
               "settings": {
-                "text": "Free shipping",
-                "link_text": "On all orders over $100",
-                "link": "shopify:\/\/collections\/all"
+                "text": "Free shipping"
               }
             },
             "1520888647304": {
               "type": "announcement",
               "settings": {
-                "text": "Hassle-free returns",
-                "link_text": "30-day postage paid returns",
-                "link": "shopify:\/\/collections\/all"
+                "text": "Hassle-free returns"
               }
             }
           },
@@ -739,7 +779,7 @@
       "collection_grid_tint": "#000000",
       "collection_grid_opacity": 10,
       "collection_grid_gutter": true,
-      "cart_type": "drawer",
+      "cart_type": "page",
       "checkout_logo_position": "left",
       "checkout_logo_size": "small",
       "checkout_body_background_color": "#000000",

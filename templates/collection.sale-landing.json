@@ -1,0 +1,372 @@
+{
+  "sections": {
+    "collection-header-landing": {
+      "type": "collection-header-landing",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": true,
+        "parallax": false,
+        "image": "shopify:\/\/shop_images\/testytest.png",
+        "image_m": "shopify:\/\/shop_images\/testytest.png",
+        "title": "SHOP SALE ITEMS",
+        "subtitle": "",
+        "btn_text": "",
+        "btn_link": "",
+        "btn_bg_color": "#000000",
+        "btn_text_color": "#ffffff",
+        "bigger_btn": true,
+        "vertical_alignment": "center"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": false,
+            "per_row": 3,
+            "rows_per_page": 7,
+            "mobile_flush_grid": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "title": "",
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": false,
+        "custom_btn_color": "#000000"
+      }
+    },
+    "1663096935ae67ffb6": {
+      "type": "logo-slider",
+      "blocks": {
+        "d6090fbf-c4df-4a3d-8a0b-24dbaef43629": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-elle.png",
+            "title": ""
+          }
+        },
+        "1663096935a603767c-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-instyle.png",
+            "title": ""
+          }
+        },
+        "1663096935a603767c-0": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-racked.png",
+            "title": ""
+          }
+        },
+        "1663096935a603767c-2": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-mane-addicts.png",
+            "title": ""
+          }
+        },
+        "ad748435-3435-4e14-9c09-1cef82869814": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-nylon.png",
+            "title": ""
+          }
+        },
+        "1663096935a603767c-1": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-allure.png",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "d6090fbf-c4df-4a3d-8a0b-24dbaef43629",
+        "1663096935a603767c-3",
+        "1663096935a603767c-0",
+        "1663096935a603767c-2",
+        "ad748435-3435-4e14-9c09-1cef82869814",
+        "1663096935a603767c-1"
+      ],
+      "settings": {
+        "bg_color": "#000000",
+        "text_color": "#000000",
+        "title": "",
+        "text": "",
+        "text_align": "center",
+        "content_width": 600,
+        "logo_opacity": 100,
+        "single_mobile_image": true,
+        "mobile_image_replacement": "shopify:\/\/shop_images\/all-press-logos-m.png",
+        "divider": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "16630981609a4abdeb": {
+      "type": "logo-list",
+      "blocks": {
+        "1663098160d59c54ee-0": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-rabbit",
+            "title": "Cruelty-free",
+            "link": ""
+          }
+        },
+        "1663098160d59c54ee-1": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-leaf",
+            "title": "Vegan",
+            "link": ""
+          }
+        },
+        "1663098160d59c54ee-2": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-chemicals",
+            "title": "Free of a lot of\ngross chemicals",
+            "link": ""
+          }
+        },
+        "1663098160d59c54ee-3": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-sunflower",
+            "title": "Natural Sunflower\nExtract",
+            "link": ""
+          }
+        },
+        "5c6dd66d-913a-4f16-8518-9ef6dc814092": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-hearts",
+            "title": "Made with love\nin the USA or Canada",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1663098160d59c54ee-0",
+        "1663098160d59c54ee-1",
+        "1663098160d59c54ee-2",
+        "1663098160d59c54ee-3",
+        "5c6dd66d-913a-4f16-8518-9ef6dc814092"
+      ],
+      "settings": {
+        "bg_color": "#ceebef",
+        "text_color": "#000000",
+        "title": "What We're \nAll About",
+        "text": "<p>Good Dye Young cultivates a safe and inclusive community that values vibrant self-expression and creativity. We also make bad ass hair products.<\/p>",
+        "text_align": "left",
+        "content_width": 1190,
+        "side_by_side": true,
+        "hdr_width": 45,
+        "logo_opacity": 100,
+        "divider": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "borders": "border-y"
+      }
+    },
+    "16631027060bc44f0e": {
+      "type": "advanced-content",
+      "blocks": {
+        "16631027065055a16f-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"yes-no-section pdp-block\">\n                                    <div class=\"inner\">\n                                        <div class=\"fck-yes\">\n                                            <h2 class=\"h3\">YESYESYES<\/h2>\n                                            <ul><li>Healthy hair focused.<\/li><li>Sunflower Extract adds UV protection to shield hair from the sun and hot tools that cause color fading.<\/li><li>Fragranced with essential oil Bergamot, known for its mood-lifting properties.<\/li><li>Ultra creamy formula that deeply conditions while depositing color.<\/li><li>Vegan and cruelty free.<\/li><\/ul>\n                                        <\/div>\n                                    \n                                        <div class=\"fck-no\">\n                                            <h2 class=\"h3\">H*CK NO<\/h2>\n                                            <ul><li>4-ABP<\/li><li>Ammonia<\/li><li>Peroxide<\/li><li>Formaldehyde<\/li><li>PPD’s<\/li><li>Persulfates<\/li><li>Paraben<\/li><li>Resorcinol<\/li><li>MEA<\/li><li>Nickel<\/li><li>Bleach<\/li><li>Phthalates<\/li><\/ul>\n                                        <\/div>\n                                    \n                                    <\/div>\n                                <\/div>",
+            "width": "75%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "16631027065055a16f-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "bg_color": "",
+        "text_color": "",
+        "bg_color_contained": false,
+        "padding_top": 0,
+        "padding_bottom": 60,
+        "space_around": false,
+        "show_top_border": true,
+        "show_bottom_border": false
+      }
+    },
+    "1663104988280bfc9d": {
+      "type": "text-columns",
+      "blocks": {
+        "166310498812c443cf-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "I cannot say \nenough good",
+            "small_title": false,
+            "hdr_uppercase": false,
+            "text": "<p>I cannot say enough good things about their products. I may actually get tired of leaving good reviews.<br\/><\/p>",
+            "text_color_1": "#000000",
+            "text_2": "<p>★ ★ ★ ★ ★ <\/p>",
+            "text_color_2": "#000000",
+            "text_3": "<p><strong>Scott D.<\/strong><\/p>",
+            "text_color_3": "#000000",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "166310498812c443cf-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "The colors are \nalways amazing",
+            "small_title": false,
+            "hdr_uppercase": false,
+            "text": "<p>The colors are always amazing, they work so well and smell so good...always my go to and will be my only go to.<br\/><\/p>",
+            "text_color_1": "#000000",
+            "text_2": "<p>★ ★ ★ ★ ★ <\/p>",
+            "text_color_2": "#000000",
+            "text_3": "<p><strong>Molly S.<\/strong><\/p>",
+            "text_color_3": "#000000",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "166310498812c443cf-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "So vibrant!",
+            "small_title": false,
+            "hdr_uppercase": false,
+            "text": "<p>I really loved how this color came out, and I'm always a fan of how soft my hair feels after dyeing with gdy products. Awesome!<\/p>",
+            "text_color_1": "#000000",
+            "text_2": "<p>★ ★ ★ ★ ★ <\/p>",
+            "text_color_2": "#000000",
+            "text_3": "<p><strong>Cai<\/strong><\/p>",
+            "text_color_3": "#000000",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "166310498812c443cf-0",
+        "166310498812c443cf-1",
+        "166310498812c443cf-2"
+      ],
+      "settings": {
+        "bg_color": "#ceebef",
+        "title": "What You Are\nSaying",
+        "subtitle": "See why everyone dyes with GDY.",
+        "align_text": "center",
+        "button_label": "Shop Now",
+        "button_link": "shopify:\/\/collections\/all",
+        "btn_bg_color": "#000000",
+        "bigger_btn": true,
+        "padding_top": 40,
+        "padding_bottom": 30,
+        "space_around": false,
+        "show_top_border": true,
+        "show_bottom_border": false,
+        "padded_columns": true,
+        "use_mobile_slider": true
+      }
+    },
+    "16631138971df52e7d": {
+      "type": "gdy-comparison",
+      "blocks": {
+        "16631138977692ce4c-0": {
+          "type": "comparison",
+          "settings": {
+            "title": "Vegan & Cruelty-Free"
+          }
+        },
+        "16631138977692ce4c-1": {
+          "type": "comparison",
+          "settings": {
+            "title": "Free of Ammonia, Formaldehyde, Peroxide, & PPD"
+          }
+        },
+        "16631138977692ce4c-2": {
+          "type": "comparison",
+          "settings": {
+            "title": "Made in the USA"
+          }
+        },
+        "0605264f-4b4b-4412-9b9a-7753ccee8f67": {
+          "type": "comparison",
+          "settings": {
+            "title": "Sustainable"
+          }
+        }
+      },
+      "block_order": [
+        "16631138977692ce4c-0",
+        "16631138977692ce4c-1",
+        "16631138977692ce4c-2",
+        "0605264f-4b4b-4412-9b9a-7753ccee8f67"
+      ],
+      "settings": {
+        "title": "GDY VS Others",
+        "gdy_title": "GDY",
+        "others_title": "Others",
+        "button_label": "Shop Now",
+        "button_link": "shopify:\/\/collections\/all",
+        "btn_bg_color": "#bf00ff",
+        "bigger_btn": true,
+        "padding_top": 45,
+        "padding_bottom": 45,
+        "space_around": false,
+        "show_top_border": true,
+        "show_bottom_border": false
+      }
+    }
+  },
+  "order": [
+    "collection-header-landing",
+    "main-collection",
+    "1663096935ae67ffb6",
+    "16630981609a4abdeb",
+    "16631027060bc44f0e",
+    "1663104988280bfc9d",
+    "16631138971df52e7d"
+  ]
+}

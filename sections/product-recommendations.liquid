@@ -23,6 +23,7 @@
 {%- if section.settings.show_product_recommendations -%}
   <div
     id="Recommendations-{{ product.id }}"
+    class="featured-products-wrapper"
     data-section-id="{{ product.id }}"
     data-section-type="product-recommendations"
     data-enable="{{ recommend_products }}"
@@ -53,7 +54,8 @@
               <div class="grid grid--uniform visually-invisible" aria-hidden="true">
                 {%- render 'product-grid-item',
                   product: product,
-                  quick_shop_enable: settings.quick_shop_enable
+                  quick_shop_enable: settings.quick_shop_enable,
+                  button_class: 'btn'
                 -%}
               </div>
             </div>
@@ -65,7 +67,9 @@
                   {%- render 'product-grid-item',
                     product: product,
                     per_row: number_of_products,
-                    quick_shop_enable: settings.quick_shop_enable
+                    quick_shop_enable: settings.quick_shop_enable,
+                    button_class: 'btn',
+                    button_class_2: 'btn btn--inverse btn-inverse--black'
                   -%}
                 {%- endfor -%}
               </div>

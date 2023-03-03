@@ -5,9 +5,53 @@
       "disabled": true,
       "settings": {}
     },
+    "0e146538-17d2-402d-a7dc-69e4543a7941": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15342534983816__0e146538-17d2-402d-a7dc-69e4543a7941-1672967817924ae525-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Need Help?"
+          }
+        },
+        "template--15342534983816__0e146538-17d2-402d-a7dc-69e4543a7941-1672967817924ae525-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>From application tips to specific product questions, we're here to help! Take a look at some of our frequently asked questions below, and if you still need answers feel free to <a href=\"https:\/\/gooddyeyoung.com\/pages\/contact\" title=\"https:\/\/gooddyeyoung.com\/pages\/contact\">click here to contact us!<\/a><\/p><p><\/p><p>Our customer service team is available via email between the hours of 8:30AM-5:00PM ET Monday - Friday. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15342534983816__0e146538-17d2-402d-a7dc-69e4543a7941-1672967817924ae525-0",
+        "template--15342534983816__0e146538-17d2-402d-a7dc-69e4543a7941-1672967817924ae525-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
     "faq": {
       "type": "faq",
       "blocks": {
+        "1e76b1fd-74e1-4a44-ab62-7d9a12de95eb": {
+          "type": "rich-text",
+          "disabled": true,
+          "settings": {
+            "title": "Need Help?",
+            "text": "<p>From application tips to specific product questions, we're here to help! Take a look at some of our frequently asked questions below, and if you still need answers feel free to <a href=\"https:\/\/gooddyeyoung.com\/pages\/contact\" title=\"https:\/\/gooddyeyoung.com\/pages\/contact\">click here to contact us!<\/a><\/p><p><\/p><p>Our customer service team is available via email between the hours of 8:30AM-5:00PM ET Monday - Friday. <\/p>",
+            "align_text": "center"
+          }
+        },
+        "5ef4d06a-b4f8-4622-b392-36476ec24d30": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Promotional Offers and Codes",
+            "text": "<p>Only one code per order per person. Free gift offers valid while supplies last. Promotional offers and codes are valid during specified time periods only. GDY reserves the right to substitute items, add, cancel, or update promotions at any time. We reserve the right to decline the promotional offer for any order that does not meet the specific criteria by the company. Any GDY promotions are only valid on <a href=\"http:\/\/gooddyeyoung.com\/\" target=\"_blank\">gooddyeyoung.com<\/a>, and cannot be combined with any other offers. Promotional offers are not available with future automatic shipments. Promotions apply to regular-priced merchandise only. Sale items, kits, and bundles are not eligible for promotions. Other restrictions may apply.<\/p>",
+            "align_text": "left"
+          }
+        },
         "faq-0": {
           "type": "rich-text",
           "settings": {
@@ -20,21 +64,21 @@
           "type": "question",
           "settings": {
             "title": "Can I purchase Good Dye Young at a retailer?",
-            "text": "<p>You can purchase GDY products on gooddyeyoung.com, sallybeauty.com, all Sally Beauty stores, <a href=\"https:\/\/www.sephora.com\/brand\/good-dye-young\" target=\"_blank\">sephora.com\/good-dye-young<\/a>, and sephora.ca for Canadian residents. We are also online at Beauty Bay for customers in the UK! To find a store near you, please use our <a href=\"https:\/\/gooddyeyoung.com\/find-stores\/\">Find Us in Stores<\/a> tool.<\/p><p>Fashion and certain accessories are exclusively sold on gooddyeyoung.com.<\/p>"
+            "text": "<p>To find a store near you, please use our <a href=\"https:\/\/gooddyeyoung.com\/pages\/store-locator\" title=\"https:\/\/gooddyeyoung.com\/pages\/store-locator\">Find Us in Stores<\/a> tool.<\/p><p>Fashion, certain accessories, and other select merchandise are exclusively sold on gooddyeyoung.com.<\/p>"
           }
         },
         "faq-2": {
           "type": "question",
           "settings": {
             "title": "Do you offer professional stylist discounts?",
-            "text": "<p>Yes! If you’re a licensed salon professional, please check out details for <a href=\"https:\/\/gooddyeyoung.com\/pro-account\/\">Pro Accounts<\/a>.<\/p>"
+            "text": "<p>Yes! If you’re a licensed salon professional, please email us at pro@gooddyeyoung.com for more information!<\/p>"
           }
         },
         "59e092ea-b544-4e85-828f-e910ad3f332c": {
           "type": "question",
           "settings": {
             "title": "Does GDY have coupons?",
-            "text": "<p>We sure do! To ensure that you know about our next offer or sale, be sure to sign up for our email list, text messaging and follow us on socials!<\/p><p><em>Coupons cannot be used on discounted items or limited edition collaborations. <\/em><\/p>"
+            "text": "<p>We sure do! To ensure that you know about our next offer or sale, be sure to sign up for our email list, text messaging and follow us on socials!<\/p><p><em>Coupon codes can be used on orders over $40 on <\/em><a href=\"http:\/\/gooddyeyoung.com\/\" target=\"_blank\"><em>gooddyeyoung.com <\/em><\/a><em>and are not valid at any other retailer. Coupons codes cannot be used on discounted items, limited edition collaborations, candles, or GDY digital gift cards.<\/em><\/p>"
           }
         },
         "faq-3": {
@@ -59,13 +103,6 @@
             "text": "<p>It depends on what you’re looking for!<\/p><p>For maintaining your vibrant color, there is no need to re-lighten your hair before applying. <\/p><p>For a bold new look, you can use DYEposit on freshly lightened hair. For the most vibrant and long lasting results, we also suggest trying a semi-permanent dye. <\/p><p>Try picking a DYEposit shade that will work with your natural hair color  If you have light brown hair, try Red or Chocolate! If you are a natural redhead, Copper or Red will look amazing! <\/p><p>Need some expert advice? Shoot us an email at <a href=\"mailto:hey@gooddyeyoung.com\">hey@gooddyeyoung.com<\/a>!<\/p>"
           }
         },
-        "11ce9dd4-b074-4630-bff1-128ccffbb7f2": {
-          "type": "question",
-          "settings": {
-            "title": "Do I need to Lighten my hair before applying DYEposit?",
-            "text": "<p>It depends on what you’re looking for!<\/p><p>-For maintaining your vibrant color, there is no need to re-lighten your hair before applying. <br\/>-For a bold new look, you can use DYEposit on freshly lightened hair. -For the most vibrant and long lasting results, we also suggest trying a semi-permanent dye. <br\/>-Try picking a DYEposit shade that will work with your natural hair color  If you have light brown hair, try Red or Chocolate! If you are a natural redhead, Copper or Red will look amazing! <\/p><p>Need some expert advice? Shoot us an email at <a href=\"mailto:hey@gooddyeyoung.com\">hey@gooddyeyoung.com<\/a>!<\/p>"
-          }
-        },
         "54be6b91-3ada-46aa-bae0-f53650fdde44": {
           "type": "question",
           "settings": {
@@ -78,20 +115,6 @@
           "settings": {
             "title": "How is DYEposit different from your semi-permanent dyes?",
             "text": "<p>DYEposit contains a lighter pigment load, for just a kiss of color! Semi-permanent dyes will yield a longer and more vivid result due to a higher pigment concentration. DYEposit also contains a bonding agent called Fiberhance! Fiberhance penetrates deep into the cortex to create new hydrogen and ionic bonds which support the damaged internal keratin structure and strengthen and provide manageability back to the hair.<\/p>"
-          }
-        },
-        "a8c95672-30b1-4ca7-86ce-316be3b638dc": {
-          "type": "question",
-          "settings": {
-            "title": "How is DYEposit different from your semi-permanent dyes?",
-            "text": "<p>DYEposit contains a lighter pigment load, for just a kiss of color! Semi-permanent dyes will yield a longer and more vivid result due to a higher pigment concentration. DYEposit also contains a bonding agent called Fiberhance! Fiberhance penetrates deep into the cortex to create new hydrogen and ionic bonds which support the damaged internal keratin structure and strengthen and provide manageability back to the hair.<\/p>"
-          }
-        },
-        "db7732f4-a393-47ce-86d5-a524c7acf1a4": {
-          "type": "question",
-          "settings": {
-            "title": "How long does DYEposit last?",
-            "text": "<p>DYEposit lasts 10-15 washes! We suggest rinsing your hair with cool water to lock in the pigment.<\/p>"
           }
         },
         "bf849fe3-6120-48e4-8907-eebdb04d4093": {
@@ -183,13 +206,6 @@
           "settings": {
             "title": "Will DYEposit show up on dark hair?",
             "text": "<p>It depends on what you’re looking for!<\/p><p>For a bold pop of color that lasts, we’d suggest pre-lightening your hair to a level 10 and using a semi-permanent dye. DYEposit can be used in between dye jobs to help keep your vibrant color bright!<\/p><p>If you’re looking for a slight tint to your dark hair, you can either use some of our bolder shades of DYEposit (red, blue, or purple!) to add a slight tint. For even more of a tint, try our semi-permanent shades Rock Lobster, Blue Ruin, PPL Eater, or Live Laugh Love! Do know that without lightening your hair, results may vary. <\/p><p>Our Chocolate DYEposit works GREAT for Brunettes looking to warm up their brown.<\/p>"
-          }
-        },
-        "65392e51-2349-4f90-b9a4-08d2c84e338c": {
-          "type": "question",
-          "settings": {
-            "title": "Will DYEposit show up on dark hair?",
-            "text": "<p>If you’re looking for a bold pop of color, we suggest pre-lightening your hair to a level 10 for best results. While DYEposit will deposit pigment, for the best results we suggest using a semi-permanent dye after lightening.<\/p><p>If you’re looking to add a slight tint to dark hair, due to the lighter pigment load in DYEposit we would suggest using a semi-permanent dye.<\/p>"
           }
         },
         "0ad74851-6781-44bb-80e2-a8e844571341": {
@@ -300,6 +316,8 @@
         }
       },
       "block_order": [
+        "1e76b1fd-74e1-4a44-ab62-7d9a12de95eb",
+        "5ef4d06a-b4f8-4622-b392-36476ec24d30",
         "faq-0",
         "faq-1",
         "faq-2",
@@ -307,11 +325,8 @@
         "faq-3",
         "faq-4",
         "f0dcab43-ffd3-4756-8013-7c254e38280f",
-        "11ce9dd4-b074-4630-bff1-128ccffbb7f2",
         "54be6b91-3ada-46aa-bae0-f53650fdde44",
         "cbfab523-fada-4059-bae7-6e6bb4f40e15",
-        "a8c95672-30b1-4ca7-86ce-316be3b638dc",
-        "db7732f4-a393-47ce-86d5-a524c7acf1a4",
         "bf849fe3-6120-48e4-8907-eebdb04d4093",
         "f8d092c3-bfc9-475b-aeb5-6f76fcdcfb0a",
         "7f68a158-beb2-451e-b8c8-ccb3f4531d8c",
@@ -325,7 +340,6 @@
         "323fd1c2-fdbf-4c76-9f81-4f1e9ea2fe53",
         "7dfd7433-48e6-450c-ac22-b5a984ed88d4",
         "ca9d5b27-9a24-4dc2-bd48-75b107bf8613",
-        "65392e51-2349-4f90-b9a4-08d2c84e338c",
         "0ad74851-6781-44bb-80e2-a8e844571341",
         "7eed0cb9-d5b1-4c02-82fc-254044a3d62d",
         "1fc3a029-b713-43c0-9b27-27f5f4a5d0ce",
@@ -456,36 +470,44 @@
             "align_text": "left"
           }
         },
+        "9cebdc39-9cf6-4f04-aff6-1987ffe3aa28": {
+          "type": "question",
+          "settings": {
+            "title": "How do I cancel my order?",
+            "text": "<p>Order cancellations are handled on a case by case basis. Please reach out to us at <a href=\"mailto:help@gooddyeyoung.com\" title=\"mailto:help@gooddyeyoung.com\">help@gooddyeyoung.com<\/a> as soon as possible if you’d like to cancel your order. Be sure to include the email address you placed your order with, and your order number. <strong>While we will make every effort to accommodate your request, we cannot guarantee your request. Please make sure your order is complete and accurate before placing it.<br\/><\/strong><\/p>"
+          }
+        },
         "26ea99be-80c1-408c-847c-c92c3e4b1710": {
           "type": "question",
           "settings": {
-            "title": "Can I add an item to my order or cancel my order once I’ve placed it?",
-            "text": "<p>Once an order is placed, we cannot add or remove any items. If you need to cancel your order, please email orders@gooddyeyoung.com with your order number or email used to place the order.<\/p><p><strong>While we will make every effort to accommodate your need, we cannot guarantee your request. Please make sure your order is complete and accurate before placing it.<\/strong><\/p>"
+            "title": "Can I add an item or exchange an item on my order?",
+            "text": "<p>Once an order is placed, we cannot add or remove any items. If you need to cancel your order, please email <a href=\"mailto:help@gooddyeyoung.com\" title=\"mailto:help@gooddyeyoung.com\">help@gooddyeyoung.com<\/a> with your order number or email used to place the order.<\/p><p><strong>While we will make every effort to accommodate your need, we cannot guarantee your request. Please make sure your order is complete and accurate before placing it.<\/strong><\/p>"
           }
         },
         "623ebd49-e420-42f8-a066-664c67391226": {
           "type": "question",
           "settings": {
             "title": "Can I edit or change my address information for my order?",
-            "text": "<p>If you need to edit or change any part of your address on your order, please immediately email orders@gooddyeyoung.com. Be sure to include your order number and correct address.<\/p><p><strong>While we will make every effort to update your address, orders are shipped out quickly from our fulfillment center.  We cannot guarantee that we can update your information. We ask that you  review your order information in its entirety before you submit your order.<\/strong><\/p><p>If we are unable to update your address, please reach out to your local post office with your tracking number to see if they are able to intercept the package.<\/p><p>Good Dye Young is not responsible for lost orders due to insufficient or incorrect address information. Please double check your order information before placing your order.<\/p>"
+            "text": "<p>If you need to edit or change any part of your address on your order, please immediately email <a href=\"mailto:help@gooddyeyoung.com\" title=\"mailto:help@gooddyeyoung.com\">help@gooddyeyoung.com<\/a>. Be sure to include your order number and correct address.<\/p><p><strong>While we will make every effort to update your address, orders are shipped out quickly from our fulfillment center.  We cannot guarantee that we can update your information. We ask that you  review your order information in its entirety before you submit your order.<\/strong><\/p><p>If we are unable to update your address, please reach out to your local post office with your tracking number to see if they are able to intercept the package.<\/p><p>Good Dye Young is not responsible for lost orders due to insufficient or incorrect address information. Please double check your order information before placing your order.<\/p>"
           }
         },
         "5ba2503d-e470-432f-b288-abbbb7b337df": {
           "type": "question",
           "settings": {
             "title": "Can I exchange my dye for a different color?",
-            "text": "<p>We do not offer direct product exchanges. To exchange the unused product for a different color or product, please purchase the items you are looking for and return your <strong>unused<\/strong> items. <a href=\"https:\/\/gooddyeyoung.com\/ufaq\/what-is-your-return-exchange-policy\/\">You can find our return instructions here.<\/a><\/p><p><strong>Please note: your original shipping charges and return shipping charges will not be refunded.<\/strong><\/p><p>Need to generate a return shipping label? Simply go to <a href=\"https:\/\/reg.usps.com\/entreg\/RegistrationAction_input\">USPS Print & Ship<\/a> to purchase and print a shipping label or find a mailing location near you <a href=\"https:\/\/tools.usps.com\/go\/POLocatorAction!input.action\">HERE<\/a>.<\/p>"
+            "text": "<p>We do not offer direct product exchanges. To exchange the unused product for a different color or product, please purchase the items you are looking for, and reach out to us at <a href=\"mailto:help@gooddyeyoung.com\"><span style=\"text-decoration:underline\">help@gooddyeyoung.com<\/span><\/a> about a return request. Be sure to include the email address used to place your order, and the order number. <\/p><p><strong>Please note: your original shipping charges and additional fees will not be refunded.<\/strong><\/p><p><\/p>"
           }
         },
         "f9fd4ebe-639a-47c4-a5f7-e63be487e480": {
           "type": "question",
           "settings": {
             "title": "Do you ship to (insert international country that we ship to)?",
-            "text": "<p>We ship to most countries outside the US. If you have a question about where we do or do not ship, please send us an email at info@gooddyeyoung.com!<\/p><p><strong>All international customers will be responsible for customs, duties, & VAT charges.<\/strong><\/p>"
+            "text": "<p>We ship to most countries outside the US. If you have a question about where we do or do not ship, please send us an email at <a href=\"mailto:help@gooddyeyoung.com\" title=\"mailto:help@gooddyeyoung.com\">help@gooddyeyoung.com<\/a>!<\/p><p><strong>All international customers will be responsible for customs, duties, & VAT charges.<\/strong><\/p>"
           }
         },
         "36abda5c-8102-4775-998d-f462a2bff217": {
           "type": "question",
+          "disabled": true,
           "settings": {
             "title": "How do I file a claim for a lost, stolen, or damaged package?",
             "text": "<p>You can file a claim with <a href=\"http:\/\/claims.route.com\/\">Route Shipping Protection by going here.<\/a> Please note that claims must be filed within 7-30 days from the last shipping update. <\/p><p>For more information about Route’s policies regarding lost, stolen, or damaged packages <a href=\"https:\/\/help.route.com\/hc\/en-us\/articles\/360041131194-Route-Package-Protection-Policies\">please check out their policies here.<\/a><\/p>"
@@ -495,7 +517,7 @@
           "type": "question",
           "settings": {
             "title": "How do I track my order?",
-            "text": "<p>Orders process right away, but depending on your location, they may take 7-10 days to arrive. International shipments may take longer.<\/p><p>Domestic Orders leave our fulfillment center within 1-3 days after being placed<\/p><p>International Orders leave our fulfillment center within 4-5 days after being placed<\/p><p>Once your order ships, you will receive an email including your tracking number. If you do not received an email with this information,  please check your spam\/junk folder. If you still have not received your tracking information, please email <a href=\"mailto:orders@gooddyeyoung.com\">orders@gooddyeyoung.com<\/a> with your order number or email address used to place the order. <\/p><p>GDY uses the US Postal Service to ship all domestic orders. Your order will be shipped via USPS and can be tracked <a href=\"https:\/\/www.usps.com\/\">here<\/a>. GDY uses APC to ship all international orders. Your order will be shipped via APC and can be tracked <a href=\"https:\/\/us.mytracking.net\/APC\/track\/Track.aspx\">here<\/a>.<\/p>"
+            "text": "<p>Orders process right away, but depending on your location, they may take 7-10 days to arrive. International shipments may take longer.<\/p><p>Domestic Orders leave our fulfillment center within 1-3 days after being placed<\/p><p>International Orders leave our fulfillment center within 4-5 days after being placed<\/p><p>Once your order ships, you will receive an email including your tracking number. If you do not received an email with this information,  please check your spam\/junk folder. If you still have not received your tracking information, please email <a href=\"mailto:help@gooddyeyoung.com\" title=\"help@gooddyeyoung.com\">help@gooddyeyoung.com<\/a> with your order number or email address used to place the order. <\/p><p>GDY uses Fedex for most domestic orders, and DHL for international orders. <a href=\"https:\/\/www.fedex.com\/en-us\/home.html\"><span style=\"text-decoration:underline\">All orders shipped via Fedex can be tracked here.<\/span><\/a> <a href=\"https:\/\/www.dhl.com\/global-en\/home\/tracking.html\"><span style=\"text-decoration:underline\">All orders shipped via DHL can be tracked here. <\/span><\/a><\/p>"
           }
         },
         "e2be0c1a-3796-49c9-b585-d261f23f8726": {
@@ -509,28 +531,22 @@
           "type": "question",
           "settings": {
             "title": "How much is shipping?",
-            "text": "<p>Shipping to the United States is a standard flat rate of $12 and orders over $30 ship free.<\/p><p>Shipping to Canada is a standard flat rate of $15.<\/p><p>International shipping charges vary based on the weight of your order and your shipping destination. <strong>All international customers will be responsible for customs, duties, & VAT charges.<\/strong><\/p>"
+            "text": "<p>We offer free shipping on domestic orders over $40. Free shipping for international orders is available on orders over $250 USD. <\/p><p>For domestic orders, we offer three different shipping options via Fedex. <\/p><p>Fedex Smart Post - $7.95<\/p><p>Fedex Home (Faster) - $12.95<\/p><p>Fedex Expedited (Fastest) $25.00<\/p><p>Shipping to other international countries is a flat rate of $25 USD<\/p><p><strong>All international customers will be responsible for customs, duties, & VAT charges.<\/strong><\/p>"
           }
         },
         "e839b14d-cfad-4d62-afa9-49bc223c62d8": {
           "type": "question",
           "settings": {
             "title": "I would like to be a distributor in xyz country.",
-            "text": "<p>GDY has partnered with Faire to sell our wholesale products online!<a href=\"https:\/\/www.faire.com\/brand\/b_2z9jzywzf8\"> For more information, please check out this page<\/a>. If you have any additional questions, please email us at info@gooddyeyoung.com.<\/p>"
+            "text": "<p>GDY has partnered with Faire to sell our wholesale products online!<a href=\"https:\/\/www.faire.com\/brand\/b_2z9jzywzf8\"> For more information, please check out this page<\/a>. If you have any additional questions, please email us at <a href=\"mailto:retail@gooddyeyoung.com\" title=\"mailto:retail@gooddyeyoung.com\">retail@gooddyeyoung.com<\/a>.<\/p>"
           }
         },
         "c9200c16-5fdc-4980-b62b-dd0f04aca55b": {
           "type": "question",
+          "disabled": true,
           "settings": {
             "title": "What is Route Shipping Protection?",
             "text": "<p>At GDY, we partner with Route Shipping Protection to offer shipping insurance. This covers packages that are lost, stolen, or damaged during transit. For a small fee, Route Shipping Protection ensures you will receive your items or be able to reorder them with one simple click. All orders are automatically enrolled in Route Shipping Protection, unless otherwise determined by the customer.<a href=\"https:\/\/help.route.com\/hc\/en-us\/articles\/360041131194-Route-Package-Protection-Policies\">For more information about Route’s Policies, you can review them here!<\/a><\/p>"
-          }
-        },
-        "9cebdc39-9cf6-4f04-aff6-1987ffe3aa28": {
-          "type": "question",
-          "settings": {
-            "title": "Will EcoCart delay my shipping?",
-            "text": "<p>Nope! You can still except your order in a timely matter! When purchased, EcoCart will eliminate, capture, or otherwise mitigate all of the carbon emissions created from shipping.<\/p>"
           }
         },
         "0a9a83bf-b5ff-4c6d-abf4-7c4232b4c9d0": {
@@ -552,7 +568,7 @@
           "type": "question",
           "settings": {
             "title": "Is your brand safe?",
-            "text": "<p>Yes, Good Dye Young products are safe to use for all ages and hair types. Our dyes contain salon grade pigments, and high quality ingredients. All of our products are cruelty free and vegan. If you have any questions about ingredients or other safety concerns, please emailinfo@gooddyeyoung.com<\/p>"
+            "text": "<p>Yes, Good Dye Young products are safe to use for all ages and hair types. Our dyes contain salon grade pigments, and high quality ingredients. All of our products are cruelty free and vegan. If you have any questions about ingredients or other safety concerns, please email <a href=\"mailto:help@gooddyeyoung.com\" title=\"mailto:help@gooddyeyoung.com\">help@gooddyeyoung.com<\/a><\/p>"
           }
         },
         "80f5d2c4-6378-466d-b28d-f55e98229c2e": {
@@ -658,7 +674,7 @@
           "type": "question",
           "settings": {
             "title": "What are the Poser Paste Ingredients?",
-            "text": "<p>Isododecane, Alcohol Denat., Bismuth Oxychloride, Mica, Silica, Cera Microcrystalline, Helianthus Annuus (Sunflower) Seed Cera, Ascorbyl Palmitate, Tocopherol, Dicaprylyl Carbonate, Myristyl Myristate, Synthetic Beeswax, Synthetic Flurophlogopite, AMP-Acrylates Diacetoneacrylamide Copolymer, Phenoxyethanol, Capryl Glycol, Ethylhexyglycerin, Citrus Aurantium Bergamia (Bergamot) Oil, Citrus Aurantium Dulcis (Sweet Orange) Oil, Glycerin, Aqua, Croton Lechleri Resin Extract, Punica Granatum (Pomegranate) Seed Extract. May also contain: D&C Red 6 Barium Lake, D&C Red 7 Lake, Ultramarine Blue (CI 77007), D&C Yellow 11, D&C Red 28, D&C Red 22, D&C Yellow 10.<\/p><p>If you have any questions concerning ingredients for any of our products, please send an email to info@gooddyeyoung.com and we’d be happy to provide more information!<\/p>"
+            "text": "<p>Isododecane, Alcohol Denat., Bismuth Oxychloride, Mica, Silica, Cera Microcrystalline, Helianthus Annuus (Sunflower) Seed Cera, Ascorbyl Palmitate, Tocopherol, Dicaprylyl Carbonate, Myristyl Myristate, Synthetic Beeswax, Synthetic Flurophlogopite, AMP-Acrylates Diacetoneacrylamide Copolymer, Phenoxyethanol, Capryl Glycol, Ethylhexyglycerin, Citrus Aurantium Bergamia (Bergamot) Oil, Citrus Aurantium Dulcis (Sweet Orange) Oil, Glycerin, Aqua, Croton Lechleri Resin Extract, Punica Granatum (Pomegranate) Seed Extract. May also contain: D&C Red 6 Barium Lake, D&C Red 7 Lake, Ultramarine Blue (CI 77007), D&C Yellow 11, D&C Red 28, D&C Red 22, D&C Yellow 10.<\/p><p>If you have any questions concerning ingredients for any of our products, please send an email to <a href=\"mailto:help@gooddyeyoung.com\" title=\"mailto:help@gooddyeyoung.com\">help@gooddyeyoung.com<\/a> and we’d be happy to provide more information!<\/p>"
           }
         },
         "221b277f-8390-4c51-9b85-014a0c354e54": {
@@ -687,14 +703,14 @@
           "type": "question",
           "settings": {
             "title": "I would like to interview Hayley and Brian.",
-            "text": "<p>Please send any inquiries to press@gooddyeyoung.com. Thank you for reaching out and for your support.<\/p>"
+            "text": "<p>Please send any inquiries to <a href=\"mailto:press@gooddyeyoung.com\" title=\"mailto:press@gooddyeyoung.com\">press@gooddyeyoung.com<\/a>. Thank you for reaching out and for your support.<\/p>"
           }
         },
         "2158a023-0d6f-4478-9f2e-4e1078d52b0c": {
           "type": "question",
           "settings": {
             "title": "I’m an Influencer\/Blogger\/Vlogger and would like to review your product.",
-            "text": "<p>Thank you for your interest in our products. Please send any inquiries to press@gooddyeyoung.com<\/p>"
+            "text": "<p>Thank you for your interest in our products. Please send any inquiries to <a href=\"mailto:press@gooddyeyoung.com\" title=\"mailto:press@gooddyeyoung.com\">press@gooddyeyoung.com<\/a><\/p>"
           }
         },
         "26a3f778-f984-4fe4-87e4-855626138057": {
@@ -723,6 +739,7 @@
         "9146dd49-736f-40db-a8c5-4654814959d1",
         "0eba79fd-2491-44fd-9416-4f1614940750",
         "36b667a6-836a-4f71-bdc5-f9b69e629e38",
+        "9cebdc39-9cf6-4f04-aff6-1987ffe3aa28",
         "26ea99be-80c1-408c-847c-c92c3e4b1710",
         "623ebd49-e420-42f8-a066-664c67391226",
         "5ba2503d-e470-432f-b288-abbbb7b337df",
@@ -733,7 +750,6 @@
         "01fe10de-3a05-45f2-a7c8-3fa6571184eb",
         "e839b14d-cfad-4d62-afa9-49bc223c62d8",
         "c9200c16-5fdc-4980-b62b-dd0f04aca55b",
-        "9cebdc39-9cf6-4f04-aff6-1987ffe3aa28",
         "0a9a83bf-b5ff-4c6d-abf4-7c4232b4c9d0",
         "4b137195-7117-40d0-a1dc-3a8a99225c05",
         "a6fff3f5-0d2f-43da-aa6e-16b5881547e7",
@@ -778,7 +794,7 @@
           "type": "question",
           "settings": {
             "title": "What is your return policy?",
-            "text": "<p>We accept returns for unopened and unused products within 30 days of the original purchase date.<\/p><p>Please email us at orders@gooddyeyoung.com with the following information:<\/p><p>• Name<br\/>• Order Number<br\/>• Products you would like to return<\/p><p>We do not accept returns for other clothing, merchandise items, or gift cards.<\/p><p>Good Dye Young is not responsible for return shipping costs. <\/p><p>Please address and ship all returns too:<\/p><p>Good Dye Young<br\/>1501 County Hospital Road<br\/>Nashville, TN 37218<\/p><p>Once we have received your order back at our fulfillment center, we will process your refund. It may take up to 2-3 weeks for orders to make it back to our fulfillment center. Once processed, refunds take anywhere from 5-7 business days to be applied to the original payment method.<\/p><p><strong>Please note: your original shipping charges and return shipping charges will not be refunded.<\/strong><\/p><p>Need to generate a return shipping label? Simply go to <a href=\"https:\/\/reg.usps.com\/entreg\/RegistrationAction_input\">USPS Print & Ship<\/a> to purchase and print a shipping label or find a mailing location near you <a href=\"https:\/\/tools.usps.com\/go\/POLocatorAction!input.action\">HERE<\/a>.<\/p>"
+            "text": "<p>Returns are handled on a case by case basis. Please reach out to us at <a href=\"mailto:help@gooddyeyoung.com\"><span style=\"text-decoration:underline\">help@gooddyeyoung.com<\/span><\/a> within 30 days of your order being delivered and we’d be happy to help! We are unable to accept returns past 30 days from the delivery date.<\/p><p><strong>Please note: your original shipping charges and additional fees will not be refunded.<\/strong><\/p><p><\/p>"
           }
         },
         "17f4daa0-ff00-4485-a401-587147bfc0cb": {
@@ -817,13 +833,6 @@
             "text": "<p>To ensure you get the most vibrant and colorful results from GDY, we recommend that you pre-lighten your hair using our Lightening Kit. If you are planing to use any of the shades from our Lighter Daze line, your hair will need to be a level 10 (platinum blonde) for the color to appear on the hair.<\/p>"
           }
         },
-        "6c935c8e-4863-4809-ab70-cb90554c6164": {
-          "type": "question",
-          "settings": {
-            "title": "Do I have to pre lighten my hair before coloring with GDY?",
-            "text": "<p>To ensure you get the most vibrant and colorful results from GDY, we recommend that you pre-lighten your hair using our Lightening Kit. If you are planing to use any of the shades from our Lighter Daze line, your hair will need to be a level 10 (platinum blonde) for the color to appear on the hair.<\/p>"
-          }
-        },
         "180c7841-1d2f-4732-ba68-d87a986bcfba": {
           "type": "question",
           "settings": {
@@ -849,7 +858,7 @@
           "type": "question",
           "settings": {
             "title": "How can I get a pastel shade?",
-            "text": "<p>We created a new line just for pastel colors called Lighter Daze! They are a softer version of our original vibrant colors. If you want to to create your own pastel shade, use our fader and the dye color of your choosing. We recommend starting with fader as your base and then mixing in a few squirts of your desired color. Always start with less color and then add more until you get your desired shade. You can test your color by applying a small amount to a piece of paper or tissue.<\/p>"
+            "text": "<p>We created a new line just for pastel colors called Lighter Daze! They are a softer version of our original vibrant colors. <\/p>"
           }
         },
         "f594b2bb-54dc-4836-ad05-0a4509c17db4": {
@@ -919,7 +928,7 @@
           "type": "question",
           "settings": {
             "title": "What colors can be used on unbleached hair?",
-            "text": "<p>Your original hair color will determine your final result. Rock Lobster, Blue Ruin, PPL Eater and None More Black are the only colors we recommend using on dark hair. On dark brown hair your results will be:<\/p><p>Rock Lobster – Cherry Cola<\/p><p>Blue Ruin – Navy<\/p><p>PPL Eater – Eggplant<\/p><p>None More Black – Lots of shine but will fade out to the original base color.<\/p>"
+            "text": "<p>Your original hair color will determine your final result. Rock Lobster, Blue Ruin, PPL Eater are the only colors we recommend using on dark hair. On dark brown hair your results will be:<\/p><p>Rock Lobster – Cherry Cola<\/p><p>Blue Ruin – Navy<\/p><p>PPL Eater – Eggplant<\/p>"
           }
         },
         "b2ddf4a9-d023-428f-add5-b98d323c9658": {
@@ -931,6 +940,7 @@
         },
         "53a5f6f7-1112-43f3-b0f1-882b4c206bde": {
           "type": "question",
+          "disabled": true,
           "settings": {
             "title": "What is GDY Fader?",
             "text": "<p>Our Fader is the ultimate customization tool in our current line-up. GDY dyes are pretty intense and just in case that’s not the look you’re going for, our Fader helps to control the intensity of whatever color(s) you mix it with. Use it to create pastel shades by mixing it with any of the GDY dyes and create your own custom hair color<\/p>"
@@ -1023,7 +1033,6 @@
         "1910f978-1bfd-457d-9a63-73277a9639fa",
         "62330f61-b909-47a5-ab7a-16a7f7f7fdba",
         "a7cd0068-6c5f-415f-a062-5e2b4ccc243a",
-        "6c935c8e-4863-4809-ab70-cb90554c6164",
         "180c7841-1d2f-4732-ba68-d87a986bcfba",
         "741f3ed9-eb16-4e88-be64-a5498710059c",
         "8d2748b1-b599-4439-8cd1-df7db01f6945",
@@ -1059,6 +1068,7 @@
   },
   "order": [
     "main",
+    "0e146538-17d2-402d-a7dc-69e4543a7941",
     "faq",
     "16590356737cbfbb3e",
     "165903677055f5e098"

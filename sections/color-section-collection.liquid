@@ -1,0 +1,97 @@
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+{%- assign collection = collections[section.settings.collection] -%}
+<div class="color" 
+data-dye_duration="{{ collection.metafields.custom.color_duration }}" 
+data-collection_color_swiper>
+
+ 
+    <div class="page-width">
+		<div class="overflow-container">
+
+			<div class="swiper color-slider-{{ section.id }}">
+			<div class="swiper-container" data-slides-desktop="{{ section.settings.slides_d }}" data-slides-tablet="{{ section.settings.slides_t }}" data-slides-mobile="{{ section.settings.slides_m }}">
+				<div class="swiper-wrapper">
+				{%- for product in collection.products limit: section.settings.max_num -%}
+						<div class="swiper-slide">
+							<a href="{{ product.url }}">
+								<div class="img">
+									<img src="{{ product.media[1] | img_url:"400x400", crop: 'top' }}" alt="" />
+								</div>
+								<h4>{{ product.title }}</h4>
+							</a>
+						</div>
+					{% endfor %}
+					</div>
+			
+				<!-- pagination -->
+				<div class="swiper-pagination"></div>
+			
+				<!-- scrollbar -->
+				<div class="swiper-scrollbar"></div>
+			</div> 
+			</div>   
+
+		</div>
+	</div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Color Section Collection",
+    "class": "index-section color-section",
+    "settings": [
+	  {
+		"type": "collection",
+		"id": "collection",
+		"label": "Choose Product"
+	  },
+      {
+        "type": "range",
+        "id": "max_num",
+        "label": "Products to display",
+        "default": 8,
+        "min": 1,
+        "max": 25,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "slides_d",
+        "label": "Slides to view - desktop",
+        "default": 4.5,
+        "min": 1,
+        "max": 8,
+        "step": 0.1
+      },
+      {
+        "type": "range",
+        "id": "slides_t",
+        "label": "Slides to view - tablet",
+        "default": 3.5,
+        "min": 1,
+        "max": 6,
+        "step": 0.1
+      },
+      {
+        "type": "range",
+        "id": "slides_m",
+        "label": "Slides to view - mobile",
+        "default": 2.5,
+        "min": 1,
+        "max": 4,
+        "step": 0.1
+      }
+	],
+    "presets": [{
+      "name": "Color Section Collection"
+    }]
+  }
+{% endschema %}
+

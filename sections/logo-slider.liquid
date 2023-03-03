@@ -1,0 +1,336 @@
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+{%- style -%}
+.logo-bar--{{ section.id }} {
+  opacity: {{ section.settings.logo_opacity | divided_by: 100.0 }};
+}
+{%- endstyle -%}
+
+{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+
+<div class="section-{{ section.id }}">
+
+<div class="page-width" data-aos="logo__animation">
+  {%- unless section.settings.title == blank and section.settings.text == blank -%}
+    <div class="section-header text-{{ section.settings.text_align }}">
+      {%- if section.settings.title != blank %}
+      <h2 class="section-header__title">{{ section.settings.title | escape }}</h2>
+      {%- endif -%}
+
+      {%- if section.settings.text != blank -%}
+      <div class="logo-bar-intro-text">
+        {{ section.settings.text }}
+      </div>
+      {%- endif -%}
+    </div>
+  {%- endunless -%}
+
+  {%- if section.blocks.size > 0 -%}
+  <div class="page-width">
+    <div class="logo-bar-swiper swiper logo-bar--{{ section.id }} {% if section.settings.single_mobile_image %}show-tablet-up{% endif %}">
+		<div class="swiper-wrapper">
+			{%- for block in section.blocks -%}
+				<div class="swiper-slide" {{ block.shopify_attributes }}>
+					{%- if block.settings.image != blank -%}
+					{%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+					<img class="logo-bar__image lazyload"
+						data-src="{{ img_url }}"
+						data-widths="[180, 360, 540, 720]"
+						data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+						data-sizes="auto"
+						alt="{{ block.settings.image.alt }}">
+					{%- else -%}
+					{{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
+					{%- endif -%}
+
+					{% if block.settings.title != blank %}
+					<p class="logo-bar__item-title">
+					{{ block.settings.title }}
+					</p>
+					{% endif %}
+				</div>
+			{%- endfor -%}
+		</div>
+    </div>
+
+    {% if section.settings.single_mobile_image %}
+      <div class="show-mobile-only">
+        <img src="{{ section.settings.mobile_image_replacement | image_url: width: 700 }}" alt="{{ section.settings.mobile_image_replacement.alt }}" style="display: block; width: 100%; max-width: 100%;">
+      </div>
+    {% endif %}
+
+
+  </div>
+  {%- endif -%}
+</div>
+
+</div>
+
+{% style %}
+.section-{{ section.id }} {
+  background-color: {{ section.settings.bg_color }};
+  padding-top: {{ section.settings.padding_top }}px;
+  padding-bottom: {{ section.settings.padding_bottom }}px;
+  margin-top: {{ section.settings.margin_top }}px;
+  margin-bottom: {{ section.settings.margin_bottom }}px;
+}
+@media screen and (max-width:768px) {
+  .section-{{ section.id }} {
+    padding-top: calc( {{ section.settings.padding_top }}px / 2);
+    padding-bottom: calc( {{ section.settings.padding_bottom }}px / 2);
+    margin-top: calc( {{ section.settings.margin_top }}px / 2);
+    margin-bottom: calc( {{ section.settings.margin_bottom }}px / 2);
+  }
+}
+
+.section-{{ section.id }} .section-header {
+  width: {{ section.settings.content_width }}px;
+  max-width: 100%;
+}
+{% if section.settings.text_align == 'center' %}
+.section-{{ section.id }} .section-header {
+  margin-left: auto;
+  margin-right: auto;
+}
+{% elsif section.settings.text_align == 'right' %}
+.section-{{ section.id }} .section-header {
+  margin-left: auto;
+}
+{% endif %}
+
+.section-{{ section.id }},
+.section-{{ section.id }} svg,
+.section-{{ section.id }} svg path {
+  color: {{ section.settings.text_color }};
+  fill: {{ section.settings.text_color }};
+}
+
+{% endstyle %}
+
+{%- if section.settings.divider -%}</div>{%- endif -%}
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  
+	const swiper_logos = new Swiper('.logo-bar-swiper', {
+		// Optional parameters
+		slidesPerView: 6,
+		spaceBetween: 50,
+		autoplay:  {
+			delay: 4000,
+		},
+		loop: true,
+    observer: true,
+		// Responsive breakpoints
+		breakpoints: {
+			// when window width is >= 320px
+			320: {
+			slidesPerView: 2,
+			spaceBetween: 20
+			},
+			// when window width is >= 480px
+			480: {
+			slidesPerView: 2,
+			spaceBetween: 30
+			},
+			// when window width is >= 640px
+			640: {
+			slidesPerView: 4,
+			spaceBetween: 40
+			},
+			// when window width is >= 640px
+			1024: {
+			slidesPerView: 6,
+			spaceBetween: 40
+			}
+		}
+
+		// If we need pagination
+		/* pagination: {
+			el: '.swiper-pagination',
+		}, */
+
+		// Navigation arrows
+		/* navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		}, */
+
+		// And if we need scrollbar
+		/* scrollbar: {
+			el: '.swiper-scrollbar',
+		}, */
+	});
+
+});
+</script>
+
+
+{% schema %}
+  {
+    "name": "Logo slider",
+    "max_blocks": 10,
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Custom Background color"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text color",
+        "default": "#000000"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text"
+      },
+      {
+        "type": "select",
+        "id": "text_align",
+        "label": "Text alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "center"
+      },
+      {
+        "type": "range",
+        "id": "content_width",
+        "label": "Intro content width",
+        "default": 600,
+        "min": 300,
+        "max": 900,
+        "step": 10,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "logo_opacity",
+        "label": "Logo opacity",
+        "default": 76,
+        "min": 0,
+        "max": 100,
+        "step": 2,
+        "unit": "%"
+      },
+      {
+        "type": "checkbox",
+        "id": "single_mobile_image",
+        "label": "Single image for mobile",
+        "info": "Replace slider with a single image for mobile view. Select image below"
+      },
+      {
+        "type": "image_picker",
+        "id": "mobile_image_replacement",
+        "label": "Mobile image"
+      },
+      {
+        "type": "checkbox",
+        "id": "divider",
+        "label": "Show section divider",
+        "default": false
+      },
+      {
+        "type": "range",
+        "id": "margin_top",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Top margin",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "margin_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Bottom margin",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Top padding",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Bottom padding",
+        "default": 50
+      }
+    ],
+    "blocks": [
+      {
+        "type": "logo_image",
+        "name": "Logo",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "textarea",
+            "id": "title",
+            "label": "Title"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Logo slider",
+        "blocks": [
+          {
+            "type": "logo_image"
+          },
+          {
+            "type": "logo_image"
+          },
+          {
+            "type": "logo_image"
+          },
+          {
+            "type": "logo_image"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

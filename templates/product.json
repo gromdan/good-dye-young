@@ -5,22 +5,45 @@
       "blocks": {
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "is_tab": false
+          }
+        },
+        "eb128bf2-5d6c-45a1-b5f2-2bab43c8d340": {
+          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/star-rating\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "disabled": true,
+          "settings": {
+            "product": "{{product}}"
           }
         },
         "price": {
           "type": "price",
           "settings": {}
         },
-        "eb128bf2-5d6c-45a1-b5f2-2bab43c8d340": {
-          "type": "shopify:\/\/apps\/yotpo-product-reviews-photos\/blocks\/star-rating\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+        "090abf0d-c6a5-45dd-8aa9-56972e9ebebb": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Choose a Purchase Plan:"
+          }
+        },
+        "a440e53f-001b-4168-ba7a-779acee105cd": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<h3 class=\"pdp-h3\">Choose A Purchase Plan:<\/h3>"
+          }
+        },
+        "da997bcf-163e-40af-8576-96b4318c72ec": {
+          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
           "settings": {
             "product": "{{product}}"
           }
         },
         "separator": {
           "type": "separator",
+          "disabled": true,
           "settings": {}
         },
         "variant_picker": {
@@ -41,6 +64,7 @@
         },
         "inventory_status": {
           "type": "inventory_status",
+          "disabled": true,
           "settings": {
             "inventory_threshold": 10,
             "inventory_transfers_enable": true
@@ -52,6 +76,17 @@
             "show_dynamic_checkout": false,
             "surface_pickup_enable": true,
             "enable_qty": true
+          }
+        },
+        "77a902c5-f90f-4e4d-9f33-306c2c4f63df": {
+          "type": "shopify:\/\/apps\/klarna-on-site-messaging\/blocks\/app-block\/b95936a9-74b6-4a95-8103-6a1b6459c25e",
+          "settings": {
+            "data_key": "credit-promotion-badge",
+            "locale_option": "geolocation",
+            "locale_fallback": "",
+            "theme": "light",
+            "topPadding": "0",
+            "bottomPadding": "0"
           }
         },
         "tab": {
@@ -77,33 +112,44 @@
           "settings": {}
         },
         "8f08ff5b-d9c2-40ca-8dfa-69ceab112645": {
-          "type": "shopify:\/\/apps\/yotpo-product-reviews-photos\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "disabled": true,
           "settings": {
             "product": "{{product}}"
+          }
+        },
+        "a5a9ef7e-444d-4056-addb-28e1ba0fbd70": {
+          "type": "custom",
+          "settings": {
+            "code": "<script type=\"text\/javascript\">\nvar _learnq = _learnq || [];\nfunction addedToCart() {\n  fetch(`${window.location.origin}\/cart.js`)\n  .then(res => res.clone().json().then(data => {\n    var cart = {\n      total_price: data.total_price\/100,\n      $value: data.total_price\/100,\n      total_discount: data.total_discount,\n      original_total_price: data.original_total_price\/100,\n      items: data.items\n    }\n    if (item !== 'undefined') {\n      cart = Object.assign(cart, item)\n    }\n    _learnq.push(['track', 'Added to Cart', cart])\n  }))\n} \n(function (ns, fetch) {\n  ns.fetch = function() {\n    const response = fetch.apply(this, arguments);\n    response.then(res => {\n      if (`${window.location.origin}\/cart\/add.js`\n      \t.includes(res.url)) {\n        \taddedToCart()\n      }\n    });\n    return response\n  }\n}(window, window.fetch))\n$(document).ajaxComplete(function(event, request, settings){\n  if(settings.url == \"\/cart\/add.js\"){\n      addedToCart()\n  }\n})<\/script>"
           }
         }
       },
       "block_order": [
         "description",
-        "price",
         "eb128bf2-5d6c-45a1-b5f2-2bab43c8d340",
+        "price",
+        "090abf0d-c6a5-45dd-8aa9-56972e9ebebb",
+        "a440e53f-001b-4168-ba7a-779acee105cd",
+        "da997bcf-163e-40af-8576-96b4318c72ec",
         "separator",
         "variant_picker",
         "sales_point",
         "inventory_status",
         "buy_buttons",
+        "77a902c5-f90f-4e4d-9f33-306c2c4f63df",
         "tab",
         "contact",
         "share",
-        "8f08ff5b-d9c2-40ca-8dfa-69ceab112645"
+        "8f08ff5b-d9c2-40ca-8dfa-69ceab112645",
+        "a5a9ef7e-444d-4056-addb-28e1ba0fbd70"
       ],
       "settings": {
         "sku_enable": false,
         "image_position": "left",
         "image_size": "large",
-        "product_zoom_enable": true,
-        "thumbnail_position": "beside",
+        "product_zoom_enable": false,
+        "thumbnail_position": "below",
         "thumbnail_arrows": false,
         "mobile_layout": "partial",
         "enable_video_looping": true,
@@ -137,36 +183,46 @@
       "type": "text-and-image",
       "disabled": true,
       "settings": {
+        "image_attr": "",
+        "image_attr_link": "",
         "image_width": 700,
         "pretitle": "",
         "title": "About your brand",
+        "bigger_title": false,
         "subtitle": "",
         "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "use_larger_text": false,
         "button_label": "",
         "button_link": "",
         "button_color": "",
         "button_style": "primary",
         "align_text": "left",
         "layout": "right",
-        "divider": false
+        "divider": false,
+        "collection_dye_duration": "none"
       }
     },
     "text-and-image2": {
       "type": "text-and-image",
       "disabled": true,
       "settings": {
+        "image_attr": "",
+        "image_attr_link": "",
         "image_width": 700,
         "pretitle": "",
         "title": "About your brand",
+        "bigger_title": false,
         "subtitle": "",
         "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "use_larger_text": false,
         "button_label": "",
         "button_link": "",
         "button_color": "",
         "button_style": "primary",
         "align_text": "left",
         "layout": "left",
-        "divider": false
+        "divider": false,
+        "collection_dye_duration": "none"
       }
     },
     "testimonials": {
@@ -220,7 +276,7 @@
       "settings": {
         "show_product_recommendations": true,
         "product_recommendations_heading": "You may also like",
-        "related_count": 5
+        "related_count": 4
       }
     },
     "recently-viewed": {
@@ -237,9 +293,10 @@
     },
     "1658935411df7a745e": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "6718f199-0312-494e-bbc7-453b7709792d": {
-          "type": "shopify:\/\/apps\/yotpo-product-reviews-photos\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "disabled": true,
           "settings": {
             "product": "{{product}}"
@@ -253,6 +310,77 @@
         "full_width": false,
         "space_around": true
       }
+    },
+    "b23d3dfc-7af8-4218-8833-775ca32f4bdb": {
+      "type": "newsletter",
+      "blocks": {
+        "template--15154563186824__b23d3dfc-7af8-4218-8833-775ca32f4bdb-166549971884186e8d-0": {
+          "type": "title",
+          "settings": {
+            "title": "Join the list"
+          }
+        },
+        "template--15154563186824__b23d3dfc-7af8-4218-8833-775ca32f4bdb-166549971884186e8d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Get exclusive access to deals, inspo, giveaways and more!<\/p>"
+          }
+        },
+        "a2a758f4-04b5-47d4-b1f8-f75a9bd344b2": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "Ucn3jj"
+          }
+        },
+        "template--15154563186824__b23d3dfc-7af8-4218-8833-775ca32f4bdb-166549971884186e8d-2": {
+          "type": "form",
+          "disabled": true,
+          "settings": {
+            "show_name_fields": false,
+            "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15154563186824__b23d3dfc-7af8-4218-8833-775ca32f4bdb-166549971884186e8d-0",
+        "template--15154563186824__b23d3dfc-7af8-4218-8833-775ca32f4bdb-166549971884186e8d-1",
+        "a2a758f4-04b5-47d4-b1f8-f75a9bd344b2",
+        "template--15154563186824__b23d3dfc-7af8-4218-8833-775ca32f4bdb-166549971884186e8d-2"
+      ],
+      "settings": {
+        "color_background": "#dbe1e0",
+        "color_text": "#1c1d1d",
+        "narrow_width": true,
+        "text_align": "left"
+      }
+    },
+    "ff15e6b0-4433-4725-b8fc-3ae606b210f2": {
+      "type": "brand-story",
+      "disabled": true,
+      "blocks": {
+        "template--15351834378376__ff15e6b0-4433-4725-b8fc-3ae606b210f2-167587174692d3cfff-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text"
+          }
+        },
+        "template--15351834378376__ff15e6b0-4433-4725-b8fc-3ae606b210f2-167587174692d3cfff-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15351834378376__ff15e6b0-4433-4725-b8fc-3ae606b210f2-167587174692d3cfff-0",
+        "template--15351834378376__ff15e6b0-4433-4725-b8fc-3ae606b210f2-167587174692d3cfff-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
     }
   },
   "order": [
@@ -265,6 +393,8 @@
     "product-recommendations",
     "recently-viewed",
     "collection-return",
-    "1658935411df7a745e"
+    "1658935411df7a745e",
+    "b23d3dfc-7af8-4218-8833-775ca32f4bdb",
+    "ff15e6b0-4433-4725-b8fc-3ae606b210f2"
   ]
 }

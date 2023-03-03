@@ -1,0 +1,621 @@
+{% style %}
+    #shopify-section-{{section.id}} .section-title {
+        margin: 25px 0px;
+    }
+    {% if section.blocks.size > 0 %}
+        {% for block in section.blocks %}
+            #shopify-section-{{section.id}} .c-tp-wrapper-{{ forloop.index }} {
+                background-image: url({{ block.settings.background_image | image_url: width: 3000 }});
+                min-height: {{ block.settings.section_height }}vh;
+                width: 100%;
+                background-repeat: no-repeat;
+                padding-top: {{ block.settings.padding_top }}rem;
+                padding-bottom: {{ block.settings.padding_bottom }}rem;
+                background-size: cover;
+            }
+
+            #shopify-section-{{section.id}} .c-tp-wrapper-{{ forloop.index }} .page-width-{{ forloop.index }} {
+                height: calc({{ block.settings.section_height }}vh - {{ block.settings.padding_top }}rem - {{ block.settings.padding_bottom }}rem);
+                position: relative;
+                {% if block.settings.alignment_x == 'center' %}
+                    display: flex;
+                    justify-content: center;
+                {% endif %}
+                {% if block.settings.alignment_y == 'center' %}
+                    display: flex;
+                    align-items: center;
+                {% endif %}
+            }
+
+            #shopify-section-{{section.id}} .c-tp-wrapper-{{ forloop.index }} .c-tp-content-{{ forloop.index }} {
+                width: {{ block.settings.container_width }}%;
+                {% if block.settings.container_height != 0 %}
+                    height: {{ block.settings.container_height }}px;
+                {% else %}
+                    height: auto;
+                {% endif %}
+                position: absolute;
+                z-index: 1;
+                {% if block.settings.alignment_x != 'center' %}
+                    {{ block.settings.alignment_x }}: 0;
+                {% endif %}
+                {% if block.settings.alignment_y != 'center' %}
+                    {{ block.settings.alignment_y }}: 0;
+                {% endif %}
+                {% if block.settings.border != 0 %}
+                    border: solid {{ block.settings.container_border }}px {{ block.settings.container_border_color }};
+                    padding: 20px;
+                    margin: 0px 20px;
+                {% endif %}
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            #shopify-section-{{section.id}} .c-tp-wrapper-{{ forloop.index }} .c-tp-content-{{ forloop.index }}:before {
+                content: "";
+                background: #000;
+                width: 100%;
+                height: 100%;
+                opacity: {{ block.settings.overlay_opacity }};
+                border-radius: {{ block.settings.overlay_radius }}px;
+                position: absolute;
+                z-index: -1;
+                padding-bottom: 260px;
+            }
+                
+            @media (max-width: 999px) { 
+                #shopify-section-{{section.id}} .c-tp-wrapper-{{ forloop.index }} .c-tp-content-{{ forloop.index }} {
+                    width: auto;
+                    position: relative;
+                }
+            }
+                
+            @media (max-width: 500px) { 
+                #shopify-section-{{section.id}} .c-tp-wrapper-{{ forloop.index }} .page-width,
+                #shopify-section-{{section.id}} .c-tp-wrapper-{{ forloop.index }} {
+                    min-height: 500px;
+                    height: 100%;
+                }
+                #shopify-section-{{section.id}} .c-tp-wrapper-{{ forloop.index }} .c-tp-content-{{ forloop.index }} {
+                    width: 100%;
+                    margin: 0px;
+                }
+            }
+        {% endfor %}
+    {% endif %}
+    #shopify-section-{{section.id}} .swiper {
+        width: 100%;
+        height: 100%;
+    }
+    #shopify-section-{{section.id}} .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #shopify-section-{{section.id}} .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #shopify-section-{{section.id}} .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+        background: #000;
+        margin-top: 12px;
+    }
+    #shopify-section-{{section.id}} .swiper-pagination-bullet-active {
+        background: transparent;
+        border: solid 1px;
+    }
+    #shopify-section-{{section.id}} .swiper-pagination-bullets {
+        background: #fff;
+        height: 50px;
+        bottom: 0px;
+    }
+    #shopify-section-{{section.id}} .c-tp-wrapper .c-tp-content > div {
+    }
+    #shopify-section-{{section.id}} .c-tp-wrapper .c-tp-content .c-tp-paragraph {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #shopify-section-{{section.id}} .c-tp-wrapper .c-tp-content .c-tp-button-div {
+        display: inline-block;
+        margin-top: 40px;
+    }
+    #shopify-section-{{section.id}} .c-tp-wrapper .c-tp-content .c-tp-button-div a.c-tp-button {
+        font-family: 'Poppins', sans-serif;
+        FONT-weight: bold;
+        text-decoration: none;
+    }
+
+    @media (max-width: 1200px) { 
+        #shopify-section-{{section.id}} .c-tp-wrapper .c-tp-content .c-tp-paragraph,
+        #shopify-section-{{section.id}} .c-tp-wrapper .c-tp-content .c-tp-button-div a.c-tp-button {
+            margin: 0px;
+        }
+    }
+    
+    @media (max-width: 999px) { 
+        #shopify-section-{{section.id}} .c-tp-wrapper .c-tp-content .c-tp-paragraph,
+        #shopify-section-{{section.id}} .c-tp-wrapper .c-tp-content .c-tp-button-div a.c-tp-button {
+        }
+    }
+    @media (max-width: 768px) { 
+        #shopify-section-{{section.id}} .c-tp-wrapper {
+            background-image: url({{ section.settings.mobile_image | image_url: width: 768 }});   
+            background-size: cover;
+        }
+    }
+    @media (max-width: 749px) { 
+        #shopify-section-{{section.id}} .c-tp-wrapper .c-tp-content {
+            position: relative;
+            width: 100%;
+            left: 0;
+            right: 0;
+        }
+        #shopify-section-{{section.id}} .c-tp-wrapper .c-tp-content > div {
+        }
+        #shopify-section-{{section.id}} .c-tp-wrapper .c-tp-content .c-tp-button-div {
+        }
+    }
+{% endstyle %}
+
+<div class="section-content">
+    {% if section.settings.heading != blank %}
+        <div class="section-title">
+            <h1 class="c-tp-heading {{ section.settings.font_size }} {{ section.settings.text_align }}" style="color:{{ section.settings.color }};">{{ section.settings.heading }}</h1>
+        </div>
+    {% endif %}
+    <div class="swiper mySwiper">
+        <div class="{% if section.settings.display_type == 'slide' %} swiper-wrapper {% endif %}">
+            {% if section.blocks.size > 0 %}
+                {% for block in section.blocks %}
+                    <div class="swiper-slide">
+                        <div class="c-tp-wrapper-{{ forloop.index }}">
+                            <div class="page-width page-width-{{ forloop.index }}">
+                                <div class="c-tp-content-{{ forloop.index }}">
+                                    <div class="text-box">
+                                        {% if block.settings.subtitle != blank %}
+                                            <h1 class="c-tp-heading dp-subtitle {{ block.settings.subtitle_size }}" style="color:{{ block.settings.subtitle_color }};">{{ block.settings.subtitle }}</h1>
+                                        {% endif %}
+                                        {% if block.settings.heading != blank %}
+                                            <h1 class="c-tp-heading dp-title {{ block.settings.title_size }}" style="color:{{ block.settings.title_color }};">{{ block.settings.heading }}</h1>
+                                        {% endif %}
+                                        {% if block.settings.text != blank %}
+                                            <div class="c-tp-paragraph" style="color:{{ block.settings.text_color }};">{{ block.settings.text }}</div>
+                                        {% endif %}
+                                    </div>
+                                    <div class="c-tp-button-div">
+                                        {% if block.settings.button_text != blank %}
+                                            <a class="c-tp-button dp-button" href="{{ block.settings.button_link }}" 
+                                                style="color: {{ block.settings.text_color }};
+                                                {% if block.settings.button_style == 'gradient' %} 
+                                                    background: {{ settings.gradient_accent_1 }};
+                                                {% else %}
+                                                    background: {{ block.settings.background_color }} ;
+                                                {% endif %}
+                                                {% if block.settings.border_color != blank %} 
+                                                    border: solid 3px {{ block.settings.border_color }}; 
+                                                    padding: 14px 29px; 
+                                                {% endif %}
+                                                {% if block.settings.button_style == 'underline' %} 
+                                                    text-decoration: underline;
+                                                    padding: 0px;
+                                                {% endif %}
+                                            ">
+                                                {{ block.settings.button_text }}
+                                            </a>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+ <!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper("#shopify-section-{{section.id}} .mySwiper", {
+        cssMode: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+        autoplay: {
+            delay: 5000,
+        }
+    });
+</script>
+
+{% schema %}
+{
+    "name": "Block TextPicture",
+    "class": "section__image-overlay-text",
+    "settings": [
+        {
+            "type": "select",
+            "id": "display_type",
+            "options": [
+                {
+                    "value": "grid",
+                    "label": "Grid"
+                },
+                {
+                    "value": "slide",
+                    "label": "Slide"
+                }
+            ],
+            "label": "Display type",
+            "default": "grid"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "default": "Heading",
+            "label": "Heading"
+        },
+        {
+            "type": "color",
+            "id": "color",
+            "default": "#EDA512",
+            "label": "Font color"
+        },
+        {
+            "type": "select",
+            "id": "font_size",
+            "options": [
+                {
+                    "value": "font-large",
+                    "label": "Large"
+                },
+                {
+                    "value": "font-medium",
+                    "label": "Medium"
+                },
+                {
+                    "value": "font-small",
+                    "label": "Small"
+                }
+            ],
+            "label": "Font size",
+            "default": "font-medium"
+        },
+        {
+            "type": "select",
+            "id": "text_align",
+            "options": [
+                {
+                    "value": "align-left",
+                    "label": "Left"
+                },
+                {
+                    "value": "align-center",
+                    "label": "Center"
+                },
+                {
+                    "value": "align-right",
+                    "label": "Right"
+                }
+            ],
+            "label": "Text align",
+            "default": "align-center"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "block",
+            "name": "Text Picture",
+            "settings": [
+                {
+                    "type": "header",
+                    "content": "Background"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "background_image",
+                    "label": "Background"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "mobile_image",
+                    "label": "Mobile background"
+                },
+                {
+                    "type": "header",
+                    "content": "Content Container"
+                },
+                {
+                    "type": "range",
+                    "id": "container_width",
+                    "label": "Container width",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "default": 48,
+                    "unit": "%"
+                },
+                {
+                    "type": "range",
+                    "id": "container_height",
+                    "label": "Container height",
+                    "min": 0,
+                    "max": 600,
+                    "step": 10,
+                    "default": 0,
+                    "unit": "px"
+                },
+                {
+                    "type": "range",
+                    "id": "container_border",
+                    "label": "Container border",
+                    "min": 0,
+                    "max": 10,
+                    "step": 1,
+                    "default": 0,
+                    "unit": "px"
+                },
+                {
+                    "type": "color",
+                    "id": "container_border_color",
+                    "label": "Border color"
+                },
+                {
+                    "type": "select",
+                    "id": "alignment_x",
+                    "options": [
+                        {
+                            "value": "left",
+                            "label": "Left"
+                        },
+                        {
+                            "value": "center",
+                            "label": "Center"
+                        },
+                        {
+                            "value": "right",
+                            "label": "Right"
+                        }
+                    ],
+                    "label": "Alignment X",
+                    "default": "left"
+                },
+                {
+                    "type": "select",
+                    "id": "alignment_y",
+                    "options": [
+                        {
+                            "value": "top",
+                            "label": "Top"
+                        },
+                        {
+                            "value": "center",
+                            "label": "Center"
+                        },
+                        {
+                            "value": "bottom",
+                            "label": "Bottom"
+                        }
+                    ],
+                    "label": "Alignment Y",
+                    "default": "center"
+                },
+                {
+                    "type": "range",
+                    "id": "overlay_opacity",
+                    "label": "Overlay opacity",
+                    "min": 0,
+                    "max": 1,
+                    "step": 0.1,
+                    "default": 0.5,
+                    "unit": "%"
+                },
+                {
+                    "type": "range",
+                    "id": "overlay_radius",
+                    "label": "Border radius",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "default": 0,
+                    "unit": "px"
+                },
+                {
+                    "type": "header",
+                    "content": "Section"
+                },
+                {
+                    "type": "range",
+                    "id": "section_height",
+                    "label": "Section height",
+                    "min": 0,
+                    "max": 100,
+                    "step": 10,
+                    "default": 80,
+                    "unit": "vh"
+                },
+                {
+                    "type": "range",
+                    "id": "padding_top",
+                    "label": "Padding top",
+                    "min": 0,
+                    "max": 15,
+                    "step": 1,
+                    "default": 2,
+                    "unit": "rem"
+                },
+                {
+                    "type": "range",
+                    "id": "padding_bottom",
+                    "label": "Padding bottom",
+                    "min": 0,
+                    "max": 15,
+                    "step": 1,
+                    "default": 2,
+                    "unit": "rem"
+                },
+                {
+                    "type": "header",
+                    "content": "Heading"
+                },
+                {
+                    "type": "text",
+                    "id": "heading",
+                    "default": "Heading",
+                    "label": "Heading"
+                },
+                {
+                    "type": "color",
+                    "id": "title_color",
+                    "default": "#EDA512",
+                    "label": "Font color"
+                },
+                {
+                    "type": "select",
+                    "id": "title_size",
+                    "options": [
+                        {
+                            "value": "font-large",
+                            "label": "Large"
+                        },
+                        {
+                            "value": "font-medium",
+                            "label": "Medium"
+                        },
+                        {
+                            "value": "font-small",
+                            "label": "Small"
+                        }
+                    ],
+                    "label": "Font size",
+                    "default": "font-medium"
+                },
+                {
+                    "type": "header",
+                    "content": "Subheading"
+                },
+                {
+                    "type": "text",
+                    "id": "subtitle",
+                    "default": "Bub title",
+                    "label": "Subtitle"
+                },
+                {
+                    "type": "color",
+                    "id": "subtitle_color",
+                    "default": "#EDA512",
+                    "label": "Font color"
+                },
+                {
+                    "type": "select",
+                    "id": "subtitle_size",
+                    "options": [
+                        {
+                            "value": "font-large",
+                            "label": "Large"
+                        },
+                        {
+                            "value": "font-medium",
+                            "label": "Medium"
+                        },
+                        {
+                            "value": "font-small",
+                            "label": "Small"
+                        }
+                    ],
+                    "label": "Font size",
+                    "default": "font-medium"
+                },
+                {
+                    "type": "header",
+                    "content": "Paragraph"
+                },
+                {
+                    "type": "textarea",
+                    "id": "text",
+                    "default": "Duck fat enhance food flavors, while enjoying health benifits and a higher smoke point over the more common cooking oils and fats.",
+                    "label": "Text"
+                },
+                {
+                    "type": "color",
+                    "id": "text_color",
+                    "default": "#FFFFFF",
+                    "label": "Font color"
+                },
+                {
+                    "type": "header",
+                    "content": "Paragraph"
+                },
+                {
+                    "type": "text",
+                    "id": "button_text",
+                    "default": "Button text",
+                    "label": "Button text"
+                },
+                {
+                    "type": "url",
+                    "id": "button_link",
+                    "label": "Button link"
+                },
+                {
+                    "type": "select",
+                    "id": "button_style",
+                    "options": [
+                        {
+                            "value": "gradient",
+                            "label": "Gradient background"
+                        },
+                        {
+                            "value": "underline",
+                            "label": "Underline button"
+                        },
+                        {
+                            "value": "background",
+                            "label": "Background"
+                        }
+                    ],
+                    "label": "Button style",
+                    "default": "gradient"
+                },
+                {
+                    "type": "header",
+                    "content": "Button style"
+                },
+                {
+                    "type": "color",
+                    "id": "button_color",
+                    "default": "#FFFFFF",
+                    "label": "Text color"
+                },
+                {
+                    "type": "color",
+                    "id": "background_color",
+                    "label": "Background color"
+                },
+                {
+                    "type": "color",
+                    "id": "border_color",
+                    "default": "transparent",
+                    "label": "Border color"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Block TextPicture"
+        }
+    ]
+}
+{% endschema %}

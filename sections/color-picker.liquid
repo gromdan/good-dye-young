@@ -1,0 +1,304 @@
+{{ 'color-picker.css' | asset_url | stylesheet_tag }}
+<div class="index-section" style="margin-bottom: 0;">
+	
+<div class="page-width">
+	{% liquid 
+		assign product_list = ''
+		for block in section.blocks
+			assign product_list = product_list | plus: ',' | plus: block.settings.product.handle
+		endfor
+
+		assign product_list_edited = product_list | split: ',' | uniq | join: ','
+	%}
+
+	<!-- product_list: {{product_list}} -->
+	<!-- product_list_edited: {{product_list_edited}} -->
+
+	<h1 class="text-center headline ">
+		{{ section.settings.title }}
+	</h1>
+
+	<div class="color-picker-wrap">
+		<div class="color-picker-display">
+			<div class="color-picker-stage color-picker-default">
+				{% if section.settings.box_title != blank %}
+				<p class="color-picker-default-title">
+					{{ section.settings.box_title }}
+				</p>
+				{% endif %}
+				{% if section.settings.box_instructions != blank %}
+				<p class="color-picker-default-text">
+					{{ section.settings.box_instructions }}
+				</p>
+				{% endif %}
+			</div>
+			{% for block in section.blocks %}
+			{% assign product = block.settings.product %}
+			<div data-product_display="{{ product.handle }}" class="color-picker-stage color-product" style="display: none;">
+				<div class="img-wrap">
+					<img src="{{ product.media[1] | image_url: width: 600 }}" alt="{{ product.media[1].alt }}">
+				</div>
+					<h4>
+						{{ product.title }}
+					</h4>
+					<a href="{{ product.url }}" class="btn">
+						Shop Now
+					</a>
+			</div>
+			{% endfor %}
+		</div>
+
+		{% for block in section.blocks %}
+		<div data-product_item="{{ block.settings.product.handle }}" class="color-picker-item">
+			<span class="color-code" style="background-color: {{ block.settings.color }}"></span>
+		</div>
+		{% endfor %}
+
+	</div>
+	
+
+</div>
+
+{% if section.settings.show_filter %}
+<div class="color-collection-filter">
+	<div class="page-width text-center">
+		{% if section.settings.main_filter_title != blank %}
+		<h2 class="h1 headline">
+			{{ section.settings.main_filter_title }}
+		</h2>
+		{% endif %}
+		<ul class="ccf-list">
+			{% if section.settings.filter_1_title != blank %}
+			<li>
+				<button class="ccf-button" data-duration-filter="1">
+					<span class="block ccf-title">
+						{{ section.settings.filter_1_title }}
+					</span>
+					<span class="block ccf-text">
+						{{ section.settings.filter_1_text }}
+					</span>
+				</button>
+			</li>
+			{% endif %}
+			{% if section.settings.filter_2_title != blank %}
+			<li>
+				<button class="ccf-button" data-duration-filter="2">
+					<span class="block ccf-title">
+						{{ section.settings.filter_2_title }}
+					</span>
+					<span class="block ccf-text">
+						{{ section.settings.filter_2_text }}
+					</span>
+				</button>
+			</li>
+			{% endif %}
+			{% if section.settings.filter_3_title != blank %}
+			<li>
+				<button class="ccf-button" data-duration-filter="3">
+					<span class="block ccf-title">
+						{{ section.settings.filter_3_title }}
+					</span>
+					<span class="block ccf-text">
+						{{ section.settings.filter_3_text }}
+					</span>
+				</button>
+			</li>
+			{% endif %}
+		</ul>
+	</div>
+</div>
+{% endif %}
+
+</div>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+	const allColorDivs = document.querySelectorAll('.color-picker-stage.color-product');
+	const allSwatches = document.querySelectorAll('.color-picker-item');
+
+	allSwatches.forEach( el => {
+		el.addEventListener('mouseenter', function() {
+			const prod_handle_2_display = el.dataset.product_item;
+			console.log('prod_handle_2_display: ', prod_handle_2_display)
+			const prod_div_2_display = document.querySelector(`[data-product_display="${prod_handle_2_display}"]`);
+			prod_div_2_display.classList.add('active')
+		})
+	})
+
+	allSwatches.forEach( el => {
+		el.addEventListener('mouseleave', function() {
+			const prod_handle_2_display = el.dataset.product_item;
+			const prod_div_2_display = document.querySelector(`[data-product_display="${prod_handle_2_display}"]`);
+			prod_div_2_display.classList.remove('active')
+		})
+	})
+
+	const handleClick = function(e) {
+		const theTarget = e.target.closest('div');
+		if (!theTarget.matches('.color-picker-item')) return;
+		console.log('thetarget2', theTarget)
+		const prod_handle_2_display = theTarget.dataset.product_item;
+		console.log('prod_handle_2_display', prod_handle_2_display)
+		const prod_div_2_display = document.querySelector(`[data-product_display="${prod_handle_2_display}"]`);
+		allColorDivs.forEach(el => el.classList.remove('active_on') );
+		console.log('hey')
+		setTimeout(function() {
+			prod_div_2_display.classList.add('active_on');
+			console.log('prod_div_2_display', prod_div_2_display)
+		}, 1)
+		console.log('there')
+		
+	}
+
+	document.addEventListener('click', handleClick);
+
+
+	// Color Collection filter code
+	const ccf_buttons = document.querySelectorAll('.ccf-button');
+	const all_color_divs = document.querySelectorAll('[data-collection_color]')
+	const all_color_swipers = document.querySelectorAll('[data-collection_color_swiper]')
+
+	const handle_ccf = function(e) {
+		const theBtn = e.target.closest('button');
+		const theBtnFilter = theBtn.dataset.durationFilter;
+		console.log('theBtnFilter', theBtnFilter);
+
+		ccf_buttons.forEach(el => el.classList.remove('active'));
+		theBtn.classList.add('active')
+
+		all_color_divs.forEach(el => {
+			if ( el.dataset.dye_duration ===  theBtnFilter) {
+				el.style.display = 'block'
+				//el.style.borderBottom = '2px solid #000'
+				el.style.margin = ''
+			} else {
+				el.style.display = 'none'
+				//el.style.borderBottom = 'none'
+				el.style.margin = '0'
+			}
+		});
+
+		all_color_swipers.forEach(el => {
+			console.log('hey, ', el.querySelector('.swiper-container'))
+			if ( el.dataset.dye_duration ===  theBtnFilter) {
+				//el.style.display = 'block'
+				el.style.borderBottom = '2px solid #000'
+				el.style.padding = ''
+				el.querySelector('.swiper-container').style.display = 'block'
+				el.closest('.index-section').style.margin = ''
+			} else {
+				el.querySelector('.swiper-container').style.display = 'none'
+				//el.style.display = 'none'
+				el.style.borderBottom = 'none'
+				el.style.padding = '0'
+				el.closest('.index-section').style.margin = '0'
+			}
+		});
+
+		AOS.refresh(); // !! otherwise, divs you haven't scrolled to yet may not show up
+	}
+
+	if (ccf_buttons) {
+		ccf_buttons.forEach( el => el.addEventListener('click', handle_ccf))
+	}
+});
+</script>
+
+{% schema %}
+{
+	"name": "Color Picker",
+	"tag": "section",
+	"settings": [
+	  {
+		"type": "text",
+		"id": "title",
+		"label": "Title"
+	  },
+	  {
+		"type": "textarea",
+		"id": "box_title",
+		"label": "Main box title"
+	  },
+	  {
+		"type": "textarea",
+		"id": "box_instructions",
+		"label": "Main box instructions"
+	  },
+	  {
+		"type": "checkbox",
+		"id": "show_filter",
+		"label": "Show Duration filter",
+		"info": "This will show/hide based on dye duration defined in the metafield in the Collection in the sections below.",
+		"default": true
+	  },
+	  {
+		"type": "text",
+		"id": "main_filter_title",
+		"label": "Main Filter title",
+		"default": "Shop by Collection"
+	  },
+	  {
+		"type": "text",
+		"id": "filter_1_title",
+		"label": "Filter 1 title",
+		"default": "Temporary"
+	  },
+	  {
+		"type": "text",
+		"id": "filter_1_text",
+		"label": "Filter 1 description",
+		"default": "Lasts 1 Wash"
+	  },
+	  {
+		"type": "text",
+		"id": "filter_2_title",
+		"label": "Filter 2 title",
+		"default": "Semi-Temporary"
+	  },
+	  {
+		"type": "text",
+		"id": "filter_2_text",
+		"label": "Filter 2 description",
+		"default": "Lasts 2 - 6 Washes"
+	  },
+	  {
+		"type": "text",
+		"id": "filter_3_title",
+		"label": "Filter 3 title",
+		"default": "Semi-Permanent"
+	  },
+	  {
+		"type": "text",
+		"id": "filter_3_text",
+		"label": "Filter 3 description",
+		"default": "Lasts 15 - 24+ Washes"
+	  }
+	],
+    "blocks": [
+      {
+        "type": "color-selector",
+        "name": "Colors & Products",
+        "settings": [
+          {
+            "type": "color",
+            "id": "color",
+            "label": "Color"
+          },
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Choose Product"
+          }
+        ]
+      }
+    ],
+	"presets": [
+	  {
+		"name": "Color Picker"
+	  }
+	]
+  }
+
+{% endschema %}

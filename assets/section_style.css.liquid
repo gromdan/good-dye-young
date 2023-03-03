@@ -89,31 +89,57 @@ section.image-grid .grid-main-content .row .column .button-wrap {
 /* End image-gallery Custom Style CSS */
 
 /* Begin three-image-gallery Custom Style CSS */
-.three-iamge-gallery .main-content
+.three-image-gallery .main-content
 {
     display: flex;
+    min-height: auto;
 }
-.three-iamge-gallery .main-content .left-image,
-.three-iamge-gallery .main-content .right-image 
+.three-image-gallery .main-content .left-image,
+.three-image-gallery .main-content .right-image 
 {
-    width: 24.16%;
-    padding: 0px 4px;
+    width: 25%;
 }
-.three-iamge-gallery .main-content .center-image {
-    width: 51.68%;
-    padding: 0px 4px;
+.three-image-gallery .main-content .center-image {
+    width: 50%;
 }
-.three-iamge-gallery .main-content .item .img-wrap img {
+.three-image-gallery .main-content .item .img-wrap img {
     width: 100%;
+    display: block;
 }
-@media (max-width: 768px) {
-    .three-iamge-gallery .main-content
+@media (min-width: 750px) {
+    .three-image-gallery .left-image .img-wrap-outer,
+    .three-image-gallery .right-image .img-wrap-outer
+    {
+        position: relative;
+        padding-bottom: 100%;
+    }
+    .three-image-gallery .center-image .img-wrap-outer {
+        position: relative;
+        padding-bottom: 50%;
+    }
+    .three-image-gallery .img-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .three-image-gallery img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width: 749px) {
+    .three-image-gallery .main-content
     {
         flex-wrap: wrap;
     }
-    .three-iamge-gallery .main-content .left-image,
-    .three-iamge-gallery .main-content .center-image,
-    .three-iamge-gallery .main-content .right-image
+    .three-image-gallery .main-content .left-image,
+    .three-image-gallery .main-content .center-image,
+    .three-image-gallery .main-content .right-image
     {
         width: 100%;
         padding: 0px;

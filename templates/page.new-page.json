@@ -1,0 +1,82 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "370dfaf5-f4d9-4d79-85d6-8c56b07b92de": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15290497302664__370dfaf5-f4d9-4d79-85d6-8c56b07b92de-1667442286dd20b613-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Need Ideas?"
+          }
+        },
+        "template--15290497302664__370dfaf5-f4d9-4d79-85d6-8c56b07b92de-1667442286dd20b613-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Get some hair inspo from our dye-hard fans.<\/p><p>Tag @gooddyeyoung to be featured!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15290497302664__370dfaf5-f4d9-4d79-85d6-8c56b07b92de-1667442286dd20b613-0",
+        "template--15290497302664__370dfaf5-f4d9-4d79-85d6-8c56b07b92de-1667442286dd20b613-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "00383243-fb75-4546-ac56-05a2dfc99ba5": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--15290497302664__00383243-fb75-4546-ac56-05a2dfc99ba5-1667442266447293cd-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<script async src='https:\/\/snapppt.com\/widgets\/widget_loader\/07c6e667-103f-485b-d243-07be47b022ed\/sauce_inspo.js' class='snapppt-widget'><\/script>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15290497302664__00383243-fb75-4546-ac56-05a2dfc99ba5-1667442266447293cd-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "bg_color": "",
+        "text_color": "",
+        "bg_color_contained": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "space_around": true,
+        "show_top_border": false,
+        "show_bottom_border": false
+      }
+    },
+    "a729510b-d63d-44ea-94c2-6a9a83b50c9d": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "SHOP WHAT'S HOT",
+        "subtitle": "",
+        "home_featured_products": "trending-hair-dye-colors-looks",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "370dfaf5-f4d9-4d79-85d6-8c56b07b92de",
+    "00383243-fb75-4546-ac56-05a2dfc99ba5",
+    "a729510b-d63d-44ea-94c2-6a9a83b50c9d"
+  ]
+}

@@ -26,6 +26,59 @@
     assign product_img_structure = product.featured_media | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
 -%}
 
+{%- liquid
+
+    assign coll_handle_1 = ''
+    assign coll_handle_2 = ''
+    assign coll_handle_3 = ''
+    assign coll_handle_4 = ''
+
+    for tag in product.tags
+
+    if tag contains 'level_1:'
+    assign coll_handle_1 = tag | remove: 'level_1:'
+    assign coll_handle_1 = coll_handle_1 | handleize
+    assign coll_1 = collections[coll_handle_1]
+    endif
+
+    if tag contains 'level_2:'
+    assign coll_handle_2 = tag | remove: 'level_2:'
+    assign coll_handle_2 = coll_handle_2 | handleize
+    assign coll_2 = collections[coll_handle_2]
+    endif
+
+    if tag contains 'level_3:'
+    assign coll_handle_3 = tag | remove: 'level_3:'
+    assign coll_handle_3 = coll_handle_3 | handleize
+    assign coll_3 = collections[coll_handle_3]
+    endif
+
+    if tag contains 'level_4:'
+    assign coll_handle_4 = tag | remove: 'level_4:'
+    assign coll_handle_4 = coll_handle_4 | handleize
+    assign coll_4 = collections[coll_handle_4]
+    endif
+
+    endfor
+-%}
+
+{% capture pdp_breadcrumbs %}
+    {% if coll_handle_1 != '' %}
+    <p class="pdp-breadcrumbs special-hdr-font-2">
+        <a href="{{ coll_1.url }}">{{ coll_1.title }}</a>
+        {% if coll_handle_2 != '' %}
+        / <a href="{{ coll_2.url }}">{{ coll_2.title }}</a>
+        {% endif %}
+        {% if coll_handle_3 != '' %}
+        / <a href="{{ coll_3.url }}">{{ coll_3.title }}</a>
+        {% endif %}
+        {% if coll_handle_4 != '' %}
+        / <a href="{{ coll_4.url }}">{{ coll_4.title }}</a>
+        {% endif %}
+    </p>
+    {% endif %}
+{% endcapture %}
+
 <div id="ProductSection-{{ section_id }}-{{ product.id }}"
      class="product-section"
      data-section-id="{{ section_id }}"
@@ -64,15 +117,16 @@
                                 video_style: video_style
                             -%}
                         </div>
-
-
+                        {% comment %}
                         <div class="small--show medium-up--hide">
                             <div class="product-single__meta">
                                 <div class="product-block product-block--header">
                                     {%- if settings.show_breadcrumbs and isModal != true -%}
                                         {%- render 'breadcrumbs' -%}
                                     {%- endif -%}
-        
+                                    {% comment %}!!CUSTOM BREADCRUMBS!!{% endcomment %}
+                                    {{ pdp_breadcrumbs }}
+
                                     {%- if settings.vendor_enable -%}
                                         <div class="product-single__vendor">
                                             {%- assign vendor_handle = product.vendor | handleize -%}
@@ -85,7 +139,7 @@
                                             {%- endif -%}
                                         </div>
                                     {%- endif -%}
-        
+
                                     {%- if isModal -%}
                                         <p class="h2 product-single__title regular-font uncaps">
                                             {{ product.title }}
@@ -99,7 +153,7 @@
                                             {%- endunless -%}
                                         </h1>
                                     {%- endif -%}
-        
+
                                     {%- if sku_enable -%}
                                         <p data-sku class="product-single__sku">
                                             {%- if current_variant.sku -%}
@@ -108,7 +162,7 @@
                                         </p>
                                     {%- endif -%}
                                 </div>
-        
+
                                 <div data-product-blocks>
                                     {%- capture form_id -%}AddToCartForm-{{ section_id }}-{{ product.id }}{%- endcapture -%}
                                     {%- for block in blocks -%}
@@ -169,7 +223,7 @@
                                                         <span data-a11y-price
                                                               class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
                                                     {%- endif -%}
-        
+
                                                     <span data-product-price
                                                           class="product__price{% if current_variant.compare_at_price > current_variant.price %} on-sale{% endif %}">
                                                         {%- unless product.empty? -%}
@@ -178,7 +232,7 @@
                                                             {{ 1999 | money }}
                                                         {%- endunless -%}
                                                     </span>
-        
+
                                                     {%- if settings.product_save_amount -%}
                                                         {%- if settings.product_save_type == 'dollar' -%}
                                                             {%- capture saved_amount -%}{{ current_variant.compare_at_price | minus: current_variant.price | money }}{%- endcapture -%}
@@ -192,7 +246,7 @@
                                                         {%- endunless -%}
                                                         </span>
                                                     {%- endif -%}
-        
+
                                                     <div
                                                         data-unit-price-wrapper
                                                         class="product__unit-price product__unit-price--spacing {% unless current_variant.unit_price_measurement %} hide{% endunless %}">
@@ -206,10 +260,10 @@
                                                             {%- endif -%}
                                                         </span>
                                                         {%- endcapture -%}
-        
+
                                                         <span data-unit-price>{{ current_variant.unit_price | money }}</span>/{{ unit_price_base_unit }}
                                                     </div>
-        
+
                                                     {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
                                                         <div class="product__policies rte small--text-center">
                                                             {%- if shop.taxes_included -%}
@@ -247,7 +301,7 @@
                                                                     endif
                                                                 endif
                                                             -%}
-        
+
                                                             {%- if block.settings.picker_type == 'button' -%}
                                                                 {%- render 'variant-button',
                                                                     product: product,
@@ -287,7 +341,7 @@
                                                             -%}
                                                         </div>
                                                     {%- endunless -%}
-        
+
                                                     {%- if block.settings.surface_pickup_enable -%}
                                                         <div data-store-availability-holder
                                                              data-product-name="{{ product.title | escape }}"
@@ -410,10 +464,58 @@
                                             <div class="placeholder-content" style="min-height: 86px;"></div>
                                         </div>
                                     {%- endfor -%}
+                                      {% if product.metafields.custom.other_shades != blank %}
+                                <h3 class="pdp-more-products-hdr">Other Shades</h3>
+                                <div class="pdp-collection-products-wrap">
+
+                                    <ul class="pdp-collection-products">
+
+                                            <li class="pdp-collection-product current">
+                                               <a href="{{ product.url }}">
+                                                    <img src="{{ product.featured_image | image_url: width: 150 }}" alt="{{ product.title }}">
+                                                </a>
+                                            </li>
+
+                                     {% for product in product.metafields.custom.other_shades.value %}
+                                           <li class="pdp-collection-product">
+                                                <a href="{{ product.url }}">
+                                                    <img src="{{ product.featured_image | image_url: width: 150 }}" alt="{{ product.title }}">
+                                                </a>
+                                            </li>
+                                         {% endfor %}
+                                        {% comment %}
+                                        {% for c_product in coll_4.products %}
+                                            {% if c_product.handle == product.handle %}
+                                            <li class="pdp-collection-product current">
+                                                <a href="{{ c_product.url }}">
+                                                    <img src="{{ c_product.featured_image | image_url: width: 150 }}" alt="{{ c_product.title }}">
+                                                </a>
+                                            </li>
+                                            {% break %}
+                                            {% endif %}
+                                        {% endfor %}
+                                        {% for c_product in coll_4.products %}
+                                            {% unless c_product.handle == product.handle %}
+                                            <li class="pdp-collection-product">
+                                                <a href="{{ c_product.url }}" title="{{ c_product.title }}">
+                                                    <img src="{{ c_product.featured_image | image_url: width: 150 }}" alt="{{ c_product.title }}">
+                                                </a>
+                                            </li>
+                                            {% endunless %}
+                                        {% endfor %}
+                                        {% endcomment %}
+                                    </ul>
+                                </div>
+                                <p class="pdp-collection-products-note">
+                                    Current Selection: {{ product.title }}
+                                </p>
+
+
+                            {% endif %}
                                 </div>
                             </div>
                         </div>
-
+                        {%endcomment%}
 
 
                         <div class="metafield-btm-info-wrap first">
@@ -516,9 +618,9 @@
                                         {{ product.metafields.accentuate.the_basics_description }}
                                     </div>
                                 {% endif %}
-                                
-    
-                                
+
+
+
                                 {% if product.metafields.accentuate.yes_content != blank %}
                                 <div class="yes-no-section pdp-block">
                                     <div class="inner">
@@ -539,12 +641,12 @@
                         </div>
                         <div class="metafield-btm-info-wrap">
                             <div class="metafield-btm-info">
-    
+
                                 <div class="how-to-section pdp-block">
                                     <div class="tabset">
                                       {% if product.metafields.accentuate.how_to_use != blank %}
                                         <!-- Tab 1 -->
-                                        <input type="radio" name="tabset" id="tab1" aria-controls="how-to" checked> 
+                                        <input type="radio" name="tabset" id="tab1" aria-controls="how-to" checked>
                                         <label class="header-font" for="tab1">How To Use</label>
                                       {% endif %}
                                       {% if product.metafields.accentuate.how_to_care != blank %}
@@ -557,7 +659,7 @@
                                         <input type="radio" name="tabset" id="tab3" aria-controls="tips" {% if product.metafields.accentuate.how_to_care == blank and product.metafields.accentuate.how_to_use == blank %} checked {% endif %} >
                                         <label class="header-font" for="tab3">Tips</label>
                                       {% endif %}
-    
+
                                         <div class="tab-panels">
                                         {% if product.metafields.accentuate.how_to_use != blank %}
                                             <section id="how-to" class="tab-panel">
@@ -575,7 +677,7 @@
                                             </section>
                                         {% endif %}
                                         </div>
-    
+
                                     </div>
                                 </div>
                             </div>
@@ -606,7 +708,7 @@
                         <div class="metafield-btm-info-wrap">
                             <div class="metafield-btm-info">
                                 <h2 class="h3">Reviews</h2>
-    
+
                                 <div class="yotpo yotpo-main-widget"
                                     data-product-id="{{ product.id }}"
                                     data-name="{{ product.title | escape }}"
@@ -615,27 +717,29 @@
                                     data-price="{{ variant.price | money_without_currency }}"
                                     data-currency="{{ shop.currency }}"
                                     data-description="{{ product.description | escape }}">
-                                </div> 
-    
+                                </div>
+
                             </div>
 
                         </div>
-                        
+
 
                     </div>
 
 
 
                 {%- endif -%}
-                
-                
-                <div class="grid__item {{ product_description_width }} small--hide medium-up--show">
+
+
+                <div class="grid__item {{ product_description_width }} desktop-product-description small--hide medium-up--show">
 
                     <div class="product-single__meta">
                         <div class="product-block product-block--header">
                             {%- if settings.show_breadcrumbs and isModal != true -%}
                                 {%- render 'breadcrumbs' -%}
                             {%- endif -%}
+                            {% comment %}!!CUSTOM BREADCRUMBS!!{% endcomment %}
+                            {{ pdp_breadcrumbs }}
 
                             {%- if settings.vendor_enable -%}
                                 <div class="product-single__vendor">
@@ -974,6 +1078,56 @@
                                     <div class="placeholder-content" style="min-height: 86px;"></div>
                                 </div>
                             {%- endfor -%}
+
+
+                            {% if product.metafields.custom.other_shades != blank %}
+                                <h3 class="pdp-more-products-hdr">Other Shades</h3>
+                                <div class="pdp-collection-products-wrap">
+
+                                    <ul class="pdp-collection-products">
+
+                                            <li class="pdp-collection-product current">
+                                               <a href="{{ product.url }}">
+                                                    <img src="{{ product.featured_image | image_url: width: 150 }}" alt="{{ product.title }}">
+                                                </a>
+                                            </li>
+
+                                     {% for product in product.metafields.custom.other_shades.value %}
+                                           <li class="pdp-collection-product">
+                                                <a href="{{ product.url }}">
+                                                    <img src="{{ product.featured_image | image_url: width: 150 }}" alt="{{ product.title }}">
+                                                </a>
+                                            </li>
+                                         {% endfor %}
+                              {% comment %}
+                                        {% for c_product in coll_4.products %}
+                                            {% if c_product.handle == product.handle %}
+                                            <li class="pdp-collection-product current">
+                                                <a href="{{ c_product.url }}">
+                                                    <img src="{{ c_product.featured_image | image_url: width: 150 }}" alt="{{ c_product.title }}">
+                                                </a>
+                                            </li>
+                                            {% break %}
+                                            {% endif %}
+                                        {% endfor %}
+                                        {% for c_product in coll_4.products %}
+                                            {% unless c_product.handle == product.handle %}
+                                            <li class="pdp-collection-product">
+                                                <a href="{{ c_product.url }}" title="{{ c_product.title }}">
+                                                    <img src="{{ c_product.featured_image | image_url: width: 150 }}" alt="{{ c_product.title }}">
+                                                </a>
+                                            </li>
+                                            {% endunless %}
+                                        {% endfor %}
+                              {% endcomment %}
+                                    </ul>
+                                </div>
+                                <p class="pdp-collection-products-note">
+                                    Current Selection: {{ product.title }}
+                                </p>
+
+
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -1061,7 +1215,7 @@
     /* .tabset > label:hover,
     .tabset > input:focus + label {
         color: #06c;
-    } 
+    }
     .tabset > label:hover::after,
     .tabset > input:focus + label::after,
     .tabset > input:checked + label::after {
@@ -1071,7 +1225,7 @@
         opacity: 1;
     }
 
-    
+
 
     .tabset > input:checked + label {
         border-color: #ccc;
@@ -1084,37 +1238,7 @@
         /* border-top: 1px solid #ccc; */
     }
 
-    .yes-no-section {
-        margin-top: 50px;
-    }
 
-    .yes-no-section .inner {
-        display: flex;
-    }
-
-    .yes-no-section .inner .fck-yes, .yes-no-section .inner .fck-no {
-        width: 50%;
-    }
-    @media screen and (max-width: 750px) {
-        .yes-no-section .inner {
-            flex-wrap: wrap;
-        }
-        .yes-no-section .inner .fck-yes, .yes-no-section .inner .fck-no {
-            width: 100%;
-        }
-    }
-    .fck-yes {
-        padding-right: 5%;
-    }
-
-    .fck-no ul {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .fck-no ul li {
-        width: 50%;
-    }
 
 
     .commitment-level--inner {

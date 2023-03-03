@@ -9,8 +9,317 @@
         "parallax": false
       }
     },
+    "16609592057cfdb2d8": {
+      "type": "color-picker",
+      "blocks": {
+        "9bb51e45-5033-4ae4-8020-eb15e95d2ff1": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#17abdd",
+            "product": "gdy-blue-ruin"
+          }
+        },
+        "d74066e1-27ba-4577-87fe-9c80a6c8c8a0": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#df1995",
+            "product": "gdy-ex-girl"
+          }
+        },
+        "5fc8a35d-eea1-424a-9bd1-ec441db52711": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#3d3a3e",
+            "product": "killswitch"
+          }
+        },
+        "90ed4816-53c1-4c29-97f0-f23ff189172c": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#fed141",
+            "product": "ko"
+          }
+        },
+        "44dbc9eb-3797-4010-a232-3ccf4069d471": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#01426a",
+            "product": "dream-big"
+          }
+        },
+        "3ebb8a81-de3e-4354-912b-a85e892711a4": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#a20067",
+            "product": "live-laugh-love"
+          }
+        },
+        "9316c082-9a6f-46dc-aa12-176245d2689c": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#00b140",
+            "product": "gdy-kowabunga"
+          }
+        },
+        "9377b232-9d9f-4887-806a-18ea0ffb07f9": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#00b2a9",
+            "product": "gdy-narwhal"
+          }
+        },
+        "2b98a831-dbea-44fe-8359-14eff2451920": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#512d6d",
+            "product": "make-it-happen"
+          }
+        },
+        "441525fd-bd64-423a-8de3-bd7614204559": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#004f59",
+            "product": "move-mountains"
+          }
+        },
+        "485c6d35-57ec-46b8-946c-a05372caa184": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#101820",
+            "product": "gdy-none-more-black"
+          }
+        },
+        "9d729ad2-54ab-4186-b4c2-01a0e3012201": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#7d55c7",
+            "product": "gdy-ppl-eater"
+          }
+        },
+        "217695c5-07ee-48a2-a3fd-0fa013fc8c2d": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#f891a5",
+            "product": "gdy-lighter-daze-pink-puff"
+          }
+        },
+        "e4cf195f-6882-4753-abc3-f600a3e25e62": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#d50032",
+            "product": "gdy-rock-lobster"
+          }
+        },
+        "a3a15460-dcea-4dc9-8e58-11b3b6e4ef5b": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#eb3300",
+            "product": "gdy-riot"
+          }
+        },
+        "45294c4c-60ef-4780-a20d-80d0930781d6": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#d50032",
+            "product": "gdy-rock-lobster"
+          }
+        },
+        "ecfb49f0-31b4-4267-a815-b899ec3776ed": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#512d6d",
+            "product": "make-it-happen"
+          }
+        },
+        "877ec4e1-da09-42a0-a85f-097467536d4d": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#17abdd",
+            "product": "gdy-blue-ruin"
+          }
+        },
+        "233df406-6171-4259-a48d-79698da810f7": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#f3e600",
+            "product": "gdy-steal-my-sunshine"
+          }
+        },
+        "d9b928a3-30fb-41af-af01-07ad52a84146": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#ff8d6d",
+            "product": "gdy-lighter-daze-peach-fuzz"
+          }
+        },
+        "ff0a5f47-6e6c-4062-aa78-d62ed3544a7c": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#26d07c",
+            "product": "gdy-lighter-daze-wondermint"
+          }
+        },
+        "b7005342-5908-465e-aa6f-ab4ac4bed913": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#eb3300",
+            "product": "gdy-riot"
+          }
+        },
+        "31ee7543-9399-462d-9463-e06d141b4fdb": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#f891a5",
+            "product": "gdy-lighter-daze-pink-puff"
+          }
+        },
+        "ac3eafc1-302e-4020-8a5d-c71402a1e804": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#71b2c9",
+            "product": "gdy-lighter-daze-sky-high-blue"
+          }
+        },
+        "a7417513-d0c7-49e2-815c-1520008e0d6a": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#004f59",
+            "product": "move-mountains"
+          }
+        },
+        "dac583f0-89f8-4ba1-a7db-e89e9dfdadc2": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#71b2c9",
+            "product": "gdy-lighter-daze-sky-high-blue"
+          }
+        },
+        "89920aae-92c8-46e2-b8f8-2b614e4c7c04": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#ad96dc",
+            "product": "gdy-stoned-pony"
+          }
+        },
+        "d0f99825-b1c1-4307-933c-c231f5a73795": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#26d07c",
+            "product": "gdy-lighter-daze-wondermint"
+          }
+        },
+        "79dd2b30-eaa1-4a27-8a11-93e24b807f51": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#f3e600",
+            "product": "gdy-steal-my-sunshine"
+          }
+        },
+        "fd293f77-305c-4d2a-a31c-2468922e0372": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#101820",
+            "product": "gdy-none-more-black"
+          }
+        },
+        "73dcf7ab-0fc7-4fb2-a592-9b8b71bcef23": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#bc4e57",
+            "product": "du-hast"
+          }
+        },
+        "0829c61b-0e77-4e83-af2b-e7f28467aa15": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#8c8b89",
+            "product": "gravedigger"
+          }
+        },
+        "3ba5e89b-d947-4172-b53c-3fed057e8819": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#b74f0d",
+            "product": "toxicity"
+          }
+        },
+        "df2ee3d6-55a3-4b5b-a2a8-06f64f721ead": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#8a1538",
+            "product": "all-in-this-together"
+          }
+        },
+        "c3aacf8a-ccca-41a0-8f03-858f347ec05e": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#bc4e57",
+            "product": "du-hast"
+          }
+        },
+        "526d6668-b9de-4162-9593-8e30f36f8fda": {
+          "type": "color-selector",
+          "settings": {
+            "color": "#3d3a3e",
+            "product": "killswitch"
+          }
+        }
+      },
+      "block_order": [
+        "9bb51e45-5033-4ae4-8020-eb15e95d2ff1",
+        "d74066e1-27ba-4577-87fe-9c80a6c8c8a0",
+        "5fc8a35d-eea1-424a-9bd1-ec441db52711",
+        "90ed4816-53c1-4c29-97f0-f23ff189172c",
+        "44dbc9eb-3797-4010-a232-3ccf4069d471",
+        "3ebb8a81-de3e-4354-912b-a85e892711a4",
+        "9316c082-9a6f-46dc-aa12-176245d2689c",
+        "9377b232-9d9f-4887-806a-18ea0ffb07f9",
+        "2b98a831-dbea-44fe-8359-14eff2451920",
+        "441525fd-bd64-423a-8de3-bd7614204559",
+        "485c6d35-57ec-46b8-946c-a05372caa184",
+        "9d729ad2-54ab-4186-b4c2-01a0e3012201",
+        "217695c5-07ee-48a2-a3fd-0fa013fc8c2d",
+        "e4cf195f-6882-4753-abc3-f600a3e25e62",
+        "a3a15460-dcea-4dc9-8e58-11b3b6e4ef5b",
+        "45294c4c-60ef-4780-a20d-80d0930781d6",
+        "ecfb49f0-31b4-4267-a815-b899ec3776ed",
+        "877ec4e1-da09-42a0-a85f-097467536d4d",
+        "233df406-6171-4259-a48d-79698da810f7",
+        "d9b928a3-30fb-41af-af01-07ad52a84146",
+        "ff0a5f47-6e6c-4062-aa78-d62ed3544a7c",
+        "b7005342-5908-465e-aa6f-ab4ac4bed913",
+        "31ee7543-9399-462d-9463-e06d141b4fdb",
+        "ac3eafc1-302e-4020-8a5d-c71402a1e804",
+        "a7417513-d0c7-49e2-815c-1520008e0d6a",
+        "dac583f0-89f8-4ba1-a7db-e89e9dfdadc2",
+        "89920aae-92c8-46e2-b8f8-2b614e4c7c04",
+        "d0f99825-b1c1-4307-933c-c231f5a73795",
+        "79dd2b30-eaa1-4a27-8a11-93e24b807f51",
+        "fd293f77-305c-4d2a-a31c-2468922e0372",
+        "73dcf7ab-0fc7-4fb2-a592-9b8b71bcef23",
+        "0829c61b-0e77-4e83-af2b-e7f28467aa15",
+        "3ba5e89b-d947-4172-b53c-3fed057e8819",
+        "df2ee3d6-55a3-4b5b-a2a8-06f64f721ead",
+        "c3aacf8a-ccca-41a0-8f03-858f347ec05e",
+        "526d6668-b9de-4162-9593-8e30f36f8fda"
+      ],
+      "settings": {
+        "title": "Shop By Color",
+        "box_title": "Picky about your hair color? Same. We got you.",
+        "box_instructions": "Hover over any color for some HAIR-spration, then click to shop.",
+        "show_filter": true,
+        "main_filter_title": "Shop by Collection",
+        "filter_1_title": "Temporary",
+        "filter_1_text": "Lasts 1 Wash",
+        "filter_2_title": "Semi-Temporary",
+        "filter_2_text": "Lasts 2 - 6 Washes",
+        "filter_3_title": "Semi-Permanent",
+        "filter_3_text": "Lasts 15 - 24+ Washes"
+      }
+    },
     "1659719991ef0fe78b": {
       "type": "color-top-section",
+      "disabled": true,
       "blocks": {
         "4c1ea117-2810-4eee-8fbc-ab0babf208a6": {
           "type": "color-selector",
@@ -40,18 +349,46 @@
       "type": "text-and-image",
       "settings": {
         "image": "shopify:\/\/shop_images\/SSGallery_Riot_Angled.png",
+        "image_attr": "",
+        "image_attr_link": "",
         "image_width": 360,
         "pretitle": "15-24+ Washes",
         "title": "STREAKS & STRANDS",
+        "bigger_title": false,
         "subtitle": "There's no limit to your creativity",
         "text": "<p>+ The same bold, hair-healthy Semi-Perm formula you know and love.<\/p><p>+ Perfect for touch-ups, money pieces, buzz cuts, dip dyes, peek-a-boos, color blocks, and so much more!<\/p><p>+ Still vegan, cruelty-free, ammonia free, formaldehyde free, peroxide free, and PPD free.<\/p>",
+        "use_larger_text": false,
         "button_label": "Shop Now",
-        "button_link": "",
+        "button_link": "https:\/\/gooddyeyoung.com\/collections\/shop?filter.p.m.custom.semi_perm=Streaks+%26+Strands&filter.v.price.gte=&filter.v.price.lte=",
         "button_color": "#ff2a0b",
         "button_style": "primary",
         "align_text": "left",
         "layout": "right",
+        "divider": false,
+        "collection_dye_duration": "3"
+      }
+    },
+    "166121461376e7641b": {
+      "type": "featured-collection-one-row",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "collection": "streaks-strands",
+        "max_products": 8,
+        "view_all": false,
         "divider": false
+      }
+    },
+    "16614629790b93a72f": {
+      "type": "color-section-collection",
+      "disabled": true,
+      "settings": {
+        "collection": "dyeposit",
+        "max_num": 8,
+        "slides_d": 4.5,
+        "slides_t": 3.5,
+        "slides_m": 2.5
       }
     },
     "16597199971713a1cf": {
@@ -130,23 +467,45 @@
         "657f3943-f0de-451f-bd1d-c03a3b89466d",
         "493cb6da-fce3-4bc9-a19d-fb36ea35d7fb"
       ],
-      "settings": {}
+      "settings": {
+        "collection_dye_duration": "3",
+        "slides_d": 4.5,
+        "slides_t": 3.5,
+        "slides_m": 2.5
+      }
     },
     "165972433220eced69": {
       "type": "text-and-image",
       "settings": {
         "image": "shopify:\/\/shop_images\/DYEposit-Copper-Front.jpg",
+        "image_attr": "",
+        "image_attr_link": "",
         "image_width": 280,
         "pretitle": "7-24+ Washes",
         "title": "DYEposit",
+        "bigger_title": false,
         "subtitle": "4-in-1 Color Depositing Mask",
         "text": "<p>+ Cleanse, tone, hydrate, and bond those locks.<\/p><p>+  Packed with salon quality ingredients for deep conditioning, shine, and Fiberhance™ bonding technology to repair damaged hair from the inside out.<\/p><p>+ Still vegan, cruelty-free, ammonia free, formaldehyde free, peroxide free, and PPD free.<\/p>",
+        "use_larger_text": false,
         "button_label": "Shop Now",
-        "button_link": "",
+        "button_link": "https:\/\/gooddyeyoung.com\/collections\/shop?filter.p.m.custom.semi_temporary=DYEposit&filter.v.price.gte=&filter.v.price.lte=",
         "button_color": "#f56e25",
         "button_style": "primary",
         "align_text": "left",
         "layout": "left",
+        "divider": false,
+        "collection_dye_duration": "2"
+      }
+    },
+    "16612175467b3ece7b": {
+      "type": "featured-collection-one-row",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "collection": "dyeposit",
+        "max_products": 8,
+        "view_all": false,
         "divider": false
       }
     },
@@ -206,23 +565,45 @@
         "40b6d26d-b68a-47ec-9038-465294a6b2bd",
         "cf7c1c4f-d294-47eb-883b-fe64a22e3fb8"
       ],
-      "settings": {}
+      "settings": {
+        "collection_dye_duration": "2",
+        "slides_d": 4.5,
+        "slides_t": 3.5,
+        "slides_m": 2.5
+      }
     },
     "1659725194d1b33f12": {
       "type": "text-and-image",
       "settings": {
         "image": "shopify:\/\/shop_images\/Color-Poser-Paste-PPL-Eater-Tilt.png",
+        "image_attr": "",
+        "image_attr_link": "",
         "image_width": 350,
         "pretitle": "1 Wash",
         "title": "Poser Paste",
+        "bigger_title": false,
         "subtitle": "Wear and wash, bold one day color!",
         "text": "<p>+ As easy as applying a new shade of lipstick!<\/p><p>+ Versatile and easy to work with.<\/p><p>+ Transfer-proof while you wear it and washes out with your favorite shampoo.<\/p><p>+ Safe for all hair types, all hair colors and all ages.<\/p>",
+        "use_larger_text": false,
         "button_label": "Shop Now",
-        "button_link": "",
+        "button_link": "https:\/\/gooddyeyoung.com\/collections\/shop?filter.p.m.custom.shop_by_duration=1+Wash&filter.v.price.gte=&filter.v.price.lte=",
         "button_color": "#7525af",
         "button_style": "primary",
         "align_text": "left",
         "layout": "right",
+        "divider": false,
+        "collection_dye_duration": "1"
+      }
+    },
+    "16612176820031b52d": {
+      "type": "featured-collection-one-row",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "collection": "poser-paste",
+        "max_products": 8,
+        "view_all": false,
         "divider": false
       }
     },
@@ -288,23 +669,45 @@
         "f0ad51e3-d194-4447-b05c-5f84fd887ea3",
         "bd0d60e6-0018-41c2-9f0d-5a0d9bbd1018"
       ],
-      "settings": {}
+      "settings": {
+        "collection_dye_duration": "1",
+        "slides_d": 4.5,
+        "slides_t": 3.5,
+        "slides_m": 2.5
+      }
     },
     "16597254210be7d05e": {
       "type": "text-and-image",
       "settings": {
         "image": "shopify:\/\/shop_images\/Color-Im-Bored-Binge-Watch-Tilt.png",
+        "image_attr": "",
+        "image_attr_link": "",
         "image_width": 240,
         "pretitle": "2-6 Washes",
         "title": "I’m Bored",
+        "bigger_title": false,
         "subtitle": "Add pigment without a lasting commitment.",
         "text": "<p>+ Fun and easy way to shake up your self-expression.<\/p><p>+ Use as an accessory to your hair to add a pop of color to your look!<\/p><p>+ Contains aloe vera and soy protein to condition and strengthen hair.<\/p><p>+ Safe for all hair types, all hair colors, and all ages.<\/p>",
-        "button_label": "",
-        "button_link": "",
+        "use_larger_text": false,
+        "button_label": "Shop Now",
+        "button_link": "https:\/\/gooddyeyoung.com\/collections\/shop?filter.p.m.custom.semi_temporary=I%27m+Bored&filter.v.price.gte=&filter.v.price.lte=",
         "button_color": "#d53241",
         "button_style": "primary",
         "align_text": "left",
         "layout": "left",
+        "divider": false,
+        "collection_dye_duration": "2"
+      }
+    },
+    "1661217756e47d9c0c": {
+      "type": "featured-collection-one-row",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "collection": "im-bored",
+        "max_products": 8,
+        "view_all": false,
         "divider": false
       }
     },
@@ -349,23 +752,45 @@
         "cda3a577-49c4-4f0e-ad97-fbc4aab0b233",
         "ef1b3bd6-a0f3-4609-aedb-a6318aafd828"
       ],
-      "settings": {}
+      "settings": {
+        "collection_dye_duration": "2",
+        "slides_d": 4.5,
+        "slides_t": 3.5,
+        "slides_m": 2.5
+      }
     },
     "16597256160966e4f9": {
       "type": "text-and-image",
       "settings": {
         "image": "shopify:\/\/shop_images\/Semi-Perm-Metal-Heads-Ex-Girl-Tilt.png",
+        "image_attr": "",
+        "image_attr_link": "",
         "image_width": 270,
         "pretitle": "15-24+ Washes",
         "title": "Semi-perm",
+        "bigger_title": false,
         "subtitle": "Ultra bright professional pigments.",
         "text": "<p>+ Creamy Vegan & Cruelty Free Formula<\/p><p>+ Botanically Infused with Natural Sunflower Extract<\/p><p>+ Ammonia Free, Formaldehyde Free, Peroxide Free, PPD Free<\/p>",
+        "use_larger_text": false,
         "button_label": "Shop Now",
-        "button_link": "",
+        "button_link": "https:\/\/gooddyeyoung.com\/collections\/shop?filter.p.m.custom.semi_perm=Additives&filter.p.m.custom.semi_perm=Darker+Daze&filter.p.m.custom.semi_perm=Lighter+Daze&filter.p.m.custom.semi_perm=Metalheads&filter.p.m.custom.semi_perm=OG+Colors&filter.p.m.custom.semi_perm=Streaks+%26+Strands&filter.v.price.gte=&filter.v.price.lte=",
         "button_color": "#f72b8f",
         "button_style": "primary",
         "align_text": "left",
         "layout": "right",
+        "divider": false,
+        "collection_dye_duration": "3"
+      }
+    },
+    "16612178064d2ce9b5": {
+      "type": "featured-collection-one-row",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "collection": "semi-perm",
+        "max_products": 8,
+        "view_all": false,
         "divider": false
       }
     },
@@ -445,24 +870,34 @@
         "d79f2a61-0bee-4750-907d-3a3996c0b95b",
         "228b83b7-f3c9-46dc-bb00-99642cbb6674"
       ],
-      "settings": {}
+      "settings": {
+        "collection_dye_duration": "3",
+        "slides_d": 4.5,
+        "slides_t": 3.5,
+        "slides_m": 2.5
+      }
     },
     "1659726632793c94bb": {
       "type": "text-and-image",
       "settings": {
         "image": "shopify:\/\/shop_images\/semi-perm-additives.png",
+        "image_attr": "",
+        "image_attr_link": "",
         "image_width": 700,
         "pretitle": "15-24+ Washes",
         "title": "Semi-Perm Additives",
+        "bigger_title": false,
         "subtitle": "Customize a shade all your own with mixable, unapologetically loud colors.",
         "text": "<p>+ Bergamot essential oil offers a sweet citrus scent.<\/p><p>+ Botanically infused with natural sunflower extract.<\/p><p>+ Vegan & cruelty free cream formula.<\/p><p>+ Safe for all hair types.<\/p>",
+        "use_larger_text": false,
         "button_label": "Shop Now",
-        "button_link": "",
+        "button_link": "https:\/\/gooddyeyoung.com\/collections\/shop?filter.p.m.custom.semi_perm=Additives&filter.v.price.gte=&filter.v.price.lte=",
         "button_color": "",
         "button_style": "primary",
         "align_text": "left",
         "layout": "left",
-        "divider": false
+        "divider": false,
+        "collection_dye_duration": "3"
       }
     },
     "1659726095805c9fff": {
@@ -480,7 +915,7 @@
         "1659726095d56814be-1": {
           "type": "liquid",
           "settings": {
-            "code": "<div style=\"display:flex;\">\n<div class=\"left\">\n@GOODDYEYOUNG\n<\/div>\n<div class=\"right\"><a href=\"https:\/\/www.instagram.com\/gooddyeyoung\/\">Follow Us On Instagram<\/a><\/div>\n<\/div>\n<script async src='https:\/\/snapppt.com\/widgets\/widget_loader\/07c6e667-103f-485b-d243-07be47b022ed\/sauce_homepage.js' class='snapppt-widget'><\/script>",
+            "code": "<div class=\"instagram-hdrs\">\n<div class=\"left\">\n<a href=\"https:\/\/www.instagram.com\/gooddyeyoung\/\" class=\"h2\">@GOODDYEYOUNG<\/a>\n<\/div>\n<div class=\"right\"><a href=\"https:\/\/www.instagram.com\/gooddyeyoung\/\" class=\"h3\">Follow Us On Instagram<\/a><\/div>\n<\/div>\n<script async src='https:\/\/snapppt.com\/widgets\/widget_loader\/07c6e667-103f-485b-d243-07be47b022ed\/sauce_homepage.js' class='snapppt-widget'><\/script>",
             "width": "100%",
             "alignment": "center"
           }
@@ -492,7 +927,14 @@
       ],
       "settings": {
         "full_width": false,
-        "space_around": true
+        "bg_color": "",
+        "text_color": "",
+        "bg_color_contained": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "space_around": true,
+        "show_top_border": false,
+        "show_bottom_border": false
       }
     },
     "main-collection": {
@@ -525,29 +967,82 @@
         "product_grid"
       ],
       "settings": {
+        "title": "",
         "enable_sidebar": true,
         "collapsed": true,
         "filter_style": "sidebar",
         "enable_color_swatches": false,
-        "enable_sort": true
+        "enable_sort": true,
+        "custom_btn_color": ""
+      }
+    },
+    "5ebdd4cf-fee6-4d99-b0b7-6480db890a70": {
+      "type": "newsletter",
+      "blocks": {
+        "template--15154562269320__5ebdd4cf-fee6-4d99-b0b7-6480db890a70-1665499917a08e1e55-0": {
+          "type": "title",
+          "settings": {
+            "title": "Join the List"
+          }
+        },
+        "template--15154562269320__5ebdd4cf-fee6-4d99-b0b7-6480db890a70-1665499917a08e1e55-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Get exclusive access to deals, inspo, giveaways and more!<\/p>"
+          }
+        },
+        "14f89931-b03a-4f81-90d3-3ea3062d9c4c": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "Ucn3jj"
+          }
+        },
+        "template--15154562269320__5ebdd4cf-fee6-4d99-b0b7-6480db890a70-1665499917a08e1e55-2": {
+          "type": "form",
+          "disabled": true,
+          "settings": {
+            "show_name_fields": false,
+            "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15154562269320__5ebdd4cf-fee6-4d99-b0b7-6480db890a70-1665499917a08e1e55-0",
+        "template--15154562269320__5ebdd4cf-fee6-4d99-b0b7-6480db890a70-1665499917a08e1e55-1",
+        "14f89931-b03a-4f81-90d3-3ea3062d9c4c",
+        "template--15154562269320__5ebdd4cf-fee6-4d99-b0b7-6480db890a70-1665499917a08e1e55-2"
+      ],
+      "settings": {
+        "color_background": "#dbe1e0",
+        "color_text": "#1c1d1d",
+        "narrow_width": true,
+        "text_align": "left"
       }
     }
   },
   "order": [
     "collection-header",
+    "16609592057cfdb2d8",
     "1659719991ef0fe78b",
     "16597222955b3f3161",
+    "166121461376e7641b",
+    "16614629790b93a72f",
     "16597199971713a1cf",
     "165972433220eced69",
+    "16612175467b3ece7b",
     "1659724363949b6ebd",
     "1659725194d1b33f12",
+    "16612176820031b52d",
     "16597252845eb4a46f",
     "16597254210be7d05e",
+    "1661217756e47d9c0c",
     "16597254248c5fa287",
     "16597256160966e4f9",
+    "16612178064d2ce9b5",
     "1659725680d0d39077",
     "1659726632793c94bb",
     "1659726095805c9fff",
-    "main-collection"
+    "main-collection",
+    "5ebdd4cf-fee6-4d99-b0b7-6480db890a70"
   ]
 }

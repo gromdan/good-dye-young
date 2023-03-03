@@ -1,7 +1,25 @@
-<div class="cart__item" data-key="{{ product.key }}">
+{% liquid 
+  assign gwp_Collection = settings.gwp_collection
+  assign isGWP = false
+  assign itemProduct = product.product
+  for coll in itemProduct.collections
+    if coll.title == gwp_Collection.title
+      assign isGWP = true
+    endif
+  endfor
+  for tag in itemProduct.tags
+    if tag == 'gwp'
+      assign isGWP = true
+    endif
+  endfor
+%}
+<!-- gwp_Collection title: {{gwp_Collection.title}}-->
+<!-- isGWP: {{isGWP}}-->
+<div class="cart__item{% if isGWP %} cart-gwp-item{% endif %}" data-key="{{ product.key }}" {% if isGWP %}data-gwp_prod="{{ itemProduct.variants.first.id }}"{% endif %}>
   {%- assign img_url = product | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
   <div class="cart__image">
-    <a href="{{ product.url }}" style="height: 0; padding-bottom: {{ 100 | divided_by: product.image.aspect_ratio }}%;">
+    {% if isGWP %}<div>{% else %}<a href="{{ product.url }}">{% endif %}
+    
       <img class="lazyload"
           data-src="{{ img_url }}"
           data-widths="[180, 360, 540]"
@@ -14,17 +32,27 @@
           src="{{ product | img_url: '400x' }}"
           alt="{{ product.product.title | escape }}">
       </noscript>
-    </a>
+    {% if isGWP %}</div>{% else %}</a>{% endif %}
+    
+      
   </div>
   <div class="cart__item-details">
     <div class="cart__item-title">
-      <a href="{{ product.url }}" class="cart__item-name">
-        {{ product.product.title }}
-      </a>
+      
+      {% if isGWP %}
+        <div class="cart__item-name">
+          {{ product.product.title }}
+        </div>
+      {% else %}
+        <a href="{{ product.url }}" class="cart__item-name">
+          {{ product.product.title }}
+        </a>
+      {% endif %}
+      
       {%- unless product.product.has_only_default_variant -%}
         <div class="cart__item--variants">
           {%- for option in product.options_with_values -%}
-            <div><span>{{ option.name }}:</span> {{ option.value }}</div>
+              <div><span>{{ option.name }}:</span> {{ option.value }}</div>
           {%- endfor -%}
         </div>
       {%- endunless -%}
@@ -37,22 +65,27 @@
       {% if property_size > 0 %}
         {% for p in product.properties %}
           {%- assign first_character_in_key = p.first | truncate: 1, '' -%}
-          {% unless p.last == blank or first_character_in_key == '_' %}
-            <div>
-              {{ p.first }}:
-              {% if p.last contains '/uploads/' %}
-                <a href="{{ p.last }}">{{ p.last | split: '/' | last }}</a>
-              {% else %}
-                {{ p.last }}
-              {% endif %}
-            </div>
+          {% unless isGWP %}
+            {% unless p.last == blank or first_character_in_key == '_' %}
+              <div>
+                {{ p.first }}:
+                {% if p.last contains '/uploads/' %}
+                  <a href="{{ p.last }}">{{ p.last | split: '/' | last }}</a>
+                {% else %}
+                  {{ p.last }}
+                {% endif %}
+              </div>
+            {% endunless %}
           {% endunless %}
         {% endfor %}
       {% endif %}
 
     </div>
     <div class="cart__item-sub">
-      <div>
+      <div class="cart__item-container">
+          {% if product.original_price == 0 %}
+            {% comment %}<span class="gwp-qty">{{ product.quantity }}</span>{% endcomment %}
+          {% else %}
         <div class="js-qty__wrapper">
           <label for="cart_updates_{{ product.key }}" class="hidden-label">{{ 'cart.label.quantity' | t }}</label>
           <input type="text"
@@ -76,12 +109,22 @@
               <span class="icon__fallback-text" aria-hidden="true">+</span>
           </button>
         </div>
+          {% endif %}
 
-        <div class="cart__remove">
-          <a href="{{ routes.cart_change_url }}?id={{ product.key }}&amp;quantity=0" class="text-link">
-            {{ 'cart.general.remove' | t }}
-          </a>
-        </div>
+        {% if isGWP %}
+          {% unless settings.gwp_activate_auto %}
+            <div class="cart__remove">
+              <button type="button" class="gwp_remove">
+                {{ 'cart.general.remove' | t }}
+              </button>
+              {% comment %}
+              <a href="{{ routes.cart_change_url }}?id={{ product.key }}&amp;quantity=0" class="text-link">
+                {{ 'cart.general.remove' | t }}
+              </a>
+            {% endcomment %}
+            </div>
+          {% endunless %}
+        {% endif %}
       </div>
 
       <div class="cart__item-price-col text-right">
@@ -93,6 +136,10 @@
           <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
           <span class="cart__price cart__discount">
             {{ product.final_price | money }}
+          </span>
+        {% elsif product.original_price == 0 %}
+            <span class="cart__price">
+            FREE!
           </span>
         {% else %}
           <span class="cart__price">

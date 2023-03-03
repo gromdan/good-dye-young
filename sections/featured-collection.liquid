@@ -6,17 +6,34 @@
 
 <div
   id="CollectionSection-{{ section.id }}"
+  class="featured-products-wrapper"
   data-section-id="{{ section.id }}"
   data-section-type="collection-grid">
   {%- if section.settings.title != blank -%}
     <div class="page-width">
       <div class="section-header{% if section.settings.view_all %}{% unless settings.type_headers_align_text %} section-header--with-link{% endunless %}{% endif %}">
-        <h2 class="section-header__title">
-          {{ section.settings.title }}
-        </h2>
+        <div class="section-header__title">
+          <h2>
+            {{ section.settings.title }}
+          </h2>
+          {% comment %}
+          {% endcomment %}
+          {%- if section.settings.subtitle != blank -%}
+          <p class="subheading">
+            {{ section.settings.subtitle }}
+          </p>
+          {%- endif -%}
+        </div>
+          
+
+
         {%- if section.settings.view_all and section.settings.rows == 1 -%}
-          <a href="{{ collections[section.settings.home_featured_products].url }}" class="btn btn--secondary btn--small section-header__link">{{ 'collections.general.all_of_collection' | t }}</a>
+          <p class="text-{{ section.settings.view_all_align }}">
+            <a href="{{ collections[section.settings.home_featured_products].url }}" class="btn btn--secondary btn--small section-header__link">{{ 'collections.general.all_of_collection' | t }}</a>
+          </p>
+          
         {%- endif -%}
+        
       </div>
     </div>
   {%- endif -%}
@@ -75,7 +92,9 @@
               product: product,
               collection: collection,
               per_row: per_row,
-              quick_shop_enable: settings.quick_shop_enable
+              quick_shop_enable: settings.quick_shop_enable,
+              button_class: 'product-btn-wrap',
+              button_class_2: 'btn btn--inverse btn-inverse--black'
             -%}
           {%- endfor -%}
 
@@ -100,6 +119,7 @@
         {%- endif -%}
       </div>
     </div>
+
   </div>
 </div>
 
@@ -115,6 +135,12 @@
         "id": "title",
         "label": "Heading",
         "default": "Featured collection"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subheading",
+        "info": "Optional"
       },
       {
         "type": "collection",
@@ -164,3 +190,4 @@
     "blocks" : []
   }
 {% endschema %}
+ {% include 'BrokenLinkRedirect' %}

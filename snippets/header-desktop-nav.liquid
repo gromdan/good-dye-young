@@ -78,22 +78,67 @@
                   <div class="h5">
                     <a href="{{ childlink.url }}" class="site-nav__dropdown-link site-nav__dropdown-link--top-level">{{ childlink.title }}</a>
                   </div>
+                {% if childlink.url contains "color" %}
+                  <div class="swatch-container">
+                    {%- for grandchildlink in childlink.links -%}
+                      <div class="swatch-group">
+                        <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">
+                          <div class="swatch-img" style="max-width:50px;">
+                            {% comment %}<img src="https://via.placeholder.com/200x200" />{%endcomment%}
+                              {% assign swatch = grandchildlink.title | downcase | append:"-color-icon.png" %}
+                              {% if swatch != blank %}
+                                <img src="{{ swatch | file_img_url: '100x100' }}">
+                              {% else %}
+                                  <img src="https://via.placeholder.com/200x200" />
+                              {% endif %}
+                          </div>
 
-                  {%- liquid
-                    if childlink.levels > 0
-                      assign previous_column_type = 'full'
-                    else
-                      assign previous_column_type = 'single'
-                    endif
-                  -%}
+                          {{grandchildlink.title}}
+                        </a>
+                      </div>
+                    {%- endfor -%}
+                  </div>
+                {% elsif childlink.title contains 'GDY' %}
 
-                  {%- for grandchildlink in childlink.links -%}
-                    <div>
-                      <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">
-                        {{grandchildlink.title}}
-                      </a>
+                    <div class="slider-container">
+                        <div class="nav-carousel">
+                            <div class="carousel-cell">
+                                <a href="#">
+                                    <img src="https://via.placeholder.com/300x200"/>
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="#">
+                                    <img src="https://via.placeholder.com/300x200"/>
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <a href="#">
+                                    <img src="https://via.placeholder.com/300x200"/>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                  {%- endfor -%}
+                {% else %}
+                    {%- liquid
+                        if childlink.levels > 0
+                            assign previous_column_type = 'full'
+                        else
+                            assign previous_column_type = 'single'
+                        endif
+                    -%}
+
+                    {%- for grandchildlink in childlink.links -%}
+                        <div>
+                            <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">
+                                {{grandchildlink.title}}
+                            </a>
+                        </div>
+                    {%- endfor -%}
+
+                {% endif %}
+
+
                 {%- endfor -%}
               </div>
             </div>

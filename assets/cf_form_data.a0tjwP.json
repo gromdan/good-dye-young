@@ -1,0 +1,638 @@
+{
+  "form": {
+    "id": "a0tjwP",
+    "name": "Registration",
+    "handle": "registration-5885",
+    "theme_id": "126350426248",
+    "settings": {
+      "locales": {
+        "back": "Back",
+        "next": "Next",
+        "cancel": "Cancel",
+        "edit_link": "Edit account",
+        "fix_errors": "Please fix errors before continuing",
+        "is_invalid": "{{label}} is invalid",
+        "email_taken": "Email has already been taken",
+        "phone_taken": "Phone number has already been taken",
+        "server_error": "Could not save form, please try again later",
+        "step_counter": "Step {{current}} of {{total}}",
+        "verify_email": "Check your email for a verification link to activate your account.",
+        "not_available": "An error occurred while saving your account, please try again in a few minutes.",
+        "create_account": "Create account",
+        "update_account": "Update account",
+        "recaptcha_error": "Challenge verification failed, please try again",
+        "creating_account": "Creating account...",
+        "updating_account": "Updating account...",
+        "too_many_requests": "We are experiencing high traffic, please try again later.",
+        "reset_password_link": "Reset your password",
+        "invalid_email_domain": "Email contains an invalid domain name",
+        "reset_password_email_sent": "Check your inbox for a link to reset your password.",
+        "reset_password_too_many_attempts": "You tried to reset your password too many times. Please wait and try again later."
+      },
+      "whitelistedTags": "",
+      "markRequiredFields": true,
+      "displayCancelButton": true,
+      "goBackAfterSubmission": false,
+      "accountApprovalRequired": true,
+      "cancelButtonRedirectUrl": "\/account\/login",
+      "emailVerificationRequired": false,
+      "postSubmissionRedirectUrl": "\/",
+      "goBackAfterCancelButtonClick": false
+    },
+    "install_locations": [
+      "page_template"
+    ],
+    "created_at": "2022-10-24T16:39:06Z",
+    "updated_at": "2022-10-24T16:45:44Z",
+    "revision_ids": [
+      "58TLPlv",
+      "K0TRxqD",
+      "qYTYkB7",
+      "6XTgXy6",
+      "kdT21ra",
+      "X1TKPq9",
+      "8oT5oVE",
+      "akT23np"
+    ]
+  },
+  "revision": {
+    "id": "58TLPlv",
+    "created_at": "2022-10-25T17:07:29Z",
+    "updated_at": "2022-10-25T17:07:29Z",
+    "embed_version": "4.11.4",
+    "published_at": null,
+    "fields": [
+      {
+        "id": 162057,
+        "dataColumn": {
+          "key": "first_name",
+          "label": "First name",
+          "dataType": "text"
+        },
+        "parentId": null,
+        "position": 0,
+        "type": "text",
+        "stepId": 365672,
+        "default": "",
+        "label": "First name",
+        "placeholder": "",
+        "description": null,
+        "enum": null,
+        "appearance": {
+          "width": 12
+        },
+        "settings": {},
+        "validations": [
+          {
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
+          }
+        ],
+        "sensitive": null,
+        "preset": "first_name",
+        "autotag": null
+      },
+      {
+        "id": 148740,
+        "dataColumn": {
+          "key": "last_name",
+          "label": "Last name",
+          "dataType": "text"
+        },
+        "parentId": null,
+        "position": 1,
+        "type": "text",
+        "stepId": 365672,
+        "default": "",
+        "label": "Last name",
+        "placeholder": "",
+        "description": null,
+        "enum": null,
+        "appearance": {
+          "width": 12
+        },
+        "settings": {},
+        "validations": [
+          {
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
+          }
+        ],
+        "sensitive": null,
+        "preset": "last_name",
+        "autotag": null
+      },
+      {
+        "id": 761674,
+        "dataColumn": {
+          "key": "email",
+          "label": "Email address",
+          "dataType": "email"
+        },
+        "parentId": null,
+        "position": 2,
+        "type": "email",
+        "stepId": 365672,
+        "default": "",
+        "label": "Email address",
+        "placeholder": "",
+        "description": null,
+        "enum": null,
+        "appearance": {
+          "width": 12
+        },
+        "settings": {},
+        "validations": [
+          {
+            "operator": "is_valid_email",
+            "comparand": null,
+            "errorMessage": "Please provide a valid email address"
+          },
+          {
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
+          }
+        ],
+        "sensitive": null,
+        "preset": "email_address",
+        "autotag": null
+      },
+      {
+        "id": 906233,
+        "dataColumn": {
+          "key": "phone",
+          "label": "Phone number",
+          "dataType": "phone"
+        },
+        "parentId": null,
+        "position": 3,
+        "type": "phone",
+        "stepId": 365672,
+        "default": "",
+        "label": "Phone number",
+        "placeholder": "",
+        "description": "",
+        "enum": [],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+          "defaultCountryCode": "US"
+        },
+        "validations": [
+          {
+            "operator": "is_valid",
+            "comparand": null,
+            "errorMessage": "Please provide a valid phone number"
+          },
+          {
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
+          }
+        ],
+        "sensitive": null,
+        "preset": "phone_number",
+        "autotag": null
+      },
+      {
+        "id": 153151,
+        "dataColumn": {
+          "key": "salon_name",
+          "label": "Salon Name",
+          "dataType": "single_line_text"
+        },
+        "parentId": null,
+        "position": 4,
+        "type": "text",
+        "stepId": 365672,
+        "default": "",
+        "label": "Salon Name",
+        "placeholder": "",
+        "description": "",
+        "enum": [],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {},
+        "validations": [
+          {
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
+          }
+        ],
+        "sensitive": null,
+        "preset": null,
+        "autotag": null
+      },
+      {
+        "id": 649204,
+        "dataColumn": {
+          "key": "salon_address",
+          "label": "Salon Address",
+          "dataType": "single_line_text"
+        },
+        "parentId": null,
+        "position": 5,
+        "type": "text",
+        "stepId": 365672,
+        "default": "",
+        "label": "Salon Address",
+        "placeholder": "",
+        "description": "",
+        "enum": [],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {},
+        "validations": [
+          {
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
+          }
+        ],
+        "sensitive": null,
+        "preset": null,
+        "autotag": null
+      },
+      {
+        "id": 925584,
+        "dataColumn": null,
+        "parentId": null,
+        "position": 6,
+        "type": "group",
+        "stepId": 365672,
+        "default": "",
+        "label": "New group field",
+        "placeholder": "",
+        "description": "",
+        "enum": [],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+          "hideLabel": true
+        },
+        "validations": [],
+        "sensitive": null,
+        "preset": null,
+        "autotag": null
+      },
+      {
+        "id": 194056,
+        "dataColumn": {
+          "key": "salon_city",
+          "label": "Salon City",
+          "dataType": "single_line_text"
+        },
+        "parentId": 925584,
+        "position": 0,
+        "type": "text",
+        "stepId": 365672,
+        "default": "",
+        "label": "Salon City",
+        "placeholder": "",
+        "description": "",
+        "enum": [],
+        "appearance": {
+          "width": 6
+        },
+        "settings": {},
+        "validations": [
+          {
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
+          }
+        ],
+        "sensitive": null,
+        "preset": null,
+        "autotag": null
+      },
+      {
+        "id": 132378,
+        "dataColumn": {
+          "key": "new_singleline_text_field_1",
+          "label": "Salon State",
+          "dataType": "single_line_text"
+        },
+        "parentId": 925584,
+        "position": 1,
+        "type": "text",
+        "stepId": 365672,
+        "default": "",
+        "label": "Salon State",
+        "placeholder": "",
+        "description": "",
+        "enum": [],
+        "appearance": {
+          "width": 6
+        },
+        "settings": {},
+        "validations": [
+          {
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
+          }
+        ],
+        "sensitive": null,
+        "preset": null,
+        "autotag": null
+      },
+      {
+        "id": 787314,
+        "dataColumn": {
+          "key": "salon_country",
+          "label": "Salon Country",
+          "dataType": "single_line_text"
+        },
+        "parentId": 925584,
+        "position": 2,
+        "type": "text",
+        "stepId": 365672,
+        "default": "",
+        "label": "Salon Country",
+        "placeholder": "",
+        "description": "",
+        "enum": [],
+        "appearance": {
+          "width": 6
+        },
+        "settings": {},
+        "validations": [
+          {
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
+          }
+        ],
+        "sensitive": null,
+        "preset": null,
+        "autotag": null
+      },
+      {
+        "id": 209669,
+        "dataColumn": {
+          "key": "salon_zip",
+          "label": "Salon Zip",
+          "dataType": "single_line_text"
+        },
+        "parentId": 925584,
+        "position": 3,
+        "type": "text",
+        "stepId": 365672,
+        "default": "",
+        "label": "Salon Zip",
+        "placeholder": "",
+        "description": "",
+        "enum": [],
+        "appearance": {
+          "width": 6
+        },
+        "settings": {},
+        "validations": [
+          {
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
+          }
+        ],
+        "sensitive": null,
+        "preset": null,
+        "autotag": null
+      },
+      {
+        "id": 761376,
+        "dataColumn": {
+          "key": "upload_salon_license",
+          "label": "Upload Salon License",
+          "dataType": "file"
+        },
+        "parentId": null,
+        "position": 7,
+        "type": "file",
+        "stepId": 365672,
+        "default": "",
+        "label": "Upload Salon License",
+        "placeholder": "",
+        "description": "",
+        "enum": [],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {},
+        "validations": [
+          {
+            "operator": "less_than",
+            "comparand": 25600,
+            "errorMessage": "Please upload a file less than 25MB in size",
+            "metadata": {
+              "mandatory": true,
+              "staticOperator": true,
+              "staticComparand": true
+            }
+          },
+          {
+            "operator": "file_extension_not_blank",
+            "comparand": null,
+            "errorMessage": "Please upload a file with a valid file extension",
+            "metadata": {
+              "mandatory": true,
+              "staticOperator": true
+            }
+          },
+          {
+            "operator": "file_extension_not_equals",
+            "comparand": ".exe,.dmg,.pkg,.sh,.bat,.cmd,.dll,.vbs,.vbe,.vb,.js,.jse,.jar,.py,.hta,.html,.htm,.tmp,.msi,.msp,.com,.ps1,.ps1xml,.ps2,.ps2xml,.psc1,.psc2,.lnk,.inf,.scf",
+            "errorMessage": "Please upload a non-executable file"
+          },
+          {
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
+          }
+        ],
+        "sensitive": null,
+        "preset": null,
+        "autotag": null
+      },
+      {
+        "id": 148421,
+        "dataColumn": {
+          "key": "expiration_date_of_license",
+          "label": "Expiration Date of License",
+          "dataType": "date"
+        },
+        "parentId": null,
+        "position": 8,
+        "type": "date",
+        "stepId": 365672,
+        "default": "",
+        "label": "Expiration Date of License",
+        "placeholder": "",
+        "description": "",
+        "enum": [],
+        "appearance": {
+          "width": 12
+        },
+        "settings": {
+          "dateInput": "picker",
+          "yearsBack": 100,
+          "dateFormat": "MM-DD-YYYY",
+          "yearsForward": 20,
+          "yearSortOrder": "descending"
+        },
+        "validations": [
+          {
+            "operator": "is_valid",
+            "comparand": null,
+            "errorMessage": "Please specify a valid date",
+            "metadata": {
+              "mandatory": true,
+              "staticOperator": true
+            }
+          },
+          {
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
+          }
+        ],
+        "sensitive": null,
+        "preset": null,
+        "autotag": null
+      },
+      {
+        "id": 353662,
+        "dataColumn": {
+          "key": "password",
+          "label": "Password",
+          "dataType": "text"
+        },
+        "parentId": null,
+        "position": 9,
+        "type": "text",
+        "stepId": 365672,
+        "default": "",
+        "label": "Password",
+        "placeholder": "",
+        "description": null,
+        "enum": null,
+        "appearance": {
+          "width": 12
+        },
+        "settings": {},
+        "validations": [
+          {
+            "operator": "not_blank",
+            "comparand": "",
+            "errorMessage": "Must not be blank",
+            "metadata": {
+              "hiddenInApp": true
+            }
+          },
+          {
+            "operator": "longer_than",
+            "comparand": 5,
+            "errorMessage": "Password is too short",
+            "metadata": {
+              "mandatory": true,
+              "staticOperator": true,
+              "comparandFieldProps": {
+                "min": 5
+              }
+            }
+          }
+        ],
+        "sensitive": true,
+        "preset": "password",
+        "autotag": null
+      }
+    ],
+    "steps": [
+      {
+        "id": 365672,
+        "title": "Step 1",
+        "description": ""
+      }
+    ],
+    "rules": [
+      {
+        "id": 990566,
+        "title": "New rule 1",
+        "conditionChaining": "all",
+        "conditions": [
+          {
+            "operand": null,
+            "operator": "not_blank",
+            "metadata": {
+              "column": {
+                "id": null,
+                "key": "email",
+                "label": "Email",
+                "dataType": "email",
+                "favorite": false,
+                "readOnly": false,
+                "createdAt": null,
+                "dedicated": true,
+                "archivedAt": null,
+                "expandedLabel": "Email"
+              }
+            }
+          }
+        ],
+        "actions": [
+          {
+            "id": 917485,
+            "effect": "tag_customer",
+            "metadata": {
+              "value": "pro-member"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

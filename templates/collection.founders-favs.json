@@ -1,0 +1,243 @@
+{
+  "sections": {
+    "4a227027-67e6-43f1-8119-3fffb589214a": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15292396798088__4a227027-67e6-43f1-8119-3fffb589214a-16740688224efdab4d-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "use_dark_text": false,
+            "top_subheading": "",
+            "title": "game day \nready",
+            "title_size": 60,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/Aly_s_Email_Assets_-_600_x_400_1.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Aly_s_Email_Assets_-_600_x_400_2.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "80% 50%"
+          }
+        },
+        "template--15292396798088__4a227027-67e6-43f1-8119-3fffb589214a-16740688224efdab4d-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "use_dark_text": false,
+            "top_subheading": "hayley's favorites",
+            "title": "Buy 3\nget 1 free",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-right",
+            "image": "shopify:\/\/shop_images\/GDY.com_RESIZED_1_a7901648-eae9-42c8-8b2d-12a2ecc836eb.png",
+            "image_mobile": "shopify:\/\/shop_images\/GDY.com_RESIZED_4.jpg",
+            "overlay_opacity": 18,
+            "focal_point": "center center"
+          }
+        },
+        "dcc1fdba-055c-408f-bbe4-0fe7028a9522": {
+          "type": "image",
+          "settings": {
+            "use_dark_text": false,
+            "top_subheading": "",
+            "title": "Shop Our\nFounders'\nFavorites",
+            "title_size": 56,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-right",
+            "image": "shopify:\/\/shop_images\/2_5a56d3fb-7d07-4eb3-a3ec-1fc38a92ce02.png",
+            "overlay_opacity": 0,
+            "focal_point": "20% 50%"
+          }
+        }
+      },
+      "block_order": [
+        "template--15292396798088__4a227027-67e6-43f1-8119-3fffb589214a-16740688224efdab4d-0",
+        "template--15292396798088__4a227027-67e6-43f1-8119-3fffb589214a-16740688224efdab4d-1",
+        "dcc1fdba-055c-408f-bbe4-0fe7028a9522"
+      ],
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "250px",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "promo-grid": {
+      "type": "promo-grid",
+      "disabled": true,
+      "blocks": {
+        "banner": {
+          "type": "banner",
+          "disabled": true,
+          "settings": {
+            "heading": "",
+            "text": "Half off our Biodegradable Tool Kit when you purchase a full-sized Semi-Perm and Lightening Kit! No code needed.",
+            "link": "",
+            "label": "",
+            "color_tint": "#ffffff",
+            "color_tint_opacity": 20,
+            "framed": false
+          }
+        }
+      },
+      "block_order": [
+        "banner"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 20,
+        "space_above": false,
+        "space_below": false
+      }
+    },
+    "818b78f1-2f50-4774-874d-0037cbd4ccc0": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Hayley's Go-To's",
+        "subtitle": "",
+        "home_featured_products": "hayleys-go-to-products",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Brian's Favorites",
+        "subtitle": "",
+        "home_featured_products": "founders-favorite-hair-dye",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "featured-collection3": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "OG Colors",
+        "subtitle": "The shades that started it all.",
+        "home_featured_products": "og-colors",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "ae8a318f-9ecf-4bea-aade-0aa97da603e5": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "LIGHTER DAZE",
+        "subtitle": "Pastels perfect for a new season.",
+        "home_featured_products": "lighter-daze",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "bc2a2c5c-d32e-467e-a259-9da3128ae78e": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "DARKER DAZE",
+        "subtitle": "Safe-for-work jewel tones.",
+        "home_featured_products": "darker-daze",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "featured-collection2": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "METALHEADS",
+        "subtitle": "Metallics perfect for any rocker.",
+        "home_featured_products": "metalheads",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "disabled": true,
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": false
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "title": "",
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true,
+        "custom_btn_color": ""
+      }
+    }
+  },
+  "order": [
+    "4a227027-67e6-43f1-8119-3fffb589214a",
+    "promo-grid",
+    "818b78f1-2f50-4774-874d-0037cbd4ccc0",
+    "featured-collection",
+    "featured-collection3",
+    "ae8a318f-9ecf-4bea-aade-0aa97da603e5",
+    "bc2a2c5c-d32e-467e-a259-9da3128ae78e",
+    "featured-collection2",
+    "main-collection"
+  ]
+}

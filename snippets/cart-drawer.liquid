@@ -1,20 +1,110 @@
 {%- if settings.cart_type == 'drawer' -%}
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
   <div id="CartDrawer" class="drawer drawer--right">
     <form id="CartDrawerForm" action="{{ routes.cart_url }}" method="post" novalidate class="drawer__contents">
+
+      <style>
+        /*  Style the progress bar  */
+        .cart-shipping__wrapper {
+          padding: 0px;
+          max-width: 700px;
+          margin: 0 auto;
+        }
+
+        .cart-shippingThreshold__bar {
+          position: relative;
+          /*  Progress bar background color  */
+          background-color: #d8d8d8;
+          height: 0.4rem;
+          border-radius:5px;
+        }
+        .cart-shipping__num{
+          font-weight:bold;
+        }
+
+        .cart-shippingThreshold__progress {
+          position: absolute;
+          top: 0;
+          left: 0;
+          min-width: 0;
+          max-width: 100%;
+          height: 100%;
+          display: block;
+          border-radius:5px;
+          /*  Progress bar fill color  */
+          background-color: tomato;
+        }
+      </style>
+
       <div class="drawer__fixed-header">
         <div class="drawer__header appear-animation appear-delay-1">
-          <div class="h2 drawer__title">{{ 'cart.general.title' | t }}</div>
-          <div class="drawer__close">
-            <button type="button" class="drawer__close-button js-drawer-close">
-              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"/></svg>
-              <span class="icon__fallback-text">{{ 'cart.general.close_cart' | t }}</span>
-            </button>
+          <div class="drawer-top">
+            <div class="h2 drawer__title">{{ 'cart.general.title' | t }}</div>
+            <div class="drawer__close">
+              <button type="button" class="drawer__close-button js-drawer-close">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"/></svg>
+                <span class="icon__fallback-text">{{ 'cart.general.close_cart' | t }}</span>
+              </button>
+            </div>
           </div>
+          <!-- Free shipping progress markup -->
+          {% if settings.free_shipping_activate %}
+            <div class="cart-shipping__wrapper">
+              <p class="cart-shipping__numOuter">You're $<span class="cart-shipping__num"></span> away from free shipping!</p>
+              <p class="cart-shipping__success">You're eligible for Free Shipping!</p>
+              <div class="cart-shippingThreshold__bar">
+                <span class="cart-shippingThreshold__progress"></span>
+              </div>
+            </div>
+          {% endif %}
         </div>
       </div>
 
       <div class="drawer__inner">
         <div class="drawer__scrollable">
+          {% if settings.gwp_activate == true %}
+
+            <div class="gwp-upsell-container">
+              <div class="gwp-wrap">
+                {% if settings.gwp_headline != blank %}
+                  <h3>{{ settings.gwp_headline }}</h3>
+                {% endif %}
+                {% assign collection = collections[settings.gwp_collection] %}
+                
+                <div class="inner swiper-container4">
+                  <div class="swiper-wrapper">
+
+                    {% for gwp_product in collection.products %}
+                      <div class="gwp-item swiper-slide">
+                        <div class="img">
+                          <img src="{{ gwp_product.featured_image | img_url:'150x150' }}">
+                        </div>
+                        <div class="content">
+                          <span class="small">{{ gwp_product.title | remove: "Free Gift" }}</span>
+                          <div class="gwp-btn product-btn-wrap">
+                            <button class="btn" type="button" data-gwp_product_id="{{ gwp_product.variants.first.id }}">
+                              Add
+                            </button>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    {% endfor %}
+                    
+                  </div>
+
+                  <!-- pagination -->
+                  <div class="swiper-pagination"></div>
+
+                  <!-- scrollbar -->
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+            </div>
+          {% endif %}
           <div data-products class="appear-animation appear-delay-2"></div>
 
           {% if settings.cart_notes_enable %}
@@ -40,13 +130,17 @@
               </div>
             {% endif %}
           </div>
+          <!-- Route Code Edited  10/27/2022 -->
+          <div class="route-div" disable-reorder watch-changes=".drawer__scrollable" desktop-align="center"></div>
+          <!-- End Route Code -->
+
 
           <div class="cart__item-sub cart__item-row">
             <div class="ajaxcart__subtotal">{{ 'cart.general.subtotal' | t }}</div>
             <div data-subtotal>{{ cart.total_price | money }}</div>
           </div>
 
-          <div class="cart__item-row text-center">
+          <div class="cart__item-row gen-copy text-center">
             <small>
               {{ 'cart.general.shipping_at_checkout' | t }}<br />
             </small>
@@ -64,7 +158,7 @@
               </label>
             </div>
           {% endif %}
-
+  
           <div class="cart__checkout-wrapper">
             <button type="submit" name="checkout" data-terms-required="{{ settings.cart_terms_conditions_enable }}" class="btn cart__checkout">
               {{ 'cart.general.checkout' | t }}
@@ -85,3 +179,326 @@
     </form>
   </div>
 {%- endif -%}
+
+{% if settings.gwp_activate or settings.gwp_activate_auto %}
+<script>
+
+  const allGWPButtons = document.querySelectorAll('.gwp-btn .btn')
+  const allGWPItems = document.querySelectorAll('.gwp-item')
+
+  var addGWPButton;
+
+  const enableGWPButtons = function() {
+    allGWPButtons.forEach(el => {
+      el.textContent = "Add";
+      el.removeAttribute('disabled');
+    });
+  }
+
+  const enableGWPItems = function() {
+    allGWPItems.forEach(el => {
+      el.classList.remove('not_selected')
+      el.classList.remove('selected')
+    });
+  }
+
+  const disableGWPButtons = function() {
+    allGWPButtons.forEach(el => {
+      el.textContent = "Add";
+      el.setAttribute('disabled', '');
+    });
+  }
+
+  const updateGiftSlider = function() {
+    disableGWPButtons();
+    addGWPButton.textContent = 'Added';
+    allGWPItems.forEach(el => {
+      el.classList.add('not_selected')
+    });
+    addGWPButton.closest('.gwp-item').classList.remove('not_selected');
+    addGWPButton.closest('.gwp-item').classList.add('selected');
+  }
+
+
+  const addGWP = function(e) {
+    addGWPButton = e.target.closest('.btn');
+    console.log('addGWPButton in addGWP: ', addGWPButton);
+    e.preventDefault();
+
+    if ( addGWPButton.dataset.gwp_product_id ) {
+      const product_data = {
+        quantity: 1,
+        id: addGWPButton.dataset.gwp_product_id,
+        properties: {'_gift_with_purchase': 'Gift with purchase!'}
+      }
+      fetch('/cart/add.js', {
+        body: JSON.stringify(product_data),
+        credentials: 'same-origin',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Requested-With':'xmlhttprequest'
+        },
+        method: 'POST'
+      }).then((response) => {
+        return response.json();
+      }).then((json) => {
+        /* yay! our products were added - do something here to indicate to the user */
+        //console.log('products', json);
+        updateGiftSlider();
+        
+        const add_event = new Event('cart:build');
+        document.dispatchEvent(add_event)
+        
+        
+      }).catch((err) => {
+        /* uh oh, we have error. */
+        console.error(err)
+      });
+    }
+  }
+
+
+  const removeGWP = function(e) {
+    const removeGWPBtn = e.target;
+    const gwpParent = removeGWPBtn.closest('.cart__item');
+
+    console.log('removeGWPBtn', removeGWPBtn)
+    console.log('gwpParent', gwpParent)
+    console.log('gwpParent.dataset.gwp_prod', gwpParent.dataset.gwp_prod)
+
+    const remove_product_data = {
+      id: gwpParent.dataset.gwp_prod,
+      quantity: 0
+    }
+    fetch('/cart/change.js', {
+      body: JSON.stringify(remove_product_data),
+      credentials: 'same-origin',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      method: 'POST'
+    }).then((response) => {
+      return response.json();
+    }).then((json) => {
+      /* yay! the product was removed */
+  
+      const add_event = new Event('cart:build');
+      document.dispatchEvent(add_event)
+
+      setTimeout(function() {
+        enableGWPButtons();
+        enableGWPItems();
+      }, 100)
+  
+      // call function to update text: updateCartHdr(prod_title)
+      
+      
+    }).catch((err) => {
+      /* uh oh, we have error. */
+      console.error('dang. ',err)
+    });
+  }
+
+  const checkCartForGWP = function() {
+    const cartGWPItem = document.querySelector('.cart-gwp-item');
+    console.log('cartGWPItem', cartGWPItem)
+    if (cartGWPItem) {
+      allGWPButtons.forEach(el => {
+        el.textContent = "Add";
+        el.setAttribute('disabled', '');
+
+        if (el.dataset.gwp_product_id === cartGWPItem.dataset.gwp_prod ) {
+          el.textContent = "Added";
+          el.closest('.gwp-item').classList.add('selected');
+        } else {
+          el.closest('.gwp-item').classList.add('not_selected');
+        }
+      });
+      
+      console.log('yes, we have a GWP item')
+      console.log('cartGWPItem', cartGWPItem)
+      return true;
+    }
+    console.log('nope, no GWP item')
+    return false
+    
+  }
+
+  
+
+  document.addEventListener("click", function(e){
+
+    if ( e.target.matches('.gwp_remove') ) {
+      removeGWP(e);
+    }
+    if ( !e.target.matches('.gwp-btn .btn' ) ) return;
+    
+    addGWP(e)
+
+  });
+  document.addEventListener("drawerOpen.CartDrawer", function(e){
+    
+    // disable buttons if item is in cart
+    setTimeout(checkCartForGWP, 100);
+
+  });
+
+  document.addEventListener("cart:low", function(e){
+    console.log('heard cart:low')
+    
+    enableGWPButtons();
+    allGWPItems.forEach(el => {
+      el.classList.remove('selected')
+      el.classList.remove('not_selected')
+    })
+
+    const cleanUp = checkCartForGWP();
+    console.log('cleanUp', cleanUp)
+    if ( cleanUp ) {
+      const cartGWPItem = document.querySelector('.cart-gwp-item');
+      const remove_product_data = {
+        id: cartGWPItem.dataset.gwp_prod,
+        quantity: 0
+      }
+      fetch('/cart/change.js', {
+        body: JSON.stringify(remove_product_data),
+        credentials: 'same-origin',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        method: 'POST'
+      }).then((response) => {
+        return response.json();
+      }).then((json) => {
+        /* yay! the product was removed */
+    
+        const add_event = new Event('cart:build');
+        document.dispatchEvent(add_event)
+  
+        
+        
+      }).catch((err) => {
+        /* uh oh, we have error. */
+        console.error('dang. ',err)
+      });
+    }
+
+
+  });
+  
+
+
+</script>
+{% endif %}
+
+<!-- settings.gwp_activate_auto: {{settings.gwp_activate_auto}} -->
+<!-- settings.gwp_product_auto: {{settings.gwp_product_auto}} -->
+{% if settings.gwp_activate_auto and settings.gwp_product_auto != blank %}
+<script>
+  {% assign auto_product = settings.gwp_product_auto %}
+  
+  let cart_amount = 0;
+  const auto_threshold = {{ settings.gwp_threshold_auto | times: 100 }};
+  const auto_product_id = {{ auto_product.first_available_variant.id }};
+  const is_available = {{ auto_product.available }};
+
+
+  const checkCartForGWPAuto = function() {
+    const cartGWPAutoItem = document.querySelector('.cart-gwp-item');
+    console.log('cartGWPAutoItem', cartGWPAutoItem)
+    if (cartGWPAutoItem) {
+      console.log('yes, we have a GWP auto item')
+      console.log('cartGWPAutoItem', cartGWPAutoItem)
+      return true;
+    }
+    console.log('nope, no GWP auto item')
+    return false
+    
+  }
+
+  const addGWPAuto = function() {
+    console.log('adding auto gwp')
+    if ( !is_available ) return;
+    const product_data = {
+      quantity: 1,
+      id: auto_product_id,
+      properties: {'_gift_with_purchase': 'Gift with purchase!'}
+    }
+    fetch('/cart/add.js', {
+      body: JSON.stringify(product_data),
+      credentials: 'same-origin',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Requested-With':'xmlhttprequest'
+      },
+      method: 'POST'
+    }).then((response) => {
+      return response.json();
+    }).then((json) => {
+      /* yay! our products were added - do something here to indicate to the user */
+      //console.log('products', json);
+      
+      const add_event = new Event('cart:build');
+      document.dispatchEvent(add_event)
+      
+    }).catch((err) => {
+      /* uh oh, we have error. */
+      console.error(err)
+    });
+  }
+
+  console.log('anybody home')
+  document.addEventListener('cartAmount', function(e) {
+    console.log('cartAmount amount', parseInt(e.detail, 10))
+    const cart_amount = parseInt(e.detail, 10);
+
+    setTimeout(function() {
+      const hasAuto = checkCartForGWPAuto();
+
+      if (cart_amount >= auto_threshold ) {
+        
+        console.log('hasAuto', hasAuto)
+        if (!hasAuto) addGWPAuto(); 
+        
+      } else {
+        if ( hasAuto ) {
+          const cartGWPItemAuto = document.querySelector('.cart-gwp-item');
+          const remove_product_data = {
+            id: cartGWPItemAuto.dataset.gwp_prod,
+            quantity: 0
+          }
+          fetch('/cart/change.js', {
+            body: JSON.stringify(remove_product_data),
+            credentials: 'same-origin',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            method: 'POST'
+          }).then((response) => {
+            return response.json();
+          }).then((json) => {
+            /* yay! the product was removed */
+        
+            const add_event = new Event('cart:build');
+            document.dispatchEvent(add_event)
+            
+          }).catch((err) => {
+            /* uh oh, we have error. */
+            console.error('dang. ',err)
+          });
+        }
+      }
+    }, 125)
+    
+
+
+  })
+
+  document.addEventListener("drawerOpen.CartDrawer", function(e){
+  
+    setTimeout(checkCartForGWPAuto, 250);
+
+  });
+
+</script>
+{% endif %}

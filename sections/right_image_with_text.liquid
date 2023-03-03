@@ -9,9 +9,14 @@
         {% if section.settings.image != blank %}
             <img class="desktop-image" src="{{ section.settings.image | image_url: width: 1600 }}" alt="Original Image">
         {% endif %}
-        {% if section.settings.button_link != blank %}
+        {% if section.settings.button_label != blank %}
             <a href="{{ section.settings.button_link }}" class="text-link">{{ section.settings.button_label }}</a>
         {% endif %}
+         {% if section.settings.button_links != blank  %}
+                        <div class="button-wrap">
+                            <div class="text-link">{{ section.settings.button_links }}</div>
+                        </div>
+                {% endif %}
     </div>
 </div>
 
@@ -42,10 +47,15 @@
             "label": "Button Label"
         },
         {
-            "type": "text",
+            "type": "url",
             "id": "button_link",
             "label": "Button Link"
-        }
+        },
+      {
+                    "type": "richtext",
+                    "id": "button_links",
+                    "label": "Multiple Button Links"
+                }
     ],
     "presets": [
         {

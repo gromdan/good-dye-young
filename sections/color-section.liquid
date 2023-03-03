@@ -4,12 +4,13 @@
 />
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<div class="color">
+<div class="color color-section" {% unless section.settings.collection_dye_duration == 'none' %}
+data-dye_duration="{{ section.settings.collection_dye_duration }}"
+data-collection_color_swiper
+{% endunless %}>
 
- 
-      
         <div class="slider">
-          <div class="swiper-container">
+          <div class="swiper-container" data-slides-desktop="{{ section.settings.slides_d }}" data-slides-tablet="{{ section.settings.slides_t }}" data-slides-mobile="{{ section.settings.slides_m }}">
             <div class="swiper-wrapper">
               {% for block in section.blocks %}
                     <div class="swiper-slide">
@@ -44,8 +45,61 @@
 {% schema %}
   {
     "name": "Color Section",
-    "class": "index-section color-section",
-    "settings": [],
+    "class": "index-section",
+    "settings": [
+      {
+        "type": "select",
+        "id": "collection_dye_duration",
+        "label": "Collection dye duration",
+        "info": "For use on Color page, with filter to show/hide groups of products",
+        "default": "none",
+        "options": [
+          {
+            "value": "none",
+            "label": "Not applicable"
+          },
+          {
+            "value": "1",
+            "label": "1: Temporary"
+          },
+          {
+            "value": "2",
+            "label": "2: Semi-Temporary"
+          },
+          {
+            "value": "3",
+            "label": "3: Semi-Permanent"
+          }
+        ]
+      },
+      {
+        "type": "range",
+        "id": "slides_d",
+        "label": "Slides to view - desktop",
+        "default": 4.5,
+        "min": 1,
+        "max": 8,
+        "step": 0.1
+      },
+      {
+        "type": "range",
+        "id": "slides_t",
+        "label": "Slides to view - tablet",
+        "default": 3.5,
+        "min": 1,
+        "max": 6,
+        "step": 0.1
+      },
+      {
+        "type": "range",
+        "id": "slides_m",
+        "label": "Slides to view - mobile",
+        "default": 2.5,
+        "min": 1,
+        "max": 4,
+        "step": 0.1
+      }
+    ],
     "blocks": [
       {
         "type": "color-selector",

@@ -1,0 +1,220 @@
+
+.color-items .color-item span.color-code {
+    display: inline-block;
+    height: 64px;
+    width: 100%;
+    transition: all ease .15s
+}
+
+.color-items .color-item {
+    line-height: 0;
+    width: 50%;
+    padding: 12px;
+    cursor: pointer
+}
+
+.color-item.active span.color-code {
+    border: 5px solid #fff;
+    outline: 2px solid #000
+}
+
+.color-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px
+}
+
+.color-picker-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px
+}
+
+.color-picker-col {
+    width: 33.33%;
+    padding: 0 16px
+}
+
+.color-product-inner {
+    border: 2px solid #000;
+    min-height: 502px;
+    max-height: 502px;
+    overflow: hidden
+}
+
+.color-product-inner .product-default {
+    height: 100%;
+    min-height: 502px
+}
+
+.color-product-inner .product-default .product-default-inner {
+    height: 100%;
+    min-height: 502px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.color-product-inner .product-default h3 {
+    margin: 0;
+    text-transform: unset;
+    font-size: 2.473em;
+    line-height: 1.07;
+    font-family: acumin-pro;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: #000
+}
+
+.color-product-inner .product-default p {
+    font-size: 1.222em;
+    line-height: 1.28;
+    color: #000;
+    font-weight: 400
+}
+
+.color-product-block {
+    margin: 13px 0
+}
+
+.color-product-item .img-wrap img {
+    height: 401px;
+    width: 100%;
+    object-fit: cover
+}
+
+.color-product-item .img-wrap {
+    line-height: 0
+}
+
+.color-product-item .content-wrap h4 {
+    margin: 0;
+    font-size: 1.333em;
+    line-height: 1.333em;
+    color: #000;
+    font-family: acumin-pro;
+    text-align: center;
+    padding: 8px 36px 12px
+}
+
+.color-product-item .content-wrap a.shop-btn {
+    background: #000;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    font-size: .889em;
+    line-height: 1.2;
+    letter-spacing: .02em;
+    color: #fff;
+    font-family: integral cf;
+    padding: 13px 15px 16px;
+    border: 2px solid #000;
+    border-left: 0;
+    border-right: 0;
+    transition: all ease .4s
+}
+
+.color-product-item .content-wrap a.shop-btn:hover {
+    background: 0 0;
+    color: #000
+}
+
+.color-product-inner .product-hover {
+    display: none
+}
+
+.color-product-item {
+    display: none
+}
+
+.color-item.disable {
+    pointer-events: none
+}
+
+@media screen and (max-width: 767px) {
+	
+
+    .color-picker-wrap.desktop {
+        display: none
+    }
+
+    .color-picker-col {
+        width: 100%;
+        padding: 0
+    }
+
+    .color-items .color-item {
+        width: 20%;
+        padding: 8px 10px
+    }
+
+    .color-items {
+        margin: 0 -10px
+    }
+
+    .color-items .color-item span.color-code {
+        height: 55px
+    }
+
+    .color-product-item .img-wrap img {
+        height: 325px
+    }
+
+    .color-product-inner {
+        min-height: 425px;
+        max-height: 425px
+    }
+
+    .color-title .elementor-widget-container {
+        margin-bottom: 16px!important
+    }
+
+    .color-product-block {
+        margin: 32px 0 24px
+    }
+
+    .color-product-inner .product-default .product-default-inner {
+        min-height: 425px
+    }
+
+    .color-product-inner .product-default {
+        min-height: 425px
+    }
+
+    .color-product-inner .product-default h3 {
+        font-size: 1.944em;
+        line-height: 40px
+    }
+
+    .color-product-inner .product-default p {
+        font-size: 1.056em
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+    .color-product-inner .product-default h3 {
+        font-size:1.648em;
+        line-height: 38px
+    }
+
+    .color-product-inner .product-default p {
+        font-size: 1.099em
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:991px) {
+    .color-picker-row .color-picker-col {
+        width:25%
+    }
+
+    .color-picker-row .color-picker-col:nth-child(2) {
+        width: 50%
+    }
+
+    .color-product-inner .product-default h3 {
+        font-size: 1.648em;
+        line-height: 38px
+    }
+}

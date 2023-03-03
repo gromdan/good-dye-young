@@ -8,11 +8,16 @@
                             <img class="desktop-image" src="{{ block.settings.image | image_url: width: 800 }}" alt="Original Image">
                         </div>
                     {% endif %}
-                    {% if block.settings.button_link != blank %}
+                    {% if block.settings.button_label != blank %}
                         <div class="button-wrap">
                             <a href="{{ block.settings.button_link }}" class="text-link">{{ block.settings.button_label }}</a>
                         </div>
                     {% endif %}
+                {% if block.settings.button_links != blank  %}
+                        <div class="button-wrap">
+                            <div class="text-link">{{ block.settings.button_links }}</div>
+                        </div>
+                {% endif %}
                 </div>  
             {% endfor %}
         </div>
@@ -37,12 +42,17 @@
                 {
                     "type": "text",
                     "id": "button_label",
-                    "label": "Button Lavel"
+                    "label": "Button Label"
                 },
                 {
-                    "type": "text",
+                    "type": "url",
                     "id": "button_link",
                     "label": "Button Link"
+                },
+                {
+                    "type": "richtext",
+                    "id": "button_links",
+                    "label": "Multiple Button Links"
                 }
             ]
         }

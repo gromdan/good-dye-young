@@ -2,133 +2,517 @@
   "sections": {
     "165973843591c5bf46": {
       "type": "banner-header",
+      "disabled": true,
       "settings": {
-        "headline": "Cleanse. tone. hydrate. bond.",
-        "align_text": "bottom"
+        "headline": "get on tour ready!",
+        "align_text": "bottom",
+        "image_main": "shopify:\/\/shop_images\/GDY.com_Main_1.jpg",
+        "image_right": "shopify:\/\/shop_images\/GDY.com_Secondary_Image_9.jpg",
+        "btn_text": "Shop the bundle",
+        "btn_link": "shopify:\/\/products\/on-tour-bundle",
+        "btn_inverse": true
       }
     },
     "slideshow": {
       "type": "slideshow",
-      "disabled": true,
       "blocks": {
-        "slideshow-0": {
+        "cf6438ff-7398-47fc-bdd2-89edee9c14e0": {
           "type": "image",
           "disabled": true,
           "settings": {
-            "top_subheading": "",
-            "title": "",
+            "use_dark_text": false,
+            "top_subheading": "ALL WEEKEND LONG",
+            "title": "DOUBLE\nPOINTS",
             "title_size": 80,
-            "subheading": "And optional subtext",
-            "link": "shopify:\/\/collections\/all",
-            "link_text": "Shop this",
-            "link_2": "shopify:\/\/collections\/all",
-            "link_text_2": "Shop all",
+            "subheading": "Plus, get a free candle of your choice on $60+ purchases!",
+            "link": "shopify:\/\/collections\/shop-vibrant-hair-dye",
+            "link_text": "get your free gift",
+            "link_2": "",
+            "link_text_2": "",
             "color_accent": "#000000",
-            "text_align": "vertical-center horizontal-center",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/Z_GROUP_SHOT_STAGE_DIVE___ENCORE_2_copy_2.png",
+            "image_mobile": "shopify:\/\/shop_images\/Rectangle_1_copy_3618047e-7fdc-4411-8ee6-5a517aa37c50.png",
             "overlay_opacity": 0,
-            "focal_point": "top center"
+            "focal_point": "80% 50%"
           }
         },
-        "slideshow-1": {
+        "1a528479-09d0-476d-a369-306204b427fb": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "use_dark_text": false,
+            "top_subheading": "LIMITED TIME ONLY",
+            "title": "HAYLEY'S\nON THE ROAD\nBUNDLE",
+            "title_size": 80,
+            "subheading": "Get Hayley's tour essentials for 30% off!",
+            "link": "",
+            "link_text": "Shop the Bundle",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/2_3c0650c2-a4a7-4760-a589-5829baf1841e.png",
+            "image_mobile": "shopify:\/\/shop_images\/GDY.com_Banner_-_Desktop.png",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "72129df6-a74a-4b86-a225-f1af19398e0a": {
           "type": "image",
           "settings": {
+            "use_dark_text": false,
             "top_subheading": "",
-            "title": "Two line\ntitle slide.",
+            "title": "To Bleach\nTheir Own",
             "title_size": 80,
-            "subheading": "And optional subtext",
-            "link": "shopify:\/\/collections\/all",
-            "link_text": "Shop all",
-            "link_2": "shopify:\/\/collections\/all",
-            "link_text_2": "Shop all",
-            "color_accent": "#000000",
-            "text_align": "vertical-bottom horizontal-left",
+            "subheading": "Learn all about our best-selling Lightening Kit!",
+            "link": "shopify:\/\/pages\/gdy-hair-lightening-bleach-kit",
+            "link_text": "Learn More",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/LK_banner_update.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/LK_Banner_mobile_c458243c-4246-4856-8427-acd9d03d7817.jpg",
             "overlay_opacity": 0,
-            "focal_point": "top center"
+            "focal_point": "center center"
+          }
+        },
+        "88aa1ce8-8f7d-441b-8130-d426db8c91fd": {
+          "type": "image",
+          "settings": {
+            "use_dark_text": false,
+            "top_subheading": "",
+            "title": "Back in \nStock!",
+            "title_size": 80,
+            "subheading": "Your favorites are back. Grab them before they're gone.",
+            "link": "shopify:\/\/collections\/best-sellers",
+            "link_text": "shop now",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "#000000",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/5_shades_10415158-7740-422f-8a9a-784bed7312c1.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/5_shades_mobile_da129821-22ae-43bc-961e-3b2ce824b415.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
           }
         }
       },
       "block_order": [
-        "slideshow-0",
-        "slideshow-1"
+        "cf6438ff-7398-47fc-bdd2-89edee9c14e0",
+        "1a528479-09d0-476d-a369-306204b427fb",
+        "72129df6-a74a-4b86-a225-f1af19398e0a",
+        "88aa1ce8-8f7d-441b-8130-d426db8c91fd"
       ],
       "settings": {
         "section_height": "550px",
-        "mobile_height": "auto",
+        "mobile_height": "500px",
         "parallax": false,
-        "style": "bars",
+        "style": "dots",
         "autoplay": true,
         "autoplay_speed": 7
       }
     },
-    "16590398202f57583c": {
-      "type": "text-and-image",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/home-page-second-section.webp",
-        "image_width": 700,
-        "pretitle": "",
-        "title": "I STREAKED IT",
-        "subtitle": "",
-        "text": "<p>Introducing Streaks & Strands: On Tour! With 6 BRAND new, concert inspired GDY shades available at Target! STREAK out and STRAND out from the crowd. Rock your new look with these 2oz semi-permanent hair dyes. These new and exclusive shades are perfect for money pieces, buzzcuts, bangs, dip-dyes, and anything in between!<\/p>",
-        "button_label": "Shop Now",
-        "button_link": "shopify:\/\/collections\/shop",
-        "button_color": "",
-        "button_style": "secondary",
-        "align_text": "left",
-        "layout": "right",
-        "divider": false
-      }
-    },
-    "featured-collection": {
+    "6a94f5d1-049c-44c3-bf73-0ded32314386": {
       "type": "featured-collection",
       "settings": {
-        "title": "NEW!!!",
-        "home_featured_products": "new",
-        "per_row": 5,
+        "title": "Green Hair looks good on you",
+        "subtitle": "",
+        "home_featured_products": "green-hair-dye",
+        "per_row": 4,
         "rows": 1,
         "mobile_scrollable": true,
         "view_all": true,
         "divider": false
       }
     },
-    "16590403355d4f9fe8": {
-      "type": "background-video-text",
+    "3efd69de-9bc7-4cf3-9439-757aad0b2d86": {
+      "type": "featured-collection",
       "settings": {
+        "title": "For Mermaid Manes",
         "subtitle": "",
-        "title": "\"The world is your oyster —paint yourself gorgeous!\"",
-        "text": "<p><strong>Brian O’Connor<\/strong><em><br\/>Co-Founder & Master Stylist, Good Dye Young<\/em><\/p>",
-        "button_label": "Shop Streaks & Strands",
-        "button_link": "shopify:\/\/collections\/streaks-strands",
-        "video_url": "https:\/\/youtu.be\/S1chmvBISCQ",
-        "color_border": "#f4f4f4",
-        "layout": "left",
-        "height": 550
+        "home_featured_products": "mermaid-hair",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
       }
     },
-    "1659040096f8fdfc25": {
-      "type": "slideshow",
+    "8afd9835-861d-4b87-829f-d4755b773d75": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Best-Sellers",
+        "subtitle": "",
+        "home_featured_products": "best-sellers",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "7d4d9248-c539-43f8-938e-766905e6bcb2": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Streaks & Strands",
+        "subtitle": "Express yourself with a pop of color.",
+        "home_featured_products": "streaks-strands",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "420ff5f8-260a-4e59-b1c8-f21439d7763d": {
+      "type": "fifty-fifty",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/GDY.com_RESIZED_3.png",
+        "bg_color": "",
+        "text_color": "",
+        "use_crazy_bg": false,
+        "pretitle": "",
+        "title": "HAYLEY'S\nON THE ROAD\nBUNDLE",
+        "subtitle": "",
+        "text": "<p>Get Hayley's tour essentials for 30% off! Bundle include:<\/p><ul><li>Color Kind Wash<\/li><li>Color Kind Rinse<\/li><li>Color Kind Pre-Wash<\/li><li>Color Kind Prime<\/li><li>DYEposit - Copper<\/li><\/ul>",
+        "button_label": "shop now",
+        "button_link": "shopify:\/\/products\/hayleys-on-the-road-bundle",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right"
+      }
+    },
+    "5f4264f1-5b24-4754-a512-6d39684b0ef0": {
+      "type": "background-image-text",
+      "disabled": true,
+      "settings": {
+        "subtitle": "",
+        "title": "orange is the new...orange",
+        "text": "<p>From gorgeous copper tones to bright neon, we’ve got the orange hue for you.<\/p>",
+        "button_label": "shop now",
+        "button_link": "shopify:\/\/collections\/orange-hair-dye",
+        "image": "shopify:\/\/shop_images\/Copy_of_PEACH_FUZZ_LIGHTER_DAZE.jpg",
+        "focal_point": "center",
+        "layout": "right",
+        "height": 450,
+        "framed": false,
+        "parallax": false
+      }
+    },
+    "10444f2d-3de6-4843-9d61-2b384588ab1e": {
+      "type": "background-image-text",
+      "disabled": true,
+      "settings": {
+        "subtitle": "",
+        "title": "For your winter blues...",
+        "text": "<p>There’s nothing sad about our ultra-cool blue hues. <\/p>",
+        "button_label": "shop now",
+        "button_link": "shopify:\/\/collections\/blue-hair-dye",
+        "image": "shopify:\/\/shop_images\/GDY_jc-4.jpg",
+        "focal_point": "center",
+        "layout": "left",
+        "height": 450,
+        "framed": false,
+        "parallax": false
+      }
+    },
+    "411021cf-ed98-420b-bcb4-e3138e67ad39": {
+      "type": "background-image-text",
+      "disabled": true,
+      "settings": {
+        "subtitle": "",
+        "title": "The latest trend: purple",
+        "text": "<p>Coming to a feed near you. Look like royalty with bold, powerful purple.<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "shopify:\/\/collections\/purple-hair-dye",
+        "image": "shopify:\/\/shop_images\/ppleater.png",
+        "focal_point": "center",
+        "layout": "right",
+        "height": 450,
+        "framed": false,
+        "parallax": false
+      }
+    },
+    "13542c77-ce28-4805-a0f2-18b93b50a62c": {
+      "type": "fifty-fifty",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/COPPER_DYEPOSIT_HOMEPAGE-min.png",
+        "bg_color": "",
+        "text_color": "",
+        "use_crazy_bg": true,
+        "pretitle": "DYEposit",
+        "title": "Easy, Healthy Color",
+        "subtitle": "",
+        "text": "<p>4-in-1 color depositing hair mask infuses each strand with quality color and ingredients.<\/p>",
+        "button_label": "SHOP NOW",
+        "button_link": "shopify:\/\/collections\/dyeposit",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right"
+      }
+    },
+    "799d557c-e942-4e32-828c-c95d2e3e4083": {
+      "type": "fifty-fifty",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/RAINBOW_HAIR_COLOR_KIT_2.jpg",
+        "bg_color": "",
+        "text_color": "",
+        "use_crazy_bg": false,
+        "pretitle": "TREND ALERT",
+        "title": "GEMINI HAIR",
+        "subtitle": "",
+        "text": "<p>Get ready to see Gemini hair in 2024: a split-dye, two-tone look. <\/p><p><\/p><p>Need help deciding which colors you should try? We've got a quiz that can help you pick!<\/p>",
+        "button_label": "START QUIZ",
+        "button_link": "shopify:\/\/products\/rainbow-kit",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right"
+      }
+    },
+    "db709fe5-c489-4c60-b1d1-4fa5cca6dae6": {
+      "type": "text-columns",
       "blocks": {
-        "1659040096d50e93aa-0": {
+        "template--15351833395336__db709fe5-c489-4c60-b1d1-4fa5cca6dae6-16776222580f295b52-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/GDY.com_RESIZED_3.png",
+            "image_width": 650,
+            "title": "hayley's on the road bundle",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "<p>Get Hayley's tour essentials for 30% off with this exclusive bundle!<\/p>",
+            "text_color_1": "rgba(0, 0, 0, 1)",
+            "text_2": "",
+            "text_color_2": "rgba(0, 0, 0, 1)",
+            "text_3": "",
+            "text_color_3": "rgba(0, 0, 0, 1)",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/products\/hayleys-on-the-road-bundle"
+          }
+        },
+        "template--15351833395336__db709fe5-c489-4c60-b1d1-4fa5cca6dae6-16776222580f295b52-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/hayley_gif.gif",
+            "image_width": 650,
+            "title": "How did we get hair?",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "<p>Take a trip down memory lane with some of Hayley's most iconic looks, and recreate them yourself!<\/p>",
+            "text_color_1": "rgba(0, 0, 0, 1)",
+            "text_2": "",
+            "text_color_2": "rgba(0, 0, 0, 1)",
+            "text_3": "",
+            "text_color_3": "rgba(0, 0, 0, 1)",
+            "button_label": "CHECK IT OUT",
+            "button_link": "shopify:\/\/pages\/founders-favs"
+          }
+        },
+        "template--15351833395336__db709fe5-c489-4c60-b1d1-4fa5cca6dae6-16776222580f295b52-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/hayley_square.jpg",
+            "image_width": 650,
+            "title": "What's in hayley's hair?",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "<p>Hayley is back on tour and rocking her signature copper hair! Find out how to recreate her look and more. <\/p>",
+            "text_color_1": "rgba(0, 0, 0, 1)",
+            "text_2": "",
+            "text_color_2": "rgba(0, 0, 0, 1)",
+            "text_3": "",
+            "text_color_3": "rgba(0, 0, 0, 1)",
+            "button_label": "get the look",
+            "button_link": "shopify:\/\/pages\/paramore-hayley-in-concert"
+          }
+        }
+      },
+      "block_order": [
+        "template--15351833395336__db709fe5-c489-4c60-b1d1-4fa5cca6dae6-16776222580f295b52-0",
+        "template--15351833395336__db709fe5-c489-4c60-b1d1-4fa5cca6dae6-16776222580f295b52-1",
+        "template--15351833395336__db709fe5-c489-4c60-b1d1-4fa5cca6dae6-16776222580f295b52-2"
+      ],
+      "settings": {
+        "bg_color": "",
+        "title": "hit the road with hayley",
+        "subtitle": "",
+        "align_text": "left",
+        "button_label": "",
+        "button_link": "",
+        "btn_bg_color": "",
+        "bigger_btn": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "space_around": true,
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padded_columns": false,
+        "use_mobile_slider": false
+      }
+    },
+    "86f1af0a-8272-49e7-ae2c-492c39c8b38e": {
+      "type": "text-columns",
+      "blocks": {
+        "template--15292397289608__86f1af0a-8272-49e7-ae2c-492c39c8b38e-1671032237615b5e01-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/lighteningkit.jpg",
+            "image_width": 650,
+            "title": "lightening kit",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "<p>Our Hair Lightening Kit is exactly what you need to lighten hair to that perfect white canvas so it's ready to show off vibrant color.<\/p>",
+            "text_color_1": "#000000",
+            "text_2": "",
+            "text_color_2": "#000000",
+            "text_3": "",
+            "text_color_3": "#000000",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/collections\/lightening"
+          }
+        },
+        "template--15292397289608__86f1af0a-8272-49e7-ae2c-492c39c8b38e-1671032237615b5e01-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/DPM_1-192.jpg",
+            "image_width": 650,
+            "title": "color kind",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "<p>Our Color Kind Hair Care collection is formualted with hair health in mind! Maintain your color while nourising your hair from root to tip.<\/p>",
+            "text_color_1": "#000000",
+            "text_2": "",
+            "text_color_2": "#000000",
+            "text_3": "",
+            "text_color_3": "#000000",
+            "button_label": "shop now",
+            "button_link": "shopify:\/\/collections\/color-kind"
+          }
+        },
+        "8d94c8b9-88a3-417e-9f14-76526c8cd82c": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/tools.jpg",
+            "image_width": 650,
+            "title": "tools",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "<p>Mixing bowls and grip clips and combs, oh my! We have all the tools you need to create your perfect look.<\/p>",
+            "text_color_1": "rgba(0, 0, 0, 1)",
+            "text_2": "",
+            "text_color_2": "rgba(0, 0, 0, 1)",
+            "text_3": "",
+            "text_color_3": "rgba(0, 0, 0, 1)",
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/collections\/tools-accessories"
+          }
+        }
+      },
+      "block_order": [
+        "template--15292397289608__86f1af0a-8272-49e7-ae2c-492c39c8b38e-1671032237615b5e01-0",
+        "template--15292397289608__86f1af0a-8272-49e7-ae2c-492c39c8b38e-1671032237615b5e01-1",
+        "8d94c8b9-88a3-417e-9f14-76526c8cd82c"
+      ],
+      "settings": {
+        "bg_color": "",
+        "title": "Stylist Must-Haves",
+        "subtitle": "",
+        "align_text": "left",
+        "button_label": "",
+        "button_link": "",
+        "btn_bg_color": "",
+        "bigger_btn": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "space_around": true,
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padded_columns": false,
+        "use_mobile_slider": false
+      }
+    },
+    "b112225c-27fd-496e-997d-ab15f799f0da": {
+      "type": "fifty-fifty",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Untitled_design_5.jpg",
+        "bg_color": "",
+        "text_color": "",
+        "use_crazy_bg": false,
+        "pretitle": "Now Trending",
+        "title": "Gemini Hair",
+        "subtitle": "",
+        "text": "<p>Take our quiz to discover what type of split-dye style matches you best! <\/p>",
+        "button_label": "take me to the quiz",
+        "button_link": "shopify:\/\/pages\/quiz",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left"
+      }
+    },
+    "74700a3c-8fe7-4240-991d-38365e2a6248": {
+      "type": "slideshow-animated",
+      "disabled": true,
+      "blocks": {
+        "template--15292397289608__74700a3c-8fe7-4240-991d-38365e2a6248-1669734129a5181189-0": {
           "type": "image",
           "settings": {
+            "use_dark_text": false,
             "top_subheading": "",
-            "title": "\"Switching up your hair\nis a fun and easy way \nto step into a new \nera of your life.\"",
-            "title_size": 40,
-            "subheading": "Hayley Williams Co-Founder of Good Dye Young",
-            "link": "",
-            "link_text": "About Us",
-            "link_2": "#",
+            "title": "What's in Hayley's Hair?",
+            "title_size": 55,
+            "subheading": "Recreate Hayley's look from Paramore's new music video.",
+            "link": "shopify:\/\/pages\/paramore-hayley-in-concert",
+            "link_text": "GET THE LOOK",
+            "link_2": "",
             "link_text_2": "",
             "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-left",
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-07-28_at_1.30.52_PM.png",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify:\/\/shop_images\/Artboard_1.png",
+            "image_mobile": "shopify:\/\/shop_images\/Photo_Nov_21_2022_12_28_37_PM.jpg",
             "overlay_opacity": 0,
             "focal_point": "center center"
           }
         },
-        "1659040096d50e93aa-1": {
+        "17fed0d5-7c4e-444b-a2f6-232917ae1d43": {
           "type": "image",
           "disabled": true,
           "settings": {
+            "use_dark_text": false,
+            "top_subheading": "",
+            "title": "Two line\ntitle slide.",
+            "title_size": 80,
+            "subheading": "And optional subtext",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "template--15292397289608__74700a3c-8fe7-4240-991d-38365e2a6248-1669734129a5181189-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "use_dark_text": false,
             "top_subheading": "",
             "title": "Two line\ntitle slide.",
             "title_size": 80,
@@ -145,11 +529,12 @@
         }
       },
       "block_order": [
-        "1659040096d50e93aa-0",
-        "1659040096d50e93aa-1"
+        "template--15292397289608__74700a3c-8fe7-4240-991d-38365e2a6248-1669734129a5181189-0",
+        "17fed0d5-7c4e-444b-a2f6-232917ae1d43",
+        "template--15292397289608__74700a3c-8fe7-4240-991d-38365e2a6248-1669734129a5181189-1"
       ],
       "settings": {
-        "section_height": "650px",
+        "section_height": "550px",
         "mobile_height": "auto",
         "parallax": false,
         "style": "bars",
@@ -157,54 +542,50 @@
         "autoplay_speed": 5
       }
     },
-    "featured-collections": {
-      "type": "featured-collections",
-      "disabled": true,
-      "blocks": {
-        "featured-collections-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": "",
-            "focal_point": "center center"
-          }
-        },
-        "featured-collections-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": "",
-            "focal_point": "center center"
-          }
-        },
-        "featured-collections-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": "",
-            "focal_point": "center center"
-          }
-        },
-        "featured-collections-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": "",
-            "focal_point": "center center"
-          }
-        }
-      },
-      "block_order": [
-        "featured-collections-0",
-        "featured-collections-1",
-        "featured-collections-2",
-        "featured-collections-3"
-      ],
+    "05dad9e4-8e2b-4653-b63d-700cc7d1876b": {
+      "type": "text-and-image",
       "settings": {
-        "title": "Shop by category",
+        "image": "shopify:\/\/shop_images\/loyalty_image_1.jpg",
+        "image_attr": "",
+        "image_attr_link": "",
+        "image_width": 700,
+        "pretitle": "",
+        "title": "THE RIDE OR DYES",
+        "bigger_title": false,
+        "subtitle": "",
+        "text": "<p>Express yourself and get rewarded. Earn points for each purchase and engaging with our community. <\/p>",
+        "use_larger_text": false,
+        "button_label": "GET REWARdS",
+        "button_link": "shopify:\/\/pages\/rewards",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left",
         "divider": false,
-        "per_row": 4,
-        "enable_gutter": true
+        "collection_dye_duration": "none"
+      }
+    },
+    "94a3f313-3da2-42fc-96f7-62fec595112d": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hayley_brian_2-min.jpg",
+        "image_attr": "",
+        "image_attr_link": "",
+        "image_width": 700,
+        "pretitle": "",
+        "title": "EXPRESS YOURSELF",
+        "bigger_title": false,
+        "subtitle": "",
+        "text": "<p>Good Dye Young is dedicated to creating a community around self-expression, color and happiness about being who you are.<\/p>",
+        "use_larger_text": false,
+        "button_label": "Learn More",
+        "button_link": "shopify:\/\/pages\/about",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false,
+        "collection_dye_duration": "none"
       }
     },
     "1659040570511e10df": {
@@ -213,43 +594,45 @@
         "165904057075338511-0": {
           "type": "logo_image",
           "settings": {
+            "use_svg": true,
+            "svg": "icon-rabbit",
+            "title": "Cruelty-free",
             "link": ""
           }
         },
         "165904057075338511-1": {
           "type": "logo_image",
           "settings": {
+            "use_svg": true,
+            "svg": "icon-leaf",
+            "title": "Vegan",
             "link": ""
           }
         },
         "165904057075338511-2": {
           "type": "logo_image",
           "settings": {
+            "use_svg": true,
+            "svg": "icon-chemicals",
+            "title": "Free of a lot of\ngross chemicals",
             "link": ""
           }
         },
         "165904057075338511-3": {
           "type": "logo_image",
           "settings": {
+            "use_svg": true,
+            "svg": "icon-sunflower",
+            "title": "Natural Sunflower\nExtract",
             "link": ""
           }
         },
         "37a8a0bf-66bc-4af4-bb5a-0d119a0eebe3": {
           "type": "logo_image",
           "settings": {
-            "link": ""
-          }
-        },
-        "535312d5-6061-4ab6-8de5-7d5c29b9cd16": {
-          "type": "logo_image",
-          "settings": {
-            "link": ""
-          }
-        },
-        "a33bb76f-4265-4698-bf09-230210ece8e5": {
-          "type": "logo_image",
-          "disabled": true,
-          "settings": {
+            "use_svg": true,
+            "svg": "icon-hearts",
+            "title": "Made with love\nin the USA or Canada",
             "link": ""
           }
         }
@@ -259,14 +642,94 @@
         "165904057075338511-1",
         "165904057075338511-2",
         "165904057075338511-3",
-        "37a8a0bf-66bc-4af4-bb5a-0d119a0eebe3",
-        "535312d5-6061-4ab6-8de5-7d5c29b9cd16",
-        "a33bb76f-4265-4698-bf09-230210ece8e5"
+        "37a8a0bf-66bc-4af4-bb5a-0d119a0eebe3"
       ],
       "settings": {
+        "bg_color": "#ceebef",
+        "text_color": "#000000",
         "title": "",
-        "logo_opacity": 76,
-        "divider": false
+        "text": "<p><strong>Good Dye Young cultivates a safe and inclusive community that values vibrant self-expression and creativity.<\/strong><\/p><p><strong>We also make bad a** hair products.<\/strong><\/p>",
+        "text_align": "center",
+        "content_width": 600,
+        "side_by_side": false,
+        "hdr_width": 30,
+        "logo_opacity": 100,
+        "divider": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "borders": "border-y"
+      }
+    },
+    "16608697434c49c16b": {
+      "type": "logo-slider",
+      "blocks": {
+        "166086974355b0dd10-0": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-allure.png",
+            "title": ""
+          }
+        },
+        "166086974355b0dd10-1": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-elle.png",
+            "title": ""
+          }
+        },
+        "166086974355b0dd10-2": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-instyle.png",
+            "title": ""
+          }
+        },
+        "166086974355b0dd10-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-racked.png",
+            "title": ""
+          }
+        },
+        "1d59a0f7-23d9-47a2-9817-4a3b3d895924": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-mane-addicts.png",
+            "title": ""
+          }
+        },
+        "1a02905e-41d6-4151-a224-c3e66654f0f7": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-nylon.png",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "166086974355b0dd10-0",
+        "166086974355b0dd10-1",
+        "166086974355b0dd10-2",
+        "166086974355b0dd10-3",
+        "1d59a0f7-23d9-47a2-9817-4a3b3d895924",
+        "1a02905e-41d6-4151-a224-c3e66654f0f7"
+      ],
+      "settings": {
+        "bg_color": "#000000",
+        "text_color": "#000000",
+        "title": "",
+        "text": "",
+        "text_align": "center",
+        "content_width": 600,
+        "logo_opacity": 100,
+        "single_mobile_image": false,
+        "divider": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "165904075540d7a89d": {
@@ -284,19 +747,32 @@
             "text": "<p>Get exclusive access to deals, inspo, giveaways and more!<\/p>"
           }
         },
+        "e75cc0ad-5d45-4400-a5f2-522a4ec2f5cd": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "Ucn3jj"
+          }
+        },
         "1659040755125e9f1a-2": {
           "type": "form",
-          "settings": {}
+          "disabled": true,
+          "settings": {
+            "show_name_fields": true,
+            "text": "<p>We use email and targeted online advertising to send you product and services updates, promotional offers and other marketing communications based on the information we collect about you, such as your email address, general location, and purchase and website browsing history.We process your personal data as stated in our <a href=\"\/pages\/privacy-policy\" target=\"_blank\" title=\"Privacy Policy\">Privacy Policy<\/a>.  You may withdraw your consent or manage your preferences at any time by clicking the unsubscribe link at the bottom of any of our marketing emails, or by emailing us at <a href=\"mailto:marketing@gooddyeyoung.com\" target=\"_blank\">marketing@gooddyeyoung.c<\/a><a href=\"mailto:support@gooddyeyoung.com\" target=\"_blank\">om<\/a>.<\/p>"
+          }
         }
       },
       "block_order": [
         "1659040755125e9f1a-0",
         "1659040755125e9f1a-1",
+        "e75cc0ad-5d45-4400-a5f2-522a4ec2f5cd",
         "1659040755125e9f1a-2"
       ],
       "settings": {
         "color_background": "#dbe1e0",
-        "color_text": "#1c1d1d"
+        "color_text": "#1c1d1d",
+        "narrow_width": true,
+        "text_align": "left"
       }
     },
     "16590407240c56251a": {
@@ -305,7 +781,7 @@
         "d5c3d907-d98d-4a12-9412-7b4bea66c977": {
           "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
           "settings": {
-            "formId": ""
+            "formId": "SqWPAL"
           }
         }
       },
@@ -320,45 +796,91 @@
     "165904111494e6d1b6": {
       "type": "advanced-content",
       "blocks": {
-        "1659041114eba7694f-0": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "link": "",
-            "width": "50%",
-            "alignment": "center"
-          }
-        },
         "1659041114eba7694f-1": {
           "type": "liquid",
           "settings": {
-            "code": "<div style=\"display:flex;\">\n<div class=\"left\">\n@GOODDYEYOUNG\n<\/div>\n<div class=\"right\"><a href=\"https:\/\/www.instagram.com\/gooddyeyoung\/\">Follow Us On Instagram<\/a><\/div>\n<\/div>\n<script async src='https:\/\/snapppt.com\/widgets\/widget_loader\/07c6e667-103f-485b-d243-07be47b022ed\/sauce_homepage.js' class='snapppt-widget'><\/script>",
+            "code": "<div class=\"instagram-hdrs\">\n<div class=\"left\">\n<a href=\"https:\/\/www.instagram.com\/gooddyeyoung\/\" class=\"h2\">@GOODDYEYOUNG<\/a>\n<\/div>\n<div class=\"right\"><a href=\"https:\/\/www.instagram.com\/gooddyeyoung\/\" class=\"h3\">Follow Us On Instagram<\/a><\/div>\n<\/div>\n<script async src='https:\/\/snapppt.com\/widgets\/widget_loader\/07c6e667-103f-485b-d243-07be47b022ed\/sauce_homepage.js' class='snapppt-widget'><\/script>",
             "width": "100%",
             "alignment": "center"
           }
         }
       },
       "block_order": [
-        "1659041114eba7694f-0",
         "1659041114eba7694f-1"
       ],
       "settings": {
         "full_width": false,
-        "space_around": false
+        "bg_color": "",
+        "text_color": "",
+        "bg_color_contained": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "space_around": false,
+        "show_top_border": false,
+        "show_bottom_border": false
+      }
+    },
+    "c2ea8028-8312-4d4d-909f-c8d603a9d350": {
+      "type": "newsletter",
+      "disabled": true,
+      "blocks": {
+        "template--15292397289608__c2ea8028-8312-4d4d-909f-c8d603a9d350-1667483876e0a5b0c6-0": {
+          "type": "title",
+          "settings": {
+            "title": "Sign up and save"
+          }
+        },
+        "template--15292397289608__c2ea8028-8312-4d4d-909f-c8d603a9d350-1667483876e0a5b0c6-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>"
+          }
+        },
+        "template--15292397289608__c2ea8028-8312-4d4d-909f-c8d603a9d350-1667483876e0a5b0c6-2": {
+          "type": "form",
+          "settings": {
+            "show_name_fields": false,
+            "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15292397289608__c2ea8028-8312-4d4d-909f-c8d603a9d350-1667483876e0a5b0c6-0",
+        "template--15292397289608__c2ea8028-8312-4d4d-909f-c8d603a9d350-1667483876e0a5b0c6-1",
+        "template--15292397289608__c2ea8028-8312-4d4d-909f-c8d603a9d350-1667483876e0a5b0c6-2"
+      ],
+      "settings": {
+        "color_background": "#f9f9f9",
+        "color_text": "#1c1d1d",
+        "narrow_width": false,
+        "text_align": "left"
       }
     }
   },
   "order": [
     "165973843591c5bf46",
     "slideshow",
-    "16590398202f57583c",
-    "featured-collection",
-    "16590403355d4f9fe8",
-    "1659040096f8fdfc25",
-    "featured-collections",
+    "6a94f5d1-049c-44c3-bf73-0ded32314386",
+    "3efd69de-9bc7-4cf3-9439-757aad0b2d86",
+    "8afd9835-861d-4b87-829f-d4755b773d75",
+    "7d4d9248-c539-43f8-938e-766905e6bcb2",
+    "420ff5f8-260a-4e59-b1c8-f21439d7763d",
+    "5f4264f1-5b24-4754-a512-6d39684b0ef0",
+    "10444f2d-3de6-4843-9d61-2b384588ab1e",
+    "411021cf-ed98-420b-bcb4-e3138e67ad39",
+    "13542c77-ce28-4805-a0f2-18b93b50a62c",
+    "799d557c-e942-4e32-828c-c95d2e3e4083",
+    "db709fe5-c489-4c60-b1d1-4fa5cca6dae6",
+    "86f1af0a-8272-49e7-ae2c-492c39c8b38e",
+    "b112225c-27fd-496e-997d-ab15f799f0da",
+    "74700a3c-8fe7-4240-991d-38365e2a6248",
+    "05dad9e4-8e2b-4653-b63d-700cc7d1876b",
+    "94a3f313-3da2-42fc-96f7-62fec595112d",
     "1659040570511e10df",
+    "16608697434c49c16b",
     "165904075540d7a89d",
     "16590407240c56251a",
-    "165904111494e6d1b6"
+    "165904111494e6d1b6",
+    "c2ea8028-8312-4d4d-909f-c8d603a9d350"
   ]
 }

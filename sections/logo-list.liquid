@@ -6,52 +6,218 @@
 
 {%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
 
+<div class="section-{{ section.id }} {{ section.settings.borders }}">
+
 <div class="page-width" data-aos="logo__animation">
-  {%- if section.settings.title != blank -%}
-    <div class="section-header">
-      <h2 class="section-header__title">{{ section.settings.title | escape }}</h2>
+  {%- unless section.settings.title == blank and section.settings.text == blank -%}
+    <div class="section-header text-{{ section.settings.text_align }}">
+
+      {% if section.settings.separate_columns %}<div class="split-hdr-wrap">{% endif %}
+
+      {%- if section.settings.title != blank %}
+      <h2 class="section-header__title">{{ section.settings.title | newline_to_br }}</h2>
+      {%- endif -%}
+
+      {%- if section.settings.text != blank -%}
+      <div class="logo-bar-intro-text">
+        {{ section.settings.text }}
+      </div>
+      {%- endif -%}
+
+      {% if section.settings.separate_columns %}</div>{% endif %}
+
     </div>
-  {%- endif -%}
+  {%- endunless -%}
 
   {%- if section.blocks.size > 0 -%}
     <div class="logo-bar logo-bar--{{ section.id }}">
       {%- for block in section.blocks -%}
         <div class="logo-bar__item" {{ block.shopify_attributes }}>
-          {%- if block.settings.link != blank -%}
-            <a href="{{ block.settings.link }}" class="logo-bar__link">
-          {%- endif -%}
-          {%- if block.settings.image != blank -%}
-            {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-            <img class="logo-bar__image lazyload"
-                data-src="{{ img_url }}"
-                data-widths="[180, 360, 540, 720]"
-                data-aspectratio="{{ block.settings.image.aspect_ratio }}"
-                data-sizes="auto"
-                alt="{{ block.settings.image.alt }}">
-          {%- else -%}
-            {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
-          {%- endif -%}
-          {%- if block.settings.link != blank -%}
-            </a>
-          {%- endif -%}
+          {% unless block.settings.use_svg %}
+            {%- if block.settings.link != blank -%}
+              <a href="{{ block.settings.link }}" class="logo-bar__link">
+            {%- endif -%}
+            {%- if block.settings.image != blank -%}
+              {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+              <img class="logo-bar__image lazyload"
+                  data-src="{{ img_url }}"
+                  data-widths="[180, 360, 540, 720]"
+                  data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+                  data-sizes="auto"
+                  alt="{{ block.settings.image.alt }}">
+            {%- else -%}
+              {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+            {%- if block.settings.link != blank -%}
+              </a>
+            {%- endif -%}
+            {% endunless %}
+            {% if block.settings.use_svg %}
+            <span class="logo-bar-svg">
+              {% case block.settings.svg %}
+              {% when 'icon-rabbit' %}
+                {% render 'icon-rabbit'  %}
+              {% when 'icon-leaf' %}
+                {% render 'icon-leaf'  %}
+              {% when 'icon-chemicals' %}
+                {% render 'icon-chemicals'  %}
+              {% when 'icon-sunflower' %}
+                {% render 'icon-sunflower'  %}
+              {% when 'icon-hearts' %}
+                {% render 'icon-hearts'  %}
+
+              {% endcase %}
+            </span>
+            {% endif %}
+
+            {% if block.settings.title != blank %}
+            <p class="logo-bar__item-title">
+              {{ block.settings.title | newline_to_br }}
+            </p>
+            {% endif %}
         </div>
       {%- endfor -%}
     </div>
   {%- endif -%}
 </div>
 
+</div>
+
+{% style %}
+.section-{{ section.id }} {
+  background-color: {{ section.settings.bg_color }};
+  padding-top: {{ section.settings.padding_top }}px;
+  padding-bottom: {{ section.settings.padding_bottom }}px;
+  margin-top: {{ section.settings.margin_top }}px;
+  margin-bottom: {{ section.settings.margin_bottom }}px;
+}
+@media screen and (max-width:768px) {
+  .section-{{ section.id }} {
+    padding-top: calc( {{ section.settings.padding_top }}px / 2);
+    padding-bottom: calc( {{ section.settings.padding_bottom }}px / 2);
+    margin-top: calc( {{ section.settings.margin_top }}px / 2);
+    margin-bottom: calc( {{ section.settings.margin_bottom }}px / 2);
+  }
+}
+
+.section-{{ section.id }} .section-header {
+  width: {{ section.settings.content_width }}px;
+  max-width: 100%;
+}
+{% if section.settings.text_align == 'center' %}
+.section-{{ section.id }} .section-header {
+  margin-left: auto;
+  margin-right: auto;
+}
+{% elsif section.settings.text_align == 'right' %}
+.section-{{ section.id }} .section-header {
+  margin-left: auto;
+}
+{% endif %}
+
+.section-{{ section.id }},
+.section-{{ section.id }} svg,
+.section-{{ section.id }} svg path {
+  color: {{ section.settings.text_color }};
+  fill: {{ section.settings.text_color }};
+}
+
+{% if section.settings.side_by_side %}
+@media screen and (min-width: 990px) {
+  .section-{{ section.id }} .section-header {
+    display: flex;
+  }
+  .section-{{ section.id }} h2 {
+    width: {{ section.settings.hdr_width }}%;
+    margin-right: 5%;
+  }
+  
+  .section-{{ section.id }} .logo-bar-intro-text {
+    width: calc( 95% - {{ section.settings.hdr_width }} );
+  }
+}
+
+{% endif %}
+
+
+
+
+{% endstyle %}
+
 {%- if section.settings.divider -%}</div>{%- endif -%}
 
 {% schema %}
   {
     "name": "Logo list",
-    "class": "index-section",
     "max_blocks": 10,
     "settings": [
       {
-        "type": "text",
+        "type": "color",
+        "id": "bg_color",
+        "label": "Custom Background color"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text color",
+        "default": "#000000"
+      },
+      {
+        "type": "textarea",
         "id": "title",
         "label": "Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text"
+      },
+      {
+        "type": "select",
+        "id": "text_align",
+        "label": "Text alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "center"
+      },
+      {
+        "type": "range",
+        "id": "content_width",
+        "label": "Intro content width",
+        "default": 600,
+        "min": 300,
+        "max": 1300,
+        "step": 10,
+        "unit": "px"
+      },
+      {
+        "type": "checkbox",
+        "id": "side_by_side",
+        "label": "Header text side-by-side",
+        "info": "Put the header and its description text next to each other for desktop"
+      },
+      {
+        "type": "range",
+        "id": "hdr_width",
+        "label": "Header width",
+        "info": "Used only if checkbox above is checked",
+        "default": 30,
+        "min": 10,
+        "max": 90,
+        "step": 5,
+        "unit": "%"
       },
       {
         "type": "range",
@@ -68,6 +234,71 @@
         "id": "divider",
         "label": "Show section divider",
         "default": false
+      },
+      {
+        "type": "range",
+        "id": "margin_top",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Top margin",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "margin_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Bottom margin",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Top padding",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Bottom padding",
+        "default": 50
+      },
+      {
+        "type": "select",
+        "id": "borders",
+        "label": "Show Borders",
+        "info": "Select which top and bottom borders to show",
+        "options": [
+          {
+            "value": "border-t",
+            "label": "Top border"
+          },
+          {
+            "value": "border-y",
+            "label": "Top and Bottom"
+          },
+          {
+            "value": "border-b",
+            "label": "Bottom border"
+          },
+          {
+            "value": "",
+            "label": "None"
+          }
+        ],
+        "default": "border-y"
       }
     ],
     "blocks": [
@@ -79,6 +310,44 @@
             "type": "image_picker",
             "id": "image",
             "label": "Image"
+          },
+          {
+            "type": "checkbox",
+            "id": "use_svg",
+            "label": "Use SVG instead?"
+          },
+          {
+            "type": "select",
+            "id": "svg",
+            "label": "Select SVG here",
+            "options": [
+              {
+                "value": "icon-rabbit",
+                "label": "Rabbit"
+              },
+              {
+                "value": "icon-leaf",
+                "label": "Leaf"
+              },
+              {
+                "value": "icon-chemicals",
+                "label": "Lab beaker"
+              },
+              {
+                "value": "icon-sunflower",
+                "label": "Sunflower"
+              },
+              {
+                "value": "icon-hearts",
+                "label": "Hearts"
+              }
+            ],
+            "default": "icon-rabbit"
+          },
+          {
+            "type": "textarea",
+            "id": "title",
+            "label": "Title"
           },
           {
             "type": "url",

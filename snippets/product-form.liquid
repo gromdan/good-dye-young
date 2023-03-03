@@ -1,4 +1,4 @@
-{%- form 'product', product, id: form_id, class: 'product-single__form' -%}
+{%- form 'product', product, data-productid: product.id, id: form_id, class: 'product-single__form' -%}
 
   {%- liquid
     assign enable_dynamic_buttons = false
@@ -69,7 +69,7 @@
 
   <div class="shopify-payment-terms product__policies">{{ form | payment_terms }}</div>
 
-  <select name="id" data-product-select class="product-single__variants no-js">
+  <select name="id" data-productid="{{ product.id }}" data-product-select class="product-single__variants no-js">
     {%- for variant in product.variants -%}
       {%- if variant.available -%}
         <option {% if variant == product.selected_or_first_available_variant %}

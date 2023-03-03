@@ -7,7 +7,12 @@
   endif
 -%}
 
-<div class="index-section image-text">
+<div class="index-section image-text"
+{% unless section.settings.collection_dye_duration == 'none' %}
+data-dye_duration="{{ section.settings.collection_dye_duration }}"
+data-collection_color
+{% endunless %}
+>
 
   <div class="page-width feature-row-wrapper">
     {%- capture image_layout -%}
@@ -25,6 +30,13 @@
                     alt="{{ section.settings.image.alt }}">
                 </div>
               {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}</a>{%- endif -%}
+              {% if section.settings.image_attr != blank %}
+                <div class="img_attr">
+                  {% if section.settings.image_attr_link != blank %}<a href="{{ section.settings.image_attr_link }}" target="_blank">{% endif %}
+                    {{ section.settings.image_attr }}
+                  {% if section.settings.image_attr_link != blank %}</a>{% endif %}
+                </div>
+              {% endif %}
             </div>
           {%- endif -%}
           {%- if section.settings.image2 != blank -%}
@@ -67,13 +79,13 @@
           <div class="subheading appear-delay{% cycle '','-1','-2','-3','-4' %}">{{ section.settings.pretitle }}</div>
         {%- endif -%}
         {%- if section.settings.title != blank -%}
-          <div class="h1 appear-delay{% cycle '','-1','-2','-3','-4' %}">{{ section.settings.title | escape }}</div>
+          <div class="h1 {% if section.settings.bigger_title %}bigger_title{% endif %} appear-delay{% cycle '','-1','-2','-3','-4' %}">{{ section.settings.title | escape | newline_to_br }}</div>
         {%- endif -%}
         {%- if section.settings.subtitle != blank -%}
           <div class="subheading appear-delay{% cycle '','-1','-2','-3','-4' %}">{{ section.settings.subtitle }}</div>
         {%- endif -%}
         {%- if section.settings.text != blank -%}
-          <div class="rte appear-delay{% cycle '','-1','-2','-3','-4' %}">{{ section.settings.text }}</div>
+          <div class="rte {% if section.settings.use_larger_text %}large-text{% endif %} appear-delay{% cycle '','-1','-2','-3','-4' %}">{{ section.settings.text }}</div>
         {%- endif -%}
         {%- if section.settings.button_label != blank -%}
           <div class="appear-delay{% cycle '','-1','-2','-3','-4' %}">
@@ -104,6 +116,16 @@
         "label": "Image"
       },
       {
+        "type": "text",
+        "id": "image_attr",
+        "label": "Image attribution"
+      },
+      {
+        "type": "url",
+        "id": "image_attr_link",
+        "label": "Image attribution link"
+      },
+      {
         "type": "image_picker",
         "id": "image2",
         "label": "Image 2"
@@ -124,10 +146,16 @@
         "label": "Preheading"
       },
       {
-        "type": "text",
+        "type": "textarea",
         "id": "title",
         "label": "Heading",
         "default": "Image with text"
+      },
+      {
+        "type": "checkbox",
+        "id": "bigger_title",
+        "label": "Bigger title?",
+        "default": false
       },
       {
         "type": "text",
@@ -139,6 +167,11 @@
         "id": "text",
         "label": "Text",
         "default": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.</p>"
+      },
+      {
+        "type": "checkbox",
+        "id": "use_larger_text",
+        "label": "Use larger text"
       },
       {
         "type": "text",
@@ -212,6 +245,31 @@
         "id": "divider",
         "label": "Show section divider",
         "default": false
+      },
+      {
+        "type": "select",
+        "id": "collection_dye_duration",
+        "label": "Collection dye duration",
+        "info": "For use on Color page, with filter to show/hide groups of products",
+        "default": "none",
+        "options": [
+          {
+            "value": "none",
+            "label": "Not applicable"
+          },
+          {
+            "value": "1",
+            "label": "1: Temporary"
+          },
+          {
+            "value": "2",
+            "label": "2: Semi-Temporary"
+          },
+          {
+            "value": "3",
+            "label": "3: Semi-Permanent"
+          }
+        ]
       }
     ],
     "presets": [

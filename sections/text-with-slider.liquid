@@ -15,12 +15,12 @@
   endif
 -%}
 
-<div class="index-section image-text">
+<div class="index-section image-text slider-text">
 
   <div class="feature-row-wrapper">
     {%- capture image_layout -%}
       <div class="slider2">
-  <div class="swiper-container">
+  <div class="swiper-container2">
 <div class="swiper-wrapper">
 {%for block in section.blocks%}
             <div class="swiper-slide">
@@ -55,7 +55,7 @@
         {{ image_layout }}
         <style>
           .featured-row-slider {
-            margin: 0 50px 0 0;
+            margin: 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -89,7 +89,7 @@
         {{ image_layout }}
         <style>
           .featured-row-slider {
-            margin: 0 0 0 50px;
+            margin: 0;
             display: flex;
             justify-content: space-between;
             align-items: center;

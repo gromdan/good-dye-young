@@ -16,18 +16,30 @@
         },
         "text": {
           "type": "text",
-          "settings": {}
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>From application tips to specific product questions, we're here to help! <a href=\"https:\/\/gooddyeyoung.com\/pages\/faq\" title=\"https:\/\/gooddyeyoung.com\/pages\/faq\">Check out our FAQs to see if your question has been answered<\/a>, or fill out the form below and let us know how we can help! <\/p><p><\/p><p>Our customer service team is available via email between the hours of 8:30-5:00PM ET Monday - Friday.   <\/p><p><\/p>"
+          }
         }
       },
       "block_order": [
         "heading",
         "text"
       ],
-      "settings": {}
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
     },
     "form": {
       "type": "contact-form",
-      "settings": {}
+      "settings": {
+        "title": "Contact us",
+        "text": "",
+        "show_phone": false,
+        "narrow_column": true
+      }
     }
   },
   "order": [

@@ -1,0 +1,204 @@
+.color-picker-wrap {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+    margin-top: 2rem;
+}
+@media screen and (min-width: 1025px) {
+    .color-picker-wrap {
+        margin-top: 2.75rem;
+    }
+}
+.color-picker-display {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    /* grid-row-start: row1-start;
+    grid-row-end: row1-end; */
+}
+.color-picker-stage {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border: #000 solid 2px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: all .1s ease-in;
+}
+.color-picker-stage.color-picker-default {
+    justify-content: space-between;
+    padding: 5% 5% 3%;
+    height: 100%;
+}
+.color-code {
+    display: block;
+    height: 55px;
+    width: 100%;
+    transition: all ease .15s;
+}
+.color-picker-item:hover .color-code {
+    border: 5px solid #fff;
+    outline: 2px solid #000;
+}
+
+.color-picker-default-title {
+    font-size: 1.75em;
+    line-height: 1.2;
+}
+.color-picker-default-text {
+    font-size: 1.125em;
+    line-height: 1.3;
+}
+
+@media screen and (max-width: 989px) {
+    .color-picker-display {
+        min-height: 425px;
+    }
+    .color-picker-default-title {
+        margin-bottom: 2em;
+    }
+
+}
+@media screen and (min-width: 990px) {
+    .color-picker-wrap {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 24px;
+    }
+    .color-picker-display {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: row2-start;
+        grid-row-end: 8;
+    }
+    .color-code {
+        height: 64px;
+    }
+   
+    .color-picker-stage.color-picker-default {
+        padding: 7% 7% 4%;
+    }
+    .color-picker-default-title {
+        font-size: 2.4em;
+    }
+    .color-picker-default-text {
+        font-size: 1.35em;
+    }
+}
+
+
+.color-picker-stage.color-product {
+    background-color: #fff;
+}
+.color-product {
+    text-align: center;
+}
+.color-product h4 {
+    padding: .75rem 3% .5rem;
+    margin: 0;
+    font-size: 1.2em;
+}
+.color-product .btn {
+    display: block;
+    font-size: 16px;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+
+.color-picker-stage.active_on, 
+.color-picker-stage.active {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.color-picker-stage.active {
+    z-index: 10;
+}
+.color-picker-stage.active_on {
+    z-index: 5;
+}
+.color-picker-stage .img-wrap {
+    position: relative;
+    height: 0;
+    padding-bottom: 88%;
+}
+@media screen and (max-width: 749px) {
+    .color-picker-stage .img-wrap {
+        padding-bottom: 93%;
+    }
+}
+@media screen and (min-width: 990px) and (max-width: 1100px) and (orientation: landscape) {
+    .color-picker-stage .img-wrap {
+        padding-bottom: 115%;
+    }
+}
+.color-picker-stage .img-wrap img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+@media screen and (max-width: 1460px) {
+    .color-product h4 {
+        padding: .5rem 3% .5rem;
+        font-size: 1.1em;
+    }
+}
+
+
+.color-collection-filter {
+    margin-top: 3rem;
+    border-bottom: #000 solid 2px;
+}
+
+@media screen and (min-width: 1025px) {
+    .color-collection-filter {
+        margin-top: 4rem;
+    }
+}
+
+.ccf-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 2em 0 0 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 749px) {
+    .ccf-list {
+        flex-direction: column;
+    }
+}
+
+.ccf-list li {
+    margin: 0 1em 1.5em;
+}
+
+.ccf-button {
+    font-family: inherit;
+    border: none;
+    outline: none;
+}
+
+.ccf-title {
+    font-weight: bold;
+    font-size: 1.25em;
+    margin-bottom: .5em;
+    text-transform: uppercase;
+    transition: all .1s ease-in;
+}
+.active .ccf-title {
+    font-family: "integral cf bold", sans-serif;
+    font-size: 1.3em;
+    transform: translateY(-6px);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 3px;
+}
+.ccf-text {
+    font-size: 1em;
+}

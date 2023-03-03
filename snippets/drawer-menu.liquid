@@ -112,13 +112,35 @@
                             {% if childlink.active or childlink.child_active %}style="height: auto;"{% endif %}>
                             <div class="collapsible-content__inner">
                               <ul class="mobile-nav__grandchildlist">
-                                {%- for grandchildlink in childlink.links -%}
-                                  <li class="mobile-nav__item">
-                                    <a href="{{ grandchildlink.url }}" class="mobile-nav__link"{% if grandchildlink.active %} data-active="true"{% endif %}>
-                                      {{ grandchildlink.title }}
-                                    </a>
-                                  </li>
-                                {%- endfor -%}
+                                  {% if childlink.url contains 'color' %}
+                                      <div class="swatch-container">
+                                          {%- for grandchildlink in childlink.links -%}
+                                              <div class="swatch-group">
+                                                  <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">
+                                                      <div class="swatch-img" style="max-width:50px;">
+                                                          {% comment %}<img src="https://via.placeholder.com/200x200" />{%endcomment%}
+                                                          {% assign swatch = grandchildlink.title | downcase | append:"-color-icon.png" %}
+                                                          {% if swatch != blank %}
+                                                              <img src="{{ swatch | file_img_url: '100x100' }}">
+                                                          {% else %}
+                                                              <img src="https://via.placeholder.com/200x200" />
+                                                          {% endif %}
+                                                      </div>
+
+                                                      {{grandchildlink.title}}
+                                                  </a>
+                                              </div>
+                                          {%- endfor -%}
+                                      </div>
+                                  {% else %}
+                                    {%- for grandchildlink in childlink.links -%}
+                                      <li class="mobile-nav__item">
+                                        <a href="{{ grandchildlink.url }}" class="mobile-nav__link"{% if grandchildlink.active %} data-active="true"{% endif %}>
+                                          {{ grandchildlink.title }}
+                                        </a>
+                                      </li>
+                                    {%- endfor -%}
+                                  {% endif %}
                               </ul>
                             </div>
                           </div>

@@ -1,0 +1,158 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1664893342c63f626b": {
+      "type": "three_image_gallery",
+      "blocks": {
+        "1fa2989c-54b0-43cf-b4b5-9b3cd4ad9e17": {
+          "type": "left_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ROW-2-IMAGE-2-1_1.png",
+            "button_label": "",
+            "button_link": "",
+            "button_links": ""
+          }
+        },
+        "5bb13940-69ea-4185-8bd3-dde63c742861": {
+          "type": "center_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MAIN_1.png",
+            "button_label": "",
+            "button_link": "",
+            "button_links": ""
+          }
+        },
+        "daeb41c8-8564-4b34-8196-dd6cbdb70bc3": {
+          "type": "right_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ROW-1-IMAGE-2-1_1.png",
+            "button_label": "",
+            "button_link": "",
+            "button_links": ""
+          }
+        }
+      },
+      "block_order": [
+        "1fa2989c-54b0-43cf-b4b5-9b3cd4ad9e17",
+        "5bb13940-69ea-4185-8bd3-dde63c742861",
+        "daeb41c8-8564-4b34-8196-dd6cbdb70bc3"
+      ],
+      "settings": {}
+    },
+    "1664893013d6aa9463": {
+      "type": "rich-text",
+      "blocks": {
+        "1664893013bbd4a571-0": {
+          "type": "heading",
+          "settings": {
+            "title": "JOIN THE HUE CREW"
+          }
+        },
+        "1664893013bbd4a571-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Share your love of vibrant hair and get paid!<\/p><p>Join The Hue Crew and you'll earn 15% commission on every sale, and your fans will get 15% off their order.<\/p><p>Simply create an account to get your unique code.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1664893013bbd4a571-0",
+        "1664893013bbd4a571-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "1664470880f1b3961c": {
+      "type": "apps",
+      "blocks": {
+        "e35ba03e-66f4-40d5-980b-cf7fce3b8b8f": {
+          "type": "shopify:\/\/apps\/snowball-affiliate-marketing\/blocks\/affiliate-sign-up\/6e5feda3-ec24-4171-ae41-64028b660bc7",
+          "settings": {
+            "form_id": "8d9744ac-ec3b-4524-a352-1145b58cf517"
+          }
+        }
+      },
+      "block_order": [
+        "e35ba03e-66f4-40d5-980b-cf7fce3b8b8f"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "ddf859c2-ebc7-4c24-8643-244c04ad29ff": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15351833526408__ddf859c2-ebc7-4c24-8643-244c04ad29ff-1677028323e376e461-0": {
+          "type": "heading",
+          "settings": {
+            "title": "FAQs"
+          }
+        },
+        "template--15351833526408__ddf859c2-ebc7-4c24-8643-244c04ad29ff-1677028323e376e461-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p><strong>How does this work? <\/strong><\/p><p>The Hue Crew is Good Dye Young’s Affiliate Program. Simply apply using the form above.  Once you’re approved, we send you a welcome email with your affiliate code. Your code is good for 15% off gooddyeyoung.com. Here’s where the fun begins! Start recommending Good Dye Young to your network with your code and you’ll earn a 15% commission each time someone makes their first purchase on gooddyeyoung.com. <\/p>"
+          }
+        },
+        "5489c93d-a009-4085-b0b6-e450bdafcd2f": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p><strong>When will I get my commission? <\/strong><\/p><p>Your commission payout will be delivered electronically via Tremendous (our payment processor) following our Payout Maturation Period, which is a 30 day window. Only orders that are not canceled, returned, or refunded within 30 days of the order date will be paid out. <\/p><p>For example, if a customer uses your code on an order placed on 1\/1\/2023, your payout will be approved on 1\/31\/2023.<\/p>"
+          }
+        },
+        "b2aa6d1e-341c-4ca2-b398-eee183a95072": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p><strong>What form of payment will I receive?<\/strong><\/p><p>In order to receive your funds, click on the email notification from Tremendous (our payment processor) and follow the steps. You can either choose to receive cash via PayPal or Bank Deposit, or you can select a digital gift card.<br\/><\/p>"
+          }
+        },
+        "43511794-a3be-4371-b637-2d6f06eaa937": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p><strong>What is Tremendous? <\/strong><\/p><p>Tremendous is a payouts platform, enabling businesses to send money, prepaid cards, and gift cards to people around the world. <\/p><p>Find out more <a href=\"https:\/\/www.tremendous.com\/\" target=\"_blank\" title=\"https:\/\/www.tremendous.com\/\">here<\/a>.<\/p>"
+          }
+        },
+        "ebfd96bc-6f3e-407b-9e9d-ca918733356c": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p><strong>I need more help. Who can I contact? <\/strong><\/p><p>We’re always here to help! Simply email us as <a href=\"mailto:help@gooddyeyoung.com\"><span style=\"text-decoration:underline\">help@gooddyeyoung.com<\/span><\/a>. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15351833526408__ddf859c2-ebc7-4c24-8643-244c04ad29ff-1677028323e376e461-0",
+        "template--15351833526408__ddf859c2-ebc7-4c24-8643-244c04ad29ff-1677028323e376e461-1",
+        "5489c93d-a009-4085-b0b6-e450bdafcd2f",
+        "b2aa6d1e-341c-4ca2-b398-eee183a95072",
+        "43511794-a3be-4371-b637-2d6f06eaa937",
+        "ebfd96bc-6f3e-407b-9e9d-ca918733356c"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1664893342c63f626b",
+    "1664893013d6aa9463",
+    "1664470880f1b3961c",
+    "ddf859c2-ebc7-4c24-8643-244c04ad29ff"
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "8fe2f351-6f42-485c-8e3a-f6dd86a2e995": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15348593066120__8fe2f351-6f42-485c-8e3a-f6dd86a2e995-167362300930e7453d-0": {
+          "type": "image",
+          "settings": {
+            "use_dark_text": false,
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Untitled_design_5.png",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "template--15348593066120__8fe2f351-6f42-485c-8e3a-f6dd86a2e995-167362300930e7453d-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "use_dark_text": false,
+            "top_subheading": "",
+            "title": "Two line\ntitle slide.",
+            "title_size": 80,
+            "subheading": "And big, beautiful imagery",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15348593066120__8fe2f351-6f42-485c-8e3a-f6dd86a2e995-167362300930e7453d-0",
+        "template--15348593066120__8fe2f351-6f42-485c-8e3a-f6dd86a2e995-167362300930e7453d-1"
+      ],
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "250px",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": false,
+        "autoplay_speed": 5
+      }
+    },
+    "c353468e-0340-4376-8bbc-91bd8464dd94": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15348593066120__c353468e-0340-4376-8bbc-91bd8464dd94-167362346236f51c45-0": {
+          "type": "heading",
+          "settings": {
+            "title": "WELCOME TO GDY"
+          }
+        },
+        "template--15348593066120__c353468e-0340-4376-8bbc-91bd8464dd94-167362346236f51c45-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Ready to express yourself? We're here to help you go bold and get vibrant color. Check out <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15348593066120__c353468e-0340-4376-8bbc-91bd8464dd94-167362346236f51c45-0",
+        "template--15348593066120__c353468e-0340-4376-8bbc-91bd8464dd94-167362346236f51c45-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "1664893342c63f626b": {
+      "type": "three_image_gallery",
+      "disabled": true,
+      "blocks": {
+        "1fa2989c-54b0-43cf-b4b5-9b3cd4ad9e17": {
+          "type": "left_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ROW-2-IMAGE-2-1_1.png",
+            "button_label": "",
+            "button_link": "",
+            "button_links": ""
+          }
+        },
+        "5bb13940-69ea-4185-8bd3-dde63c742861": {
+          "type": "center_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MAIN_1.png",
+            "button_label": "",
+            "button_link": "",
+            "button_links": ""
+          }
+        },
+        "daeb41c8-8564-4b34-8196-dd6cbdb70bc3": {
+          "type": "right_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ROW-1-IMAGE-2-1_1.png",
+            "button_label": "",
+            "button_link": "",
+            "button_links": ""
+          }
+        }
+      },
+      "block_order": [
+        "1fa2989c-54b0-43cf-b4b5-9b3cd4ad9e17",
+        "5bb13940-69ea-4185-8bd3-dde63c742861",
+        "daeb41c8-8564-4b34-8196-dd6cbdb70bc3"
+      ],
+      "settings": {}
+    },
+    "2ea9a128-7d51-48d0-85af-aef150c8e882": {
+      "type": "text-columns",
+      "blocks": {
+        "template--15348593066120__2ea9a128-7d51-48d0-85af-aef150c8e882-1673624783a398961c-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/VIDEO.png",
+            "image_width": 650,
+            "title": "VIDEO TUTORIALS",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "",
+            "text_color_1": "#000000",
+            "text_2": "",
+            "text_color_2": "#000000",
+            "text_3": "",
+            "text_color_3": "#000000",
+            "button_label": "Learn more",
+            "button_link": "shopify:\/\/pages\/how-to-dye-hair-video-tutorial"
+          }
+        },
+        "template--15348593066120__2ea9a128-7d51-48d0-85af-aef150c8e882-1673624783a398961c-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/FAQS.png",
+            "image_width": 650,
+            "title": "FAQs",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "",
+            "text_color_1": "#000000",
+            "text_2": "",
+            "text_color_2": "#000000",
+            "text_3": "",
+            "text_color_3": "#000000",
+            "button_label": "get help",
+            "button_link": "shopify:\/\/pages\/faq"
+          }
+        },
+        "3dc173ce-f376-4100-8eab-3243928b98c6": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/INSPIRATION.png",
+            "image_width": 650,
+            "title": "Get Creative",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "",
+            "text_color_1": "#000000",
+            "text_2": "",
+            "text_color_2": "#000000",
+            "text_3": "",
+            "text_color_3": "#000000",
+            "button_label": "INSPO",
+            "button_link": "shopify:\/\/pages\/vibrant-hair-color-ideas"
+          }
+        }
+      },
+      "block_order": [
+        "template--15348593066120__2ea9a128-7d51-48d0-85af-aef150c8e882-1673624783a398961c-0",
+        "template--15348593066120__2ea9a128-7d51-48d0-85af-aef150c8e882-1673624783a398961c-1",
+        "3dc173ce-f376-4100-8eab-3243928b98c6"
+      ],
+      "settings": {
+        "bg_color": "",
+        "title": "",
+        "subtitle": "",
+        "align_text": "center",
+        "button_label": "",
+        "button_link": "",
+        "btn_bg_color": "",
+        "bigger_btn": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "space_around": true,
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padded_columns": false,
+        "use_mobile_slider": false
+      }
+    },
+    "d67062a4-13fa-4ae1-a5d9-7cce14c6ebc4": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/REWARDS_11760036-030a-41e4-8e84-91becc056eb0.png",
+        "image_attr": "",
+        "image_attr_link": "",
+        "image_width": 700,
+        "pretitle": "",
+        "title": "Earn Rewards",
+        "bigger_title": false,
+        "subtitle": "",
+        "text": "<p>Join the Ride or Dyes and earn points for each purchase and engaging with our community.<\/p>",
+        "use_larger_text": false,
+        "button_label": "SIGN UP",
+        "button_link": "",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false,
+        "collection_dye_duration": "none"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "8fe2f351-6f42-485c-8e3a-f6dd86a2e995",
+    "c353468e-0340-4376-8bbc-91bd8464dd94",
+    "1664893342c63f626b",
+    "2ea9a128-7d51-48d0-85af-aef150c8e882",
+    "d67062a4-13fa-4ae1-a5d9-7cce14c6ebc4"
+  ]
+}
