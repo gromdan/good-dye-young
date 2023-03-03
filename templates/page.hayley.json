@@ -1,0 +1,408 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "77a40ac1-00a2-44b7-9bb7-2114e448a11b": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15270233145480__77a40ac1-00a2-44b7-9bb7-2114e448a11b-1665609297e4cf1322-0": {
+          "type": "image",
+          "settings": {
+            "use_dark_text": false,
+            "top_subheading": "",
+            "title": "HAYLEY'S \nON TOUR \nLOOKS",
+            "title_size": 70,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify:\/\/shop_images\/Hayley_opry.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/Hayley_opry.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15270233145480__77a40ac1-00a2-44b7-9bb7-2114e448a11b-1665609297e4cf1322-0"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "728d6de8-76de-4240-bc49-a1ccfc48c26b": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "HAYLEY'S GO-TO PRODUCTS",
+        "subtitle": "",
+        "home_featured_products": "hayleys-go-to-products",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
+    "b3364233-4948-49c5-9002-5647a471e629": {
+      "type": "fifty-fifty",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Untitled-25.jpg",
+        "bg_color": "",
+        "text_color": "",
+        "use_crazy_bg": false,
+        "pretitle": "",
+        "title": "How to get Hayley's Copper Hair:",
+        "subtitle": "",
+        "text": "<p>1. Mix a full tube of KO with a third of a tube of Copper DYEposit<\/p><p>2. Add half a tube of Biz<\/p><p>3. Mix until combined<\/p><p>4. Apply to hair<\/p><p>5. Let sit for at least 30 minutes<\/p><p>6. Rinse and style<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right"
+      }
+    },
+    "b0749d1d-9d93-43d2-9d7f-458728ac4c18": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "template--15292397682824__b0749d1d-9d93-43d2-9d7f-458728ac4c18-16705218355dd2c14a-0": {
+          "type": "heading",
+          "settings": {
+            "title": "How to get Hayley's Copper Hair:"
+          }
+        },
+        "template--15292397682824__b0749d1d-9d93-43d2-9d7f-458728ac4c18-16705218355dd2c14a-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>1. Mix a full tube of KO with a third of a tube of Copper DYEposit<\/p><p>2. Add half a tube of Biz<\/p><p>3. Mix until combined<\/p><p>4. Apply to hair<\/p><p>5. Let sit for at least 30 minutes<\/p><p>6. Rinse and style<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15292397682824__b0749d1d-9d93-43d2-9d7f-458728ac4c18-16705218355dd2c14a-0",
+        "template--15292397682824__b0749d1d-9d93-43d2-9d7f-458728ac4c18-16705218355dd2c14a-1"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "ea88ce56-48a6-4c4d-8c61-d3ade75a1e7f": {
+      "type": "featured-video",
+      "settings": {
+        "title": "HAYLEY + BRIAN SHARE HAYLEY'S HAIR ROUTINE",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=mr10l1MSo5M",
+        "divider": false
+      }
+    },
+    "8ad4d38a-2adc-477c-a89c-35fb36618d21": {
+      "type": "fifty-fifty",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/GDY.com_RESIZED_3.png",
+        "bg_color": "",
+        "text_color": "",
+        "use_crazy_bg": false,
+        "pretitle": "",
+        "title": "Hayley's On The Road Hair Bundle",
+        "subtitle": "",
+        "text": "<p>Get everything Hayley uses when she’s on tour for 30% off!<\/p>",
+        "button_label": "SHOP THE BUNDLE",
+        "button_link": "shopify:\/\/products\/hayleys-on-the-road-bundle",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right"
+      }
+    },
+    "911c08ef-452f-4dcf-a2b1-2ffda120d0af": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Hayley-Inspired Merch",
+        "subtitle": "Get in the BIZness of showing off your GDY style.",
+        "home_featured_products": "merch",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "69bcb609-ef56-4d4b-a700-a4b5f89b11b4": {
+      "type": "text-columns",
+      "disabled": true,
+      "blocks": {
+        "template--15270233145480__69bcb609-ef56-4d4b-a700-a4b5f89b11b4-1665609487b27d4f4e-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/HAYLEY_LANDING_PAGE_3.jpg",
+            "image_width": 650,
+            "title": "",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "<p><\/p>",
+            "text_color_1": "#000000",
+            "text_2": "<p><\/p>",
+            "text_color_2": "#000000",
+            "text_3": "<p><\/p>",
+            "text_color_3": "#000000",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--15270233145480__69bcb609-ef56-4d4b-a700-a4b5f89b11b4-1665609487b27d4f4e-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/HAYLEY_LANDING_PAGE_4.jpg",
+            "image_width": 650,
+            "title": "",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "<p><\/p>",
+            "text_color_1": "#000000",
+            "text_2": "<p><\/p>",
+            "text_color_2": "#000000",
+            "text_3": "<p><\/p>",
+            "text_color_3": "#000000",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--15270233145480__69bcb609-ef56-4d4b-a700-a4b5f89b11b4-1665609487b27d4f4e-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/HAYLEY_LANDING_PAGE_2.jpg",
+            "image_width": 650,
+            "title": "",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "<p><\/p>",
+            "text_color_1": "#000000",
+            "text_2": "<p><\/p>",
+            "text_color_2": "#000000",
+            "text_3": "<p><\/p>",
+            "text_color_3": "#000000",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15270233145480__69bcb609-ef56-4d4b-a700-a4b5f89b11b4-1665609487b27d4f4e-0",
+        "template--15270233145480__69bcb609-ef56-4d4b-a700-a4b5f89b11b4-1665609487b27d4f4e-1",
+        "template--15270233145480__69bcb609-ef56-4d4b-a700-a4b5f89b11b4-1665609487b27d4f4e-2"
+      ],
+      "settings": {
+        "bg_color": "",
+        "title": "",
+        "subtitle": "",
+        "align_text": "center",
+        "button_label": "",
+        "button_link": "",
+        "btn_bg_color": "",
+        "bigger_btn": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "space_around": true,
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padded_columns": false,
+        "use_mobile_slider": false
+      }
+    },
+    "713ccd90-3686-4600-bd41-942b80bfca16": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "Rock It Your Way",
+        "text": "<p>Create your own fiery look with our vibrant orange dyes. Everything from all over semi-perm to streaks & strands for a custom pop of color. <\/p>",
+        "button_label": "SHOP NOW",
+        "button_link": "shopify:\/\/collections\/orange-hair-dye",
+        "image": "shopify:\/\/shop_images\/HOME_PAGE_3-min.jpg",
+        "focal_point": "center",
+        "layout": "right",
+        "height": 550,
+        "framed": false,
+        "parallax": false
+      }
+    },
+    "40edb4d9-39b8-4bde-9c45-615e03b2e5db": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "METALHEADS",
+        "text": "<p>Heavy is the head that bangs. Metal music and the lifestyle within it is nothing less than a culture fueled by raw emotion and self expression.<\/p>",
+        "button_label": "SHOP NOW",
+        "button_link": "shopify:\/\/collections\/metalheads",
+        "image": "shopify:\/\/shop_images\/TOXICITY_HAYLEY_LANDING_PAGE_2.jpg",
+        "focal_point": "top",
+        "layout": "left",
+        "height": 550,
+        "framed": false,
+        "parallax": false
+      }
+    },
+    "1661556045fa63fe6b": {
+      "type": "advanced-content",
+      "disabled": true,
+      "blocks": {
+        "166155604565dc9fa5-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Mission<\/h2>\n<p class=\"large-text pad-right-10\">Good Dye Young cultivates a safe and inclusive community that values vibrant self-expression and creativity. We also make bad ass hair products.<\/p>",
+            "width": "50%",
+            "alignment": "top-middle"
+          }
+        },
+        "c21a64b4-f3b2-4333-81a6-659187bc4b46": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Community<\/h2>\n<p class=\"large-text pad-right-10\">Good Dye Young is a community bonded by self expression, limitless inspiration and flair for bold color.<\/p>",
+            "width": "50%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "166155604565dc9fa5-1",
+        "c21a64b4-f3b2-4333-81a6-659187bc4b46"
+      ],
+      "settings": {
+        "full_width": false,
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
+        "bg_color_contained": false,
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "space_around": true,
+        "show_top_border": false,
+        "show_bottom_border": false
+      }
+    },
+    "166155803897b57306": {
+      "type": "logo-list",
+      "disabled": true,
+      "blocks": {
+        "1661558038e22e9c69-0": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-rabbit",
+            "title": "Cruelty-free",
+            "link": ""
+          }
+        },
+        "1661558038e22e9c69-1": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-leaf",
+            "title": "Vegan",
+            "link": ""
+          }
+        },
+        "1661558038e22e9c69-2": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-chemicals",
+            "title": "Free of a lot of\ngross chemicals",
+            "link": ""
+          }
+        },
+        "1661558038e22e9c69-3": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-sunflower",
+            "title": "Natural Sunflower\nExtract",
+            "link": ""
+          }
+        },
+        "74a53c01-7abe-43f9-a963-f869dc661c56": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-hearts",
+            "title": "Made with love\nin the USA",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1661558038e22e9c69-0",
+        "1661558038e22e9c69-1",
+        "1661558038e22e9c69-2",
+        "1661558038e22e9c69-3",
+        "74a53c01-7abe-43f9-a963-f869dc661c56"
+      ],
+      "settings": {
+        "bg_color": "",
+        "text_color": "#000000",
+        "title": "WHAT WE’RE <br>ALL ABOUT",
+        "text": "<p>Good Dye Young cultivates a safe and inclusive community that values vibrant self-expression and creativity. We also make bad ass hair products.<\/p>",
+        "text_align": "left",
+        "content_width": 1300,
+        "side_by_side": true,
+        "hdr_width": 40,
+        "logo_opacity": 76,
+        "divider": false,
+        "margin_top": 50,
+        "margin_bottom": 50,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "borders": "border-b"
+      }
+    },
+    "1665610209671c4719": {
+      "type": "apps",
+      "blocks": {
+        "fe52bf3a-a546-49be-8b89-b1b0837b7d0e": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "SqWPAL"
+          }
+        }
+      },
+      "block_order": [
+        "fe52bf3a-a546-49be-8b89-b1b0837b7d0e"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "77a40ac1-00a2-44b7-9bb7-2114e448a11b",
+    "728d6de8-76de-4240-bc49-a1ccfc48c26b",
+    "b3364233-4948-49c5-9002-5647a471e629",
+    "b0749d1d-9d93-43d2-9d7f-458728ac4c18",
+    "ea88ce56-48a6-4c4d-8c61-d3ade75a1e7f",
+    "8ad4d38a-2adc-477c-a89c-35fb36618d21",
+    "911c08ef-452f-4dcf-a2b1-2ffda120d0af",
+    "69bcb609-ef56-4d4b-a700-a4b5f89b11b4",
+    "713ccd90-3686-4600-bd41-942b80bfca16",
+    "40edb4d9-39b8-4bde-9c45-615e03b2e5db",
+    "1661556045fa63fe6b",
+    "166155803897b57306",
+    "1665610209671c4719"
+  ]
+}

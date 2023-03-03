@@ -5,13 +5,26 @@
     {% endif %}
   {% endif %}
   <div class="inner">
+
+    {% if section.settings.image_main != blank %}
       <div class="img-left">
-          <img src="https://cdn.shopify.com/s/files/1/0590/4957/4536/files/Primary-Home-Page-Image.jpg?v=1659738528" />
+          <img src="{{ section.settings.image_main | image_url: width: 1000 }}" alt="{{ section.settings.image_main.alt }}" />
       </div>
-    <div class="img-right">
-      <img src="https://cdn.shopify.com/s/files/1/0590/4957/4536/files/Secondary-Image-Home-Page.jpg?v=1659738528" />
-      <a href="#" class="btn btn--full">Shop NOw</a>
-    </div>
+    {% endif %}
+
+    {% if section.settings.image_right != blank or section.settings.btn_text != blank %}
+      <div class="img-right">
+        {% if section.settings.image_right != blank %}
+        <img src="{{ section.settings.image_right | image_url: width: 800 }}" alt="{{ section.settings.image_right.alt }}" />
+        {% endif %}
+        {% if section.settings.btn_text != blank %}
+        <a href="{{ section.settings.btn_link }}" class="btn btn--full {% if section.settings.btn_inverse %}btn--inverse-dark-outline{% endif %}">
+          {{ section.settings.btn_text }}
+        </a>
+        {% endif %}
+
+      </div>
+    {% endif %}
   </div>
   {% if section.settings.align_text == 'bottom' %}
     {% if section.settings.headline != blank %}
@@ -47,8 +60,36 @@
                 "label": "Bottom"
               }
             ]
+          },
+          {
+            "type": "image_picker",
+            "id": "image_main",
+            "label": "Main Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_right",
+            "label": "Right Image"
+          },
+          {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Button text",
+            "info": "Optional"
+          },
+          {
+            "type": "url",
+            "id": "btn_link",
+            "label": "Button link",
+            "info": "Optional"
+          },
+          {
+            "type": "checkbox",
+            "id": "btn_inverse",
+            "label": "Inverse button style?",
+            "default": false
           }
-    ],
+    ],/*
     "blocks": [
       {
         "type": "color-selector",
@@ -66,7 +107,7 @@
           }
         ]
       }
-    ],
+    ],*/
     "presets": [{
       "name": "Banner Header"
     }]

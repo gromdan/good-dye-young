@@ -9,54 +9,256 @@
       "type": "text-and-image",
       "settings": {
         "image": "shopify:\/\/shop_images\/About-PageHBduo.jpg",
+        "image_attr": "",
+        "image_attr_link": "",
         "image_width": 700,
         "pretitle": "",
-        "title": "about good dye young",
+        "title": "About \nGood Dye \nYoung",
+        "bigger_title": true,
         "subtitle": "",
         "text": "<p>Good Dye Young was created by Hayley Williams, lead singer of the Grammy Award winning band Paramore, and her longtime hair stylist and makeup artist, Brian O’Connor.<\/p><p>The two became best friends through years of creative collaboration and developed GDY as a hair color brand with a vision to create a community around self-expression, color and happiness about being who you are.<\/p>",
+        "use_larger_text": false,
         "button_label": "",
         "button_link": "",
         "button_color": "",
         "button_style": "primary",
         "align_text": "left",
         "layout": "left",
-        "divider": false
+        "divider": false,
+        "collection_dye_duration": "none"
       }
     },
     "16597370563f7e0ed6": {
       "type": "text-and-image",
       "settings": {
         "image": "shopify:\/\/shop_images\/1-1.jpg",
+        "image_attr": "",
+        "image_attr_link": "",
         "image_width": 700,
         "pretitle": "",
         "title": "Hayley & Brian",
+        "bigger_title": false,
         "subtitle": "",
         "text": "<p><strong>GDY is an extension of Hayley & Brian’s shared passion to provide a brand that breaks down that wall of just being a company, and creating a community you can be a part of, empowered by tools that encourage your freedom of self-expression.<\/strong><\/p><p>“Hair is one of the coolest and easiest tools that we have for self-expression. It’s your own personal megaphone and it’s attached to your head! Our purpose is to create an all-inclusive culture that inspires creativity and empowers everyone’s journey through self-discovery with a whole lot more fun so we can all dye happy.”<\/p><p>– Hayley Williams<\/p>",
+        "use_larger_text": false,
         "button_label": "",
         "button_link": "",
         "button_color": "",
         "button_style": "primary",
         "align_text": "left",
         "layout": "right",
-        "divider": false
+        "divider": true,
+        "collection_dye_duration": "none"
       }
     },
     "165973713930796eba": {
       "type": "text-and-image",
       "settings": {
         "image": "shopify:\/\/shop_images\/2-1.jpg",
+        "image_attr": "",
+        "image_attr_link": "",
         "image_width": 700,
         "pretitle": "",
         "title": "",
+        "bigger_title": false,
         "subtitle": "",
         "text": "<p>Brian O’ Connor is a staple in the styling scene in the South’s entertainment capital, Nashville. His expertise in color and style has helped shape GDY’s products.<\/p><p>Focused on quality ingredients and product performance, Brian sets a high standard for all of the brand’s offerings.<\/p><p>“Hair! The accessory you wear everyday and the first thing people notice. Your hair says a lot about who you are and exactly what you want to say to the world. I say the brighter the better and don’t ever let someone dull that shine.”– Brian O’ Connor Artistic Director<\/p>",
+        "use_larger_text": false,
         "button_label": "",
         "button_link": "",
         "button_color": "",
         "button_style": "primary",
         "align_text": "left",
         "layout": "left",
-        "divider": false
+        "divider": false,
+        "collection_dye_duration": "none"
+      }
+    },
+    "1661556045fa63fe6b": {
+      "type": "advanced-content",
+      "blocks": {
+        "166155604565dc9fa5-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Mission<\/h2>\n<p class=\"large-text pad-right-10\">Good Dye Young cultivates a safe and inclusive community that values vibrant self-expression and creativity. We also make bad ass hair products.<\/p>",
+            "width": "50%",
+            "alignment": "top-middle"
+          }
+        },
+        "c21a64b4-f3b2-4333-81a6-659187bc4b46": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Community<\/h2>\n<p class=\"large-text pad-right-10\">Good Dye Young is a community bonded by self expression, limitless inspiration and flair for bold color.<\/p>",
+            "width": "50%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "166155604565dc9fa5-1",
+        "c21a64b4-f3b2-4333-81a6-659187bc4b46"
+      ],
+      "settings": {
+        "full_width": false,
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
+        "bg_color_contained": false,
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "space_around": true,
+        "show_top_border": false,
+        "show_bottom_border": false
+      }
+    },
+    "166155803897b57306": {
+      "type": "logo-list",
+      "blocks": {
+        "1661558038e22e9c69-0": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-rabbit",
+            "title": "Cruelty-free",
+            "link": ""
+          }
+        },
+        "1661558038e22e9c69-1": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-leaf",
+            "title": "Vegan",
+            "link": ""
+          }
+        },
+        "1661558038e22e9c69-2": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-chemicals",
+            "title": "Free of a lot of\ngross chemicals",
+            "link": ""
+          }
+        },
+        "1661558038e22e9c69-3": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-sunflower",
+            "title": "Natural Sunflower\nExtract",
+            "link": ""
+          }
+        },
+        "74a53c01-7abe-43f9-a963-f869dc661c56": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-hearts",
+            "title": "Made with love\nin the USA",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1661558038e22e9c69-0",
+        "1661558038e22e9c69-1",
+        "1661558038e22e9c69-2",
+        "1661558038e22e9c69-3",
+        "74a53c01-7abe-43f9-a963-f869dc661c56"
+      ],
+      "settings": {
+        "bg_color": "",
+        "text_color": "#000000",
+        "title": "WHAT WE’RE <br>ALL ABOUT",
+        "text": "<p>Good Dye Young cultivates a safe and inclusive community that values vibrant self-expression and creativity. We also make bad ass hair products.<\/p>",
+        "text_align": "left",
+        "content_width": 1300,
+        "side_by_side": true,
+        "hdr_width": 40,
+        "logo_opacity": 76,
+        "divider": false,
+        "margin_top": 50,
+        "margin_bottom": 50,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "borders": "border-b"
+      }
+    },
+    "16615586782c344875": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/globe-head.jpg",
+        "image_attr": "@jennaseevers",
+        "image_attr_link": "https:\/\/www.instagram.com\/jennaseevers\/?hl=en",
+        "image_width": 700,
+        "pretitle": "",
+        "title": "Sustainability",
+        "bigger_title": false,
+        "subtitle": "",
+        "text": "<p>Good Dye Young is passionate about our planet as well as high quality products. Sustainability is something we are always learning about and improving from a brand perspective. This is ever changing for us as we discover new ways for us to be more sustainable.<\/p>",
+        "use_larger_text": false,
+        "button_label": "View More",
+        "button_link": "shopify:\/\/pages\/sustainability",
+        "button_color": "rgba(0,0,0,0)",
+        "button_style": "secondary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false,
+        "collection_dye_duration": "none"
+      }
+    },
+    "16615597529dc22d51": {
+      "type": "advanced-content",
+      "blocks": {
+        "16615597523af5fbf5-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"contact-column\">\n<h2>Press inquiries<\/h2>\n<a href=\"mailto:press@gooddyeyoung.com\"><span class=\"cc-link\">Say Hello<\/span><\/a>\n<\/div>",
+            "width": "25%",
+            "alignment": "top-middle"
+          }
+        },
+        "3cf179c4-b0b0-4f8c-a693-60d3597a117e": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"contact-column\">\n<h2>Learn from an expert<\/h2>\n<a target=\"_blank\" href=\"https:\/\/www.youtube.com\/c\/GoodDyeYoung\"><span class=\"cc-link\">Explore How-To<\/span><\/a>\n<\/div>",
+            "width": "25%",
+            "alignment": "top-middle"
+          }
+        },
+        "3879bb22-d0bd-4002-94a6-7e9370841396": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"contact-column\">\n<h2>Get order support<\/h2>\n<a href=\"\/pages\/contact\"><span class=\"cc-link\">Talk To Us<\/span><\/a>\n<\/div>",
+            "width": "25%",
+            "alignment": "top-middle"
+          }
+        },
+        "7775070f-ca01-425c-8eb4-1a67e86dccd3": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"contact-column\">\n<h2>Just for <br>Pros<\/h2>\n<a href=\"https:\/\/gooddyeyoung.com\/pages\/pro-accounts\"><span class=\"cc-link\">Get Your Discount<\/span><\/a>\n<\/div>",
+            "width": "25%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "16615597523af5fbf5-1",
+        "3cf179c4-b0b0-4f8c-a693-60d3597a117e",
+        "3879bb22-d0bd-4002-94a6-7e9370841396",
+        "7775070f-ca01-425c-8eb4-1a67e86dccd3"
+      ],
+      "settings": {
+        "full_width": false,
+        "bg_color": "",
+        "text_color": "",
+        "bg_color_contained": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "space_around": true,
+        "show_top_border": false,
+        "show_bottom_border": false
       }
     }
   },
@@ -64,6 +266,10 @@
     "main",
     "16597370125d0b2d59",
     "16597370563f7e0ed6",
-    "165973713930796eba"
+    "165973713930796eba",
+    "1661556045fa63fe6b",
+    "166155803897b57306",
+    "16615586782c344875",
+    "16615597529dc22d51"
   ]
 }

@@ -1,0 +1,61 @@
+{%- assign newsletter_form_id = 'newsletter-' | append: section_id -%}
+{% form 'customer', id: newsletter_form_id %}
+  {%- if form.posted_successfully? -%}
+    <div class="note note--success">
+      {{ 'general.newsletter_form.newsletter_confirmation' | t }}
+    </div>
+  {%- endif -%}
+  {%- if form.errors and form.context == snippet_context -%}
+    {{ form.errors | default_errors }}
+  {%- endif -%}
+
+  {%- unless form.posted_successfully? -%}
+	<div class="grid grid--small">
+		{% if show_name_fields %}
+			<div class="grid__item medium-up--one-half m-mb-1">
+				<label for="Contact-{{ section_id }}" class="hidden-label">First Name</label>
+				<input type="text" id="Contact-{{ section_id }}" class="input-full newsletter__input-2" name="contact[first_name]" autocapitalize="words" value="" placeholder="First Name">
+			</div>
+			<div class="grid__item medium-up--one-half">
+				<label for="Contact-{{ section_id }}" class="hidden-label">Last Name</label>
+				<input type="text" id="Contact-{{ section_id }}" class="input-full newsletter__input-2" name="contact[last_name]" autocapitalize="words" value="" placeholder="Last Name">
+			</div>
+		{% endif %}
+
+		<div class="grid__item" style="margin-top: 1em;">
+			<label for="Email-{{ section_id }}" class="hidden-label">{{ 'general.newsletter_form.newsletter_email' | t }}</label>
+			<input type="email" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="{{ 'general.newsletter_form.newsletter_email' | t }}" name="contact[email]" id="Email-{{ section_id }}" class="newsletter__input-2" autocorrect="off" autocapitalize="off">
+		</div>
+
+		{% if fine_print != blank %}
+		<div class="grid__item fine_print">
+			{{ fine_print }}
+		</div>
+		{% endif %}
+
+		<div class="grid__item">
+			<input type="hidden" name="contact[tags]" value="prospect,newsletter">
+			<input type="hidden" name="contact[context]" value="{{ snippet_context }}">
+
+			
+			<div class="newsletter-form-2-sign-up">
+			
+				<button type="submit" class="btn" name="commit">
+					{{ 'general.newsletter_form.submit' | t }}
+				{% comment %}
+				<span class="form__submit--large">{{ 'general.newsletter_form.submit' | t }}</span>
+				<span class="form__submit--small">
+					<svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-right" viewBox="0 0 50 15"><path d="M0 9.63V5.38h35V0l15 7.5L35 15V9.63z"/></svg>
+				</span>
+				{% endcomment %}
+				</button>
+			</div>
+		</div>
+
+
+		
+	</div>
+    
+    
+  {%- endunless -%}
+{% endform %}

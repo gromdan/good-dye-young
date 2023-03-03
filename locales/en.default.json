@@ -46,7 +46,7 @@
     "newsletter_form": {
       "newsletter_email": "Enter your email",
       "newsletter_confirmation": "Thanks for subscribing",
-      "submit": "Subscribe"
+      "submit": "Sign Up"
     },
     "search": {
       "view_more": "View more",
@@ -143,6 +143,8 @@
       "view_all_products_html": "View all<br>{{ count }} products",
       "see_more": "Show more",
       "see_less": "Show less",
+      "add_to_cart": "Add to cart",
+      "sold_out": "Sold out",
       "no_matches": "Sorry, there are no products in this collection.",
       "items_with_count": {
         "one": "{{ count }} product",
@@ -312,7 +314,7 @@
         "one": "Low stock - {{ count }} item left",
         "other": "Low stock - {{ count }} items left"
       },
-      "sold_out": "Sold Out",
+      "sold_out": "Back Soon",
       "unavailable": "Unavailable",
       "quantity": "Quantity",
       "add_to_cart": "Add to cart",

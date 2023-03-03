@@ -4,6 +4,8 @@ Arguments
 - [per_row]: number of items per row
 - [quick_shop_enable]: boolean
 - [collection]: collection object
+- button_class
+- button_class_2
 {% endcomment %}
 
 {%- liquid
@@ -49,6 +51,63 @@ Arguments
   endif
 -%}
 
+
+
+{%- liquid 
+
+  assign coll_handle_1 = ''
+  assign coll_handle_2 = ''
+  assign coll_handle_3 = ''
+  assign coll_handle_4 = ''
+
+  for tag in product.tags
+
+  if tag contains 'level_1:'
+  assign coll_handle_1 = tag | remove: 'level_1:'
+  assign coll_handle_1 = coll_handle_1 | handleize
+  assign coll_1 = collections[coll_handle_1]
+  endif
+
+  if tag contains 'level_2:'
+  assign coll_handle_2 = tag | remove: 'level_2:'
+  assign coll_handle_2 = coll_handle_2 | handleize
+  assign coll_2 = collections[coll_handle_2]
+  endif
+
+  if tag contains 'level_3:'
+  assign coll_handle_3 = tag | remove: 'level_3:'
+  assign coll_handle_3 = coll_handle_3 | handleize
+  assign coll_3 = collections[coll_handle_3]
+  endif
+
+  if tag contains 'level_4:'
+  assign coll_handle_4 = tag | remove: 'level_4:'
+  assign coll_handle_4 = coll_handle_4 | handleize
+  assign coll_4 = collections[coll_handle_4]
+  endif
+
+  endfor
+-%}
+
+{% capture pdp_breadcrumbs %}
+  {% if coll_handle_1 != '' %}
+  <p class="pdp-breadcrumbs special-hdr-font-2">
+      <a href="{{ coll_1.url }}">{{ coll_1.title }}</a>
+      {% if coll_handle_2 != '' %}
+      / <a href="{{ coll_2.url }}">{{ coll_2.title }}</a>
+      {% endif %}
+      {% if coll_handle_3 != '' %}
+      / <a href="{{ coll_3.url }}">{{ coll_3.title }}</a>
+      {% endif %}
+      {% if coll_handle_4 != '' %}
+      / <a href="{{ coll_4.url }}">{{ coll_4.title }}</a>
+      {% endif %}
+  </p>
+  {% endif %}
+{% endcapture %}
+
+
+
 <div class="grid__item grid-product {{ grid_item_width }}{% if quick_shop_enable %} grid-product__has-quick-shop{% endif %}" data-aos="row-of-{{ per_row }}" data-product-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
   <div class="grid-product__content">
     {%- if has_custom_label -%}
@@ -61,11 +120,13 @@ Arguments
           {{ 'products.product.sold_out' | t }}
         </div>
       {%- endunless -%}
-      {%- if on_sale and product.available -%}
-        <div class="grid-product__tag grid-product__tag--sale">
-          {{ 'products.general.sale' | t }}
-        </div>
-      {%- endif -%}
+      {% if product.metafields.custom.show_sale_tag == true %}
+        
+          <div class="grid-product__tag grid-product__tag--sale">
+            {{ 'products.general.sale' | t }}
+          </div>
+        
+      {% endif %}
     {%- endif -%}
 
     {%- liquid
@@ -76,6 +137,11 @@ Arguments
 
       assign preview_image = product.featured_media.preview_image
       assign img_url = preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
+
+      if use_2nd_image
+      assign img_url = product.media[1] | img_url: '1x1' | replace: '_1x1.', '_{width}x.'
+      assign preview_image = product.media[1]
+      endif
     -%}
 
     <a href="{{ product.url | within: collection }}" class="grid-product__link">
@@ -85,7 +151,16 @@ Arguments
             <span class="quick-product__label">{{ settings.quick_shop_text }}</span>
           </div>
         {%- endif -%}
-        {%- if fixed_aspect_ratio -%}
+        {%- if square_img -%}
+          <div class="grid__image-ratio grid__image-ratio--square">
+            <img class="lazyload"
+              data-src="{{ img_url }}"
+              data-widths="[360, 540, 720, 900, 1080]"
+              data-aspectratio="{{ preview_image.aspect_ratio }}"
+              data-sizes="auto"
+              alt="{{ preview_image.alt | escape }}">
+          </div>
+        {%- elsif fixed_aspect_ratio -%}
           <div
             class="grid__image-ratio grid__image-ratio--{{ settings.product_grid_image_size }}">
             <img class="lazyload{% unless settings.product_grid_image_fill %} grid__image-contain{% endunless %}"
@@ -163,52 +238,89 @@ Arguments
       </div>
 
       <div class="grid-product__meta">
-        <div class="grid-product__title grid-product__title--{{ settings.type_product_style }}">{{ product.title }}</div>
-        {%- if settings.vendor_enable -%}
-          <div class="grid-product__vendor">{{ product.vendor }}</div>
-        {%- endif -%}
-        <div class="grid-product__price">
-          {%- if on_sale -%}
-            <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
-            <span class="grid-product__price--original">{{ product.compare_at_price | money }}</span>
-            <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
+        {% if title_only %}
+          <div class="grid-product__title colors_title grid-product__title--{{ settings.type_product_style }}">{{ product.title }}</div>
+        {% else %}
+          {% comment %}!!CUSTOM BREADCRUMBS!!{% endcomment %}
+          <div class="franchise">{{ product.metafields.custom.franchise }}</div>
+          <div class="grid-product__title grid-product__title--{{ settings.type_product_style }}">{{ product.title }}</div>
+          {%  if product.metafields.custom.shop_by_color != blank %}
+            <span>{{ product.metafields.custom.shop_by_color }}</span>
+            {% endif %}
+          <div class="prod-type">
+            {{ product.type }}
+          </div>
+          <div class="yotpo bottomLine"
+               data-product-id="{{ product.id }}">
+          </div>
+          {%- if settings.vendor_enable -%}
+            <div class="grid-product__vendor">{{ product.vendor }}</div>
           {%- endif -%}
-          {%- if product.price_varies -%}
-            {%- assign price = product.price_min | money -%}
-            {{ 'products.general.from_text_html' | t: price: price }}
-          {%- else -%}
-            {{ product.price  | money }}
-          {%- endif -%}
-          {%- if on_sale -%}
-            {%- if settings.product_save_amount -%}
-              {%- if settings.product_save_type == 'dollar' -%}
-                {%- capture saved_amount -%}{{ product.compare_at_price | minus: product.price | money }}{%- endcapture -%}
-              {%- else -%}
-                {%- capture saved_amount -%}{{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round }}%{%- endcapture -%}
-              {%- endif -%}
-              <span class="grid-product__price--savings">
-                {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
-              </span>
+          <div class="grid-product__price">
+            {%- if on_sale -%}
+              <span class="visually-hidden">{{ 'products.general.regular_price' | t }}</span>
+              <span class="grid-product__price--original">{{ product.compare_at_price | money }}</span>
+              <span class="visually-hidden">{{ 'products.general.sale_price' | t }}</span>
             {%- endif -%}
-          {%- endif -%}
-
-          {%- assign product_variant = product.selected_or_first_available_variant -%}
-          {%- if product_variant.unit_price_measurement -%}
-            <div class="product__unit-price">
-              {%- capture unit_price_base_unit -%}
-                {%- if product_variant.unit_price_measurement -%}
-                  {%- if product_variant.unit_price_measurement.reference_value != 1 -%}
-                    {{ product_variant.unit_price_measurement.reference_value }}
-                  {%- endif -%}
-                  {{ product_variant.unit_price_measurement.reference_unit }}
+            {%- if product.price_varies -%}
+              {%- assign price = product.price_min | money -%}
+              {{ 'products.general.from_text_html' | t: price: price }}
+            {%- else -%}
+              {{ product.price  | money }}
+            {%- endif -%}
+            {%- if on_sale -%}
+              {%- if settings.product_save_amount -%}
+                {%- if settings.product_save_type == 'dollar' -%}
+                  {%- capture saved_amount -%}{{ product.compare_at_price | minus: product.price | money }}{%- endcapture -%}
+                {%- else -%}
+                  {%- capture saved_amount -%}{{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round }}%{%- endcapture -%}
                 {%- endif -%}
-              {%- endcapture -%}
+                <span class="grid-product__price--savings">
+                  {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
+                </span>
+              {%- endif -%}
+            {%- endif -%}
 
-              {{ product_variant.unit_price | money }}/{{ unit_price_base_unit }}
-            </div>
-          {%- endif -%}
-        </div>
+            {%- assign product_variant = product.selected_or_first_available_variant -%}
+            {%- if product_variant.unit_price_measurement -%}
+              <div class="product__unit-price">
+                {%- capture unit_price_base_unit -%}
+                  {%- if product_variant.unit_price_measurement -%}
+                    {%- if product_variant.unit_price_measurement.reference_value != 1 -%}
+                      {{ product_variant.unit_price_measurement.reference_value }}
+                    {%- endif -%}
+                    {{ product_variant.unit_price_measurement.reference_unit }}
+                  {%- endif -%}
+                {%- endcapture -%}
+
+                {{ product_variant.unit_price | money }}/{{ unit_price_base_unit }}
+              </div>
+            {%- endif -%}
+          </div>
+
+        {% endif %}
+
+
       </div>
+      {% unless title_only %}
+<!--      <a href="{{ product.url }}" class="{{ button_class }}">
+        <span class="{{ button_class_2 }}">
+          Add to Cart
+        </span>
+      </a>-->
+      {% if product.available == true %}
+      <form method="post" action="/cart/add" class="{{ button_class }}">
+        <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+         <span class="{{ button_class_2 }}">
+          <input type="submit" value="{{ 'collections.general.add_to_cart' | t }}" />
+         </span>
+      </form>
+      {% else %}
+      <div class="{{ button_class }} product_grid_sold_out">
+        {{ 'collections.general.sold_out' | t }}
+      </div>
+        {% endif %}
+      {% endunless %}
     </a>
   </div>
   {%- if settings.enable_swatches -%}

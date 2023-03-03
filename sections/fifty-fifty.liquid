@@ -1,0 +1,210 @@
+<section class="fifty-fifty border-y section-{{ section.id }}">
+	<div class="ff-text text-{{ section.settings.align_text }} {% if section.settings.use_crazy_bg %}animated_colors_bg{% endif %}">
+		<div class="ff-text-flex">
+			<div class="ff-text-inner">
+			
+				{%- if section.settings.pretitle != blank -%}
+					<div class="subheading">{{ section.settings.pretitle }}</div>
+				{%- endif -%}
+				{%- if section.settings.title != blank -%}
+					<div class="h1">{{ section.settings.title | escape | newline_to_br }}</div>
+				{%- endif -%}
+				{%- if section.settings.subtitle != blank -%}
+					<div class="subheading">{{ section.settings.subtitle }}</div>
+				{%- endif -%}
+				{%- if section.settings.text != blank -%}
+					<div class="rte">{{ section.settings.text }}</div>
+				{%- endif -%}
+				{%- if section.settings.button_label != blank -%}
+					<div class="">
+					<a href="{{ section.settings.button_link }}" class="btn{% if section.settings.button_style == 'secondary' %} btn--tertiary{% endif %}{% if section.settings.use_crazy_bg %} btn--inverse-white-outline{% endif %}" {% if section.settings.button_color != blank %}style="background-color:{{ section.settings.button_color }}!important;"{% endif %}>
+						{{ section.settings.button_label }}
+					</a>
+					</div>
+				{%- endif -%}
+			</div>
+		</div>
+	</div>
+	<div class="ff-image">
+		{%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+		<img class="lazyload"
+		data-src="{{ img_url }}"
+		data-widths="[180, 360, 540, 750, 900, 1080]"
+		data-aspectratio="{{ section.settings.image2.aspect_ratio }}"
+		data-sizes="auto"
+		alt="{{ section.settings.image2.alt }}">
+	</div>
+</section>
+{% comment %}
+{% if section.settings.image != blank %}
+{% style %}
+
+@media screen and (max-width: 749px) {
+	.section-{{ section.id }} .ff-image {
+		background: url({{ section.settings.image | image_url: width: 800 }})
+	}
+}
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+	.section-{{ section.id }} .ff-image {
+		background: url({{ section.settings.image | image_url: width: 1000 }})
+	}
+}
+@media screen and (min-width: 1025px) {
+	.section-{{ section.id }} .ff-image {
+		background: url({{ section.settings.image | image_url: width: 1500 }})
+	}
+}
+
+{% endstyle %}
+{% endif %}
+{% endcomment %}
+{% style %}
+{% if section.settings.layout == 'left' %}
+@media screen and (min-width: 750px) {
+	.ff-image {
+		order: 1;
+	}
+	.ff-text {
+		order: 2;
+	}
+	.ff-text-inner {
+		align-self: flex-start;
+	}
+}
+{% endif %}
+{% unless section.settings.use_crazy_bg %}
+	{% if section.settings.bg_color != blank or section.settings.bg_color != 'rgba(0,0,0,0)' %}
+		.section-{{ section.id }} .ff-text {
+			background-color: {{ section.settings.bg_color }};
+		}
+	{% endif %}
+	{% if section.settings.text_color != blank or section.settings.text_color != 'rgba(0,0,0,0)' %}
+		.section-{{ section.id }} .ff-text {
+			color: {{ section.settings.text_color }};
+		}
+	{% endif %}
+{% endunless %}
+{% endstyle %}
+
+{% schema %}
+  {
+    "name": "Image with text 50/50",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Custom Background color"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Custom Text color"
+      },
+      {
+        "type": "checkbox",
+        "id": "use_crazy_bg",
+        "label": "Use animated gradient BG",
+        "info": "This will override the color selections above and also change the text color to white"
+      },
+      {
+        "type": "text",
+        "id": "pretitle",
+        "label": "Preheading"
+      },
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Heading",
+        "default": "Image with text"
+      },
+      {
+        "type": "text",
+        "id": "subtitle",
+        "label": "Subheading"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.</p>"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      },
+      {
+        "type": "color",
+        "id": "button_color",
+        "label": "Button Color"
+      },
+      {
+        "type": "select",
+        "id": "button_style",
+        "label": "Button style",
+        "default": "primary",
+        "options": [
+          {
+            "value": "primary",
+            "label": "Primary"
+          },
+          {
+            "value": "secondary",
+            "label": "Secondary"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "align_text",
+        "label": "Text alignment",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Centered"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "layout",
+        "label": "Layout",
+        "default": "right",
+        "options": [
+          {
+            "value": "left",
+            "label": "Image on left"
+          },
+          {
+            "value": "right",
+            "label": "Image on right"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image with text 50/50"
+      }
+    ]
+  }
+{% endschema %}

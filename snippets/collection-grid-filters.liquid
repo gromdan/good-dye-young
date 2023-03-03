@@ -13,6 +13,12 @@
 
     {%- if filter_style == 'sidebar' -%}
     <div class="collection-sidebar small--hide">
+      <h1 class="section-header__title">
+            {{ collection.title }}
+        </h1>
+        {% comment %}
+        {%- render 'breadcrumbs' -%}
+        {% endcomment %}
         {%- render 'collection-grid-filters-form', location: 'CollectionSidebar', filters: collection.filters, collapsed: collapsed, enable_color_swatches: enable_color_swatches -%}
     </div>
     {%- endif -%}  

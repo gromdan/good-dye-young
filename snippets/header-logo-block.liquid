@@ -66,8 +66,8 @@
           itemprop="logo">
         <img
           class="medium-up--hide"
-          src="{{ block.settings.logo | img_url: header_logo_size_mobile }}"
-          srcset="{{ block.settings.logo | img_url: header_logo_size_mobile }} 1x, {{ block.settings.logo | img_url: header_logo_size_mobile, scale: 2 }} 2x"
+          src="{{ block.settings.logo-mobile | img_url: header_logo_size_mobile }}"
+          srcset="{{ block.settings.logo-mobile | img_url: header_logo_size_mobile }} 1x, {{ block.settings.logo-mobile | img_url: header_logo_size_mobile, scale: 2 }} 2x"
           alt="{{ block.settings.logo.alt | default: shop.name }}">
       </a>
       {%- if block.settings.logo-inverted -%}

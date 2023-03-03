@@ -8,6 +8,92 @@
     "theme_support_url": "https:\/\/archetypethemes.co\/pages\/support#impulse"
   },
   {
+    "name": "Free Shipping",
+    "settings": [
+      {
+        "type": "header",
+        "content": "General"
+      },
+      {
+        "type": "checkbox",
+        "id": "free_shipping_activate",
+        "label": "Enable Free Shipping Bar",
+        "info": "This enables the progress bar in the Cart Drawer"
+      },
+      {
+        "type": "range",
+        "id": "free_shipping_threshold",
+        "min": 0,
+        "max": 250,
+        "step": 5,
+        "unit": "$",
+        "label": "Amount",
+        "default": 40
+      }
+    ]
+  },
+  {
+    "name": "Gift With Purchase",
+    "settings": [
+      {
+        "type": "header",
+        "content": "GWP - User selects item from collection"
+      },
+      {
+        "type": "checkbox",
+        "id": "gwp_activate",
+        "label": "Activate Gift With Purchase"
+      },
+      {
+        "type": "text",
+        "id": "gwp_headline",
+        "label": "Activate Gift With Purchase"
+      },
+      {
+        "type": "range",
+        "id": "gwp_threshold",
+        "min": 25,
+        "max": 250,
+        "step": 5,
+        "unit": "$",
+        "label": "Amount",
+        "default": 50
+      },
+      {
+        "type": "collection",
+        "id": "gwp_collection",
+        "label": "Choose Collection",
+        "info": "This will display all items in the collection, if available."
+      },
+      {
+        "type": "header",
+        "content": "GWP - auto (no user selection)"
+      },
+      {
+        "type": "checkbox",
+        "id": "gwp_activate_auto",
+        "label": "Auto Gift With Purchase",
+        "info": "Activate automatic Gift With Purchase. Customer does not select anything."
+      },
+      {
+        "type": "range",
+        "id": "gwp_threshold_auto",
+        "min": 25,
+        "max": 250,
+        "step": 5,
+        "unit": "$",
+        "label": "Amount",
+        "default": 50
+      },
+      {
+        "type": "product",
+        "id": "gwp_product_auto",
+        "label": "Choose Product",
+        "info": "Select product that will automatically be added to the cart when the price threshold is met. The product should have a tag of \"gwp\"."
+      }
+    ]
+  },
+  {
     "name": "Colors",
     "settings": [
       {

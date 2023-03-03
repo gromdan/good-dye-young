@@ -1,0 +1,86 @@
+{
+  "sections": {
+    "166256707920b737c7": {
+      "type": "rich-text",
+      "blocks": {
+        "16625670797445f59f-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Become a Wholesaler"
+          }
+        },
+        "16625670797445f59f-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16625670797445f59f-0",
+        "16625670797445f59f-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "1662567008c46621cf": {
+      "type": "advanced-content",
+      "blocks": {
+        "1662567008418b96bb-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "1662567008418b96bb-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<iframe style=\"margin: 0 auto; border: none; display: block; max-width: 100%;\" src=\"https:\/\/www.faire.com\/embed\/bw_bkx3hmn6u7\" width=\"500\" height=\"700\" scrolling=\"no\" ecl=\"true\"><\/iframe>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "4e28a698-cca0-4471-ac95-f67dd61bebcc": {
+          "type": "liquid",
+          "settings": {
+            "code": "<script async=\"\" defer=\"\" src=\"https:\/\/boostwidget.helloabound.com?key=1c86f177-954f-41f3-a229-ce7e187a68a6\" type=\"text\/javascript\" ecl=\"true\"><\/script>\n<div id=\"helloabound-widget-card\" ecl=\"true\"><\/div>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1662567008418b96bb-0",
+        "1662567008418b96bb-1",
+        "4e28a698-cca0-4471-ac95-f67dd61bebcc"
+      ],
+      "settings": {
+        "full_width": false,
+        "bg_color": "",
+        "text_color": "",
+        "bg_color_contained": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "space_around": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "166256707920b737c7",
+    "1662567008c46621cf",
+    "main"
+  ]
+}

@@ -1,81 +1,317 @@
-{%- if section.settings.divider -%}<div class="section--divider">{%- endif -%}
+{%- if section.settings.space_around -%}
+  <div class="index-section">
+{%- endif -%}
+<div class="tc-{{ section.id }}">
 
-<div class="page-width">
-  {%- if section.settings.title != blank -%}
-    <div class="section-header text-{{ section.settings.align_text }}">
-      <h2>{{ section.settings.title }}</h2>
-    </div>
-  {%- endif -%}
+  <div class="page-width {% if section.settings.use_mobile_slider %}show-tablet-up{% endif %}">
+    {%- if section.settings.title != blank -%}
+      <div class="section-header text-{{ section.settings.align_text }}">
+        <h2>{{ section.settings.title | newline_to_br }}</h2>
+      </div>
+    {%- endif -%}
+    {%- if section.settings.subtitle != blank -%}
+      <div class="section-header text-{{ section.settings.align_text }}">
+        <p>{{ section.settings.subtitle | newline_to_br }}</p>
+      </div>
+    {%- endif -%}
 
-  <div class="grid{% unless section.blocks.size == 5 %} grid--uniform{% endunless %} grid--flush-bottom">
-    {%- liquid
-      assign grid_item_width = 'medium-up--one-third'
-      case section.blocks.size
-        when 1
-          assign grid_item_width = 'medium-up--one-half'
-        when 2
-          assign grid_item_width = 'medium-up--one-half'
-        when 4
-          assign grid_item_width = 'medium-up--one-half'
-      endcase
-    -%}
-    {%- for block in section.blocks -%}
-      {%- if section.blocks.size == 5 and forloop.index < 3 -%}
-        {%- assign column_width = 'medium-up--one-half' -%}
-      {%- else -%}
-        {%- assign column_width = grid_item_width -%}
-      {%- endif -%}
-      <div class="grid__item {{ column_width }} text-{{ section.settings.align_text }}" {{ block.shopify_attributes }} data-aos="row-of-3">
-        {%- if block.settings.enable_image -%}
-          <div style="{% if section.settings.align_text == 'center' %}margin: 0 auto;{% endif %} max-width: {{ block.settings.image_width }}px;">
-            {%- if block.settings.button_link != blank -%}
-              <a href="{{ block.settings.button_link }}">
-            {%- endif -%}
-            {%- if block.settings.image != blank -%}
-              <div class="image-wrap text-spacing" style="height: 0; padding-bottom: {{ 100 | divided_by: block.settings.image.aspect_ratio }}%;">
-                {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                <img class="lazyload"
-                    data-src="{{ img_url }}"
-                    data-widths="[180, 360, 540, 720, 900, 1080]"
-                    data-aspectratio="{{ block.settings.image.aspect_ratio }}"
-                    data-sizes="auto"
-                    alt="{{ block.settings.image.alt }}">
+    <div class="grid{% unless section.blocks.size == 5 %} grid--uniform{% endunless %} grid--flush-bottom">
+      {%- liquid
+        assign grid_item_width = 'medium-up--one-third'
+        case section.blocks.size
+          when 1
+            assign grid_item_width = 'medium-up--one-half'
+          when 2
+            assign grid_item_width = 'medium-up--one-half'
+          when 4
+            assign grid_item_width = 'medium-up--one-half'
+        endcase
+      -%}
+      {%- for block in section.blocks -%}
+        {%- if section.blocks.size == 5 and forloop.index < 3 -%}
+          {%- assign column_width = 'medium-up--one-half' -%}
+        {%- else -%}
+          {%- assign column_width = grid_item_width -%}
+        {%- endif -%}
+        <div class="grid__item {{ column_width }} text-{{ section.settings.align_text }}" {{ block.shopify_attributes }} data-aos="row-of-3">
+          <div class="text-column-item">
+            
+            {%- if block.settings.enable_image -%}
+              <div style="{% if section.settings.align_text == 'center' %}margin: 0 auto;{% endif %} max-width: {{ block.settings.image_width }}px;">
+                {%- if block.settings.button_link != blank -%}
+                  <a href="{{ block.settings.button_link }}">
+                {%- endif -%}
+                {%- if block.settings.image != blank -%}
+                  <div class="image-wrap text-spacing" style="height: 0; padding-bottom: {{ 100 | divided_by: block.settings.image.aspect_ratio }}%;">
+                    {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                    <img class="lazyload"
+                        data-src="{{ img_url }}"
+                        data-widths="[180, 360, 540, 720, 900, 1080]"
+                        data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+                        data-sizes="auto"
+                        alt="{{ block.settings.image.alt }}">
+                  </div>
+                {%- else -%}
+                  <div class="image-wrap text-spacing">{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}</div>
+                {%- endif -%}
+                {%- if block.settings.button_link != blank -%}
+                  </a>
+                {%- endif -%}
               </div>
-            {%- else -%}
-              <div class="image-wrap text-spacing">{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}</div>
             {%- endif -%}
-            {%- if block.settings.button_link != blank -%}
+            {%- if block.settings.title != blank -%}
+              <div class="tc-column-title">
+                <h3 class="{% if block.settings.small_title %}h4{% endif %}{% unless block.settings.hdr_uppercase %} uncaps{% endunless %}">{{ block.settings.title | newline_to_br }}</h3>
+              </div>
+            {%- endif -%}
+            {%- if block.settings.text != blank -%}
+              <div class="rte-setting text-spacing" style="color: {{ block.settings.text_color_1 }};">{{ block.settings.text }}</div>
+            {%- endif -%}
+            {%- if block.settings.text_2 != blank -%}
+              <div class="rte-setting text-spacing" style="color: {{ block.settings.text_color_2 }};">{{ block.settings.text_2 }}</div>
+            {%- endif -%}
+            {%- if block.settings.text_3 != blank -%}
+              <div class="rte-setting text-spacing" style="color: {{ block.settings.text_color_3 }};">{{ block.settings.text_3 }}</div>
+            {%- endif -%}
+            {%- if block.settings.button_label != blank -%}
+              <a href="{{ block.settings.button_link }}" class="btn btn--secondary btn--small">
+                {{ block.settings.button_label }}
               </a>
             {%- endif -%}
+
+
           </div>
-        {%- endif -%}
-        {%- if block.settings.title != blank -%}
-          <h3>{{ block.settings.title }}</h3>
-        {%- endif -%}
-        {%- if block.settings.text != blank -%}
-          <div class="rte-setting text-spacing">{{ block.settings.text }}</div>
-        {%- endif -%}
-        {%- if block.settings.button_label != blank -%}
-          <a href="{{ block.settings.button_link }}" class="btn btn--secondary btn--small">
-            {{ block.settings.button_label }}
-          </a>
-        {%- endif -%}
-      </div>
-    {%- endfor -%}
+        </div>
+      {%- endfor -%}
+    </div>
   </div>
+
+
+  {% if section.settings.use_mobile_slider %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+    <div class="page-width show-mobile-only">
+      <div class="swiper text-columns-swiper">
+        <div class="swiper-wrapper">
+            {%- for block in section.blocks -%}
+            {%- if section.blocks.size == 5 and forloop.index < 3 -%}
+              {%- assign column_width = 'medium-up--one-half' -%}
+            {%- else -%}
+              {%- assign column_width = grid_item_width -%}
+            {%- endif -%}
+
+              <div class="swiper-slide" {{ block.shopify_attributes }}>
+                <div class="text-{{ section.settings.align_text }}">
+                  <div class="text-column-item">
+                    
+                    {%- if block.settings.enable_image -%}
+                      <div style="{% if section.settings.align_text == 'center' %}margin: 0 auto;{% endif %} max-width: {{ block.settings.image_width }}px;">
+                        {%- if block.settings.button_link != blank -%}
+                          <a href="{{ block.settings.button_link }}">
+                        {%- endif -%}
+                        {%- if block.settings.image != blank -%}
+                          <div class="image-wrap text-spacing" style="height: 0; padding-bottom: {{ 100 | divided_by: block.settings.image.aspect_ratio }}%;">
+                            {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                            <img class="lazyload"
+                                data-src="{{ img_url }}"
+                                data-widths="[180, 360, 540, 720, 900, 1080]"
+                                data-aspectratio="{{ block.settings.image.aspect_ratio }}"
+                                data-sizes="auto"
+                                alt="{{ block.settings.image.alt }}">
+                          </div>
+                        {%- else -%}
+                          <div class="image-wrap text-spacing">{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}</div>
+                        {%- endif -%}
+                        {%- if block.settings.button_link != blank -%}
+                          </a>
+                        {%- endif -%}
+                      </div>
+                    {%- endif -%}
+                    {%- if block.settings.title != blank -%}
+                      <div class="tc-column-title">
+                        <h3 class="{% if block.settings.small_title %}h4{% endif %}{% unless block.settings.hdr_uppercase %} uncaps{% endunless %}">{{ block.settings.title | newline_to_br }}</h3>
+                      </div>
+                    {%- endif -%}
+                    {%- if block.settings.text != blank -%}
+                      <div class="rte-setting text-spacing" style="color: {{ block.settings.text_color_1 }};">{{ block.settings.text }}</div>
+                    {%- endif -%}
+                    {%- if block.settings.text_2 != blank -%}
+                      <div class="rte-setting text-spacing" style="color: {{ block.settings.text_color_2 }};">{{ block.settings.text_2 }}</div>
+                    {%- endif -%}
+                    {%- if block.settings.text_3 != blank -%}
+                      <div class="rte-setting text-spacing" style="color: {{ block.settings.text_color_3 }};">{{ block.settings.text_3 }}</div>
+                    {%- endif -%}
+                    {%- if block.settings.button_label != blank -%}
+                      <a href="{{ block.settings.button_link }}" class="btn btn--secondary btn--small">
+                        {{ block.settings.button_label }}
+                      </a>
+                    {%- endif -%}
+        
+        
+                  </div>
+                </div>
+              </div>
+          {%- endfor -%}
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+    </div>
+
+
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function(){
+          
+          const swiper_columns = new Swiper('.tc-{{ section.id }} .text-columns-swiper', {
+            // Optional parameters
+            slidesPerView: 1,
+            spaceBetween: 50,
+            autoplay: false,
+            observer: true,
+            loop: true,
+            // Responsive breakpoints
+            breakpoints: {
+              // when window width is >= 320px
+              320: {
+              slidesPerView: 1,
+              spaceBetween: 20
+              },
+              // when window width is >= 480px
+              480: {
+              slidesPerView: 1,
+              spaceBetween: 30
+              },
+              // when window width is >= 640px
+              640: {
+              slidesPerView: 4,
+              spaceBetween: 40
+              },
+              // when window width is >= 640px
+              1024: {
+              slidesPerView: 6,
+              spaceBetween: 40
+              }
+            },
+        
+            // If we need pagination
+            pagination: {
+              el: '.swiper-pagination',
+            },
+        
+            // Navigation arrows
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+        
+            // And if we need scrollbar
+            /* scrollbar: {
+              el: '.swiper-scrollbar',
+            }, */
+          });
+        
+        });
+      </script>
+    {% endif %}
+
+
+    <div class="page-width">
+      {%- if section.settings.button_label != blank -%}
+      <p class="section-button text-{{ section.settings.align_text }}" style="margin-top: 2rem;">
+        <a href="{{ section.settings.button_link }}" class="btn {% if section.settings.bigger_btn %}bigger_btn{% endif %}">
+          {{ section.settings.button_label }}
+        </a>
+      </p>
+      {%- endif -%}
+    </div>
 </div>
 
-{%- if section.settings.divider -%}</div>{%- endif -%}
+{%- if section.settings.space_around -%}
+  </div>
+{%- endif -%}
+
+
+{% style %}
+{% if section.settings.bg_color != blank %}
+  .tc-{{ section.id }} .page-width {
+    background-color: {{ section.settings.bg_color }};
+  }
+  .tc-{{ section.id }} {
+    background-color: {{ section.settings.bg_color }};
+  }
+{% endif %}
+
+
+.tc-{{ section.id }} {
+  padding-top: {{ section.settings.padding_top }}px;
+  padding-bottom: {{ section.settings.padding_bottom }}px;
+  {% if section.settings.show_top_border %}
+    border-top: #000 solid 2px;
+  {% endif %}
+  {% if section.settings.show_bottom_border %}
+    border-bottom: #000 solid 2px;
+  {% endif %}
+}
+@media screen and (max-width: 768px) {
+  .tc-{{ section.id }} {
+    padding-top: calc( {{ section.settings.padding_top }}px * 0.65 );
+    padding-bottom: calc( {{ section.settings.padding_bottom }}px * 0.65 );
+  }
+}
+
+{% if section.settings.btn_bg_color != blank or section.settings.btn_bg_color != 'rgba(0,0,0,0)' %}
+.tc-{{ section.id }} .section-button .btn {
+  background-color: {{ section.settings.btn_bg_color }}
+}
+{% endif %}
+
+@media screen and (min-width: 768px) {
+  .tc-column-title {
+    display: flex;
+    flex-direction: column;
+    min-height: 5rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+{% if section.settings.padded_columns %}
+.tc-{{ section.id }} .text-column-item {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+@media screen and (min-width: 768px) {
+  .tc-{{ section.id }} .text-column-item {
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+  }
+}
+{% endif %}
+{% endstyle %}
+
 
 {% schema %}
   {
     "name": "Text columns with images",
-    "class": "index-section",
     "settings": [
       {
-        "type": "text",
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background color"
+      },
+      {
+        "type": "textarea",
         "id": "title",
         "label": "Heading"
+      },
+      {
+        "type": "textarea",
+        "id": "subtitle",
+        "label": "Subeading"
       },
       {
         "type": "select",
@@ -98,9 +334,83 @@
         ]
       },
       {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label",
+        "info": "Optional button for section"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Link"
+      },
+      {
+        "type": "color",
+        "id": "btn_bg_color",
+        "label": "Button background color"
+      },
+      {
+        "type": "checkbox",
+        "id": "bigger_btn",
+        "label": "Enhanced button",
+        "info": "Slightly bigger button"
+      },
+      /*{
         "type": "checkbox",
         "id": "divider",
         "label": "Show section divider",
+        "default": false
+      },*/
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Top padding",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Bottom padding",
+        "default": 0
+      },
+      {
+        "type": "checkbox",
+        "id": "space_around",
+        "label": "Add margin above and below",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_top_border",
+        "label": "Show top border",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_bottom_border",
+        "label": "Show bottom border",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "padded_columns",
+        "label": "Use padding on columns",
+        "info": "Adds horizontal padding to columns",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "use_mobile_slider",
+        "label": "Use slider on mobile",
+        "info": "Show columns in slider for mobile view",
         "default": false
       }
     ],
@@ -131,16 +441,56 @@
             "unit": "px"
           },
           {
-            "type": "text",
+            "type": "textarea",
             "id": "title",
             "label": "Heading",
             "default": "Example title"
           },
           {
+            "type": "checkbox",
+            "id": "small_title",
+            "label": "Smaller title",
+            "default": false
+          },
+          {
+            "type": "checkbox",
+            "id": "hdr_uppercase",
+            "label": "Title uppercase",
+            "default": true
+          },
+          {
             "type": "richtext",
             "id": "text",
-            "label": "Text",
+            "label": "Text 1",
             "default": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.</p>"
+          },
+          {
+            "type": "color",
+            "id": "text_color_1",
+            "label": "Text color 1",
+            "default": "rgba(0, 0, 0, 1)"
+          },
+          {
+            "type": "richtext",
+            "id": "text_2",
+            "label": "Text 2"
+          },
+          {
+            "type": "color",
+            "id": "text_color_2",
+            "label": "Text color 2",
+            "default": "rgba(0, 0, 0, 1)"
+          },
+          {
+            "type": "richtext",
+            "id": "text_3",
+            "label": "Text 3"
+          },
+          {
+            "type": "color",
+            "id": "text_color_3",
+            "label": "Text color 3",
+            "default": "rgba(0, 0, 0, 1)"
           },
           {
             "type": "text",

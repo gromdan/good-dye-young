@@ -1,0 +1,241 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<div class="care-product-block page-width" ecl="true">
+    <div class="care-product-numbers" ecl="true">
+        <div class="care-pro-number active" data-item="1" ecl="true">
+            <span class="number" ecl="true">1</span>
+        </div>
+        <div class="care-pro-number" data-item="2" ecl="true">
+            <span class="number" ecl="true">2</span>
+        </div>
+        <div class="care-pro-number" data-item="3" ecl="true">
+            <span class="number" ecl="true">3</span>
+        </div>
+        <div class="care-pro-number" data-item="4" ecl="true">
+            <span class="number" ecl="true">4</span>
+        </div>
+    </div>
+    <div class="care-product-items" ecl="true">
+      {% assign count = 0 %}
+      {% for block in section.blocks %}
+        {% assign count = count | plus: 1 %}
+        <div class="care-product-item {% if count == 1 %}first active{% elsif count == 2 %}second{% elsif count == 3 %}third{% elsif count == 4 %}four{% endif %}" data-value="{{ count }}" ecl="true">
+            <div class="img-wrap" ecl="true">
+             
+             
+                <img src="{{ block.settings.prod.featured_image | img_url:'master' }}"
+                     alt="Pre Wash (Scalp Scrub)" ecl="true">
+          
+            </div>
+            <div class="content-wrap" ecl="true">
+                <h4>{{ block.settings.prod.title }}</h4>
+                <p ecl="true">{{ block.settings.prod.description | truncate: 60 }}</p>
+                <a href="{{ block.settings.prod.url }}" class="shop-btn"
+                   ecl="true">Shop now</a>
+            </div>
+        </div>
+
+        {% endfor %}
+      {% comment %}
+        <div class="care-product-item second" data-value="2" ecl="true">
+            <div class="img-wrap" ecl="true">
+                <img src="https://gooddyeyoung.com/wp-content/uploads/2018/11/Care-Wash.jpg" alt="Wash (Shampoo)"
+                     ecl="true">
+            </div>
+            <div class="content-wrap" ecl="true">
+                <h4 ecl="true">Wash (Shampoo)</h4>
+                <p ecl="true"></p>
+                <p class="lead" ecl="true">Gentle shampoo that moisturizes, softens and nour...</p>
+                <a href="https://gooddyeyoung.com/product/wash-color-kind-shampoo/" class="shop-btn" ecl="true">Shop
+                    now</a>
+            </div>
+        </div>
+        <div class="care-product-item third" data-value="3" ecl="true">
+            <div class="img-wrap" ecl="true">
+                <img src="https://gooddyeyoung.com/wp-content/uploads/2018/11/Care-Rinse.jpg" alt="Rinse (Conditioner)"
+                     ecl="true">
+            </div>
+            <div class="content-wrap" ecl="true">
+                <h4 ecl="true">Rinse (Conditioner)</h4>
+                <p ecl="true"></p>
+                <p class="lead" ecl="true">Potent repairing conditioner that keeps hair feel...</p>
+                <a href="https://gooddyeyoung.com/product/rinse-color-kind-conditioner/" class="shop-btn" ecl="true">Shop
+                    now</a>
+            </div>
+        </div>
+        <div class="care-product-item four" data-value="4" ecl="true">
+            <div class="img-wrap" ecl="true">
+                <img src="https://gooddyeyoung.com/wp-content/uploads/2019/08/Care-Prime.jpg" alt="Prime (Hair Primer)"
+                     ecl="true">
+            </div>
+            <div class="content-wrap" ecl="true">
+                <h4 ecl="true">Prime (Hair Primer)</h4>
+                <p ecl="true"></p>
+                <p class="lead" ecl="true">Prime those locks. Color Kind hair primer maintai...</p>
+                <a href="https://gooddyeyoung.com/product/prime-color-kind-primer/" class="shop-btn" ecl="true">Shop
+                    now</a>
+            </div>
+        </div>
+      {% endcomment %}
+    </div>
+</div>
+<script type="text/javascript" ecl="true">
+			jQuery(document).ready(function($){
+                $('.care-product-item:first-child').addClass('active');
+                $('.care-pro-number:first-child').addClass('active');
+
+				$('.care-product-numbers .care-pro-number').click(function(){
+					var item_index = $(this).attr("data-item");
+                    $('.care-product-item').removeClass('active');
+					$(this).closest('.care-product-block').find('.care-product-item[data-value='+item_index+']').addClass('active');
+                    $('.care-product-numbers .care-pro-number').removeClass('active');
+                    $(this).addClass('active');
+				});
+
+                $('.care-product-item').click(function(){
+					var item_index = $(this).attr("data-value");
+                    $('.care-pro-number').removeClass('active');
+					$(this).closest('.care-product-block').find('.care-pro-number[data-item='+item_index+']').addClass('active');
+                    $('.care-product-item').removeClass('active');
+                    $(this).addClass('active');
+				});
+
+			});
+		</script>
+<style>
+    .care-product-items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -16px;
+    }
+    .care-product-item {
+        width: 25%;
+        text-align: center;
+        padding: 0 16px;
+        cursor: pointer;
+    }
+    .care-product-block {
+        
+    }
+    .care-product-item .img-wrap {
+        margin: 48px 0 32px;
+    }
+    .care-product-item .content-wrap h4 {
+        color: #000;
+        margin: 0 0 16px;
+    }
+    .care-product-item .content-wrap p {
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 21px;
+        color: #000;
+        margin: 0 0 32px;
+    }
+    .care-product-item .content-wrap a.shop-btn {
+        font-size: 0.889em;
+        font-weight: 700;
+        line-height: 19px;
+        color: #000;
+        font-family: integral cf;
+        letter-spacing: 0.02em;
+        padding: 13px 24px 16px;
+        border: 2px solid #000;
+        display: inline-block;
+        transition: all ease 0.3s;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .care-product-item .content-wrap a.shop-btn:hover {
+        background: #000;
+        color: #fff;
+    }
+    .care-product-item {
+        opacity: 0.33;
+    }
+    .care-product-item.active {
+        opacity: 1;
+    }
+    .care-product-item.active .content-wrap a.shop-btn {
+        opacity: 1;
+        visibility: visible;
+    }
+    .care-pro-number span.number {
+        border: 2px solid #000;
+        font-size: 1.703em;
+        width: 72px;
+        height: 72px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+        line-height:1;
+    }
+    .care-pro-number.active span.number {
+        background: #000;
+        color: #fff;
+    }
+    .care-product-numbers {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -16px;
+    }
+    .care-product-numbers .care-pro-number {
+        width: 25%;
+        text-align: center;
+        padding: 0 16px;
+    }
+    .care-product-item .img-wrap img {
+        max-height: 400px;
+        width: auto;
+    }
+    @media only screen and (max-width:769px){
+        .care-pro-number span.number {
+            width: 60px;
+            height: 60px;
+            font-size: 1.374em;
+            line-height: 24px;
+        }
+        .care-product-item.active {
+            display: block;
+        }
+        .care-product-item {
+            display: none;
+            width: 100%;
+        }
+
+    }
+</style>
+{% schema %}
+  {
+    "name": "Product Highlight List",
+    "class": "index-section",
+    "settings": [
+    ],
+    "blocks" : [
+      {
+        "type": "product",
+        "name": "Product",
+        "settings": [
+          {
+            "type": "product",
+            "id": "prod",
+            "label": "Product"
+          }
+        ]
+      }
+    ],
+    "presets": [{
+      "name": "Product Highlight List",
+      "blocks": [
+      ]
+    }]
+  }
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

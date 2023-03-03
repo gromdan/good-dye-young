@@ -10,7 +10,7 @@
 {%- endstyle -%}
 
 <div class="newsletter-section newsletter-{{ section.id }}{% if section.settings.color_background == settings.color_body_bg %} newsletter-section--with-divider{% endif %}">
-  <div class="page-width text-center">
+  <div class="page-width {% if section.settings.narrow_width %}page-width--narrow{% endif %} text-{{ section.settings.text_align }}">
     {%- for block in section.blocks -%}
       <div class="theme-block" {{ block.shopify_attributes }}>
         {%- case block.type -%}
@@ -18,14 +18,16 @@
             {% render block %}
           {%- when 'title' -%}
             {%- if block.settings.title != blank -%}
-              <p class="h3">{{ block.settings.title | escape }}</p>
+              <p class="h2">{{ block.settings.title | escape }}</p>
             {%- endif -%}
           {%- when 'text' -%}
             {%- if block.settings.text != blank -%}
               <div class="rte">{{ block.settings.text }}</div>
             {%- endif -%}
           {%- when 'form' -%}
-            {%- render 'newsletter-form', section_id: section.id, snippet_context: 'section' -%}
+            {%- render 'newsletter-form-2', section_id: section.id, snippet_context: 'section', 
+              show_name_fields: block.settings.show_name_fields, 
+              fine_print: block.settings.text -%}
           {%- when 'share_buttons' -%}
             {%- render 'social-sharing' -%}
         {%- endcase -%}
@@ -69,7 +71,20 @@
       {
         "type": "form",
         "name": "Form",
-        "limit": 1
+        "limit": 1,
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "show_name_fields",
+            "label": "Show First and Last Name fields"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Fine print",
+            "default": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>"
+          }
+        ]
       },
       {
         "type": "share_buttons",
@@ -93,6 +108,27 @@
         "id": "color_text",
         "label": "Text",
         "default": "#1c1d1d"
+      },
+      {
+        "type": "checkbox",
+        "id": "narrow_width",
+        "label": "Narrow width?"
+      },
+      {
+        "type": "select",
+        "id": "text_align",
+        "label": "Text alignment",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          }
+        ]
       }
     ],
     "presets": [

@@ -2,10 +2,134 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {}
+    },
+    "28748652-be51-4a0b-93a0-303ed0703611": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15351833460872__28748652-be51-4a0b-93a0-303ed0703611-16764337115a5027da-0": {
+          "type": "heading",
+          "settings": {
+            "title": "How did we get hair?"
+          }
+        },
+        "ef9f8b89-efa1-4660-aefa-d78bf267b013": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Take a trip down memory lane as we look back on some of Hayley's most iconic looks. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15351833460872__28748652-be51-4a0b-93a0-303ed0703611-16764337115a5027da-0",
+        "ef9f8b89-efa1-4660-aefa-d78bf267b013"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "d173574d-3a62-4f37-8b9a-105533bd1cc4": {
+      "type": "hero-video",
+      "settings": {
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link_text": "",
+        "link": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/9f2bb36e670547338196ca86a860e8f2.mp4",
+        "overlay_opacity": 0,
+        "section_height": "100vh",
+        "mobile_height": "auto"
+      }
+    },
+    "20a70179-cb9c-41d3-ad76-17d2691bcc2a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15351833460872__20a70179-cb9c-41d3-ad76-17d2691bcc2a-167718657428d52844-0": {
+          "type": "heading",
+          "settings": {
+            "title": "24 HOUR SALE"
+          }
+        },
+        "template--15351833460872__20a70179-cb9c-41d3-ad76-17d2691bcc2a-167718657428d52844-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Get 24% off the shades uses to create Hayley's iconic looks. <\/p>"
+          }
+        },
+        "4748ad3b-4576-487c-b097-751d5f007954": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>CODE: HERAS<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15351833460872__20a70179-cb9c-41d3-ad76-17d2691bcc2a-167718657428d52844-0",
+        "template--15351833460872__20a70179-cb9c-41d3-ad76-17d2691bcc2a-167718657428d52844-1",
+        "4748ad3b-4576-487c-b097-751d5f007954"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "9a4fed08-e518-485d-b1d3-8ee5095fb0ca": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "RIOT",
+        "subtitle": "",
+        "home_featured_products": "hayley-williams-riot-hair-dye",
+        "per_row": 3,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "acc10d4f-ea80-4b3a-a67f-3c3f2bc786f9": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "DECODE",
+        "subtitle": "",
+        "home_featured_products": "hayley-williams-decode-hair-dye",
+        "per_row": 3,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "2f8fbafa-d830-4c03-95fd-1ba794351849": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "STILL INTO YOU",
+        "subtitle": "",
+        "home_featured_products": "hayley-williams-still-into-you-hair-dye",
+        "per_row": 3,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "28748652-be51-4a0b-93a0-303ed0703611",
+    "d173574d-3a62-4f37-8b9a-105533bd1cc4",
+    "20a70179-cb9c-41d3-ad76-17d2691bcc2a",
+    "9a4fed08-e518-485d-b1d3-8ee5095fb0ca",
+    "acc10d4f-ea80-4b3a-a67f-3c3f2bc786f9",
+    "2f8fbafa-d830-4c03-95fd-1ba794351849"
   ]
 }

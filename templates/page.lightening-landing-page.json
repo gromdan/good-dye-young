@@ -1,0 +1,717 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "6d341813-1fd0-46e7-9a74-5dceb2161ef3": {
+      "type": "slideshow-animated",
+      "blocks": {
+        "template--15378217730184__6d341813-1fd0-46e7-9a74-5dceb2161ef3-167716410462130433-0": {
+          "type": "image",
+          "settings": {
+            "use_dark_text": false,
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/LK_Banner_a96d4b8c-6b6a-4e16-ad8d-ccad122ebd59.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/LK_banner_mobile.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "template--15378217730184__6d341813-1fd0-46e7-9a74-5dceb2161ef3-167716410462130433-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "use_dark_text": false,
+            "top_subheading": "",
+            "title": "Two line\ntitle slide.",
+            "title_size": 80,
+            "subheading": "And big, beautiful imagery",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15378217730184__6d341813-1fd0-46e7-9a74-5dceb2161ef3-167716410462130433-0",
+        "template--15378217730184__6d341813-1fd0-46e7-9a74-5dceb2161ef3-167716410462130433-1"
+      ],
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "250px",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "1664893013d6aa9463": {
+      "type": "rich-text",
+      "blocks": {
+        "1664893013bbd4a571-0": {
+          "type": "heading",
+          "settings": {
+            "title": "to bleach their own"
+          }
+        },
+        "1664893013bbd4a571-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>New to vibrant color? Not sure how to achieve the best results?<\/p><p>Our hair Lightening Kit includes everything you need to create a perfect white canvas for any look.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1664893013bbd4a571-0",
+        "1664893013bbd4a571-1"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "72b0ec0a-5680-41ae-ad4b-7d901d8f3523": {
+      "type": "fifty-fifty",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Primary_Creative_Product_-_Lightening_Kit.jpg",
+        "bg_color": "",
+        "text_color": "",
+        "use_crazy_bg": false,
+        "pretitle": "",
+        "title": "hair lightening kit",
+        "subtitle": "$17.00",
+        "text": "<p>Kit comes with pre-measured:<\/p><ul><li>Powder Lightener, 1.05 OZ<\/li><li>Crème Developer, 4 FL OZ<\/li><\/ul>",
+        "button_label": "SHOP NOW",
+        "button_link": "shopify:\/\/products\/gdy-hair-lightening-kit",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left"
+      }
+    },
+    "429432a1-d8b5-45de-87f0-e8dc05ab3832": {
+      "type": "testimonials",
+      "blocks": {
+        "template--15378217730184__429432a1-d8b5-45de-87f0-e8dc05ab3832-16771665650fd5b28e-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Unlike other bleaches I’ve used, this one actually made my hair super soft after I washed it out.<\/p>",
+            "author": "Alexis F.",
+            "author_info": ""
+          }
+        },
+        "template--15378217730184__429432a1-d8b5-45de-87f0-e8dc05ab3832-16771665650fd5b28e-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>I usually get my hair lightener professionally as I'm really afraid of messing up, but this stuff was is incredible!<\/p>",
+            "author": "Taylor",
+            "author_info": ""
+          }
+        },
+        "template--15378217730184__429432a1-d8b5-45de-87f0-e8dc05ab3832-16771665650fd5b28e-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>The BEST box bleach kit I’ve ever used.<\/p>",
+            "author": "Gabriella G.",
+            "author_info": ""
+          }
+        },
+        "template--15378217730184__429432a1-d8b5-45de-87f0-e8dc05ab3832-16771665650fd5b28e-3": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Super easy to use and gentle on my hair!<\/p>",
+            "author": "Sam K.",
+            "author_info": ""
+          }
+        },
+        "template--15378217730184__429432a1-d8b5-45de-87f0-e8dc05ab3832-16771665650fd5b28e-4": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Honestly the lift in color? The softness and shine of my hair after using this lightening kit? Top tier.<\/p>",
+            "author": "Jennifer R.",
+            "author_info": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15378217730184__429432a1-d8b5-45de-87f0-e8dc05ab3832-16771665650fd5b28e-0",
+        "template--15378217730184__429432a1-d8b5-45de-87f0-e8dc05ab3832-16771665650fd5b28e-1",
+        "template--15378217730184__429432a1-d8b5-45de-87f0-e8dc05ab3832-16771665650fd5b28e-2",
+        "template--15378217730184__429432a1-d8b5-45de-87f0-e8dc05ab3832-16771665650fd5b28e-3",
+        "template--15378217730184__429432a1-d8b5-45de-87f0-e8dc05ab3832-16771665650fd5b28e-4"
+      ],
+      "settings": {
+        "title": "the reviews are in",
+        "align_text": "left",
+        "round_images": false,
+        "color_background": "#f1e6b2",
+        "color_text": "#1c1d1d"
+      }
+    },
+    "8f3eeef5-abcb-4c16-b8ce-06e9803cd9f6": {
+      "type": "text-columns",
+      "blocks": {
+        "template--15378217730184__8f3eeef5-abcb-4c16-b8ce-06e9803cd9f6-1677193794abf1553b-0": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/3_0264b3a7-e980-4697-a1a2-55e6651eafc7.png",
+            "image_width": 650,
+            "title": "",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "",
+            "text_color_1": "#000000",
+            "text_2": "",
+            "text_color_2": "#000000",
+            "text_3": "",
+            "text_color_3": "#000000",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--15378217730184__8f3eeef5-abcb-4c16-b8ce-06e9803cd9f6-1677193794abf1553b-1": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/WHY_GDY.png",
+            "image_width": 650,
+            "title": "",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "",
+            "text_color_1": "#000000",
+            "text_2": "",
+            "text_color_2": "#000000",
+            "text_3": "",
+            "text_color_3": "#000000",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15378217730184__8f3eeef5-abcb-4c16-b8ce-06e9803cd9f6-1677193794abf1553b-0",
+        "template--15378217730184__8f3eeef5-abcb-4c16-b8ce-06e9803cd9f6-1677193794abf1553b-1"
+      ],
+      "settings": {
+        "bg_color": "",
+        "title": "WHY TRY OUR LIGHTENING KIT?",
+        "subtitle": "We intentionally included a 25 volume developer that is powerful enough to gently lift the hair while being safe for at-home lightening. Our salon-grade formula is conditioning and strengthening along with being clean, vegan, and cruelty free.",
+        "align_text": "left",
+        "button_label": "",
+        "button_link": "",
+        "btn_bg_color": "",
+        "bigger_btn": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "space_around": true,
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padded_columns": false,
+        "use_mobile_slider": false
+      }
+    },
+    "07144749-4a80-41b9-9ef3-346524e07e42": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--15378217730184__07144749-4a80-41b9-9ef3-346524e07e42-16775316113c572cb6-1": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "code": "<h2>WHY TRY OUR LIGHTENING KIT?<\/h2><p>We intentionally included a 25 volume developer that is powerful enough to gently lift the hair while being safe for at-home lightening. Our salon-grade formula is conditioning and strengthening along with being clean, vegan, and cruelty free.<\/p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "template--15378217730184__07144749-4a80-41b9-9ef3-346524e07e42-16775316113c572cb6-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LK_WHY_US_-_NO_HEADER.png",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "9b205a6a-2dda-430d-92f3-04e1ec2fc261": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WHY_-_UPDATED.jpg",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15378217730184__07144749-4a80-41b9-9ef3-346524e07e42-16775316113c572cb6-1",
+        "template--15378217730184__07144749-4a80-41b9-9ef3-346524e07e42-16775316113c572cb6-0",
+        "9b205a6a-2dda-430d-92f3-04e1ec2fc261"
+      ],
+      "custom_css": [],
+      "settings": {
+        "full_width": false,
+        "bg_color": "",
+        "text_color": "",
+        "bg_color_contained": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "space_around": false,
+        "show_top_border": false,
+        "show_bottom_border": false
+      }
+    },
+    "d7994ddd-e60b-4150-b2e9-d2e0cfadcdf7": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15378217730184__d7994ddd-e60b-4150-b2e9-d2e0cfadcdf7-167717272880f5fa21-0": {
+          "type": "heading",
+          "settings": {
+            "title": "How to Lighten Your Hair"
+          }
+        },
+        "template--15378217730184__d7994ddd-e60b-4150-b2e9-d2e0cfadcdf7-167717272880f5fa21-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Our resident stylist, Brian O'Connor, takes you through everything you need to know to bleach like a pro!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15378217730184__d7994ddd-e60b-4150-b2e9-d2e0cfadcdf7-167717272880f5fa21-0",
+        "template--15378217730184__d7994ddd-e60b-4150-b2e9-d2e0cfadcdf7-167717272880f5fa21-1"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": false,
+        "divider": false
+      }
+    },
+    "af4627b2-9608-432b-8776-224c6a3e101c": {
+      "type": "featured-video",
+      "settings": {
+        "title": "",
+        "video_url": "https:\/\/youtu.be\/7nBBs4AYKTU",
+        "divider": false
+      }
+    },
+    "d9964d74-81e8-4ecd-9948-7ed172c60fcd": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--15378217730184__d9964d74-81e8-4ecd-9948-7ed172c60fcd-16771727687ea9edd1-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WAVES_2_4e7322c6-e5e1-4d22-b028-b745c8d39235.png",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "template--15378217730184__d9964d74-81e8-4ecd-9948-7ed172c60fcd-16771727687ea9edd1-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>How many lightening kits do i need?<\/h2><p>Your hair length, texture, and tone can affect how many lightening kits you need. <\/p><p>Use our reference models to see how many kits, and what size, you will need to achieve your best lift!<\/p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15378217730184__d9964d74-81e8-4ecd-9948-7ed172c60fcd-16771727687ea9edd1-0",
+        "template--15378217730184__d9964d74-81e8-4ecd-9948-7ed172c60fcd-16771727687ea9edd1-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "bg_color": "",
+        "text_color": "",
+        "bg_color_contained": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "space_around": true,
+        "show_top_border": false,
+        "show_bottom_border": false
+      }
+    },
+    "afd97ab6-c255-499a-97fa-9ce558e8834d": {
+      "type": "text-columns",
+      "blocks": {
+        "42bfb65d-605a-4326-a69a-41afa77204f6": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/SMALLSECTIONS.jpg",
+            "image_width": 650,
+            "title": "",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "",
+            "text_color_1": "#000000",
+            "text_2": "",
+            "text_color_2": "#000000",
+            "text_3": "",
+            "text_color_3": "#000000",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "a023351e-3faa-4bc5-a21f-da267bc5b08c": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/LK_-_SMALL_SECTION.jpg",
+            "image_width": 650,
+            "title": "",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "",
+            "text_color_1": "#000000",
+            "text_2": "",
+            "text_color_2": "#000000",
+            "text_3": "",
+            "text_color_3": "#000000",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "86ae2a58-9639-4a40-a834-5e8576f94886": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/LK_-_BUZZCUT.jpg",
+            "image_width": 650,
+            "title": "",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "",
+            "text_color_1": "#000000",
+            "text_2": "",
+            "text_color_2": "#000000",
+            "text_3": "",
+            "text_color_3": "#000000",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--15378217730184__afd97ab6-c255-499a-97fa-9ce558e8834d-1677166720d1d7055b-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/LK_-_SHORT_LENGTH.jpg",
+            "image_width": 650,
+            "title": "",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "",
+            "text_color_1": "#000000",
+            "text_2": "",
+            "text_color_2": "#000000",
+            "text_3": "",
+            "text_color_3": "#000000",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--15378217730184__afd97ab6-c255-499a-97fa-9ce558e8834d-1677166720d1d7055b-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/LK_-_SHOULDER_LENGTH.jpg",
+            "image_width": 650,
+            "title": "",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "",
+            "text_color_1": "#000000",
+            "text_2": "",
+            "text_color_2": "#000000",
+            "text_3": "",
+            "text_color_3": "#000000",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--15378217730184__afd97ab6-c255-499a-97fa-9ce558e8834d-1677166720d1d7055b-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/LK_-_SHOULDER_TEXTURED_LENGTH.jpg",
+            "image_width": 650,
+            "title": "",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "",
+            "text_color_1": "#000000",
+            "text_2": "",
+            "text_color_2": "#000000",
+            "text_3": "",
+            "text_color_3": "#000000",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "18ac63b5-d4b1-4c44-af34-22076d4ad065": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/LK_-_SHOULDER_LENGTH_2.jpg",
+            "image_width": 650,
+            "title": "",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "",
+            "text_color_1": "#000000",
+            "text_2": "",
+            "text_color_2": "#000000",
+            "text_3": "",
+            "text_color_3": "#000000",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "d8ee4f25-3723-4398-bd96-04941b985cd1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/LK_-_LOW_BACK_LENGTH.jpg",
+            "image_width": 650,
+            "title": "",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "",
+            "text_color_1": "#000000",
+            "text_2": "",
+            "text_color_2": "#000000",
+            "text_3": "",
+            "text_color_3": "#000000",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "749a1316-9687-455a-940d-7f29e44085aa": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/LK_-_WAIST_LENGTH.jpg",
+            "image_width": 650,
+            "title": "",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "",
+            "text_color_1": "#000000",
+            "text_2": "",
+            "text_color_2": "#000000",
+            "text_3": "",
+            "text_color_3": "#000000",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "42bfb65d-605a-4326-a69a-41afa77204f6",
+        "a023351e-3faa-4bc5-a21f-da267bc5b08c",
+        "86ae2a58-9639-4a40-a834-5e8576f94886",
+        "template--15378217730184__afd97ab6-c255-499a-97fa-9ce558e8834d-1677166720d1d7055b-0",
+        "template--15378217730184__afd97ab6-c255-499a-97fa-9ce558e8834d-1677166720d1d7055b-1",
+        "template--15378217730184__afd97ab6-c255-499a-97fa-9ce558e8834d-1677166720d1d7055b-2",
+        "18ac63b5-d4b1-4c44-af34-22076d4ad065",
+        "d8ee4f25-3723-4398-bd96-04941b985cd1",
+        "749a1316-9687-455a-940d-7f29e44085aa"
+      ],
+      "settings": {
+        "bg_color": "",
+        "title": "",
+        "subtitle": "",
+        "align_text": "center",
+        "button_label": "",
+        "button_link": "",
+        "btn_bg_color": "",
+        "bigger_btn": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "space_around": true,
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padded_columns": false,
+        "use_mobile_slider": false
+      }
+    },
+    "7bfa537e-4cc9-4528-aac6-4c5374771141": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/LK_Banner_61717c8c-26cf-46d8-8026-5a11f230dacd.jpg",
+        "image_attr": "",
+        "image_attr_link": "",
+        "image_width": 700,
+        "pretitle": "",
+        "title": "",
+        "bigger_title": false,
+        "subtitle": "",
+        "text": "<p><strong>Still not sure how many kits you need?<\/strong><\/p><p>Take our quiz to find out!<\/p>",
+        "use_larger_text": false,
+        "button_label": "take the quiz",
+        "button_link": "shopify:\/\/pages\/how-many-lightening-kits-do-i-need",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false,
+        "collection_dye_duration": "none"
+      }
+    },
+    "0f2e115c-c4f2-43c8-bcd7-080eb6b4f5fc": {
+      "type": "faq",
+      "blocks": {
+        "8defc4ac-49e9-4937-8ca9-70f9a0bbe535": {
+          "type": "rich-text",
+          "disabled": true,
+          "settings": {
+            "title": "LIGHTENING",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "d210fa11-48d5-4cc2-a78b-95eb09a45f0b": {
+          "type": "question",
+          "settings": {
+            "title": "What is GDY’s Lightening Kit?",
+            "text": "<p>The Good Dye Young Lightening Kit allows you to lighten your hair to a level 9 or 10 light blonde so when you apply the GDY colors, they will show up as vibrant as possible.<\/p><p>We use 25 Volume Creme Developer so that your hair is left in good condition while offering just the right amount of lift to achieve lighter results.<\/p>"
+          }
+        },
+        "template--15378217730184__0f2e115c-c4f2-43c8-bcd7-080eb6b4f5fc-16771667275c3d9f9a-1": {
+          "type": "question",
+          "settings": {
+            "title": "How does the Lightening Kit work?",
+            "text": "<p>We at GDY have made this easy for you! We’ve measured both the Creme Developer and the Powder Lightener already and you simply mix one bottle of the Creme Developer with one packet of Powder Lightener, making sure to mix to a nice even cream consistency. <strong>Make sure you get professional advice when lightening or removing color.<\/strong><\/p>"
+          }
+        },
+        "template--15378217730184__0f2e115c-c4f2-43c8-bcd7-080eb6b4f5fc-16771667275c3d9f9a-0": {
+          "type": "question",
+          "settings": {
+            "title": "Do I have to pre-lighten my hair before coloring with GDY?",
+            "text": "<p>To ensure you get the most vibrant and colorful results from GDY, we recommend that you pre-lighten your hair using our Lightening Kit.<\/p>"
+          }
+        },
+        "e3256295-bc49-41e0-9a34-fd7be030402d": {
+          "type": "question",
+          "settings": {
+            "title": "Is there a specific amount of time I should leave the Lightener on my hair?",
+            "text": "<p>You can leave it on up to 50 minutes and then rinse out, shampoo and dry. We do suggest checking your hair after 30 minutes to see if you have achieved a high enough level of lift! If upon rinsing out the lightening kit you think you need to go even lighter, we suggest waiting 2-4 days and then lightening again.  We sure to monitor your hair closely as not to over process the hair. Since that would be your second time lightening, we suggest only leaving the lightening kit on for a max of 30 minutes and checking frequently!<\/p>"
+          }
+        },
+        "4a271bf2-aadb-4c0b-8295-aa3b7a5ecaa3": {
+          "type": "question",
+          "settings": {
+            "title": "How do I use the GDY Lightening Kit?",
+            "text": "<p>The very best way to apply a lightener to  hair is as follows:<\/p><p>1. Do a strand test to make sure your hair can take a lightener and also a patch test if you plan on applying the GDY Lightening Kit to your scalp.<br\/><br\/>2. Section and clip your hair into 4 sections by parting your hair down the middle and then side to side from top of crown to bottom of ear.<br\/><br\/>3. Start with the bottom sections first and apply GDY Lightening Kit away from the root area. The bottom of your hair is usually darker and more stubborn, that’s why you want to start there. <em><strong>TIP: <\/strong><\/em><em>Did you know that the heat from the scalp will make the Lightener swell, and it will process much more quickly at the root due to the heat from the scalp?  Hold off on applying the root area AFTER you are done processing the rest of your hair if you want to avoid hot roots.<br\/><br\/><\/em>4. Methodically apply the GDY Lightener mixture in small sections, remembering to leave the roots out. If you take too thick of sections, you may miss spots, and end up with a splotchy base. Saturate the strand of hair by working the GDY Lightening Kit evenly into each section with a gloved hand  <em><strong>TIP<\/strong><\/em><em>: If the ends of your hair are lighter naturally, leave them out for now until after you have applied the Lightening Kit to all the sections. Then go back and apply the Lightener to the ends. This will help prevent the ends of your hair from over processing ( aka: turning to mush).<br\/><br\/><\/em>5. Once you apply your lightener to the mids and ends of your hair, go back through each section and apply the lightener to your roots.<br\/><br\/>6. A good idea is to wrap each strand into tinfoil to help the Lightener lift faster and keep it from drying out. When Lightener dries out, it quits working. <em><strong>TIP<\/strong><\/em><em>: If you do not have tinfoil, after you finish each quadrant, wrap it in plastic wrap. After you have completed the application, wrap your entire hair with plastic wrap.<br\/><br\/><\/em>7. Let your hair process for no more than 50 minutes, until you achieve the desired tone. Check consistently (every 5-10 minutes) to evaluate the color lift. (Darker hair may need to be lightened more than once to reach your perfect base.)<br\/><br\/>8. After you have achieved the desired result, rinse the Lightener out thoroughly and shampoo. <em><strong>TIP<\/strong><\/em><em>: If you plan on using a semi-permanent dye afterwards, do not condition! Conditioner coats the hair cuticle and prevents the color from taking as well as it could.<br\/><br\/><\/em>9. Now you can apply your favorite GDY hair color!<\/p>"
+          }
+        },
+        "2dd56b83-8024-41dd-9b27-5cafd693f8f1": {
+          "type": "question",
+          "settings": {
+            "title": "What if I have dye already in my hair? How do I lighten it with GDY Lightening Kit?",
+            "text": "<p>If you have color on your hair now, and you have LESS than ½ of regrowth showing, put the GDY Lightener from root to end following the directions above for sectioning and application.<\/p><p>If you have color on your hair now and you have MORE than ½ of regrowth, apply the Lightener to your regrowth last, after you have applied the Lightener to the rest of your hair. Virgin hair (hair without dye), lightens faster than color treated hair.<\/p>"
+          }
+        },
+        "808c2f10-5c80-47e8-8d10-f4675f6b9228": {
+          "type": "question",
+          "settings": {
+            "title": "Can I use lightening kit on textured hair?",
+            "text": "<p>Yes, you can use our lightening kit on naturally textured hair. Just be aware that textured hair will lift and lighten differently than non- textured hair so always keep on eye on your hair while it’s processing. Please note, we do not recommend using our lightening kit on chemically textured hair, such as perms.<\/p>"
+          }
+        },
+        "ad929329-7863-4ebc-b918-959b1eb638bf": {
+          "type": "question",
+          "settings": {
+            "title": "What if after using the GDY Powder Lightener and 25 Volume Creme Developer, my hair still has a lot of gold and orange in it and is not a pale blonde? What do I do?",
+            "text": "<p>You may need to do another round of lightening. First take a strand test to ensure that your hair is able to take another round of lightening. If so, apply GDY Hair Lightener as directed, or go to our step-by-step guide.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "8defc4ac-49e9-4937-8ca9-70f9a0bbe535",
+        "d210fa11-48d5-4cc2-a78b-95eb09a45f0b",
+        "template--15378217730184__0f2e115c-c4f2-43c8-bcd7-080eb6b4f5fc-16771667275c3d9f9a-1",
+        "template--15378217730184__0f2e115c-c4f2-43c8-bcd7-080eb6b4f5fc-16771667275c3d9f9a-0",
+        "e3256295-bc49-41e0-9a34-fd7be030402d",
+        "4a271bf2-aadb-4c0b-8295-aa3b7a5ecaa3",
+        "2dd56b83-8024-41dd-9b27-5cafd693f8f1",
+        "808c2f10-5c80-47e8-8d10-f4675f6b9228",
+        "ad929329-7863-4ebc-b918-959b1eb638bf"
+      ],
+      "custom_css": [],
+      "settings": {
+        "title": "Frequently Asked Questions"
+      }
+    },
+    "4b7f4883-6b40-42ba-a333-434b8da59994": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Untitled_design_5.png",
+        "image_attr": "",
+        "image_attr_link": "",
+        "image_width": 700,
+        "pretitle": "",
+        "title": "hair \ndye-recotry",
+        "bigger_title": false,
+        "subtitle": "",
+        "text": "<p>Learn everything you need to know about dyeing your hair.<br\/><\/p>",
+        "use_larger_text": false,
+        "button_label": "read our blog",
+        "button_link": "",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false,
+        "collection_dye_duration": "none"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "6d341813-1fd0-46e7-9a74-5dceb2161ef3",
+    "1664893013d6aa9463",
+    "72b0ec0a-5680-41ae-ad4b-7d901d8f3523",
+    "429432a1-d8b5-45de-87f0-e8dc05ab3832",
+    "8f3eeef5-abcb-4c16-b8ce-06e9803cd9f6",
+    "07144749-4a80-41b9-9ef3-346524e07e42",
+    "d7994ddd-e60b-4150-b2e9-d2e0cfadcdf7",
+    "af4627b2-9608-432b-8776-224c6a3e101c",
+    "d9964d74-81e8-4ecd-9948-7ed172c60fcd",
+    "afd97ab6-c255-499a-97fa-9ce558e8834d",
+    "7bfa537e-4cc9-4528-aac6-4c5374771141",
+    "0f2e115c-c4f2-43c8-bcd7-080eb6b4f5fc",
+    "4b7f4883-6b40-42ba-a333-434b8da59994"
+  ]
+}

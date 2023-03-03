@@ -1,3 +1,25 @@
+<!--popup modal-->
+        <div id="mySizeChartModal" class="ebcf_modal">
+          <div class="ebcf_modal-content">
+            <span class="ebcf_close">&times;</span>
+            <h3>Enter Your Email to Activate</h3>
+            <br />
+            <div class="input-group newsletter__input-group">
+              <input type="email" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="Enter your email" name="contact[email]" id="activation_email" class="input-group-field newsletter__input" autocorrect="off" autocapitalize="off">
+              
+              <div class="input-group-btn">
+                <button type="submit" class="btn btn-activation-email" name="commit">
+                  <span class="form__submit--large">Activate</span>
+                  <span class="form__submit--small">
+                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-right" viewBox="0 0 50 15"><path d="M0 9.63V5.38h35V0l15 7.5L35 15V9.63z"></path></svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <p class="activation-email-error" style="color: red;"></p>
+          </div>
+        </div>
+
 <div class="page-width page-content login">
   <header class="section-header">
     <h1 class="section-header__title">My Account</h1>
@@ -10,7 +32,7 @@
         <header class="">
           <h1>Returning Customer?</h1>
         </header>
-        <p>We have safely moved your account over to our new site, however you will need to re-activate it here by creating a new password</p>
+        <p>Don't have an account? Create one to join the Ride or Dyes to earn points & redeem rewards.</p>
   
         <p><a class="btn" href="#" id="mySizeChart">Re-activate</a></p>
         <br>
@@ -127,3 +149,110 @@
     </div>
   </div>
 </div>
+<style>
+  .ebcf_modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 50; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.ebcf_modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 600px;
+}
+
+/* The Close Button */
+.ebcf_close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.ebcf_close:hover,
+.ebcf_close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+<script>
+  // Get the modal
+var ebModal = document.getElementById('mySizeChartModal');
+
+// Get the button that opens the modal
+var ebBtn = document.getElementById("mySizeChart");
+
+// Get the <span> element that closes the modal
+var ebSpan = document.getElementsByClassName("ebcf_close")[0];
+
+// When the user clicks the button, open the modal 
+ebBtn.onclick = function() {
+    ebModal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+ebSpan.onclick = function() {
+    ebModal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == ebModal) {
+        ebModal.style.display = "none";
+    }
+}
+</script>
+<script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+  <script>
+      $(document).ready(function () {
+          $('.btn-activation-email').click(function () {
+              var email = $('#activation_email').val();
+              if (email && email !== '') {
+                $('.activation-email-error').text('');
+                  fetch('https://gdy.contracollective.com/activation-email?email=' + email)
+                      .then(function (response) {
+                          return response.json()
+                      })
+                      .then(function (data) {
+                          if (data.activationData) {
+                            window.location.href = data.activationData.account_activation_url;
+                          }
+                          if (data.message) {
+                            $('.activation-email-error').text(data.message);
+                          }
+                      })
+                      .catch(function (err){
+                          console.log('Error:', err);
+                      } )
+                  // $.ajax({
+                  //     url: 'http://142.93.4.226:3000/activation-email?email=' + email,
+                  //     success: function (data) {
+                  //         console.log('Success:', data);
+                  //     },
+                  //     error: function (xhr, status, error) {
+                  //         console.log('Error:', error)
+                  //     }
+                  // });
+              } else {
+                $('.activation-email-error').text('Please type email at first.');
+              }
+              
+          })
+      })
+  </script>

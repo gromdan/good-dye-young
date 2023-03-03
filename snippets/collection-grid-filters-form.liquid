@@ -4,19 +4,23 @@
 - collapsed: boolean
 {% endcomment %}
 
-<ul class="no-bullets tag-list tag-list--active-tags">
-{%- for filter in filters -%}
-  {%- assign filter_index = forloop.index -%}
+<a href="{{ collection.url }}" class="reset h4">
+  Reset Filters
+</a>
 
-  {%- for filter_value in filter.active_values -%}
-  <li class="tag tag--remove">
-    <a class="btn btn--small" href="{{ filter_value.url_to_remove }}">
-      {{ filter_value.label | escape }}
-    </a>
-    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"/></svg>
-  </li>
-  {%- endfor -%}
-{%- endfor -%}
+<ul class="no-bullets tag-list tag-list--active-tags">
+    {%- for filter in filters -%}
+        {%- assign filter_index = forloop.index -%}
+
+        {%- for filter_value in filter.active_values -%}
+            <li class="tag tag--remove">
+                <a class="btn btn--small" href="{{ filter_value.url_to_remove }}">
+                    {{ filter_value.label | escape }}
+                </a>
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"/></svg>
+            </li>
+        {%- endfor -%}
+    {%- endfor -%}
 </ul>
 
 <form class="filter-form">
@@ -32,7 +36,7 @@
           aria-controls="{{ location }}-{{ filter_index }}{% if filter_id %}-{{ filter_id }}{% endif %}"
           data-collapsible-id="{{ filter_id }}">
           {{ filter.label | escape }}
-          {%- render 'collapsible-icons' -%}
+          {%- render 'collapsible-icons-plus-minus' -%}
       </button>
       <div
       id="{{ location }}-{{ filter_index }}-{{ filter_id }}"

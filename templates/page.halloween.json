@@ -1,0 +1,391 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "77a40ac1-00a2-44b7-9bb7-2114e448a11b": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15270233145480__77a40ac1-00a2-44b7-9bb7-2114e448a11b-1665609297e4cf1322-0": {
+          "type": "image",
+          "settings": {
+            "use_dark_text": false,
+            "top_subheading": "",
+            "title": "SPOOKY SEASON IS HERE",
+            "title_size": 80,
+            "subheading": "Create looks inspired by your fave pop culture icons.",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/2-min.png",
+            "image_mobile": "shopify:\/\/shop_images\/2-min.png",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15270233145480__77a40ac1-00a2-44b7-9bb7-2114e448a11b-1665609297e4cf1322-0"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "auto",
+        "parallax": true,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "378f4241-86e0-4c51-b54e-ba2017e2ce3c": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2.png",
+        "image_attr": "",
+        "image_attr_link": "",
+        "image_width": 700,
+        "pretitle": "",
+        "title": "HAYLEY'S ORANGE REVIVAL",
+        "bigger_title": false,
+        "subtitle": "",
+        "text": "",
+        "use_larger_text": false,
+        "button_label": "GET THE LOOK",
+        "button_link": "shopify:\/\/pages\/paramore-hayley-in-concert",
+        "button_color": "",
+        "button_style": "secondary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false,
+        "collection_dye_duration": "none"
+      }
+    },
+    "16597370125d0b2d59": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/4.png",
+        "image_attr": "",
+        "image_attr_link": "",
+        "image_width": 700,
+        "pretitle": "",
+        "title": "WITCHY PLATINUM",
+        "bigger_title": true,
+        "subtitle": "",
+        "text": "",
+        "use_larger_text": false,
+        "button_label": "GET THE LOOK",
+        "button_link": "shopify:\/\/products\/dyeposit-platinum",
+        "button_color": "",
+        "button_style": "secondary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false,
+        "collection_dye_duration": "none"
+      }
+    },
+    "b82f800f-bed1-4763-b7ad-5b0bc9542a1a": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/6.png",
+        "image_attr": "",
+        "image_attr_link": "",
+        "image_width": 700,
+        "pretitle": "",
+        "title": "WITCHY COPPER",
+        "bigger_title": false,
+        "subtitle": "",
+        "text": "",
+        "use_larger_text": false,
+        "button_label": "GET THE LOOK",
+        "button_link": "shopify:\/\/products\/dyeposit-copper",
+        "button_color": "",
+        "button_style": "secondary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false,
+        "collection_dye_duration": "none"
+      }
+    },
+    "5b7c7a8b-253b-4023-aef0-a234d019ed9f": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/12.png",
+        "image_attr": "",
+        "image_attr_link": "",
+        "image_width": 700,
+        "pretitle": "",
+        "title": "GREEN MACHINE LOCKS",
+        "bigger_title": false,
+        "subtitle": "",
+        "text": "",
+        "use_larger_text": false,
+        "button_label": "GET THE LOOK",
+        "button_link": "shopify:\/\/products\/move-mountains",
+        "button_color": "",
+        "button_style": "secondary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false,
+        "collection_dye_duration": "none"
+      }
+    },
+    "38af8105-b1c3-4e9d-bc86-b9445f73fb08": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/18.png",
+        "image_attr": "",
+        "image_attr_link": "",
+        "image_width": 700,
+        "pretitle": "",
+        "title": "PASTEL BESTIE",
+        "bigger_title": false,
+        "subtitle": "",
+        "text": "",
+        "use_larger_text": false,
+        "button_label": "GET THE LOOK",
+        "button_link": "shopify:\/\/products\/gdy-lighter-daze-pink-puff",
+        "button_color": "",
+        "button_style": "secondary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false,
+        "collection_dye_duration": "none"
+      }
+    },
+    "6d6cb9a2-88d9-43e1-9a73-a2a5a6fe91e5": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/10.png",
+        "image_attr": "",
+        "image_attr_link": "",
+        "image_width": 700,
+        "pretitle": "",
+        "title": "ANNA'S COPPER",
+        "bigger_title": false,
+        "subtitle": "",
+        "text": "",
+        "use_larger_text": false,
+        "button_label": "GET THE LOOK",
+        "button_link": "shopify:\/\/products\/dyeposit-copper",
+        "button_color": "",
+        "button_style": "secondary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false,
+        "collection_dye_duration": "none"
+      }
+    },
+    "5d403008-0830-494c-b7c7-c48eb0960134": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/16.png",
+        "image_attr": "",
+        "image_attr_link": "",
+        "image_width": 700,
+        "pretitle": "",
+        "title": "DIRRRTY STREAKS & STRANDS",
+        "bigger_title": false,
+        "subtitle": "",
+        "text": "",
+        "use_larger_text": false,
+        "button_label": "GET THE LOOK",
+        "button_link": "shopify:\/\/products\/gdy-rock-lobster",
+        "button_color": "",
+        "button_style": "secondary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false,
+        "collection_dye_duration": "none"
+      }
+    },
+    "4ac86c2e-5e61-4ab7-a48f-b0c88e7d7eb9": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/14.png",
+        "image_attr": "",
+        "image_attr_link": "",
+        "image_width": 700,
+        "pretitle": "",
+        "title": "GO BLUE OR GO HOME",
+        "bigger_title": false,
+        "subtitle": "",
+        "text": "",
+        "use_larger_text": false,
+        "button_label": "GET THE LOOK",
+        "button_link": "shopify:\/\/products\/gdy-blue-ruin",
+        "button_color": "",
+        "button_style": "secondary",
+        "align_text": "left",
+        "layout": "left",
+        "divider": false,
+        "collection_dye_duration": "none"
+      }
+    },
+    "4fd1f057-db16-4eac-8e78-d7063f8f5009": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/8.png",
+        "image_attr": "",
+        "image_attr_link": "",
+        "image_width": 700,
+        "pretitle": "",
+        "title": "THE OTHER BLUES",
+        "bigger_title": false,
+        "subtitle": "",
+        "text": "",
+        "use_larger_text": false,
+        "button_label": "GET THE LOOK",
+        "button_link": "shopify:\/\/products\/blue-ruin-poser-paste",
+        "button_color": "",
+        "button_style": "secondary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false,
+        "collection_dye_duration": "none"
+      }
+    },
+    "713ccd90-3686-4600-bd41-942b80bfca16": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "ALL OVER COLOR",
+        "text": "<p>Transform yourself with our bold but good-for-hair color.<\/p>",
+        "button_label": "SHOP NOW",
+        "button_link": "shopify:\/\/collections\/semi-perm",
+        "image": "shopify:\/\/shop_images\/HOME_PAGE_3-min.jpg",
+        "focal_point": "center",
+        "layout": "right",
+        "height": 550,
+        "framed": false,
+        "parallax": false
+      }
+    },
+    "728d6de8-76de-4240-bc49-a1ccfc48c26b": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "ON TREND",
+        "subtitle": "",
+        "home_featured_products": "trending-hair-dye-colors-looks",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "166155803897b57306": {
+      "type": "logo-list",
+      "disabled": true,
+      "blocks": {
+        "1661558038e22e9c69-0": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-rabbit",
+            "title": "Cruelty-free",
+            "link": ""
+          }
+        },
+        "1661558038e22e9c69-1": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-leaf",
+            "title": "Vegan",
+            "link": ""
+          }
+        },
+        "1661558038e22e9c69-2": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-chemicals",
+            "title": "Free of a lot of\ngross chemicals",
+            "link": ""
+          }
+        },
+        "1661558038e22e9c69-3": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-sunflower",
+            "title": "Natural Sunflower\nExtract",
+            "link": ""
+          }
+        },
+        "74a53c01-7abe-43f9-a963-f869dc661c56": {
+          "type": "logo_image",
+          "settings": {
+            "use_svg": true,
+            "svg": "icon-hearts",
+            "title": "Made with love\nin the USA",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1661558038e22e9c69-0",
+        "1661558038e22e9c69-1",
+        "1661558038e22e9c69-2",
+        "1661558038e22e9c69-3",
+        "74a53c01-7abe-43f9-a963-f869dc661c56"
+      ],
+      "settings": {
+        "bg_color": "",
+        "text_color": "#000000",
+        "title": "WHAT WE’RE <br>ALL ABOUT",
+        "text": "<p>Good Dye Young cultivates a safe and inclusive community that values vibrant self-expression and creativity. We also make bad ass hair products.<\/p>",
+        "text_align": "left",
+        "content_width": 1300,
+        "side_by_side": true,
+        "hdr_width": 40,
+        "logo_opacity": 76,
+        "divider": false,
+        "margin_top": 50,
+        "margin_bottom": 50,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "borders": "border-b"
+      }
+    },
+    "1665610209671c4719": {
+      "type": "apps",
+      "blocks": {
+        "fe52bf3a-a546-49be-8b89-b1b0837b7d0e": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "SqWPAL"
+          }
+        }
+      },
+      "block_order": [
+        "fe52bf3a-a546-49be-8b89-b1b0837b7d0e"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "77a40ac1-00a2-44b7-9bb7-2114e448a11b",
+    "378f4241-86e0-4c51-b54e-ba2017e2ce3c",
+    "16597370125d0b2d59",
+    "b82f800f-bed1-4763-b7ad-5b0bc9542a1a",
+    "5b7c7a8b-253b-4023-aef0-a234d019ed9f",
+    "38af8105-b1c3-4e9d-bc86-b9445f73fb08",
+    "6d6cb9a2-88d9-43e1-9a73-a2a5a6fe91e5",
+    "5d403008-0830-494c-b7c7-c48eb0960134",
+    "4ac86c2e-5e61-4ab7-a48f-b0c88e7d7eb9",
+    "4fd1f057-db16-4eac-8e78-d7063f8f5009",
+    "713ccd90-3686-4600-bd41-942b80bfca16",
+    "728d6de8-76de-4240-bc49-a1ccfc48c26b",
+    "166155803897b57306",
+    "1665610209671c4719"
+  ]
+}

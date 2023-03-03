@@ -1,0 +1,199 @@
+<style>
+.swell-faq-list li {
+    border-bottom: 1px #80808038 solid !important;
+  }
+  
+  .swell-faq-text {
+    font-weight: 500 !important;
+  }
+  
+  .swell-faq-list {
+    width: 65% !important;
+}
+  .yotpo-faq-button {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    padding: 20px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: Integral !important;
+    position: relative;
+      }
+  
+  .yotpo-faq-button::hover {
+    color: #ffffff !important;
+    background-color: #eb3300; 
+      }
+  
+</style>
+
+
+<section class="swell-faq">
+	<h2>FAQ's</h2>
+	<ul class="swell-faq-list">
+		<li>
+			<span class="swell-faq-text">What are the advantages of becoming a rewards member?</span><span class="swell-faq-load-more">+</span>
+			<p class="swell-faq-explanation">
+                •Our rewards program is a tiered program that allows you to earn more perks the more you engage with us. You’ll receive rewards points for each purchase, that can then be redeemed towards the cost of future purchases.
+   <br><br>•You also earn points for referring friends, leaving reviews, and you’ll also receive a special birthday gift from all of us at GDY! 
+            </p>
+		</li>
+
+		<li>
+			<span class="swell-faq-text">I already have an account. Do I need to create a new one to earn rewards?</span><span class="swell-faq-load-more">+</span>
+          <p class="swell-faq-explanation">
+
+            •All customers with an active account are automatically enrolled in our rewards program. If you have had more than one customer account with us, please note that only one rewards account was created per person.
+            <br><br>•*As of Sept 23, GDY has moved to Shopify! If you haven’t visited us since then, please reactivate your account [on this page]. Enter your email address and you will be prompted to set up a new password!
+
+            
+          </p>
+		</li>
+		<li>
+			<span class="swell-faq-text">Will I receive points for purchases I made prior to creating my rewards account?</span><span class="swell-faq-load-more">+</span>
+          <p class="swell-faq-explanation">
+
+            •You will only receive points for purchases made after creating your rewards account. Make sure to create an account before placing an order so you can receive points!
+            <br><br>•If you have questions regarding your previous DYEmonds, please contact us at help@gooddyeyoung.com. 
+            
+          </p>
+		</li>
+	</ul>
+  
+     <a href="https://gooddyeyoung.com/pages/loyalty-rewards-points-faq" class="yotpo-faq-button">MORE FAQ's</a>
+  
+</section>
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+
+    
+  
+  $('.swell-faq-list li').click(function(e){
+      e.preventDefault();
+      $(this).find('.swell-faq-explanation').toggleClass('swell-faq-show swell-faq-hide');
+    	
+    
+    if($(this).find('.swell-faq-explanation').css('display')=="none"){
+      $(this).find('.swell-faq-load-more').text('+');
+    }
+    else{
+      $(this).find('.swell-faq-load-more').text('-');
+    }
+    
+  });
+  
+</script>
+
+
+<style>
+  
+  .swell-faq {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    flex-direction: column;
+}
+
+.swell-faq h2 {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+
+.swell-faq-list {
+    width: 80%;
+}
+
+.swell-faq-explanation {
+    text-align: left;
+    display: none;
+    width: 100%;
+  margin-bottom: 0px;
+  padding-right: .8rem;
+  padding-left: 10px;
+}
+
+.swell-faq-text {
+    font-weight: 800;
+    font-family: Integral;
+}
+
+.swell-faq-load-more {
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.swell-faq-list li {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    padding: 1rem 0;
+    font-size: 20px;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+  
+  .swell-faq-list li:hover {
+    background: rgba(255,255,255, .3);
+}
+  
+.swell-faq-show{
+ display: block; 
+}
+  
+  .swell-faq-hide{
+ display: block; 
+}
+  
+  
+  .tos-link a{
+  color: skyblue;
+    
+  }
+  
+  
+  @media(max-width: 768px){
+    .swell-faq-list li{
+     font-size: 16px;
+      line-height: 1;
+    }
+    
+    p.swell-faq-explanation{
+     font-size: 12px;
+      line-height: 1;
+      margin-top: .5rem;
+      
+    }
+    
+    .swell-faq-text{
+     position: relative; 
+      padding-right: .8rem;
+    }
+    
+    .swell-faq-load-more{
+     position: absolute;
+      right: 0.75rem;
+    }
+    
+    .swell-faq-list,
+    .tos-link{
+      width: 100%;
+      padding: 0px .75rem;
+    }
+    
+  }
+  
+</style>

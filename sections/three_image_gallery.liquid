@@ -1,11 +1,13 @@
 <div class="full-width">
     <div class="main-content">
         {% for block in section.blocks %}
-            {% if block.type ==  'left_image' %}
+            {% if block.type == 'left_image' %}
                 <div class="item left-image">
                     {% if block.settings.image != blank %}
-                        <div class="img-wrap">
-                            <img class="desktop-image" src="{{ block.settings.image | image_url: width: 800 }}" alt="Left Image">
+                        <div class="img-wrap-outer">
+                            <div class="img-wrap">
+                                <img class="desktop-image" src="{{ block.settings.image | image_url: width: 800 }}" alt="{{ block.settings.image.alt }}" loading="lazy">
+                            </div>
                         </div>
                     {% endif %}
                     {% if block.settings.button_link != blank %}
@@ -13,13 +15,20 @@
                             <a href="{{ block.settings.button_link }}" class="text-link">{{ block.settings.button_label }}</a>
                         </div>
                     {% endif %}
+              {% if block.settings.button_links != blank  %}
+                        <div class="button-wrap">
+                            <div class="text-link">{{ block.settings.button_links }}</div>
+                        </div>
+                {% endif %}
                 </div>
             {% endif %}
-            {% if block.type ==  'center_image' %}
+            {% if block.type == 'center_image' %}
                 <div class="item center-image">
                     {% if block.settings.image != blank %}
-                        <div class="img-wrap">
-                            <img class="desktop-image" src="{{ block.settings.image | image_url: width: 800 }}" alt="Left Image">
+                        <div class="img-wrap-outer">
+                            <div class="img-wrap">
+                                <img class="desktop-image" src="{{ block.settings.image | image_url: width: 800 }}" alt="{{ block.settings.image.alt }}" loading="lazy">
+                            </div>
                         </div>
                     {% endif %}
                     {% if block.settings.button_link != blank %}
@@ -27,13 +36,20 @@
                             <a href="{{ block.settings.button_link }}" class="text-link">{{ block.settings.button_label }}</a>
                         </div>
                     {% endif %}
+              {% if block.settings.button_links != blank  %}
+                        <div class="button-wrap">
+                            <div class="text-link">{{ block.settings.button_links }}</div>
+                        </div>
+                {% endif %}
                 </div>
             {% endif %}
-            {% if block.type ==  'right_image' %}
+            {% if block.type == 'right_image' %}
                 <div class="item right-image">
                     {% if block.settings.image != blank %}
-                        <div class="img-wrap">
-                            <img class="desktop-image" src="{{ block.settings.image | image_url: width: 800 }}" alt="Left Image">
+                        <div class="img-wrap-outer">
+                            <div class="img-wrap">
+                                <img class="desktop-image" src="{{ block.settings.image | image_url: width: 800 }}" alt="{{ block.settings.image.alt }}" loading="lazy">
+                            </div>
                         </div>
                     {% endif %}
                     {% if block.settings.button_link != blank %}
@@ -41,6 +57,11 @@
                             <a href="{{ block.settings.button_link }}" class="text-link">{{ block.settings.button_label }}</a>
                         </div>
                     {% endif %}
+              {% if block.settings.button_links != blank %}
+                        <div class="button-wrap">
+                            <div class="text-link">{{ block.settings.button_links }}</div>
+                        </div>
+                {% endif %}
                 </div>
             {% endif %}
         {% endfor %}
@@ -52,7 +73,7 @@
 {
     "name": "Three Image Gallery",
     "tag": "section",
-    "class": "three-iamge-gallery",
+    "class": "three-image-gallery",
     "max_blocks": 3,
     "blocks": [
         {
@@ -71,8 +92,13 @@
                 },
                 {
                     "id": "button_link",
-                    "type": "text",
+                    "type": "url",
                     "label": "Button Link"
+                },
+                  {
+                    "id": "button_links",
+                    "type": "richtext",
+                    "label": "Multiple Button Links"
                 }
             ]
         },
@@ -92,8 +118,13 @@
                 },
                 {
                     "id": "button_link",
-                    "type": "text",
+                    "type": "url",
                     "label": "Button Link"
+                },
+                  {
+                    "id": "button_links",
+                    "type": "richtext",
+                    "label": "Multiple Button Links"
                 }
             ]
         },
@@ -113,8 +144,13 @@
                 },
                 {
                     "id": "button_link",
-                    "type": "text",
+                    "type": "url",
                     "label": "Button Link"
+                },
+                  {
+                    "id": "button_links",
+                    "type": "richtext",
+                    "label": "Multiple Button Links"
                 }
             ]
         }

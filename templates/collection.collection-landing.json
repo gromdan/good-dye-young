@@ -1,5 +1,128 @@
 {
   "sections": {
+    "4a227027-67e6-43f1-8119-3fffb589214a": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15292396798088__4a227027-67e6-43f1-8119-3fffb589214a-16740688224efdab4d-0": {
+          "type": "image",
+          "settings": {
+            "use_dark_text": false,
+            "top_subheading": "hayley's favorites",
+            "title": "Buy 3\nget 1 free",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-right",
+            "image": "shopify:\/\/shop_images\/GDY.com_RESIZED_1_a7901648-eae9-42c8-8b2d-12a2ecc836eb.png",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "template--15292396798088__4a227027-67e6-43f1-8119-3fffb589214a-16740688224efdab4d-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "use_dark_text": false,
+            "top_subheading": "",
+            "title": "Two line\ntitle slide.",
+            "title_size": 80,
+            "subheading": "And big, beautiful imagery",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15292396798088__4a227027-67e6-43f1-8119-3fffb589214a-16740688224efdab4d-0",
+        "template--15292396798088__4a227027-67e6-43f1-8119-3fffb589214a-16740688224efdab4d-1"
+      ],
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Get The Look",
+        "subtitle": "Get Hayley's Copper Hair",
+        "home_featured_products": "paramore-hayley-concert-looks",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "featured-collection3": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Hair Care",
+        "subtitle": "Color kind and hair healthy.",
+        "home_featured_products": "hair-care",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "ae8a318f-9ecf-4bea-aade-0aa97da603e5": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "DYEposit",
+        "subtitle": "",
+        "home_featured_products": "dyeposit",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "bc2a2c5c-d32e-467e-a259-9da3128ae78e": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Award winners",
+        "subtitle": "",
+        "home_featured_products": "award-winners",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "featured-collection2": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Merch",
+        "subtitle": "",
+        "home_featured_products": "merch",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
     "main-collection": {
       "type": "main-collection",
       "disabled": true,
@@ -8,13 +131,20 @@
           "type": "collection_description",
           "settings": {}
         },
-        "product_grid": {
-          "type": "product_grid",
-          "settings": {}
-        },
         "subcollections": {
           "type": "subcollections",
-          "settings": {}
+          "settings": {
+            "subcollections_per_row": 5
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "enable_collection_count": true,
+            "per_row": 4,
+            "rows_per_page": 7,
+            "mobile_flush_grid": false
+          }
         }
       },
       "block_order": [
@@ -22,106 +152,24 @@
         "subcollections",
         "product_grid"
       ],
-      "settings": {}
-    },
-    "promo-grid": {
-      "type": "promo-grid",
-      "blocks": {
-        "banner": {
-          "type": "banner",
-          "settings": {
-            "color_tint": "#E95454"
-          }
-        },
-        "advanced": {
-          "type": "advanced",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "banner",
-        "advanced"
-      ],
       "settings": {
-        "space_above": true,
-        "space_below": false
-      }
-    },
-    "featured-collection": {
-      "type": "featured-collection",
-      "settings": {}
-    },
-    "featured-collection2": {
-      "type": "featured-collection",
-      "settings": {}
-    },
-    "promo-grid2": {
-      "type": "promo-grid",
-      "blocks": {
-        "simple": {
-          "type": "simple",
-          "settings": {
-            "width": "50"
-          }
-        },
-        "advanced": {
-          "type": "advanced",
-          "settings": {
-            "width": "50"
-          }
-        }
-      },
-      "block_order": [
-        "simple",
-        "advanced"
-      ],
-      "settings": {
-        "space_above": false,
-        "space_below": false
-      }
-    },
-    "featured-collection3": {
-      "type": "featured-collection",
-      "settings": {}
-    },
-    "featured-collections": {
-      "type": "featured-collections",
-      "blocks": {
-        "collection1": {
-          "type": "collection",
-          "settings": {}
-        },
-        "collection2": {
-          "type": "collection",
-          "settings": {}
-        },
-        "collection3": {
-          "type": "collection",
-          "settings": {}
-        },
-        "collection4": {
-          "type": "collection",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "collection1",
-        "collection2",
-        "collection3",
-        "collection4"
-      ],
-      "settings": {
-        "title": "You may also like"
+        "title": "",
+        "enable_sidebar": true,
+        "collapsed": true,
+        "filter_style": "sidebar",
+        "enable_color_swatches": false,
+        "enable_sort": true,
+        "custom_btn_color": ""
       }
     }
   },
   "order": [
-    "promo-grid",
+    "4a227027-67e6-43f1-8119-3fffb589214a",
     "featured-collection",
-    "featured-collection2",
-    "promo-grid2",
     "featured-collection3",
-    "featured-collections",
+    "ae8a318f-9ecf-4bea-aade-0aa97da603e5",
+    "bc2a2c5c-d32e-467e-a259-9da3128ae78e",
+    "featured-collection2",
     "main-collection"
   ]
 }

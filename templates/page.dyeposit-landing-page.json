@@ -1,0 +1,576 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "77a40ac1-00a2-44b7-9bb7-2114e448a11b": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15270233145480__77a40ac1-00a2-44b7-9bb7-2114e448a11b-1665609297e4cf1322-0": {
+          "type": "image",
+          "settings": {
+            "use_dark_text": false,
+            "top_subheading": "",
+            "title": "CLEANSE.\nTONE.\nHYDRATE.\nBOND.",
+            "title_size": 60,
+            "subheading": "Maintain your shade with this multi-benefit, easy-to-use color depositing mask!",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/HERO.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/HERO_MOBILE_1afd652b-06d9-4e10-9656-af0a019c3775.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15270233145480__77a40ac1-00a2-44b7-9bb7-2114e448a11b-1665609297e4cf1322-0"
+      ],
+      "settings": {
+        "section_height": "450px",
+        "mobile_height": "300px",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "c4205607-7376-4a00-8e5f-fc658053a8c8": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15350869950600__c4205607-7376-4a00-8e5f-fc658053a8c8-16739893578fc626d6-0": {
+          "type": "heading",
+          "settings": {
+            "title": "DYEPOSIT"
+          }
+        },
+        "template--15350869950600__c4205607-7376-4a00-8e5f-fc658053a8c8-16739893578fc626d6-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Cleanse, tone, hydrate, and bond those locks with DYEposit. <br\/><br\/>Whether you’re blonde, brunette, or any color of the rainbow, we have a hue for you.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15350869950600__c4205607-7376-4a00-8e5f-fc658053a8c8-16739893578fc626d6-0",
+        "template--15350869950600__c4205607-7376-4a00-8e5f-fc658053a8c8-16739893578fc626d6-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "divider": false
+      }
+    },
+    "f89d803f-a519-4bb9-b736-26a8dffce6e1": {
+      "type": "slideshow",
+      "blocks": {
+        "template--15350869950600__f89d803f-a519-4bb9-b736-26a8dffce6e1-16739895301a984f12-0": {
+          "type": "image",
+          "settings": {
+            "use_dark_text": false,
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/20220524_052_StackB-editedDee.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/SUBFEATURE_MOBILE.jpg",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        },
+        "template--15350869950600__f89d803f-a519-4bb9-b736-26a8dffce6e1-16739895301a984f12-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "use_dark_text": false,
+            "top_subheading": "",
+            "title": "Two line\ntitle slide.",
+            "title_size": 80,
+            "subheading": "And big, beautiful imagery",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "overlay_opacity": 0,
+            "focal_point": "center center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15350869950600__f89d803f-a519-4bb9-b736-26a8dffce6e1-16739895301a984f12-0",
+        "template--15350869950600__f89d803f-a519-4bb9-b736-26a8dffce6e1-16739895301a984f12-1"
+      ],
+      "settings": {
+        "section_height": "natural",
+        "mobile_height": "500px",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5
+      }
+    },
+    "f46cd058-1924-4dc5-8410-a2387202e2d0": {
+      "type": "logo-slider",
+      "blocks": {
+        "template--15350869950600__f46cd058-1924-4dc5-8410-a2387202e2d0-1674055544cdd50697-0": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-allure.png",
+            "title": ""
+          }
+        },
+        "template--15350869950600__f46cd058-1924-4dc5-8410-a2387202e2d0-1674055544cdd50697-1": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-elle.png",
+            "title": ""
+          }
+        },
+        "template--15350869950600__f46cd058-1924-4dc5-8410-a2387202e2d0-1674055544cdd50697-2": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-instyle.png",
+            "title": ""
+          }
+        },
+        "template--15350869950600__f46cd058-1924-4dc5-8410-a2387202e2d0-1674055544cdd50697-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-racked.png",
+            "title": ""
+          }
+        },
+        "e470e2c0-ca13-455d-8230-55ce3f8c96f5": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-mane-addicts.png",
+            "title": ""
+          }
+        },
+        "dbc32a15-8d2b-408e-b05b-de97f6763eb9": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-nylon.png",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15350869950600__f46cd058-1924-4dc5-8410-a2387202e2d0-1674055544cdd50697-0",
+        "template--15350869950600__f46cd058-1924-4dc5-8410-a2387202e2d0-1674055544cdd50697-1",
+        "template--15350869950600__f46cd058-1924-4dc5-8410-a2387202e2d0-1674055544cdd50697-2",
+        "template--15350869950600__f46cd058-1924-4dc5-8410-a2387202e2d0-1674055544cdd50697-3",
+        "e470e2c0-ca13-455d-8230-55ce3f8c96f5",
+        "dbc32a15-8d2b-408e-b05b-de97f6763eb9"
+      ],
+      "settings": {
+        "bg_color": "#000000",
+        "text_color": "#000000",
+        "title": "",
+        "text": "",
+        "text_align": "center",
+        "content_width": 600,
+        "logo_opacity": 100,
+        "single_mobile_image": false,
+        "divider": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "8ad01465-926d-46d1-970d-95d770c3e339": {
+      "type": "fifty-fifty",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Untitled_design_1_75d1ff31-65e9-4fb8-b602-efe27fc638ba.png",
+        "bg_color": "",
+        "text_color": "",
+        "use_crazy_bg": false,
+        "pretitle": "",
+        "title": "4-IN-1",
+        "subtitle": "",
+        "text": "<p><strong>1. CLEANSE<\/strong><br\/>Avocado oil helps to soothe the scalp, repair the hair shaft, and protect strands from UV and environmental pollutants.<br\/><br\/><strong>2. TONE<\/strong><br\/>Ultra creamy formula that bonds and deeply conditions while enhancing color. With 6 vibrant shades and 4 natural tones to choose from. <br\/><br\/><strong>3. HYDRATE<\/strong><br\/>Packed with salon quality ingredients including coconut oil, shea butter, and broccoli seed oil to add moisture and shine. <br\/><br\/><strong>4. BOND<\/strong><br\/>Fiberhance™ bonding technology repairs damaged hair from the inside out.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left"
+      }
+    },
+    "728d6de8-76de-4240-bc49-a1ccfc48c26b": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Refresh Color or Add a Subtle Tone",
+        "subtitle": "",
+        "home_featured_products": "dyeposit",
+        "per_row": 4,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "5f139a25-e6da-44f2-be75-2c30e8830088": {
+      "type": "featured-video",
+      "settings": {
+        "title": "How to use dyeposit",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=XbIMYdhdNuI",
+        "divider": false
+      }
+    },
+    "1665610209671c4719": {
+      "type": "apps",
+      "blocks": {
+        "fe52bf3a-a546-49be-8b89-b1b0837b7d0e": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "SqWPAL"
+          }
+        }
+      },
+      "block_order": [
+        "fe52bf3a-a546-49be-8b89-b1b0837b7d0e"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "3bf234fb-490c-4889-b9a9-3903db6f4e43": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--15350869950600__3bf234fb-490c-4889-b9a9-3903db6f4e43-1674055643d86e3ca8-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WAVES_2.png",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "template--15350869950600__3bf234fb-490c-4889-b9a9-3903db6f4e43-1674055643d86e3ca8-1": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "code": "<h2>Custom content<\/h2><p>Use this advanced section to build your own layouts or to add custom HTML, Liquid, or scripts.<\/p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15350869950600__3bf234fb-490c-4889-b9a9-3903db6f4e43-1674055643d86e3ca8-0",
+        "template--15350869950600__3bf234fb-490c-4889-b9a9-3903db6f4e43-1674055643d86e3ca8-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "bg_color": "",
+        "text_color": "",
+        "bg_color_contained": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "space_around": true,
+        "show_top_border": false,
+        "show_bottom_border": false
+      }
+    },
+    "6fd548d5-d307-4d46-9f7b-6ef9ecff5ed0": {
+      "type": "testimonials",
+      "blocks": {
+        "template--15350869950600__6fd548d5-d307-4d46-9f7b-6ef9ecff5ed0-1674055544f779f67a-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>I love this! The conditioning aspect leaves my hair so soft and looking healthier than usual. This has given me an easy, fun way to give my hair some attention. <\/p>",
+            "author": "Kylie C.",
+            "author_info": "Red DYEposit"
+          }
+        },
+        "template--15350869950600__6fd548d5-d307-4d46-9f7b-6ef9ecff5ed0-1674055544f779f67a-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Brassy no more! From first use I noticed a huge difference with my full head of (tired) highlights. I left the product in for 10 minutes, rinsed and could see how much my warm colour had lifted even when wet. Buzzing to order more!<\/p>",
+            "author": "Jennifer B.",
+            "author_info": "Platinum DYEposit"
+          }
+        },
+        "template--15350869950600__6fd548d5-d307-4d46-9f7b-6ef9ecff5ed0-1674055544f779f67a-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>I was very surprise with the results. My hair felt so vibrant and healthy, the smell and the colour were gorgeous. I regretted not buying another unit, but I’ll definitely get it again.<\/p>",
+            "author": "Monica M.",
+            "author_info": "Copper DYEposit"
+          }
+        },
+        "template--15350869950600__6fd548d5-d307-4d46-9f7b-6ef9ecff5ed0-1674055544f779f67a-3": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "template--15350869950600__6fd548d5-d307-4d46-9f7b-6ef9ecff5ed0-1674055544f779f67a-4": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        }
+      },
+      "block_order": [
+        "template--15350869950600__6fd548d5-d307-4d46-9f7b-6ef9ecff5ed0-1674055544f779f67a-0",
+        "template--15350869950600__6fd548d5-d307-4d46-9f7b-6ef9ecff5ed0-1674055544f779f67a-1",
+        "template--15350869950600__6fd548d5-d307-4d46-9f7b-6ef9ecff5ed0-1674055544f779f67a-2",
+        "template--15350869950600__6fd548d5-d307-4d46-9f7b-6ef9ecff5ed0-1674055544f779f67a-3",
+        "template--15350869950600__6fd548d5-d307-4d46-9f7b-6ef9ecff5ed0-1674055544f779f67a-4"
+      ],
+      "settings": {
+        "title": "the reviews are in",
+        "align_text": "left",
+        "round_images": true,
+        "color_background": "#ffffff",
+        "color_text": "#1c1d1d"
+      }
+    },
+    "db2301fc-227f-43f9-9dd6-0498a94ea509": {
+      "type": "background-image-text",
+      "settings": {
+        "subtitle": "",
+        "title": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/ba_collage.png",
+        "focal_point": "center",
+        "layout": "left",
+        "height": 750,
+        "framed": false,
+        "parallax": false
+      }
+    },
+    "8f669149-45d2-46d8-a82a-85b471853ad4": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Copy_of_DYEPOSIT_GROUP_SHOT.jpg",
+        "image_attr": "",
+        "image_attr_link": "",
+        "image_width": 700,
+        "pretitle": "",
+        "title": "dyeposit",
+        "bigger_title": false,
+        "subtitle": "Healthy hair focused.",
+        "text": "",
+        "use_larger_text": false,
+        "button_label": "add to cart",
+        "button_link": "",
+        "button_color": "#000000",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "right",
+        "divider": false,
+        "collection_dye_duration": "2"
+      }
+    },
+    "05f235a6-744b-4b48-894a-fa43957dce2f": {
+      "type": "fifty-fifty",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Aly_s_Email_Assets_-_600_x_600_1.png",
+        "bg_color": "",
+        "text_color": "",
+        "use_crazy_bg": false,
+        "pretitle": "",
+        "title": "DYEPOSIT",
+        "subtitle": "Color Conditioning Mask",
+        "text": "",
+        "button_label": "SHOP NOW",
+        "button_link": "shopify:\/\/products\/dyeposit-copper",
+        "button_color": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "layout": "left"
+      }
+    },
+    "69bcb609-ef56-4d4b-a700-a4b5f89b11b4": {
+      "type": "text-columns",
+      "disabled": true,
+      "blocks": {
+        "template--15270233145480__69bcb609-ef56-4d4b-a700-a4b5f89b11b4-1665609487b27d4f4e-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/free_shipping_40.png",
+            "image_width": 300,
+            "title": "",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "",
+            "text_color_1": "#000000",
+            "text_2": "",
+            "text_color_2": "#000000",
+            "text_3": "",
+            "text_color_3": "#000000",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--15270233145480__69bcb609-ef56-4d4b-a700-a4b5f89b11b4-1665609487b27d4f4e-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/rewards_563e9c57-48c7-487c-888d-b3a226f0f76c.png",
+            "image_width": 300,
+            "title": "",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "",
+            "text_color_1": "#000000",
+            "text_2": "",
+            "text_color_2": "#000000",
+            "text_3": "",
+            "text_color_3": "#000000",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--15270233145480__69bcb609-ef56-4d4b-a700-a4b5f89b11b4-1665609487b27d4f4e-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/paylater.png",
+            "image_width": 300,
+            "title": "",
+            "small_title": false,
+            "hdr_uppercase": true,
+            "text": "",
+            "text_color_1": "#000000",
+            "text_2": "",
+            "text_color_2": "#000000",
+            "text_3": "",
+            "text_color_3": "#000000",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15270233145480__69bcb609-ef56-4d4b-a700-a4b5f89b11b4-1665609487b27d4f4e-0",
+        "template--15270233145480__69bcb609-ef56-4d4b-a700-a4b5f89b11b4-1665609487b27d4f4e-1",
+        "template--15270233145480__69bcb609-ef56-4d4b-a700-a4b5f89b11b4-1665609487b27d4f4e-2"
+      ],
+      "settings": {
+        "bg_color": "#ffffff",
+        "title": "",
+        "subtitle": "",
+        "align_text": "center",
+        "button_label": "",
+        "button_link": "",
+        "btn_bg_color": "",
+        "bigger_btn": false,
+        "padding_top": 20,
+        "padding_bottom": 0,
+        "space_around": false,
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padded_columns": false,
+        "use_mobile_slider": false
+      }
+    },
+    "b333ab0b-c31e-4e6c-9699-c17c523cc903": {
+      "type": "logo-slider",
+      "blocks": {
+        "template--15350869950600__b333ab0b-c31e-4e6c-9699-c17c523cc903-1674073121d8e062c7-0": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Free_shipping_2c203831-2ec0-4266-b333-fd1cd4d971b0.png",
+            "title": ""
+          }
+        },
+        "template--15350869950600__b333ab0b-c31e-4e6c-9699-c17c523cc903-1674073121d8e062c7-1": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rewards_563e9c57-48c7-487c-888d-b3a226f0f76c.png",
+            "title": ""
+          }
+        },
+        "template--15350869950600__b333ab0b-c31e-4e6c-9699-c17c523cc903-1674073121d8e062c7-3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/subscribe.png",
+            "title": ""
+          }
+        },
+        "template--15350869950600__b333ab0b-c31e-4e6c-9699-c17c523cc903-1674073121d8e062c7-2": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/paylater.png",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15350869950600__b333ab0b-c31e-4e6c-9699-c17c523cc903-1674073121d8e062c7-0",
+        "template--15350869950600__b333ab0b-c31e-4e6c-9699-c17c523cc903-1674073121d8e062c7-1",
+        "template--15350869950600__b333ab0b-c31e-4e6c-9699-c17c523cc903-1674073121d8e062c7-3",
+        "template--15350869950600__b333ab0b-c31e-4e6c-9699-c17c523cc903-1674073121d8e062c7-2"
+      ],
+      "settings": {
+        "bg_color": "",
+        "text_color": "#000000",
+        "title": "",
+        "text": "",
+        "text_align": "center",
+        "content_width": 300,
+        "logo_opacity": 100,
+        "single_mobile_image": false,
+        "divider": false,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    }
+  },
+  "order": [
+    "main",
+    "77a40ac1-00a2-44b7-9bb7-2114e448a11b",
+    "c4205607-7376-4a00-8e5f-fc658053a8c8",
+    "f89d803f-a519-4bb9-b736-26a8dffce6e1",
+    "f46cd058-1924-4dc5-8410-a2387202e2d0",
+    "8ad01465-926d-46d1-970d-95d770c3e339",
+    "728d6de8-76de-4240-bc49-a1ccfc48c26b",
+    "5f139a25-e6da-44f2-be75-2c30e8830088",
+    "1665610209671c4719",
+    "3bf234fb-490c-4889-b9a9-3903db6f4e43",
+    "6fd548d5-d307-4d46-9f7b-6ef9ecff5ed0",
+    "db2301fc-227f-43f9-9dd6-0498a94ea509",
+    "8f669149-45d2-46d8-a82a-85b471853ad4",
+    "05f235a6-744b-4b48-894a-fa43957dce2f",
+    "69bcb609-ef56-4d4b-a700-a4b5f89b11b4",
+    "b333ab0b-c31e-4e6c-9699-c17c523cc903"
+  ]
+}

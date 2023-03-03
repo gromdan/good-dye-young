@@ -1,0 +1,248 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "1e76b1fd-74e1-4a44-ab62-7d9a12de95eb": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Ride Or DYE FAQs",
+            "text": "<p>Thanks for being a Ride or Dye! Check out the info below to learn more about our rewards program. If  you still need answers feel free to <a href=\"https:\/\/gooddyeyoung.com\/pages\/contact\" title=\"https:\/\/gooddyeyoung.com\/pages\/contact\">click here to contact us!<\/a><\/p>",
+            "align_text": "center"
+          }
+        },
+        "faq-0": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Signing Up",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "faq-1": {
+          "type": "question",
+          "settings": {
+            "title": "How do I sign up for the Ride or Dye Rewards program?",
+            "text": "<p><a href=\"https:\/\/gooddyeyoung.com\/account\/login?return_url=%2Faccount\" title=\"https:\/\/gooddyeyoung.com\/account\/login?return_url=%2Faccount\">Create an account by clicking here, <\/a> and enter your name, email, and password. It’s free to join and you will automatically be signed up to receive emails with exclusive access to sales, promotions, and all of our newest drops. We even do secret sales only available to our Ride or Dyes! <\/p><p> If you currently have an account or email subscription with us - you’ve already a Ride or Dye! Kick back, sign in, and start earning points towards free GDY!<\/p>"
+          }
+        },
+        "faq-2": {
+          "type": "question",
+          "settings": {
+            "title": "What are the advantages of becoming a rewards member?",
+            "text": "<p>Our rewards program is a tiered program that allows you to earn more perks the more you engage with us. You’ll receive rewards points for each purchase, that can then be redeemed towards the cost of future purchases. <\/p><p>You also earn points for referring friends, leaving reviews, engaging with us on social media, and so much more! You’ll also receive a special birthday gift from all of us at GDY! <\/p>"
+          }
+        },
+        "59e092ea-b544-4e85-828f-e910ad3f332c": {
+          "type": "question",
+          "settings": {
+            "title": "I already have an account. Do I need to create a new one to earn rewards?",
+            "text": "<p>All customers with an active account are automatically enrolled in our rewards program. If you have had more than one customer account with us, please note that only one rewards account was created per person.<\/p><p><strong>As of Sept 29, GDY has moved to Shopify! If you haven’t visited us since then, please reactivate your account <\/strong><a href=\"https:\/\/gooddyeyoung.com\/account\/login?return_url=%2Faccount\" title=\"https:\/\/gooddyeyoung.com\/account\/login?return_url=%2Faccount\"><strong>on this page.<\/strong><\/a><strong> Enter your email address and you will be prompted to set up a new password! <\/strong><\/p>"
+          }
+        },
+        "faq-3": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Account",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "faq-4": {
+          "type": "question",
+          "settings": {
+            "title": "Where can I find all of my rewards account info?",
+            "text": "<p>The rewards page is your roadmap to all your points and perks. <a href=\"https:\/\/gooddyeyoung.com\/pages\/rewards\" title=\"https:\/\/gooddyeyoung.com\/pages\/rewards\">You can access all your info by visiting our rewards page here!<\/a><\/p>"
+          }
+        },
+        "f0dcab43-ffd3-4756-8013-7c254e38280f": {
+          "type": "question",
+          "settings": {
+            "title": "Will I receive points for purchases I made prior to creating my rewards account?",
+            "text": "<p>You will only receive points for purchases made after creating your rewards account. Make sure to create an account before placing an order so you can receive points!<\/p><p>If you have questions regarding your previous DYEmonds, please contact us at <a href=\"mailto:help@gooddyeyoung.com\"><span style=\"text-decoration:underline\">help@gooddyeyoung.com<\/span><\/a>. <\/p>"
+          }
+        },
+        "54be6b91-3ada-46aa-bae0-f53650fdde44": {
+          "type": "question",
+          "settings": {
+            "title": "What if I have an old email address or multiple email addresses and want to combine my accounts & earnings?",
+            "text": "<p>Contact customer service by emailing <a href=\"mailto:help@gooddyeyoung.com\" title=\"mailto:help@gooddyeyoung.com\">help@gooddyeyoung.com<\/a> and our team will be happy to assist you.<\/p>"
+          }
+        },
+        "cbfab523-fada-4059-bae7-6e6bb4f40e15": {
+          "type": "question",
+          "settings": {
+            "title": "Does it cost anything to begin earning points?",
+            "text": "<p>Absolutely not! Sign up is 100% free, and it will never cost you anything to earn points. <a href=\"https:\/\/gooddyeyoung.com\/pages\/rewards\" title=\"https:\/\/gooddyeyoung.com\/pages\/rewards\">Make sure to visit the rewards page to get started.<\/a><\/p>"
+          }
+        },
+        "0ad74851-6781-44bb-80e2-a8e844571341": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Earning and Redeeming",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "7eed0cb9-d5b1-4c02-82fc-254044a3d62d": {
+          "type": "question",
+          "settings": {
+            "title": "How do I redeem my points?",
+            "text": "<p><a href=\"https:\/\/gooddyeyoung.com\/pages\/rewards\" title=\"https:\/\/gooddyeyoung.com\/pages\/rewards\">Simply visit the rewards page<\/a> to view all of our great reward options and click the 'Redeem' button to redeem your chosen reward.<\/p>"
+          }
+        },
+        "1fc3a029-b713-43c0-9b27-27f5f4a5d0ce": {
+          "type": "question",
+          "settings": {
+            "title": "How do points convert to dollars?",
+            "text": "<p>You’ll earn points for each dollar you spend on your GDY goodies! Once you reach 100 points, you can enjoy $10 off! 100 points convert to $10. 200 points convert to $20. 300 points convert to $30. And points at a 1.25x multiplier. And if you reach our top Bold Tier, you will receive points at a 1.5x multiplier.<\/p>"
+          }
+        },
+        "4f459639-4ed0-46c9-ac8c-d7611a9e1cae": {
+          "type": "question",
+          "settings": {
+            "title": "Is there a limit to how many points I can earn?",
+            "text": "<p>Nope! You will always have an opportunity to earn more points by shopping with us, engaging with our brand and community online, and through seasonal sales.<\/p>"
+          }
+        },
+        "a62300c6-734d-4beb-881f-b04e9561b5ea": {
+          "type": "question",
+          "settings": {
+            "title": "Do points ever expire?",
+            "text": "<p>Your points will expire after one year of inactivity. Inactivity includes not interacting with our program i.e., redeeming points, placing an order, leaving reviews, etc.<\/p>"
+          }
+        },
+        "b3cd8ea5-20b2-45a9-aabd-1e67facfd3ff": {
+          "type": "question",
+          "settings": {
+            "title": "How do I redeem my rewards at checkout?",
+            "text": "<p>To redeem your points in checkout, use the slider directly above your cart total to choose the amount you would like to apply, then click the \"APPLY\" button.<\/p>"
+          }
+        },
+        "a98d8c30-f43a-4b4e-bc18-aff8d6a9fb0d": {
+          "type": "question",
+          "settings": {
+            "title": "How do I redeem my points?",
+            "text": "<p><a href=\"https:\/\/gooddyeyoung.com\/pages\/rewards\" title=\"https:\/\/gooddyeyoung.com\/pages\/rewards\">Log in and visit the rewards page<\/a> to view all of our great reward options and click the 'Redeem' button to redeem your chosen reward.<\/p>"
+          }
+        },
+        "f90e3096-0b57-4045-b24d-5ed0a4c16518": {
+          "type": "question",
+          "settings": {
+            "title": "How can I get a birthday reward?",
+            "text": "<p><a href=\"https:\/\/gooddyeyoung.com\/pages\/rewards\" title=\"https:\/\/gooddyeyoung.com\/pages\/rewards\">Add your birthday under ways to earn points on the rewards page! <\/a>On your birthday we will send you a special discount code via email valid for 30 days from the date of your b-day!<\/p><p>Your birthday code is non-transferable and may not be sold or assigned to anyone else. If we feel someone is trying to manipulate the program, we reserve the right to terminate your account at our discretion.<\/p>"
+          }
+        },
+        "5238f9b7-647b-4e0e-a442-71203f5690e4": {
+          "type": "question",
+          "settings": {
+            "title": "I signed up for the Birthday Bonus but I didn’t receive it?",
+            "text": "<p>Happy Birthday!  We’re so glad that you have chosen to celebrate with us through our rewards program.  In order for you to receive your birthday bonus on your birthday, you must register your birthday at least 30 days prior to your birthday.  <\/p><p>If your birthday falls between the day that you registered and the 30 day waiting period afterwards, you will receive your birthday bonus 30 days after your registration.  This delay is only applicable for the first year that you signed up.  <\/p><p>All successive birthday bonuses will be emailed to you on your birthday.  If you register your birthday through your rewards account any time after it has passed in the current calendar year, rewards will not be added to your account until the day of your birthday in the following year.  <\/p><p>Remember, the birthday reward is determined by the Rewards member tier that you are part of on the date of your birthday.  If it has been more than 30 days since you registered for your birthday reward and you still have not received the additional points in your account, please contact <a href=\"mailto:help@gooddyeyoung.com\" title=\"mailto:help@gooddyeyoung.com\">help@gooddyeyoung.com<\/a> and we will be happy to assist you.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1e76b1fd-74e1-4a44-ab62-7d9a12de95eb",
+        "faq-0",
+        "faq-1",
+        "faq-2",
+        "59e092ea-b544-4e85-828f-e910ad3f332c",
+        "faq-3",
+        "faq-4",
+        "f0dcab43-ffd3-4756-8013-7c254e38280f",
+        "54be6b91-3ada-46aa-bae0-f53650fdde44",
+        "cbfab523-fada-4059-bae7-6e6bb4f40e15",
+        "0ad74851-6781-44bb-80e2-a8e844571341",
+        "7eed0cb9-d5b1-4c02-82fc-254044a3d62d",
+        "1fc3a029-b713-43c0-9b27-27f5f4a5d0ce",
+        "4f459639-4ed0-46c9-ac8c-d7611a9e1cae",
+        "a62300c6-734d-4beb-881f-b04e9561b5ea",
+        "b3cd8ea5-20b2-45a9-aabd-1e67facfd3ff",
+        "a98d8c30-f43a-4b4e-bc18-aff8d6a9fb0d",
+        "f90e3096-0b57-4045-b24d-5ed0a4c16518",
+        "5238f9b7-647b-4e0e-a442-71203f5690e4"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "16590356737cbfbb3e": {
+      "type": "faq",
+      "blocks": {
+        "92eb3c8e-1641-4fb7-8476-142280ea7905": {
+          "type": "rich-text",
+          "settings": {
+            "title": "VIP Tiers",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "1659035673b2acbb0d-0": {
+          "type": "question",
+          "settings": {
+            "title": "How is my membership tier deermined?",
+            "text": "<p>Your tier is determined by the amount you spend within a year from your Ride or Dye sign-up date. When you enter a new tier, you will remain in that tier for one year from that day forward. To maintain your status or move up, continue purchasing your GDY favorites and engaging with our community! <\/p>"
+          }
+        },
+        "1659035673b2acbb0d-1": {
+          "type": "question",
+          "settings": {
+            "title": "How will I know when I have reached a new tier?",
+            "text": "<p>When your total points cross a tier threshold, you will receive an email welcoming you into the new tier.<\/p>"
+          }
+        },
+        "36b667a6-836a-4f71-bdc5-f9b69e629e38": {
+          "type": "rich-text",
+          "settings": {
+            "title": "General Troubleshooting",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "9cebdc39-9cf6-4f04-aff6-1987ffe3aa28": {
+          "type": "question",
+          "settings": {
+            "title": "Why didn't I earn ponits on my purchase?",
+            "text": "<p>Double-check you were signed into your rewards account and didn’t accidentally check out as a guest. You must be logged in when making purchases to earn points. If you have done this in error, contact us at <a href=\"mailto:help@gooddyeyoung.com\" title=\"mailto:help@gooddyeyoung.com\">help@gooddyeyoung.com<\/a> to help apply your points to your account. You also won’t receive points if you return your purchase or your purchase is canceled for any reason. Please note that any points you earn on a purchase you later return will be deducted from your point balance. <\/p>"
+          }
+        },
+        "26ea99be-80c1-408c-847c-c92c3e4b1710": {
+          "type": "question",
+          "settings": {
+            "title": "I should have earned points for a purchase\/incentive but I didn't see my account balance change. Did I get credit?",
+            "text": "<p>Yes! The first thing to note is that there may be a delay in our systems communicating and points could take anywhere from minutes to several hours to appear in your account.  However, if you feel like you have earned points but they are not showing up in your account you can also troubleshoot it with these tricks:<\/p><p>Try to refresh your browser.<\/p><p>Try to log out and then back in to your account.<\/p><p>Check your ‘Rewards history’ in your Rewards account to see if the points were added without you realizing it.  Your ‘Rewards history’ will show you the number of points earned, how and when they were earned, as well as any redemptions of points made on your account.<\/p><p>If you still feel like your points balance is not accurate you can contact our team at <a href=\"mailto:help@gooddyeyoung.com\" title=\"mailto:help@gooddyeyoung.com\">help@gooddyeyoung.com<\/a> and they will look into the issue for you.<\/p>"
+          }
+        },
+        "623ebd49-e420-42f8-a066-664c67391226": {
+          "type": "question",
+          "settings": {
+            "title": "I've referred several friends, but haven't received any points for it. Is there something else I need to do?",
+            "text": "<p>Thank you so much for sharing us with your friends!  We really appreciate it.  <\/p><p>Referred friends must be a first time customer in order for both of you to receive the referral rewards.  In addition, the referral must be initiated through our rewards referral box on your personal rewards page or through the use of your unique referral link also found there. <\/p><p>Points will be added to your account as soon as your friend completes their first purchase on our website.  <\/p><p>When this happens you will receive an email letting you know that one of your referrals made a purchase using your code and that a reward was added to your account.  You can also check your ‘Rewards History’ to see a list of any points that you have received for referrals.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "92eb3c8e-1641-4fb7-8476-142280ea7905",
+        "1659035673b2acbb0d-0",
+        "1659035673b2acbb0d-1",
+        "36b667a6-836a-4f71-bdc5-f9b69e629e38",
+        "9cebdc39-9cf6-4f04-aff6-1987ffe3aa28",
+        "26ea99be-80c1-408c-847c-c92c3e4b1710",
+        "623ebd49-e420-42f8-a066-664c67391226"
+      ],
+      "settings": {
+        "title": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "faq",
+    "16590356737cbfbb3e"
+  ]
+}
