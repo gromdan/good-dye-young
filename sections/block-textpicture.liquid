@@ -6,16 +6,17 @@
         {% for block in section.blocks %}
             #shopify-section-{{section.id}} .c-tp-wrapper-{{ forloop.index }} {
                 background-image: url({{ block.settings.background_image | image_url: width: 3000 }});
-                min-height: {{ block.settings.section_height }}vh;
+                min-height: {{ block.settings.section_height }}px;
                 width: 100%;
                 background-repeat: no-repeat;
                 padding-top: {{ block.settings.padding_top }}rem;
                 padding-bottom: {{ block.settings.padding_bottom }}rem;
                 background-size: cover;
+                background-position-y: center;
             }
-
+            
             #shopify-section-{{section.id}} .c-tp-wrapper-{{ forloop.index }} .page-width-{{ forloop.index }} {
-                height: calc({{ block.settings.section_height }}vh - {{ block.settings.padding_top }}rem - {{ block.settings.padding_bottom }}rem);
+                height: calc({{ block.settings.section_height }}px - {{ block.settings.padding_top }}rem - {{ block.settings.padding_bottom }}rem);
                 position: relative;
                 {% if block.settings.alignment_x == 'center' %}
                     display: flex;
@@ -70,7 +71,14 @@
                     position: relative;
                 }
             }
-                
+            
+            @media (max-width: 768px) { 
+                #shopify-section-{{section.id}} .c-tp-wrapper-{{ forloop.index }} {
+                    background-image: url({{ block.settings.mobile_image | image_url: width: 768 }});   
+                    background-size: cover;
+                }
+            }
+            
             @media (max-width: 500px) { 
                 #shopify-section-{{section.id}} .c-tp-wrapper-{{ forloop.index }} .page-width,
                 #shopify-section-{{section.id}} .c-tp-wrapper-{{ forloop.index }} {
@@ -114,6 +122,8 @@
         height: 50px;
         bottom: 0px;
     }
+
+    {% comment %}
     #shopify-section-{{section.id}} .c-tp-wrapper .c-tp-content > div {
     }
     #shopify-section-{{section.id}} .c-tp-wrapper .c-tp-content .c-tp-paragraph {
@@ -160,6 +170,7 @@
         #shopify-section-{{section.id}} .c-tp-wrapper .c-tp-content .c-tp-button-div {
         }
     }
+    {% endcomment %}
 {% endstyle %}
 
 <div class="section-content">
@@ -189,12 +200,12 @@
                                     </div>
                                     <div class="c-tp-button-div">
                                         {% if block.settings.button_text != blank %}
-                                            <a class="c-tp-button dp-button" href="{{ block.settings.button_link }}" 
+                                            <a class="c-tp-button dp-button {% if block.settings.button_style != 'underline' %} btn {% endif %}" href="{{ block.settings.button_link }}" 
                                                 style="color: {{ block.settings.text_color }};
-                                                {% if block.settings.button_style == 'gradient' %} 
-                                                    background: {{ settings.gradient_accent_1 }};
+                                                {% if block.settings.button_style == 'background' %} 
+                                                    background: {{ block.settings.background_color }};
                                                 {% else %}
-                                                    background: {{ block.settings.background_color }} ;
+                                                    background: transparent;
                                                 {% endif %}
                                                 {% if block.settings.border_color != blank %} 
                                                     border: solid 3px {{ block.settings.border_color }}; 
@@ -440,10 +451,10 @@
                     "id": "section_height",
                     "label": "Section height",
                     "min": 0,
-                    "max": 100,
+                    "max": 1000,
                     "step": 10,
-                    "default": 80,
-                    "unit": "vh"
+                    "default": 580,
+                    "unit": "PX"
                 },
                 {
                     "type": "range",
