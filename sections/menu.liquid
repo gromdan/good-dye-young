@@ -1,0 +1,53 @@
+{% style %}
+#shopify-section-{{section.id}} .section-content {
+    background: linear-gradient(90deg,#b10f29 0%,#ea6f31 16.67%,#c59602 40.62%,#a3c0d1 62.5%,#345f86 80.73%,#000000 100%);
+}
+#shopify-section-{{section.id}} .section-content a.mnu-btn {
+    background: transparent;
+    margin: 8px 0px;
+}
+#shopify-section-{{section.id}} .section-content a.mnu-btn.active {
+    border: solid 3px #fff;
+}
+{% endstyle %}
+
+<div class="section-content">
+    <div class="page-width">
+        {% if section.blocks.size > 0  %}
+            {% for block in section.blocks  %}
+                <a href="block.settings.link" class="mnu-btn btn {% if forloop.index == 1 %}active{% endif %}">{{ block.settings.label }}</a>
+            {% endfor %}
+        {% endif %}
+    </div>
+</div>
+{% schema %}
+{
+    "name": "Menu list",
+    "class": "menu-list",
+    "settings": [
+    ],
+    "blocks": [
+        {
+            "type": "block",
+            "name": "blog",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "label",
+                    "label": "Label"
+                },
+                {
+                    "type": "url",
+                    "id": "link",
+                    "label": "Link"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Menu list"
+        }
+    ]
+}
+{% endschema %}
