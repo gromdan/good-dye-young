@@ -3,7 +3,7 @@
 <div class="page-width">
   {%- if section.settings.title != blank -%}
     <div class="section-header">
-      <h2>{{ section.settings.title }}</h2>
+      <h2 class="{{ section.settings.text_align }} {{ section.settings.font_size }}">{{ section.settings.title }}</h2>
     </div>
   {%- endif -%}
   <div class="video-wrapper">
@@ -31,6 +31,46 @@
         "type": "text",
         "id": "title",
         "label": "Heading"
+      },
+      {
+        "type": "select",
+        "id": "font_size",
+        "options": [
+            {
+                "value": "font-large",
+                "label": "Large"
+            },
+            {
+                "value": "font-medium",
+                "label": "Medium"
+            },
+            {
+                "value": "font-small",
+                "label": "Small"
+            }
+        ],
+        "label": "Font size",
+        "default": "font-medium"
+      },
+      {
+        "type": "select",
+        "id": "text_align",
+        "options": [
+            {
+              "value": "align-left",
+              "label": "Left"
+            },
+            {
+              "value": "align-center",
+              "label": "Center"
+            },
+            {
+              "value": "align-right",
+              "label": "Right"
+            }
+        ],
+        "label": "Text align",
+        "default": "align-center"
       },
       {
         "type": "video_url",

@@ -1,6 +1,7 @@
 {% style %}
 #shopify-section-{{section.id}} .section-content {
     background: linear-gradient(90deg,#b10f29 0%,#ea6f31 16.67%,#c59602 40.62%,#a3c0d1 62.5%,#345f86 80.73%,#000000 100%);
+    position: relative;
 }
 #shopify-section-{{section.id}} .section-content a.mnu-btn {
     background: transparent;
@@ -9,17 +10,98 @@
 #shopify-section-{{section.id}} .section-content a.mnu-btn.active {
     border: solid 3px #fff;
 }
+#shopify-section-{{section.id}} .mobile-menu {
+    display: none;
+    padding: 15px 0px;
+}
+#shopify-section-{{section.id}} .mobile-menu .btn_mobile-menue {
+    color: #fff;
+    display: flex;
+}
+#shopify-section-{{section.id}} ul.mobile-menu-list {
+    list-style: none;
+    position: absolute;
+    z-index: 1;
+    background: #fff;
+    width: 80%;
+    margin: 0;
+    top: 50px;
+    padding: 0px 30px 30px 0px;
+}
+#shopify-section-{{section.id}} ul.mobile-menu-list li {
+    border-bottom: solid 1px;
+}
+#shopify-section-{{section.id}} ul.mobile-menu-list li a.btn {
+    background: transparent;
+    color: #000;
+}
+#shopify-section-{{section.id}} ul.mobile-menu-list li a.btn.active {
+    text-decoration: underline;
+}
+@media(max-width: 768px) {
+    #shopify-section-{{section.id}} .desktop-menu,
+    #shopify-section-{{section.id}} .mobile-menu .icon-close {
+        display: none;
+    }
+    #shopify-section-{{section.id}} .mobile-menu,
+    #shopify-section-{{section.id}} .mobile-menu .icon-hamburger {
+        display: block;
+    }
+    #shopify-section-{{section.id}} ul.mobile-menu-list[visible=true] {
+        display: block;
+    }
+    #shopify-section-{{section.id}} ul.mobile-menu-list[visible=false] {
+        display: none;
+    }
+}
 {% endstyle %}
 
 <div class="section-content">
     <div class="page-width">
-        {% if section.blocks.size > 0  %}
-            {% for block in section.blocks  %}
-                <a href="block.settings.link" class="mnu-btn btn {% if forloop.index == 1 %}active{% endif %}">{{ block.settings.label }}</a>
-            {% endfor %}
-        {% endif %}
+        <div class="desktop-menu">
+            {% if section.blocks.size > 0  %}
+                {% for block in section.blocks  %}
+                    <a href="{{ block.settings.link }}" class="mnu-btn btn {% if block.settings.active == 'active' %}active{% endif %}">{{ block.settings.label }}</a>
+                {% endfor %}
+            {% endif %}
+        </div>
+
+        <div class="mobile-menu">
+            <a href="Javascript:;" class="btn_mobile-menue">
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" viewBox="0 0 64 64"><path d="M7 15h51M7 32h43M7 49h51"/></svg>
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"></path></svg>
+            </a>
+            <ul class="mobile-menu-list" visible="false">
+                {% if section.blocks.size > 0  %}
+                    {% for block in section.blocks  %}
+                        <li class="mob-mnu-btn">
+                            <a href="{{ block.settings.link }}" class="btn {% if block.settings.active == 'active' %}active{% endif %}">{{ block.settings.label }}</a>
+                        </li>
+                    {% endfor %}
+                {% endif %}
+            </ul>
+        </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function() {
+        $('#shopify-section-{{section.id}} a.btn_mobile-menue').on('click', function() {
+            var el = $(this).parent().find('ul.mobile-menu-list');
+            var visible = el.attr('visible');
+            $('#shopify-section-{{section.id}} .mobile-menu svg.icon').css('display', 'none');
+
+            if(visible == 'true') {
+                el.attr('visible', 'false');
+                $('#shopify-section-{{section.id}} .mobile-menu svg.icon-hamburger').css('display', 'block');
+            }else {
+                el.attr('visible', 'true');
+                $('#shopify-section-{{section.id}} .mobile-menu svg.icon-close').css('display', 'block');
+            }
+        });
+    });
+</script>
+
 {% schema %}
 {
     "name": "Menu list",
@@ -29,7 +111,7 @@
     "blocks": [
         {
             "type": "block",
-            "name": "blog",
+            "name": "page",
             "settings": [
                 {
                     "type": "text",
@@ -40,6 +122,22 @@
                     "type": "url",
                     "id": "link",
                     "label": "Link"
+                },
+                {
+                    "type": "select",
+                    "id": "active",
+                    "options": [
+                        {
+                            "value": "active",
+                            "label": "Active"
+                        },
+                        {
+                            "value": "inactive",
+                            "label": "Inactive"
+                        }
+                    ],
+                    "label": "Active",
+                    "default": "inactive"
                 }
             ]
         }
