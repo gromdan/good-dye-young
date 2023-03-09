@@ -1,42 +1,132 @@
 {
     "sections": {
-      "main": {
-        "type": "blog-template",
-        "settings": {}
-      },
-      "featured-collections": {
-        "type": "featured-collections",
-        "blocks": {
-          "collection1": {
-            "type": "collection",
-            "settings": {}
-          },
-          "collection2": {
-            "type": "collection",
-            "settings": {}
-          },
-          "collection3": {
-            "type": "collection",
-            "settings": {}
-          },
-          "collection4": {
-            "type": "collection",
-            "settings": {}
-          }
+        "menu": {
+            "type": "menu",
+            "blocks": {
+                "menu1": {
+                    "type": "menu",
+                    "settings": {
+                        "label": "tab one",
+                        "link": "\/pages\/education"
+                    }
+                },
+                "menu2": {
+                    "type": "menu",
+                    "settings": {
+                        "label": "tab two",
+                        "link": "\/blogs\/education"
+                    }
+                },
+                "menu3": {
+                    "type": "menu",
+                    "settings": {
+                        "label": "tab three"
+                    }
+                },
+                "menu4": {
+                    "type": "menu",
+                    "settings": {
+                        "label": "tab four"
+                    }
+                },
+                "menu5": {
+                    "type": "menu",
+                    "settings": {
+                        "label": "tab five"
+                    }
+                }
+            },
+            "block_order": [
+                "menu1",
+                "menu2",
+                "menu3",
+                "menu4",
+                "menu5"
+            ]
         },
-        "block_order": [
-          "collection1",
-          "collection2",
-          "collection3",
-          "collection4"
-        ],
-        "settings": {
-          "title": "You may also like"
+        "video": {
+            "type": "featured-video",
+            "settings": {
+                "title": "WELCOME FROM HAYLEY + BRIAN",
+                "font_size": "font-medium",
+                "text_align": "align-center"
+            }
+        },
+        "divide1": {
+            "type": "rich-text",
+            "settings": {
+                "border_top": 15,
+                "border_bottom": 0,
+                "narrow_column": false
+            }
+        },
+        "main": {
+            "type": "blog-template",
+            "settings": {}
+        },
+        "divide2": {
+            "type": "rich-text",
+            "settings": {
+                "border_top": 15,
+                "border_bottom": 0,
+                "narrow_column": false
+            }
+        },
+        "blogs": {
+            "type": "blog-slide",
+            "settings": {
+                "heading": "MORE HAIR DYE COURSES",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+                "color": "#000",
+                "font_size": "small"
+            },
+            "blocks": {
+                "slide1": {
+                    "type": "block",
+                    "settings": {
+                        "button_text": "read more"
+                    }
+                },
+                "slide2": {
+                    "type": "block",
+                    "settings": {
+                        "button_text": "read more"
+                    }
+                },
+                "slide3": {
+                    "type": "block",
+                    "settings": {
+                        "button_text": "read more"
+                    }
+                },
+                "slide4": {
+                    "type": "block",
+                    "settings": {
+                        "button_text": "read more"
+                    }
+                },
+                "slide5": {
+                    "type": "block",
+                    "settings": {
+                        "button_text": "read more"
+                    }
+                }
+            },
+            "block_order": [
+                "slide1",
+                "slide2",
+                "slide3",
+                "slide4",
+                "slide5"
+            ]
         }
-      }
     },
     "order": [
-      "main",
-      "featured-collections"
+        "menu",
+        "video",
+        "divide1",
+        "main",
+        "divide2",
+        "blogs"
     ]
-  }
+}

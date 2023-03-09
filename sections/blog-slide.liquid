@@ -34,7 +34,7 @@
         displayl: flex;
         flex-direction: column;
     }
-    #shopify-section-{{section.id}} .article {
+    #shopify-section-{{section.id}} .blog {
         margin-top: 9px;
     }
     @media(max-width: 500px) {
@@ -57,7 +57,7 @@
             </div>
         {% endif %}
         
-        <div class="article-slide">
+        <div class="blog-slide">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     {% if section.blocks.size > 0 %}
@@ -70,12 +70,12 @@
                                         <img src="{{ 'default.png' | asset_url }}">
                                     {% endif %}
                                     </div>
-                                 <div class="article-title">
-                                    <h5 class="">{{ block.settings.article.title | truncate: 13 }}</h5>
+                                 <div class="blog-title">
+                                    <h5 class="">{{ block.settings.blog.title | truncate: 13 }}</h5>
                                 </div>
                                 {% if block.settings.button_text != blank %}
                                     <div class="button-wrap">
-                                        <a href="{{ block.settings.article.url }}" class="btn">{{ block.settings.button_text }}</a>
+                                        <a href="{{ block.settings.blog.url }}" class="btn">{{ block.settings.button_text }}</a>
                                     </div>
                                 {% endif %}
                             </div>
@@ -125,8 +125,8 @@
 
 {% schema %}
 {
-    "name": "Article slide",
-    "class": "article-slide",
+    "name": "Blog slide",
+    "class": "blog-slide",
     "settings": [
         {
             "type": "text",
@@ -213,8 +213,8 @@
             "settings": [
                 {
                     "type": "blog",
-                    "id": "article",
-                    "label": "Article"
+                    "id": "blog",
+                    "label": "Blog"
                 },
                 {
                     "type": "image_picker",
@@ -231,7 +231,7 @@
     ],
     "presets": [
         {
-            "name": "Article slide"
+            "name": "Blog slide"
         }
     ]
 }
