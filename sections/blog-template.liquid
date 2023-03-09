@@ -1,117 +1,117 @@
-{%- paginate blog.articles by 21 -%}
+{% style %}
+    #shopify-section-{{section.id}} .image {
+      max-height: 600px;
+      height: 600px;
+      margin: 50px 0px 25px 0px;
+    }
+    #shopify-section-{{section.id}} .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    #shopify-section-{{section.id}} .button-wrap a.btn {
+      background: #fff;
+      border: solid 2px #000;
+      color: #000;
+    }
+     #shopify-section-{{section.id}} .button-wrap a.btn:hover {
+      background: #000;
+      color: #fff;
+    }
+    #shopify-section-{{section.id}} .button-wrap {
+      display: flex;
+      gap: 15px;
+    }
+    @media (max-width: 1000px) {
+      #shopify-section-{{section.id}} .image {
+        height: auto;
+      }
+    }
+{% endstyle %}
 
-<div data-section-id="{{ section.id }}" data-section-type="blog">
-  <div class="page-width page-content">
+<div class="text-{{ section.settings.align_text }} page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %}">
+    {%- if blog.articles.size > 0 -%}
+        {%- for article in blog.articles -%}
+            {%- if article.title != blank -%}<h2>{{ article.title | escape }}</h2>{%- endif -%}
+            <div class="rte">
+                <div class="enlarge-text">
+                    {%- if article.excerpt != blank -%}
+                        {{ article.excerpt }}
+                    {%- endif -%}
+                </div>
+            </div>
+            <div class="button-wrap rte">
+                <a href="#" class="btn">read more</a>
+                <a href="#" class="btn">watch</a>
+            </div>
+            {%- if article.image != blank -%}
+                <div class="image">
+                    <img src="{{ article.image | image_url: width: 2000 }}">
+                </div>
+            {%- endif -%}
+        {%- endfor -%}
+    {% endif %}
 
-    {%- render 'breadcrumbs' -%}
-
-    <header class="section-header{% if section.settings.blog_show_tag_filter and blog.tags.size > 0 %}{% unless settings.type_headers_align_text %} section-header--with-link{% endunless %}{% endif %}">
-      <h1 class="section-header__title">
-        {{ blog.title }}
-
-        {%- if section.settings.blog_show_rss -%}
-          <a href="{{ shop.url }}{{ blog.url }}.atom" class="rss-link">
-            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-rss" viewBox="0 0 20 20"><path fill="#444" d="M5.903 16.586a2.489 2.489 0 1 1-4.977 0 2.489 2.489 0 0 1 4.977 0zM12.956 19.075H9.43c0-4.688-3.817-8.505-8.505-8.505V7.044c6.638 0 12.031 5.393 12.031 12.031z"/><path fill="#444" d="M15.445 19.075c0-8.028-6.493-14.52-14.52-14.52V.925c10.019 0 18.15 8.131 18.15 18.15h-3.63z"/></svg>
-            <span class="icon__fallback-text">RSS</span>
-          </a>
-        {%- endif -%}
-      </h1>
-
-      {%- if section.settings.blog_show_tag_filter and blog.tags.size > 0 -%}
-        <select id="BlogTagFilter">
-          <option value="/blogs/{{ blog.handle }}">All</option>
-          {%- for tag in blog.all_tags -%}
-            {% if tag contains "_" %}{%- assign tag_starts_with = tag | slice: 0 -%}{% if tag_starts_with == "_" %}{% if tag_count %}{%- assign tag_count = tag_count | minus: 1 | at_least: 0 -%}{% endif %}{% continue %}{% endif %}{% endif %}
-            <option value="/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" {% if current_tags contains tag %}selected{% endif %}>{{ tag }}</option>
-          {%- endfor -%}
-        </select>
-      {%- endif -%}
-    </header>
-
-    <div class="grid grid--uniform">
-      {%- for article in blog.articles -%}
-        {%- render 'article-grid-item', article: article, grid_item_width: 'medium-up--one-third', per_row: '3', image_size: section.settings.blog_image_size -%}
-      {%- endfor -%}
-    </div>
-
-    {%- if paginate.pages > 1 -%}
-      {%- render 'pagination', paginate: paginate -%}
-    {%- endif -%}
-
-  </div>
+    {% comment %}
+    {%- for block in section.blocks -%}
+        <div class="theme-block">
+            <h2>{{ block.settings.title | escape }}</h2>
+            <div class="rte">
+                {%- if block.settings.text != blank -%}
+                    {{ block.settings.text }}
+                {%- endif -%}
+            </div>
+            <div class="image">
+                {%- if block.settings.image != blank -%}
+                    <img src="{{ block.settings.image | image_url: width: 2000 }}">
+                {%- endif -%}
+            </div>
+            <div class="button-wrap rte">
+                <a href="{{ block.settings.link1 }}" class="btn">
+                {{ block.settings.link_text1 }}
+                </a>
+                <a href="{{ block.settings.link2 }}" class="btn">
+                  {{ block.settings.link_text2 }}
+                </a>
+            </div>
+        </div>
+    {%- endfor -%}
+    {% endcomment %}
 </div>
-
-{%- endpaginate -%}
-
 {% schema %}
   {
-    "name": "Blog pages",
+    "name": "Blog template",
+    "class": "blog-template",
     "settings": [
-      {
-        "type": "checkbox",
-        "id": "blog_show_tag_filter",
-        "label": "Show tag filter"
-      },
-      {
-        "type": "checkbox",
-        "id": "blog_show_rss",
-        "label": "Show RSS link"
-      },
-      {
-        "type": "checkbox",
-        "id": "blog_show_tags",
-        "label": "Show tags"
-      },
-      {
-        "type": "checkbox",
-        "id": "blog_show_date",
-        "label": "Show date",
-        "default": true
-      },
-      {
-        "type": "checkbox",
-        "id": "blog_show_comments",
-        "label": "Show comment count",
-        "default": true
-      },
-      {
-        "type": "checkbox",
-        "id": "blog_show_author",
-        "label": "Show author"
-      },
-      {
-        "type": "checkbox",
-        "id": "blog_show_excerpt",
-        "label": "Show excerpt"
-      },
-      {
-        "type": "select",
-        "id": "blog_image_size",
-        "label": "Image size",
-        "default": "wide",
-        "options": [
-          {
-            "value": "natural",
-            "label": "Natural"
-          },
-          {
-            "value": "square",
-            "label": "Square (1:1)"
-          },
-          {
-            "value": "landscape",
-            "label": "Landscape (4:3)"
-          },
-          {
-            "value": "portrait",
-            "label": "Portrait (2:3)"
-          },
-          {
-            "value": "wide",
-            "label": "Wide (16:9)"
-          }
-        ]
-      }
-    ]
+        {
+            "type": "select",
+            "id": "align_text",
+            "label": "Text alignment",
+            "default": "center",
+            "options": [
+            {
+                "value": "left",
+                "label": "Left"
+            },
+            {
+                "value": "center",
+                "label": "Centered"
+            },
+            {
+                "value": "right",
+                "label": "Right"
+            }
+            ]
+        },
+        {
+            "type": "checkbox",
+            "id": "narrow_column",
+            "label": "Narrow column",
+            "default": true
+        }
+    ],
+    "presets": [{
+      "name": "Text with image column"
+    }]
   }
 {% endschema %}
