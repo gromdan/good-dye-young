@@ -41,8 +41,8 @@
                 </div>
             </div>
             <div class="button-wrap rte">
-                <a href="#" class="btn">read more</a>
-                <a href="#" class="btn">watch</a>
+                <a href="{{ article.url }}" target="_blank" class="btn">read more</a>
+                <a href="{{ article.url }}" target="_blank" class="btn">watch</a>
             </div>
             {%- if article.image != blank -%}
                 <div class="image">

@@ -227,7 +227,9 @@
                 {% endfor %}
             {% endif %}
         </div>
-        <div class="swiper-pagination"></div>
+        {% if section.settings.display_type == 'slide' %}
+            <div class="swiper-pagination"></div>
+        {% endif %}
     </div>
 </div>
 

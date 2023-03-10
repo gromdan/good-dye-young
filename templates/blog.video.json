@@ -14,15 +14,15 @@
                     "type": "menu",
                     "settings": {
                         "label": "tab two",
-                        "link": "\/blogs\/education",
-                        "active": "active"
+                        "link": "\/blogs\/education"
                     }
                 },
                 "menu3": {
                     "type": "menu",
                     "settings": {
                         "label": "tab three",
-                        "link": "\/blogs\/video"
+                        "link": "\/blogs\/video",
+                        "active": "active"
                     }
                 },
                 "menu4": {
@@ -46,27 +46,12 @@
                 "menu5"
             ]
         },
-        "video": {
-            "type": "featured-video",
-            "settings": {
-                "title": "WELCOME FROM HAYLEY + BRIAN",
-                "font_size": "font-medium",
-                "text_align": "align-center"
-            }
-        },
         "divide1": {
             "type": "rich-text",
             "settings": {
                 "border_top": 15,
                 "border_bottom": 0,
                 "narrow_column": false
-            }
-        },
-        "main": {
-            "type": "blog-template",
-            "settings": {
-                "narrow_column": false,
-                "align_text": "left"
             }
         },
         "divide2": {
@@ -128,9 +113,7 @@
     },
     "order": [
         "menu",
-        "video",
         "divide1",
-        "main",
         "divide2",
         "blogs"
     ]
