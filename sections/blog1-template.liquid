@@ -1,0 +1,116 @@
+{% style %}
+    #shopify-section-{{section.id}} .image {
+      max-height: 600px;
+      height: 600px;
+      margin: 50px 0px 25px 0px;
+    }
+    #shopify-section-{{section.id}} .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    #shopify-section-{{section.id}} .button-wrap a.btn {
+      background: #fff;
+      border: solid 2px #000;
+      color: #000;
+    }
+     #shopify-section-{{section.id}} .button-wrap a.btn:hover {
+      background: #000;
+      color: #fff;
+    }
+    #shopify-section-{{section.id}} .button-wrap {
+      display: flex;
+      gap: 15px;
+    }
+    @media (max-width: 1000px) {
+      #shopify-section-{{section.id}} .image {
+        height: auto;
+      }
+    }
+{% endstyle %}
+
+<div class="text-{{ section.settings.align_text }} page-width{% if section.settings.narrow_column %} page-width--narrow{% endif %}">
+    {%- if blog.articles.size > 0 -%}
+        {%- for article in blog.articles -%}
+            {%- if article.image != blank -%}
+                <div class="image">
+                    <img src="{{ article.image | image_url: width: 2000 }}">
+                </div>
+            {%- endif -%}
+            {%- if article.title != blank -%}<h2>{{ article.title | escape }}</h2>{%- endif -%}
+            <div class="rte">
+                <div class="enlarge-text">
+                    {%- if article.excerpt != blank -%}
+                        {{ article.excerpt }}
+                    {%- endif -%}
+                </div>
+            </div>
+            <div class="button-wrap rte">
+                <a href="{{ article.url }}" target="_blank" class="btn">read more</a>
+            </div>
+        {%- endfor -%}
+    {% endif %}
+
+    {% comment %}
+    {%- for block in section.blocks -%}
+        <div class="theme-block">
+            <h2>{{ block.settings.title | escape }}</h2>
+            <div class="rte">
+                {%- if block.settings.text != blank -%}
+                    {{ block.settings.text }}
+                {%- endif -%}
+            </div>
+            <div class="image">
+                {%- if block.settings.image != blank -%}
+                    <img src="{{ block.settings.image | image_url: width: 2000 }}">
+                {%- endif -%}
+            </div>
+            <div class="button-wrap rte">
+                <a href="{{ block.settings.link1 }}" class="btn">
+                {{ block.settings.link_text1 }}
+                </a>
+                <a href="{{ block.settings.link2 }}" class="btn">
+                  {{ block.settings.link_text2 }}
+                </a>
+            </div>
+        </div>
+    {%- endfor -%}
+    {% endcomment %}
+</div>
+{% schema %}
+  {
+    "name": "Blog1 template",
+    "class": "blog-template",
+    "settings": [
+        {
+            "type": "select",
+            "id": "align_text",
+            "label": "Text alignment",
+            "default": "center",
+            "options": [
+            {
+                "value": "left",
+                "label": "Left"
+            },
+            {
+                "value": "center",
+                "label": "Centered"
+            },
+            {
+                "value": "right",
+                "label": "Right"
+            }
+            ]
+        },
+        {
+            "type": "checkbox",
+            "id": "narrow_column",
+            "label": "Narrow column",
+            "default": true
+        }
+    ],
+    "presets": [{
+      "name": "Text with image column"
+    }]
+  }
+{% endschema %}
