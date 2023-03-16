@@ -6,10 +6,25 @@
 #shopify-section-{{section.id}} .section-content a.mnu-btn {
     background: transparent;
     margin: 8px 0px;
+    white-space: nowrap;
+    box-sizing: content-box;
 }
 #shopify-section-{{section.id}} .section-content a.mnu-btn.active {
     border: solid 3px #fff;
 }
+@media(max-width: 1000px) {
+    #shopify-section-{{section.id}} .scrollbar {
+        width: 100%;
+        overflow-x: scroll;
+        display: flex;
+    }
+    #shopify-section-{{section.id}} .section-content a.mnu-btn:last-child {
+        padding: 9px 34px;
+        display: flex;
+        justify-content: center;
+    }
+}
+{% comment%}
 #shopify-section-{{section.id}} .mobile-menu {
     display: none;
     padding: 15px 0px;
@@ -54,18 +69,23 @@
         display: none;
     }
 }
+{% endcomment%}
+
 {% endstyle %}
 
 <div class="section-content">
     <div class="page-width">
         <div class="desktop-menu">
-            {% if section.blocks.size > 0  %}
-                {% for block in section.blocks  %}
-                    <a href="{{ block.settings.link }}" class="mnu-btn btn {% if block.settings.active == 'active' %}active{% endif %}">{{ block.settings.label }}</a>
-                {% endfor %}
-            {% endif %}
+            <div class="scrollbar">
+                {% if section.blocks.size > 0  %}
+                    {% for block in section.blocks  %}
+                        <a href="{{ block.settings.link }}" class="mnu-btn btn {% if block.settings.active == 'active' %}active{% endif %}">{{ block.settings.label }}</a>
+                    {% endfor %}
+                {% endif %}
+            </div>
         </div>
 
+        {% comment %}
         <div class="mobile-menu">
             <a href="Javascript:;" class="btn_mobile-menue">
                 <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" viewBox="0 0 64 64"><path d="M7 15h51M7 32h43M7 49h51"/></svg>
@@ -81,9 +101,12 @@
                 {% endif %}
             </ul>
         </div>
+        {% endcomment %}
+
     </div>
 </div>
 
+{% comment %}
 <script>
     $(document).ready(function() {
         $('#shopify-section-{{section.id}} a.btn_mobile-menue').on('click', function() {
@@ -101,6 +124,7 @@
         });
     });
 </script>
+{% endcomment %}
 
 {% schema %}
 {

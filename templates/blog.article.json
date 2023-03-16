@@ -21,15 +21,15 @@
                     "type": "menu",
                     "settings": {
                         "label": "tab three",
-                        "link": "\/blogs\/video",
-                        "active": "active"
+                        "link": "\/blogs\/video"
                     }
                 },
                 "menu4": {
                     "type": "menu",
                     "settings": {
                         "label": "tab four",
-                        "link": "\/blogs\/article"
+                        "link": "\/blogs\/article",
+                        "active": "active"
                     }
                 },
                 "menu5": {
@@ -50,9 +50,16 @@
         "divide1": {
             "type": "rich-text",
             "settings": {
-                "border_top": 15,
-                "border_bottom": 0,
+                "border_top": 0,
+                "border_bottom": 15,
                 "narrow_column": false
+            }
+        },
+        "main": {
+            "type": "blog1-template",
+            "settings": {
+                "narrow_column": false,
+                "align_text": "left"
             }
         },
         "divide2": {
@@ -115,6 +122,7 @@
     "order": [
         "menu",
         "divide1",
+        "main",
         "divide2",
         "blogs"
     ]

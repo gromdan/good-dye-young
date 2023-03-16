@@ -1,4 +1,8 @@
 {% style %}
+    #shopify-section-{{section.id}} .section-content {
+        margin-top: {{ section.settings.margin_top }}px;
+        margin-bottom: {{ section.settings.margin_bottom }}px;
+    }
     #shopify-section-{{section.id}} .section-title {
         margin: 25px 0px;
     }
@@ -324,6 +328,26 @@
             ],
             "label": "Text align",
             "default": "align-center"
+        },
+        {
+            "type": "range",
+            "id": "margin_top",
+            "label": "Margin top",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 0,
+            "unit": "px"
+        },
+        {
+            "type": "range",
+            "id": "margin_bottom",
+            "label": "Margin bottom",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 0,
+            "unit": "px"
         }
     ],
     "blocks": [

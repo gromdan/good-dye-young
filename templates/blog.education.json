@@ -28,7 +28,8 @@
                 "menu4": {
                     "type": "menu",
                     "settings": {
-                        "label": "tab four"
+                        "label": "tab four",
+                        "link": "\/blogs\/article"
                     }
                 },
                 "menu5": {
