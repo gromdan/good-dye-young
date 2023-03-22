@@ -1,5 +1,5 @@
 {% style %}
-    #shopify-section-{{section.id}} .section-header__title {
+    #shopify-section-{{section.id}} .article-header .section-header__title {
         margin-bottom: 30px;
     }
     #shopify-section-{{section.id}} .divide {
@@ -13,7 +13,7 @@
         height: 600px;
         margin: 50px 0px 25px 0px;
     }
-    #shopify-section-{{section.id}} img {
+    #shopify-section-{{section.id}} .article-content img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -45,7 +45,12 @@
         border-radius: 50%;
         margin-right: 6px;
     }
+    #shopify-section-{{section.id}} .grid--uniform .small--one-half:last-child {
+        border-right: none;
+    }
 {% endstyle %}
+
+{%- assign per_row = 4 -%}
 
 <div class="article-wrapper index-section">
     <div class="page-width">
@@ -85,5 +90,105 @@
                 </div>
             </div>
         </div>
+
+
+
+        
+
+
+
+        
     </div>
+</div>
+
+<!-- checking: {{article.metafields.custom.related_products}} -->
+{% if article.metafields.custom.related_products %}
+    <div
+        id="CollectionSection-{{ section.id }}"
+        class="featured-products-wrapper featured-collection-one-row blog-related-products"
+        data-section-id="{{ section.id }}"
+        data-section-type="collection-grid">
+        {%- if article.metafields.custom.related_products_title != blank -%}
+          <div class="page-width">
+            <div class="section-header{% if article.metafields.custom.related_products_collection != blank %}{% unless settings.type_headers_align_text %} section-header--with-link{% endunless %}{% endif %}">
+              <div class="section-header__title">
+                <h2>
+                  {{ article.metafields.custom.related_products_title }}
+                </h2>
+                {% comment %}
+                {%- if section.settings.subtitle != blank -%}
+                <p class="subheading">
+                  {{ section.settings.subtitle }}
+                </p>
+                {%- endif -%}
+                {% endcomment %}
+              </div>
+                
+      
+      
+              {%- if article.metafields.custom.related_products_collection != blank -%}
+                {% liquid 
+                    assign link_text = article.metafields.custom.related_products_collection_link_text
+                    if article.metafields.custom.related_products_collection_link_text == blank
+                        assign link_text = 'collections.general.all_of_collection' | t
+                    endif
+                %}
+                <p>
+                  <a href="{{ article.metafields.custom.related_products_collection.url }}" class="btn btn--secondary btn--small section-header__link">{{ link_text }}</a>
+                </p>
+              {%- endif -%}
+              
+            </div>
+          </div>
+        {%- endif -%}
+      
+        <div class="page-width page-width--flush-small">
+          <div class="grid-overflow-wrapper grid-overflow-wrapper-desktop">
+            <div class="grid grid--uniform overflow-container" data-aos="overflow__animation">
+              {% assign grid_item_width = 'small--one-half medium-up--one-fifth' %}
+      
+              
+      
+                {%- for product in article.metafields.custom.related_products.value -%}
+                  {%- render 'product-grid-item',
+                    product: product,
+                    collection: collection,
+                    per_row: per_row,
+                    quick_shop_enable: settings.quick_shop_enable,
+                    button_class: 'product-btn-wrap',
+                    button_class_2: 'btn btn--inverse btn-inverse--black',
+                    use_2nd_image: true,
+                    square_img: false,
+                    title_only: false,
+                    force_contain: true
+                  -%}
+                {%- endfor -%}
+      
+                {% comment %}
+                    {%- if article.metafields.custom.related_products_collection != blank -%}
+        
+                        <div class="grid__item text-center{% if section.settings.mobile_scrollable %} small--hide{% endif %}">
+                        <a href="{{ article.metafields.custom.related_products_collection.url }}" class="btn">{{ 'collections.general.all_of_collection' | t }}</a>
+                        </div>
+        
+                        <div class="grid__item grid__item--view-all text-center {{ grid_item_width }} medium-up--hide">
+                        <a href="{{ article.metafields.custom.related_products_collection.url }}" class="grid-product__see-all">
+                            {{ 'collections.general.view_all_products_html' | t: count: collection.products_count }}
+                        </a>
+                        </div>
+        
+                    {%- endif -%}
+                {% endcomment %}
+      
+            </div>
+          </div>
+      
+        </div>
+    </div>
+{% endif %}
+
+<div class="page-width">
+
+    <div class="divide"></div>
+
 </div>

@@ -1,0 +1,242 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "c8d8e259-dace-4b11-b538-78e71d45470f": {
+      "type": "menu",
+      "blocks": {
+        "4161ba99-a3b4-4e67-8f12-7b791fbe8fbc": {
+          "type": "menu",
+          "settings": {
+            "label": "Main",
+            "link": "shopify:\/\/pages\/education",
+            "active": "active"
+          }
+        },
+        "56a07d3e-f282-47a1-8494-5e959ff6ac32": {
+          "type": "menu",
+          "settings": {
+            "label": "Trends",
+            "link": "shopify:\/\/blogs\/trends",
+            "active": "inactive"
+          }
+        },
+        "d0b35f15-82d1-487f-8250-8c6379628d3f": {
+          "type": "menu",
+          "settings": {
+            "label": "How To",
+            "link": "shopify:\/\/blogs\/how-to",
+            "active": "inactive"
+          }
+        },
+        "b258e864-843f-4039-9b42-d2fcb5b4de56": {
+          "type": "menu",
+          "settings": {
+            "label": "Education",
+            "link": "shopify:\/\/blogs\/education",
+            "active": "inactive"
+          }
+        },
+        "302927bb-aecf-4b2e-97e9-cdd119a666b1": {
+          "type": "menu",
+          "settings": {
+            "label": "Lightening",
+            "link": "shopify:\/\/blogs\/lightening",
+            "active": "inactive"
+          }
+        },
+        "2d882852-8f5d-4619-b634-48b2e9ac9a4b": {
+          "type": "menu",
+          "settings": {
+            "label": "Using GDY",
+            "link": "shopify:\/\/blogs\/using-gdy",
+            "active": "inactive"
+          }
+        },
+        "28aeb385-b47e-4cfb-b82d-e1c9853decb0": {
+          "type": "menu",
+          "settings": {
+            "label": "Hayley's Hair",
+            "link": "shopify:\/\/blogs\/hayleys-hair",
+            "active": "inactive"
+          }
+        }
+      },
+      "block_order": [
+        "4161ba99-a3b4-4e67-8f12-7b791fbe8fbc",
+        "56a07d3e-f282-47a1-8494-5e959ff6ac32",
+        "d0b35f15-82d1-487f-8250-8c6379628d3f",
+        "b258e864-843f-4039-9b42-d2fcb5b4de56",
+        "302927bb-aecf-4b2e-97e9-cdd119a666b1",
+        "2d882852-8f5d-4619-b634-48b2e9ac9a4b",
+        "28aeb385-b47e-4cfb-b82d-e1c9853decb0"
+      ],
+      "settings": {}
+    },
+    "85846c22-a2f7-452b-8863-5e7a197de201": {
+      "type": "featured-video",
+      "disabled": true,
+      "settings": {
+        "title": "welcome from hayley + brian",
+        "font_size": "font-medium",
+        "text_align": "align-center",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "divider": false
+      }
+    },
+    "b9ad758e-2898-4bf6-ad72-0bbfeff34a9b": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--15395207905416__b9ad758e-2898-4bf6-ad72-0bbfeff34a9b-16793263656994625a-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "template--15395207905416__b9ad758e-2898-4bf6-ad72-0bbfeff34a9b-16793263656994625a-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>LET'S EXPERIMENT<\/h2><p>Been around the block? Learn new ways to experiment with your favorite products, and learn about upcoming trends and the looks we love.<\/p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15395207905416__b9ad758e-2898-4bf6-ad72-0bbfeff34a9b-16793263656994625a-0",
+        "template--15395207905416__b9ad758e-2898-4bf6-ad72-0bbfeff34a9b-16793263656994625a-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "bg_color": "",
+        "text_color": "",
+        "bg_color_contained": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "space_around": true,
+        "show_top_border": false,
+        "show_bottom_border": false
+      }
+    },
+    "5420c73e-bda3-4ba7-8a2f-23de2bc23f0f": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15382891888776__5420c73e-bda3-4ba7-8a2f-23de2bc23f0f-1677766112d361e1ab-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": ""
+          }
+        },
+        "template--15382891888776__5420c73e-bda3-4ba7-8a2f-23de2bc23f0f-1677766112d361e1ab-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "enlarge_text": true,
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15382891888776__5420c73e-bda3-4ba7-8a2f-23de2bc23f0f-1677766112d361e1ab-0",
+        "template--15382891888776__5420c73e-bda3-4ba7-8a2f-23de2bc23f0f-1677766112d361e1ab-1"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": false,
+        "divider": false,
+        "border_top": 0,
+        "border_bottom": 15
+      }
+    },
+    "b5794b48-5f9c-48ee-bfb2-dfe61820cd08": {
+      "type": "fifty-fifty",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hayley.webp",
+        "bg_color": "",
+        "text_color": "",
+        "use_crazy_bg": false,
+        "pretitle": "",
+        "title": "Now Trending: Gemini Hair",
+        "subtitle": "",
+        "text": "<p>You might be asking yourself, “what is gemini hair?” and “how is it different from a split dye?” Spoiler alert: it’s not!<\/p>",
+        "button_label": "READ MORE",
+        "button_link": "shopify:\/\/blogs\/trends\/now-trending-gemini-hair",
+        "button_color": "#ffffff",
+        "button_style": "secondary",
+        "align_text": "left",
+        "layout": "left"
+      }
+    },
+    "1ae03764-ad41-4f60-8897-b99aaec83496": {
+      "type": "fifty-fifty",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Blog_Heros_8.jpg",
+        "bg_color": "",
+        "text_color": "",
+        "use_crazy_bg": false,
+        "pretitle": "",
+        "title": "2023 Hair Trends",
+        "subtitle": "",
+        "text": "<p>It’s a new year which means new trends! 2023 brings back some old classics, as well as some new favorites. Check out our favorite hair trends for 2023 and let us know which one you love!<\/p>",
+        "button_label": "READ MORE",
+        "button_link": "shopify:\/\/blogs\/trends\/2023-hair-trends",
+        "button_color": "",
+        "button_style": "secondary",
+        "align_text": "left",
+        "layout": "left"
+      }
+    },
+    "5fb28628-001c-45bc-b69d-b498b4674e8e": {
+      "type": "fifty-fifty",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Blog_Heros_9.jpg",
+        "bg_color": "",
+        "text_color": "",
+        "use_crazy_bg": false,
+        "pretitle": "",
+        "title": "Shades that Glow under Black Light",
+        "subtitle": "",
+        "text": "<p>Ever wished you could make your hair glow in the dark? Same here. While technology hasn’t advanced that far yet, we do have shades that glow under black light! <\/p>",
+        "button_label": "READ MORE",
+        "button_link": "shopify:\/\/blogs\/using-gdy\/shades-that-glow-under-black-light",
+        "button_color": "",
+        "button_style": "secondary",
+        "align_text": "left",
+        "layout": "right"
+      }
+    },
+    "03866a0b-3e01-4852-bfcd-f2278ca0fb73": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "more courses",
+        "blog": "education",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": true,
+        "blog_image_size": "square",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "c8d8e259-dace-4b11-b538-78e71d45470f",
+    "85846c22-a2f7-452b-8863-5e7a197de201",
+    "b9ad758e-2898-4bf6-ad72-0bbfeff34a9b",
+    "5420c73e-bda3-4ba7-8a2f-23de2bc23f0f",
+    "b5794b48-5f9c-48ee-bfb2-dfe61820cd08",
+    "1ae03764-ad41-4f60-8897-b99aaec83496",
+    "5fb28628-001c-45bc-b69d-b498b4674e8e",
+    "03866a0b-3e01-4852-bfcd-f2278ca0fb73"
+  ]
+}

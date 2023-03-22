@@ -32,7 +32,7 @@
           "settings": {
             "label": "Education",
             "link": "shopify:\/\/blogs\/education",
-            "active": "active"
+            "active": "inactive"
           }
         },
         "menu5": {
@@ -40,7 +40,7 @@
           "settings": {
             "label": "Lightening",
             "link": "shopify:\/\/blogs\/lightening",
-            "active": "inactive"
+            "active": "active"
           }
         },
         "9c691329-c78a-4760-8e81-3df4a5d7e3cc": {
@@ -71,78 +71,112 @@
       ],
       "settings": {}
     },
+    "video": {
+      "type": "featured-video",
+      "disabled": true,
+      "settings": {
+        "title": "WELCOME FROM HAYLEY + BRIAN",
+        "font_size": "font-medium",
+        "text_align": "align-center",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "divider": false
+      }
+    },
     "divide1": {
       "type": "rich-text",
       "blocks": {
-        "e7ac8c3f-e146-4b37-9a51-7984036d0fb7": {
+        "51ac334d-438d-4e45-b56e-95f9e150c120": {
           "type": "heading",
           "settings": {
-            "title": "EDUCATION"
+            "title": "Lightening"
           }
         },
-        "090c0e64-b88a-498f-a5e8-d58a4537545a": {
+        "34339397-ca78-4b4b-b002-ce8aebd6ace6": {
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p>Learn all about Semi-Permanent dye, color theory, and more! <\/p>"
+            "text": "<p>It all starts with the perfect canvas, so start here to learn how to lighten your hair like a pro!<\/p>"
           }
         }
       },
       "block_order": [
-        "e7ac8c3f-e146-4b37-9a51-7984036d0fb7",
-        "090c0e64-b88a-498f-a5e8-d58a4537545a"
+        "51ac334d-438d-4e45-b56e-95f9e150c120",
+        "34339397-ca78-4b4b-b002-ce8aebd6ace6"
       ],
       "settings": {
         "align_text": "left",
         "narrow_column": false,
         "divider": false,
-        "border_top": 15,
-        "border_bottom": 0
+        "border_top": 0,
+        "border_bottom": 15
       }
     },
-    "8cc84bf5-83d6-445f-a494-2b7969513d78": {
+    "a2e89f54-3d5d-4dc3-bcd3-821184cc9655": {
       "type": "featured-video",
       "blocks": {
-        "23e8663d-93b6-41f9-8a41-c53527d7575e": {
+        "b5e6c766-6db2-418c-b95d-f03e69c856fe": {
           "type": "rich-text",
           "settings": {
-            "title": "WHAT is semi-permanent dye?",
-            "text": "Mena from GDY walks you through what semi-permanent hair dye is and how it works.",
+            "title": "Developer 101: What is Developer and What does it Do?",
+            "text": "Mena from GDY breaks down what developer is, and why we use 25 volume!",
             "button_text": ""
           }
         }
       },
       "block_order": [
-        "23e8663d-93b6-41f9-8a41-c53527d7575e"
+        "b5e6c766-6db2-418c-b95d-f03e69c856fe"
       ],
       "settings": {
         "title": "",
         "font_size": "font-medium",
         "text_align": "align-left",
-        "video_url": "https:\/\/youtu.be\/X0GujYiREks",
+        "video_url": "https:\/\/youtu.be\/iBQjIi_CHCs",
         "divider": false
       }
     },
-    "1998eeb7-e26d-4041-8766-281edfbbc861": {
+    "c959448c-f528-4a4e-a241-a2d373dcab7c": {
       "type": "featured-video",
       "blocks": {
-        "3b4ec54c-a664-403e-bb97-e09aa6823af3": {
+        "c23bf750-57b5-46e4-94a9-2c17213f9164": {
           "type": "rich-text",
           "settings": {
-            "title": "What causes your color to fade?",
-            "text": "Watch as Mena from GDY talks you through the ways Semi-Permanent color can fade.",
+            "title": "Lightening 101: What is Bleach?",
+            "text": "Join Mena from GDY as she talks you through everything you need to know about bleach.",
             "button_text": ""
           }
         }
       },
       "block_order": [
-        "3b4ec54c-a664-403e-bb97-e09aa6823af3"
+        "c23bf750-57b5-46e4-94a9-2c17213f9164"
       ],
       "settings": {
         "title": "",
-        "font_size": "font-small",
+        "font_size": "font-medium",
+        "text_align": "align-center",
+        "video_url": "https:\/\/youtu.be\/sId7nbUbN_Y",
+        "divider": false
+      }
+    },
+    "f602362f-b05c-404e-b258-614c91840940": {
+      "type": "featured-video",
+      "blocks": {
+        "490d39de-11a8-4f69-8d24-506e4ce2b589": {
+          "type": "rich-text",
+          "settings": {
+            "title": "What Tools Do I Need to Lighten My Hair?",
+            "text": "Learn what tools are needed to properly, and safely, apply bleach at home.",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "490d39de-11a8-4f69-8d24-506e4ce2b589"
+      ],
+      "settings": {
+        "title": "",
+        "font_size": "font-medium",
         "text_align": "align-left",
-        "video_url": "https:\/\/youtu.be\/eQKGKHcWFeI",
+        "video_url": "https:\/\/youtu.be\/9YUteZs443c",
         "divider": false
       }
     },
@@ -201,6 +235,13 @@
             "blog": "",
             "button_text": "read more"
           }
+        },
+        "24a76a14-d2d7-4deb-96c1-28a64cc77842": {
+          "type": "block",
+          "settings": {
+            "blog": "",
+            "button_text": ""
+          }
         }
       },
       "block_order": [
@@ -208,7 +249,8 @@
         "slide2",
         "slide3",
         "slide4",
-        "slide5"
+        "slide5",
+        "24a76a14-d2d7-4deb-96c1-28a64cc77842"
       ],
       "settings": {
         "heading": "MORE HAIR DYE COURSES",
@@ -223,8 +265,8 @@
     "8794fe77-f4e8-46f6-9dba-7d759ccb4f0f": {
       "type": "blog-posts",
       "settings": {
-        "title": "Related Posts",
-        "blog": "education",
+        "title": "Other Lightening",
+        "blog": "lightening",
         "post_limit": 3,
         "blog_show_tags": false,
         "blog_show_date": false,
@@ -238,9 +280,11 @@
   },
   "order": [
     "menu",
+    "video",
     "divide1",
-    "8cc84bf5-83d6-445f-a494-2b7969513d78",
-    "1998eeb7-e26d-4041-8766-281edfbbc861",
+    "a2e89f54-3d5d-4dc3-bcd3-821184cc9655",
+    "c959448c-f528-4a4e-a241-a2d373dcab7c",
+    "f602362f-b05c-404e-b258-614c91840940",
     "68e0c19a-8443-4307-9ebf-990412179134",
     "divide2",
     "blogs",

@@ -83,19 +83,19 @@
           "settings": {
             "use_dark_text": false,
             "top_subheading": "",
-            "title": "Back in \nStock!",
+            "title": "The Perfect\nPinks",
             "title_size": 80,
-            "subheading": "Your favorites are back. Grab them before they're gone.",
-            "link": "shopify:\/\/collections\/best-sellers",
+            "subheading": "Shop our best-selling pink shades, just in time for spring.",
+            "link": "shopify:\/\/collections\/pink-hair-dye",
             "link_text": "shop now",
             "link_2": "",
             "link_text_2": "",
             "color_accent": "#000000",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify:\/\/shop_images\/5_shades_10415158-7740-422f-8a9a-784bed7312c1.jpg",
-            "image_mobile": "shopify:\/\/shop_images\/5_shades_mobile_da129821-22ae-43bc-961e-3b2ce824b415.jpg",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify:\/\/shop_images\/PINK_BANNER.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/PINK_BANNER_MOBILE.jpg",
             "overlay_opacity": 0,
-            "focal_point": "center center"
+            "focal_point": "top center"
           }
         }
       },
@@ -117,9 +117,9 @@
     "6a94f5d1-049c-44c3-bf73-0ded32314386": {
       "type": "featured-collection",
       "settings": {
-        "title": "Green Hair looks good on you",
+        "title": "Get Ready with Pinks",
         "subtitle": "",
-        "home_featured_products": "green-hair-dye",
+        "home_featured_products": "pink-hair-dye",
         "per_row": 4,
         "rows": 1,
         "mobile_scrollable": true,
@@ -130,9 +130,9 @@
     "3efd69de-9bc7-4cf3-9439-757aad0b2d86": {
       "type": "featured-collection",
       "settings": {
-        "title": "For Mermaid Manes",
+        "title": "As Seen On Your Feed",
         "subtitle": "",
-        "home_featured_products": "mermaid-hair",
+        "home_featured_products": "trending-hair-dye-colors-looks",
         "per_row": 4,
         "rows": 1,
         "mobile_scrollable": true,
@@ -291,11 +291,11 @@
             "small_title": false,
             "hdr_uppercase": true,
             "text": "<p>Get Hayley's tour essentials for 30% off with this exclusive bundle!<\/p>",
-            "text_color_1": "rgba(0, 0, 0, 1)",
+            "text_color_1": "#000000",
             "text_2": "",
-            "text_color_2": "rgba(0, 0, 0, 1)",
+            "text_color_2": "#000000",
             "text_3": "",
-            "text_color_3": "rgba(0, 0, 0, 1)",
+            "text_color_3": "#000000",
             "button_label": "Shop Now",
             "button_link": "shopify:\/\/products\/hayleys-on-the-road-bundle"
           }
@@ -310,13 +310,13 @@
             "small_title": false,
             "hdr_uppercase": true,
             "text": "<p>Take a trip down memory lane with some of Hayley's most iconic looks, and recreate them yourself!<\/p>",
-            "text_color_1": "rgba(0, 0, 0, 1)",
+            "text_color_1": "#000000",
             "text_2": "",
-            "text_color_2": "rgba(0, 0, 0, 1)",
+            "text_color_2": "#000000",
             "text_3": "",
-            "text_color_3": "rgba(0, 0, 0, 1)",
+            "text_color_3": "#000000",
             "button_label": "CHECK IT OUT",
-            "button_link": "shopify:\/\/pages\/founders-favs"
+            "button_link": "shopify:\/\/pages\/hayleys-iconic-looks-heras"
           }
         },
         "template--15351833395336__db709fe5-c489-4c60-b1d1-4fa5cca6dae6-16776222580f295b52-2": {
@@ -329,11 +329,11 @@
             "small_title": false,
             "hdr_uppercase": true,
             "text": "<p>Hayley is back on tour and rocking her signature copper hair! Find out how to recreate her look and more. <\/p>",
-            "text_color_1": "rgba(0, 0, 0, 1)",
+            "text_color_1": "#000000",
             "text_2": "",
-            "text_color_2": "rgba(0, 0, 0, 1)",
+            "text_color_2": "#000000",
             "text_3": "",
-            "text_color_3": "rgba(0, 0, 0, 1)",
+            "text_color_3": "#000000",
             "button_label": "get the look",
             "button_link": "shopify:\/\/pages\/paramore-hayley-in-concert"
           }
@@ -413,11 +413,11 @@
             "small_title": false,
             "hdr_uppercase": true,
             "text": "<p>Mixing bowls and grip clips and combs, oh my! We have all the tools you need to create your perfect look.<\/p>",
-            "text_color_1": "rgba(0, 0, 0, 1)",
+            "text_color_1": "#000000",
             "text_2": "",
-            "text_color_2": "rgba(0, 0, 0, 1)",
+            "text_color_2": "#000000",
             "text_3": "",
-            "text_color_3": "rgba(0, 0, 0, 1)",
+            "text_color_3": "#000000",
             "button_label": "Shop Now",
             "button_link": "shopify:\/\/collections\/tools-accessories"
           }

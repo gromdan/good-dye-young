@@ -211,8 +211,8 @@ h3.uncaps {
 }
 @media only screen and (max-width:768px){
 	.collection__grid .grid-product{
-		width:47.4%;
-        margin:5px;
+		width: calc( 50% - 10px );
+    margin:5px;
 		/*padding-left:17px;*/
 	}
 }
@@ -1266,4 +1266,32 @@ body .reviews .yotpo .standalone-bottomline.star-clickable, body .reviews .yotpo
 
 .acsb-trigger.acsb-trigger-position-y-bottom {
   z-index:1;
+}
+
+
+/* #SiteHeader {
+	position: sticky;
+	top: 0;
+} */
+
+
+@media screen and (max-width: 768px) {
+	header .section-header__title {
+		margin-bottom: 1rem;
+	}
+}
+
+@media screen and (max-width: 959px) {
+	.grid-overflow-wrapper .small--one-half input {
+		font-size: 14px !important;
+	}
+}
+
+.blog-related-products {
+	margin-top: 4rem;
+}
+@media screen and (max-width: 959px) {
+	.blog-related-products {
+		margin-top: 3rem;
+	}
 }

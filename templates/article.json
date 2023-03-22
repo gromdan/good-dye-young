@@ -5,56 +5,81 @@
       "settings": {}
     },
     "blogs": {
-        "type": "blog-slide",
-        "settings": {
-            "heading": "MORE HAIR DYE COURSES",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
-            "color": "#000",
-            "font_size": "small"
+      "type": "blog-slide",
+      "disabled": true,
+      "blocks": {
+        "slide1": {
+          "type": "block",
+          "settings": {
+            "blog": "",
+            "button_text": "read more"
+          }
         },
-        "blocks": {
-            "slide1": {
-                "type": "block",
-                "settings": {
-                    "button_text": "read more"
-                }
-            },
-            "slide2": {
-                "type": "block",
-                "settings": {
-                    "button_text": "read more"
-                }
-            },
-            "slide3": {
-                "type": "block",
-                "settings": {
-                    "button_text": "read more"
-                }
-            },
-            "slide4": {
-                "type": "block",
-                "settings": {
-                    "button_text": "read more"
-                }
-            },
-            "slide5": {
-                "type": "block",
-                "settings": {
-                    "button_text": "read more"
-                }
-            }
+        "slide2": {
+          "type": "block",
+          "settings": {
+            "blog": "",
+            "button_text": "read more"
+          }
         },
-        "block_order": [
-            "slide1",
-            "slide2",
-            "slide3",
-            "slide4",
-            "slide5"
-        ]
+        "slide3": {
+          "type": "block",
+          "settings": {
+            "blog": "",
+            "button_text": "read more"
+          }
+        },
+        "slide4": {
+          "type": "block",
+          "settings": {
+            "blog": "",
+            "button_text": "read more"
+          }
+        },
+        "slide5": {
+          "type": "block",
+          "settings": {
+            "blog": "",
+            "button_text": "read more"
+          }
+        }
+      },
+      "block_order": [
+        "slide1",
+        "slide2",
+        "slide3",
+        "slide4",
+        "slide5"
+      ],
+      "settings": {
+        "heading": "MORE HAIR DYE COURSES",
+        "color": "#000000",
+        "font_size": "small",
+        "text_align": "align-center",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "3c09c0b8-f4fb-4078-9599-941ab4b85922": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "Blog posts",
+        "blog": "lightening",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": true,
+        "blog_image_size": "wide",
+        "divider": false
+      }
     }
   },
   "order": [
     "main",
-    "blogs"
+    "blogs",
+    "3c09c0b8-f4fb-4078-9599-941ab4b85922"
   ]
 }
