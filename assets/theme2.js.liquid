@@ -4073,6 +4073,7 @@ lazySizesConfig.expFactor = 4;
       siteHeader = document.querySelector(selectors.siteHeader);
 
       config.stickyEnabled = (siteHeader.dataset.sticky === 'true');
+      //config.stickyEnabled = false; // turning this off 
       if (config.stickyEnabled) {
         config.wrapperOverlayed = wrapper.classList.contains(config.overlayedClass);
         stickyHeaderCheck();

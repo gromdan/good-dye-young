@@ -1,121 +1,278 @@
 {
-    "sections": {
-        "menu": {
-            "type": "menu",
-            "blocks": {
-                "menu1": {
-                    "type": "menu",
-                    "settings": {
-                        "label": "tab one",
-                        "link": "\/pages\/education"
-                    }
-                },
-                "menu2": {
-                    "type": "menu",
-                    "settings": {
-                        "label": "tab two",
-                        "link": "\/blogs\/education"
-                    }
-                },
-                "menu3": {
-                    "type": "menu",
-                    "settings": {
-                        "label": "tab three",
-                        "link": "\/blogs\/video",
-                        "active": "active"
-                    }
-                },
-                "menu4": {
-                    "type": "menu",
-                    "settings": {
-                        "label": "tab four",
-                        "link": "\/blogs\/article"
-                    }
-                },
-                "menu5": {
-                    "type": "menu",
-                    "settings": {
-                        "label": "tab five"
-                    }
-                }
-            },
-            "block_order": [
-                "menu1",
-                "menu2",
-                "menu3",
-                "menu4",
-                "menu5"
-            ]
+  "sections": {
+    "menu": {
+      "type": "menu",
+      "blocks": {
+        "menu1": {
+          "type": "menu",
+          "settings": {
+            "label": "main",
+            "link": "\/pages\/education",
+            "active": "inactive"
+          }
         },
-        "divide1": {
-            "type": "rich-text",
-            "settings": {
-                "border_top": 15,
-                "border_bottom": 0,
-                "narrow_column": false
-            }
+        "menu2": {
+          "type": "menu",
+          "settings": {
+            "label": "education",
+            "link": "\/blogs\/education",
+            "active": "inactive"
+          }
         },
-        "divide2": {
-            "type": "rich-text",
-            "settings": {
-                "border_top": 15,
-                "border_bottom": 0,
-                "narrow_column": false
-            }
+        "menu3": {
+          "type": "menu",
+          "settings": {
+            "label": "video",
+            "link": "\/blogs\/video",
+            "active": "active"
+          }
         },
-        "blogs": {
-            "type": "blog-slide",
-            "settings": {
-                "heading": "MORE HAIR DYE COURSES",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
-                "color": "#000",
-                "font_size": "small"
-            },
-            "blocks": {
-                "slide1": {
-                    "type": "block",
-                    "settings": {
-                        "button_text": "read more"
-                    }
-                },
-                "slide2": {
-                    "type": "block",
-                    "settings": {
-                        "button_text": "read more"
-                    }
-                },
-                "slide3": {
-                    "type": "block",
-                    "settings": {
-                        "button_text": "read more"
-                    }
-                },
-                "slide4": {
-                    "type": "block",
-                    "settings": {
-                        "button_text": "read more"
-                    }
-                },
-                "slide5": {
-                    "type": "block",
-                    "settings": {
-                        "button_text": "read more"
-                    }
-                }
-            },
-            "block_order": [
-                "slide1",
-                "slide2",
-                "slide3",
-                "slide4",
-                "slide5"
-            ]
+        "menu4": {
+          "type": "menu",
+          "settings": {
+            "label": "article",
+            "link": "shopify:\/\/blogs\/article",
+            "active": "inactive"
+          }
+        },
+        "menu5": {
+          "type": "menu",
+          "settings": {
+            "label": "mixed media",
+            "link": "shopify:\/\/blogs\/mixed-media",
+            "active": "inactive"
+          }
         }
+      },
+      "block_order": [
+        "menu1",
+        "menu2",
+        "menu3",
+        "menu4",
+        "menu5"
+      ],
+      "settings": {}
     },
-    "order": [
-        "menu",
-        "divide1",
-        "divide2",
-        "blogs"
-    ]
+    "divide1": {
+      "type": "rich-text",
+      "blocks": {
+        "4b6a9157-61e3-41f4-9ea7-26ee03be0d95": {
+          "type": "heading",
+          "settings": {
+            "title": "VIDEO TUTORIALS"
+          }
+        },
+        "ff18f5ad-8ec6-4805-bfc9-d3a7161a9d9e": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Watch step-by-step tutorials on everything from lightening hair to creating multi-dimensional looks.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "4b6a9157-61e3-41f4-9ea7-26ee03be0d95",
+        "ff18f5ad-8ec6-4805-bfc9-d3a7161a9d9e"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": false,
+        "divider": false,
+        "border_top": 0,
+        "border_bottom": 15
+      }
+    },
+    "a962e65a-03e7-4238-91e8-635f4105e97e": {
+      "type": "featured-video",
+      "blocks": {
+        "2b329a85-2e4b-40f4-b767-9b608fd26ad5": {
+          "type": "rich-text",
+          "settings": {
+            "title": "LIGHTENING 101",
+            "text": "Lorem ipsum dolor sit amet, consectetur .adipiscing elit, sed d",
+            "button_text": "WATCH"
+          }
+        }
+      },
+      "block_order": [
+        "2b329a85-2e4b-40f4-b767-9b608fd26ad5"
+      ],
+      "settings": {
+        "title": "",
+        "font_size": "font-medium",
+        "text_align": "align-center",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "divider": false
+      }
+    },
+    "4c137dc5-9e12-49b5-b414-11ab21cadd10": {
+      "type": "featured-video",
+      "blocks": {
+        "9c82c4a9-557e-45f4-abc0-06dd56a531f0": {
+          "type": "rich-text",
+          "settings": {
+            "title": "how to use dyeposit",
+            "text": "Lorem ipsum dolor sit amet, consectetur .adipiscing elit, sed d",
+            "button_text": "watch"
+          }
+        }
+      },
+      "block_order": [
+        "9c82c4a9-557e-45f4-abc0-06dd56a531f0"
+      ],
+      "settings": {
+        "title": "",
+        "font_size": "font-medium",
+        "text_align": "align-center",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "divider": false
+      }
+    },
+    "1c5d2d39-272e-4711-9265-b1bee4a2547e": {
+      "type": "block-textpicture",
+      "blocks": {
+        "b5d1e7aa-f9b0-429c-96d4-a23f7b1f433b": {
+          "type": "block",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/New_Project_2_09b4543e-4a0a-4adc-b045-1ebd8ad04aff.png",
+            "mobile_image": "shopify:\/\/shop_images\/New_Project_1_a052b33b-9305-4f5e-b328-df32835a8391.png",
+            "container_width": 48,
+            "container_height": 320,
+            "container_border": 0,
+            "container_border_color": "",
+            "alignment_x": "right",
+            "alignment_y": "center",
+            "overlay_opacity": 0,
+            "overlay_radius": 0,
+            "section_height": 580,
+            "padding_top": 2,
+            "padding_bottom": 2,
+            "heading": "free shipping friday",
+            "title_color": "#ffffff",
+            "title_size": "font-medium",
+            "subtitle": "",
+            "subtitle_color": "#eda512",
+            "subtitle_size": "font-medium",
+            "text": "",
+            "text_color": "#ffffff",
+            "button_text": "SHOP NOW",
+            "button_link": "#",
+            "button_style": "gradient",
+            "button_color": "#ffffff",
+            "background_color": "",
+            "border_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "b5d1e7aa-f9b0-429c-96d4-a23f7b1f433b"
+      ],
+      "settings": {
+        "display_type": "grid",
+        "heading": "",
+        "color": "#eda512",
+        "font_size": "font-medium",
+        "text_align": "align-center"
+      }
+    },
+    "621ff192-e49a-49a2-b55c-1d4ae9851d76": {
+      "type": "featured-video",
+      "blocks": {
+        "7cf7abe5-599e-4424-bd6e-3bff6dfdb55e": {
+          "type": "rich-text",
+          "settings": {
+            "title": "how to use I’m bored",
+            "text": "Lorem ipsum dolor sit amet, consectetur .adipiscing elit, sed d",
+            "button_text": "watch"
+          }
+        }
+      },
+      "block_order": [
+        "7cf7abe5-599e-4424-bd6e-3bff6dfdb55e"
+      ],
+      "settings": {
+        "title": "",
+        "font_size": "font-medium",
+        "text_align": "align-center",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "divider": false
+      }
+    },
+    "divide2": {
+      "type": "rich-text",
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "divider": false,
+        "border_top": 15,
+        "border_bottom": 0
+      }
+    },
+    "blogs": {
+      "type": "blog-slide",
+      "blocks": {
+        "slide1": {
+          "type": "block",
+          "settings": {
+            "blog": "",
+            "button_text": "read more"
+          }
+        },
+        "slide2": {
+          "type": "block",
+          "settings": {
+            "blog": "",
+            "button_text": "read more"
+          }
+        },
+        "slide3": {
+          "type": "block",
+          "settings": {
+            "blog": "",
+            "button_text": "read more"
+          }
+        },
+        "slide4": {
+          "type": "block",
+          "settings": {
+            "blog": "",
+            "button_text": "read more"
+          }
+        },
+        "slide5": {
+          "type": "block",
+          "settings": {
+            "blog": "",
+            "button_text": "read more"
+          }
+        }
+      },
+      "block_order": [
+        "slide1",
+        "slide2",
+        "slide3",
+        "slide4",
+        "slide5"
+      ],
+      "settings": {
+        "heading": "MORE HAIR DYE COURSES",
+        "color": "#000000",
+        "font_size": "small",
+        "text_align": "align-center",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "menu",
+    "divide1",
+    "a962e65a-03e7-4238-91e8-635f4105e97e",
+    "4c137dc5-9e12-49b5-b414-11ab21cadd10",
+    "1c5d2d39-272e-4711-9265-b1bee4a2547e",
+    "621ff192-e49a-49a2-b55c-1d4ae9851d76",
+    "divide2",
+    "blogs"
+  ]
 }

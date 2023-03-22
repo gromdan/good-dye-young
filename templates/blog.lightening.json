@@ -6,7 +6,7 @@
         "menu1": {
           "type": "menu",
           "settings": {
-            "label": "main",
+            "label": "tab one",
             "link": "\/pages\/education",
             "active": "inactive"
           }
@@ -14,7 +14,7 @@
         "menu2": {
           "type": "menu",
           "settings": {
-            "label": "education",
+            "label": "tab two",
             "link": "\/blogs\/education",
             "active": "inactive"
           }
@@ -22,7 +22,7 @@
         "menu3": {
           "type": "menu",
           "settings": {
-            "label": "video",
+            "label": "tab three",
             "link": "\/blogs\/video",
             "active": "inactive"
           }
@@ -30,17 +30,17 @@
         "menu4": {
           "type": "menu",
           "settings": {
-            "label": "article",
+            "label": "tab four",
             "link": "\/blogs\/article",
-            "active": "inactive"
+            "active": "active"
           }
         },
         "menu5": {
           "type": "menu",
           "settings": {
-            "label": "mixed media",
-            "link": "shopify:\/\/blogs\/mixed-media",
-            "active": "active"
+            "label": "tab five",
+            "link": "",
+            "active": "inactive"
           }
         }
       },
@@ -56,13 +56,13 @@
     "divide1": {
       "type": "rich-text",
       "blocks": {
-        "729dce16-06f4-41d2-8a19-666bc96e9844": {
+        "a8754db3-7815-46e5-999b-ba0b10cd60c3": {
           "type": "heading",
           "settings": {
             "title": "the gdy blog"
           }
         },
-        "8ec489e8-3e34-4902-b04c-ccc2d16b07a0": {
+        "e90ba383-5ba1-4e7d-ad81-145dfe5c8e25": {
           "type": "text",
           "settings": {
             "enlarge_text": true,
@@ -71,8 +71,8 @@
         }
       },
       "block_order": [
-        "729dce16-06f4-41d2-8a19-666bc96e9844",
-        "8ec489e8-3e34-4902-b04c-ccc2d16b07a0"
+        "a8754db3-7815-46e5-999b-ba0b10cd60c3",
+        "e90ba383-5ba1-4e7d-ad81-145dfe5c8e25"
       ],
       "settings": {
         "align_text": "left",
@@ -85,63 +85,31 @@
     "main": {
       "type": "blog1-template",
       "settings": {
-        "article": "article\/how-to-extensions",
         "align_text": "left",
         "narrow_column": false
       }
     },
-    "eac998a4-6c54-4b02-9cd3-b8451f4ac312": {
-      "type": "featured-video",
-      "blocks": {
-        "6c5c53c2-b6d9-43b3-a961-999c1cda6529": {
-          "type": "rich-text",
-          "settings": {
-            "title": "LIGHTENING 101",
-            "text": "Lorem ipsum dolor sit amet, consectetur .adipiscing elit, sed do eiusmod tempor",
-            "button_text": "WATCH"
-          }
-        }
-      },
-      "block_order": [
-        "6c5c53c2-b6d9-43b3-a961-999c1cda6529"
-      ],
-      "settings": {
-        "title": "",
-        "font_size": "font-medium",
-        "text_align": "align-center",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "divider": false
-      }
-    },
-    "6400acde-d82a-403e-ba91-65a9636c75f8": {
-      "type": "blog1-template",
-      "settings": {
-        "article": "article\/gemini-hair",
-        "align_text": "left",
-        "narrow_column": false
-      }
-    },
-    "6f61f678-45d8-455d-aa5b-5a81cd94b3b5": {
+    "f8ef833f-5672-4375-b235-6e2cd361df92": {
       "type": "block-textpicture",
       "blocks": {
-        "c8c59e8f-93d2-4c29-8d61-db25a72387cd": {
+        "abea832e-a7b2-453b-8cea-1a3a97a1eb10": {
           "type": "block",
           "settings": {
             "background_image": "shopify:\/\/shop_images\/New_Project_2_09b4543e-4a0a-4adc-b045-1ebd8ad04aff.png",
             "mobile_image": "shopify:\/\/shop_images\/New_Project_1_a052b33b-9305-4f5e-b328-df32835a8391.png",
             "container_width": 48,
-            "container_height": 310,
+            "container_height": 330,
             "container_border": 0,
             "container_border_color": "",
             "alignment_x": "right",
             "alignment_y": "center",
             "overlay_opacity": 0,
             "overlay_radius": 0,
-            "section_height": 500,
-            "padding_top": 2,
-            "padding_bottom": 2,
+            "section_height": 580,
+            "padding_top": 0,
+            "padding_bottom": 0,
             "heading": "free shipping friday",
-            "title_color": "#fafafa",
+            "title_color": "#ffffff",
             "title_size": "font-medium",
             "subtitle": "",
             "subtitle_color": "#eda512",
@@ -149,7 +117,7 @@
             "text": "",
             "text_color": "#ffffff",
             "button_text": "SHOP NOW",
-            "button_link": "#",
+            "button_link": "",
             "button_style": "gradient",
             "button_color": "#ffffff",
             "background_color": "",
@@ -158,39 +126,14 @@
         }
       },
       "block_order": [
-        "c8c59e8f-93d2-4c29-8d61-db25a72387cd"
+        "abea832e-a7b2-453b-8cea-1a3a97a1eb10"
       ],
       "settings": {
         "display_type": "grid",
         "heading": "",
         "color": "#eda512",
         "font_size": "font-medium",
-        "text_align": "align-center",
-        "margin_top": 26,
-        "margin_bottom": 0
-      }
-    },
-    "ad4e07d9-2f70-4eb6-86ae-cd44388e77aa": {
-      "type": "featured-video",
-      "blocks": {
-        "beda70e2-5074-4014-b41c-c43556c7ddcf": {
-          "type": "rich-text",
-          "settings": {
-            "title": "how to use dyeposit",
-            "text": "Lorem ipsum dolor sit amet, consectetur .adipiscing elit, sed do eiusmod tempor",
-            "button_text": "WATCH"
-          }
-        }
-      },
-      "block_order": [
-        "beda70e2-5074-4014-b41c-c43556c7ddcf"
-      ],
-      "settings": {
-        "title": "",
-        "font_size": "font-medium",
-        "text_align": "align-center",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "divider": false
+        "text_align": "align-center"
       }
     },
     "divide2": {
@@ -264,10 +207,7 @@
     "menu",
     "divide1",
     "main",
-    "eac998a4-6c54-4b02-9cd3-b8451f4ac312",
-    "6400acde-d82a-403e-ba91-65a9636c75f8",
-    "6f61f678-45d8-455d-aa5b-5a81cd94b3b5",
-    "ad4e07d9-2f70-4eb6-86ae-cd44388e77aa",
+    "f8ef833f-5672-4375-b235-6e2cd361df92",
     "divide2",
     "blogs"
   ]

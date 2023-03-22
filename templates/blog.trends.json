@@ -14,32 +14,48 @@
         "menu2": {
           "type": "menu",
           "settings": {
-            "label": "education",
-            "link": "\/blogs\/education",
-            "active": "inactive"
+            "label": "Trends",
+            "link": "shopify:\/\/blogs\/trends",
+            "active": "active"
           }
         },
         "menu3": {
           "type": "menu",
           "settings": {
-            "label": "video",
-            "link": "\/blogs\/video",
+            "label": "How To",
+            "link": "shopify:\/\/blogs\/how-to",
             "active": "inactive"
           }
         },
         "menu4": {
           "type": "menu",
           "settings": {
-            "label": "article",
-            "link": "\/blogs\/article",
-            "active": "active"
+            "label": "Education",
+            "link": "shopify:\/\/blogs\/education",
+            "active": "inactive"
           }
         },
         "menu5": {
           "type": "menu",
           "settings": {
-            "label": "mixed media",
-            "link": "shopify:\/\/blogs\/mixed-media",
+            "label": "Lightening",
+            "link": "shopify:\/\/blogs\/lightening",
+            "active": "inactive"
+          }
+        },
+        "9c691329-c78a-4760-8e81-3df4a5d7e3cc": {
+          "type": "menu",
+          "settings": {
+            "label": "Using GDY",
+            "link": "shopify:\/\/blogs\/using-gdy",
+            "active": "inactive"
+          }
+        },
+        "3bc31982-5953-4b0c-8dc5-b01af0e4f026": {
+          "type": "menu",
+          "settings": {
+            "label": "Hayley's Hair",
+            "link": "shopify:\/\/blogs\/hayleys-hair",
             "active": "inactive"
           }
         }
@@ -49,30 +65,43 @@
         "menu2",
         "menu3",
         "menu4",
-        "menu5"
+        "menu5",
+        "9c691329-c78a-4760-8e81-3df4a5d7e3cc",
+        "3bc31982-5953-4b0c-8dc5-b01af0e4f026"
       ],
       "settings": {}
+    },
+    "video": {
+      "type": "featured-video",
+      "disabled": true,
+      "settings": {
+        "title": "WELCOME FROM HAYLEY + BRIAN",
+        "font_size": "font-medium",
+        "text_align": "align-center",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "divider": false
+      }
     },
     "divide1": {
       "type": "rich-text",
       "blocks": {
-        "a8754db3-7815-46e5-999b-ba0b10cd60c3": {
+        "51ac334d-438d-4e45-b56e-95f9e150c120": {
           "type": "heading",
           "settings": {
-            "title": "the gdy blog"
+            "title": "Trends"
           }
         },
-        "e90ba383-5ba1-4e7d-ad81-145dfe5c8e25": {
+        "34339397-ca78-4b4b-b002-ce8aebd6ace6": {
           "type": "text",
           "settings": {
             "enlarge_text": true,
-            "text": "<p>The destination for the latest trends to essential hair tips.<\/p>"
+            "text": "<p>From Gemini Hair to extensions, we have all the info you need on the hottest trends!<\/p>"
           }
         }
       },
       "block_order": [
-        "a8754db3-7815-46e5-999b-ba0b10cd60c3",
-        "e90ba383-5ba1-4e7d-ad81-145dfe5c8e25"
+        "51ac334d-438d-4e45-b56e-95f9e150c120",
+        "34339397-ca78-4b4b-b002-ce8aebd6ace6"
       ],
       "settings": {
         "align_text": "left",
@@ -82,60 +111,11 @@
         "border_bottom": 15
       }
     },
-    "main": {
+    "68e0c19a-8443-4307-9ebf-990412179134": {
       "type": "blog1-template",
       "settings": {
         "align_text": "left",
         "narrow_column": false
-      }
-    },
-    "f8ef833f-5672-4375-b235-6e2cd361df92": {
-      "type": "block-textpicture",
-      "blocks": {
-        "abea832e-a7b2-453b-8cea-1a3a97a1eb10": {
-          "type": "block",
-          "settings": {
-            "background_image": "shopify:\/\/shop_images\/New_Project_2_09b4543e-4a0a-4adc-b045-1ebd8ad04aff.png",
-            "mobile_image": "shopify:\/\/shop_images\/New_Project_1_a052b33b-9305-4f5e-b328-df32835a8391.png",
-            "container_width": 48,
-            "container_height": 330,
-            "container_border": 0,
-            "container_border_color": "",
-            "alignment_x": "right",
-            "alignment_y": "center",
-            "overlay_opacity": 0,
-            "overlay_radius": 0,
-            "section_height": 580,
-            "padding_top": 0,
-            "padding_bottom": 0,
-            "heading": "free shipping friday",
-            "title_color": "#ffffff",
-            "title_size": "font-medium",
-            "subtitle": "",
-            "subtitle_color": "#eda512",
-            "subtitle_size": "font-medium",
-            "text": "",
-            "text_color": "#ffffff",
-            "button_text": "SHOP NOW",
-            "button_link": "",
-            "button_style": "gradient",
-            "button_color": "#ffffff",
-            "background_color": "",
-            "border_color": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "abea832e-a7b2-453b-8cea-1a3a97a1eb10"
-      ],
-      "settings": {
-        "display_type": "grid",
-        "heading": "",
-        "color": "#eda512",
-        "font_size": "font-medium",
-        "text_align": "align-center",
-        "margin_top": 25,
-        "margin_bottom": 0
       }
     },
     "divide2": {
@@ -150,6 +130,7 @@
     },
     "blogs": {
       "type": "blog-slide",
+      "disabled": true,
       "blocks": {
         "slide1": {
           "type": "block",
@@ -203,14 +184,30 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "8794fe77-f4e8-46f6-9dba-7d759ccb4f0f": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "Other Trends",
+        "blog": "trends",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": false,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": true,
+        "blog_image_size": "wide",
+        "divider": false
+      }
     }
   },
   "order": [
     "menu",
+    "video",
     "divide1",
-    "main",
-    "f8ef833f-5672-4375-b235-6e2cd361df92",
+    "68e0c19a-8443-4307-9ebf-990412179134",
     "divide2",
-    "blogs"
+    "blogs",
+    "8794fe77-f4e8-46f6-9dba-7d759ccb4f0f"
   ]
 }

@@ -4,9 +4,407 @@
       "type": "main-page",
       "disabled": true,
       "settings": {}
+    },
+    "c8d8e259-dace-4b11-b538-78e71d45470f": {
+      "type": "menu",
+      "blocks": {
+        "4161ba99-a3b4-4e67-8f12-7b791fbe8fbc": {
+          "type": "menu",
+          "settings": {
+            "label": "Main",
+            "link": "shopify:\/\/pages\/education",
+            "active": "active"
+          }
+        },
+        "56a07d3e-f282-47a1-8494-5e959ff6ac32": {
+          "type": "menu",
+          "settings": {
+            "label": "Trends",
+            "link": "shopify:\/\/blogs\/trends",
+            "active": "inactive"
+          }
+        },
+        "d0b35f15-82d1-487f-8250-8c6379628d3f": {
+          "type": "menu",
+          "settings": {
+            "label": "How To",
+            "link": "shopify:\/\/blogs\/how-to",
+            "active": "inactive"
+          }
+        },
+        "b258e864-843f-4039-9b42-d2fcb5b4de56": {
+          "type": "menu",
+          "settings": {
+            "label": "Education",
+            "link": "shopify:\/\/blogs\/education",
+            "active": "inactive"
+          }
+        },
+        "302927bb-aecf-4b2e-97e9-cdd119a666b1": {
+          "type": "menu",
+          "settings": {
+            "label": "Lightening",
+            "link": "shopify:\/\/blogs\/lightening",
+            "active": "inactive"
+          }
+        },
+        "2d882852-8f5d-4619-b634-48b2e9ac9a4b": {
+          "type": "menu",
+          "settings": {
+            "label": "Using GDY",
+            "link": "shopify:\/\/blogs\/using-gdy",
+            "active": "inactive"
+          }
+        },
+        "28aeb385-b47e-4cfb-b82d-e1c9853decb0": {
+          "type": "menu",
+          "settings": {
+            "label": "Hayley's Hair",
+            "link": "shopify:\/\/blogs\/hayleys-hair",
+            "active": "inactive"
+          }
+        }
+      },
+      "block_order": [
+        "4161ba99-a3b4-4e67-8f12-7b791fbe8fbc",
+        "56a07d3e-f282-47a1-8494-5e959ff6ac32",
+        "d0b35f15-82d1-487f-8250-8c6379628d3f",
+        "b258e864-843f-4039-9b42-d2fcb5b4de56",
+        "302927bb-aecf-4b2e-97e9-cdd119a666b1",
+        "2d882852-8f5d-4619-b634-48b2e9ac9a4b",
+        "28aeb385-b47e-4cfb-b82d-e1c9853decb0"
+      ],
+      "settings": {}
+    },
+    "6f9eeb5a-49cf-4410-916a-321b31c184b4": {
+      "type": "block-textpicture",
+      "blocks": {
+        "46844c5a-1d0f-4c6e-902e-8ff5bf10e2cd": {
+          "type": "block",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/hero_desktop.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/hero_mobile_dbe468f1-7f51-49fd-9e95-e2e79c1be4cc.jpg",
+            "container_width": 100,
+            "container_height": 0,
+            "container_border": 0,
+            "container_border_color": "",
+            "alignment_x": "left",
+            "alignment_y": "top",
+            "overlay_opacity": 0,
+            "overlay_radius": 0,
+            "section_height": 600,
+            "padding_top": 1,
+            "padding_bottom": 1,
+            "heading": "(DYE)rectory",
+            "title_color": "#ffffff",
+            "title_size": "font-medium",
+            "subtitle": "welcome to the",
+            "subtitle_color": "#000000",
+            "subtitle_size": "font-small",
+            "text": "",
+            "text_color": "#ffffff",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "gradient",
+            "button_color": "#ffffff",
+            "background_color": "",
+            "border_color": "rgba(0,0,0,0)"
+          }
+        },
+        "2a6345bf-54ce-4d4a-9ce5-ecd9dc58ee45": {
+          "type": "block",
+          "disabled": true,
+          "settings": {
+            "container_width": 48,
+            "container_height": 0,
+            "container_border": 0,
+            "container_border_color": "",
+            "alignment_x": "left",
+            "alignment_y": "center",
+            "overlay_opacity": 0.5,
+            "overlay_radius": 0,
+            "section_height": 580,
+            "padding_top": 2,
+            "padding_bottom": 2,
+            "heading": "Heading",
+            "title_color": "#eda512",
+            "title_size": "font-medium",
+            "subtitle": "Bub title",
+            "subtitle_color": "#eda512",
+            "subtitle_size": "font-medium",
+            "text": "Duck fat enhance food flavors, while enjoying health benifits and a higher smoke point over the more common cooking oils and fats.",
+            "text_color": "#ffffff",
+            "button_text": "Button text",
+            "button_link": "",
+            "button_style": "gradient",
+            "button_color": "#ffffff",
+            "background_color": "",
+            "border_color": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "46844c5a-1d0f-4c6e-902e-8ff5bf10e2cd",
+        "2a6345bf-54ce-4d4a-9ce5-ecd9dc58ee45"
+      ],
+      "settings": {
+        "display_type": "grid",
+        "heading": "",
+        "color": "#eda512",
+        "font_size": "font-medium",
+        "text_align": "align-center",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "5420c73e-bda3-4ba7-8a2f-23de2bc23f0f": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15382891888776__5420c73e-bda3-4ba7-8a2f-23de2bc23f0f-1677766112d361e1ab-0": {
+          "type": "heading",
+          "settings": {
+            "title": ""
+          }
+        },
+        "template--15382891888776__5420c73e-bda3-4ba7-8a2f-23de2bc23f0f-1677766112d361e1ab-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>From Dye Hards to first time DIY-ers, we've got all the courses you need to express yourself with bold, vibrant color.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15382891888776__5420c73e-bda3-4ba7-8a2f-23de2bc23f0f-1677766112d361e1ab-0",
+        "template--15382891888776__5420c73e-bda3-4ba7-8a2f-23de2bc23f0f-1677766112d361e1ab-1"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": false,
+        "divider": false,
+        "border_top": 0,
+        "border_bottom": 15
+      }
+    },
+    "2b201e6a-8051-4c53-a5ad-99b8318417f8": {
+      "type": "block-textpicture",
+      "blocks": {
+        "06111773-788f-4724-8742-58cdbf0a2a40": {
+          "type": "block",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/hayley_desktop.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/hayley_mobile.jpg",
+            "container_width": 70,
+            "container_height": 330,
+            "container_border": 0,
+            "container_border_color": "",
+            "alignment_x": "left",
+            "alignment_y": "center",
+            "overlay_opacity": 0,
+            "overlay_radius": 0,
+            "section_height": 580,
+            "padding_top": 2,
+            "padding_bottom": 2,
+            "heading": "Hayley's On the Road Hair Routine",
+            "title_color": "#ffffff",
+            "title_size": "font-medium",
+            "subtitle": "",
+            "subtitle_color": "#000000",
+            "subtitle_size": "font-medium",
+            "text": "",
+            "text_color": "#ffffff",
+            "button_text": "READ MORE",
+            "button_link": "shopify:\/\/blogs\/hayleys-hair\/hayleys-on-the-road-hair-routine",
+            "button_style": "gradient",
+            "button_color": "#ffffff",
+            "background_color": "",
+            "border_color": "#ffffff"
+          }
+        },
+        "40d0bb65-9795-464d-ad30-19061d26302f": {
+          "type": "block",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/bleah.jpg",
+            "container_width": 48,
+            "container_height": 330,
+            "container_border": 0,
+            "container_border_color": "",
+            "alignment_x": "left",
+            "alignment_y": "center",
+            "overlay_opacity": 0,
+            "overlay_radius": 0,
+            "section_height": 580,
+            "padding_top": 2,
+            "padding_bottom": 2,
+            "heading": "lightening 101",
+            "title_color": "#ffffff",
+            "title_size": "font-medium",
+            "subtitle": "",
+            "subtitle_color": "#000000",
+            "subtitle_size": "font-medium",
+            "text": "",
+            "text_color": "#ffffff",
+            "button_text": "READ MORE",
+            "button_link": "shopify:\/\/blogs\/lightening\/lightening-101-5-tips-for-the-best-results",
+            "button_style": "gradient",
+            "button_color": "#ffffff",
+            "background_color": "",
+            "border_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "06111773-788f-4724-8742-58cdbf0a2a40",
+        "40d0bb65-9795-464d-ad30-19061d26302f"
+      ],
+      "settings": {
+        "display_type": "slide",
+        "heading": "the latest",
+        "color": "#000000",
+        "font_size": "font-medium",
+        "text_align": "align-center",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "5efec161-fd3d-49d6-a0ea-0c26344c1dc4": {
+      "type": "block-textpicture",
+      "blocks": {
+        "28e5a6f7-682b-4b3c-8615-e997902c099e": {
+          "type": "block",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/Artboard_1.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/dye_dabbler_mobile.jpg",
+            "container_width": 46,
+            "container_height": 500,
+            "container_border": 3,
+            "container_border_color": "#ffffff",
+            "alignment_x": "left",
+            "alignment_y": "top",
+            "overlay_opacity": 0,
+            "overlay_radius": 0,
+            "section_height": 580,
+            "padding_top": 2,
+            "padding_bottom": 2,
+            "heading": "start here",
+            "title_color": "#ffffff",
+            "title_size": "font-medium",
+            "subtitle": "dreamers",
+            "subtitle_color": "#ffffff",
+            "subtitle_size": "font-medium",
+            "text": "",
+            "text_color": "#ffffff",
+            "button_text": "DYE 101",
+            "button_link": "shopify:\/\/pages\/dreamers-education-portal",
+            "button_style": "underline",
+            "button_color": "#ffffff",
+            "background_color": "",
+            "border_color": "rgba(0,0,0,0)"
+          }
+        },
+        "5c62bda4-efae-440f-8840-f368d3264c38": {
+          "type": "block",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/dreamer_image_desktop.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/dreamer_mobile.jpg",
+            "container_width": 51,
+            "container_height": 500,
+            "container_border": 3,
+            "container_border_color": "#ffffff",
+            "alignment_x": "left",
+            "alignment_y": "top",
+            "overlay_opacity": 0,
+            "overlay_radius": 0,
+            "section_height": 580,
+            "padding_top": 2,
+            "padding_bottom": 2,
+            "heading": "HUES?",
+            "title_color": "#ffffff",
+            "title_size": "font-medium",
+            "subtitle": "HOOKED ON",
+            "subtitle_color": "#ffffff",
+            "subtitle_size": "font-medium",
+            "text": "",
+            "text_color": "#ffffff",
+            "button_text": "DIVE DEEPER",
+            "button_link": "shopify:\/\/pages\/dabblers-education-portal",
+            "button_style": "underline",
+            "button_color": "#ffffff",
+            "background_color": "",
+            "border_color": "rgba(0,0,0,0)"
+          }
+        },
+        "ab059002-f22a-4038-ae6c-a2372ea3adbb": {
+          "type": "block",
+          "settings": {
+            "background_image": "shopify:\/\/shop_images\/devotee_image_desktop_3fb3c70f-a378-41d6-a020-3223190e88fc.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/devotee_image_mobile_c06783dc-46a3-457c-b155-a5c422974689.jpg",
+            "container_width": 51,
+            "container_height": 510,
+            "container_border": 3,
+            "container_border_color": "#ffffff",
+            "alignment_x": "left",
+            "alignment_y": "top",
+            "overlay_opacity": 0,
+            "overlay_radius": 0,
+            "section_height": 580,
+            "padding_top": 2,
+            "padding_bottom": 2,
+            "heading": "ready",
+            "title_color": "#ffffff",
+            "title_size": "font-medium",
+            "subtitle": "next level",
+            "subtitle_color": "#ffffff",
+            "subtitle_size": "font-medium",
+            "text": "",
+            "text_color": "#ffffff",
+            "button_text": "LET'S EXPERIMENT",
+            "button_link": "shopify:\/\/pages\/devotee-education-portal",
+            "button_style": "underline",
+            "button_color": "#ffffff",
+            "background_color": "",
+            "border_color": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "28e5a6f7-682b-4b3c-8615-e997902c099e",
+        "5c62bda4-efae-440f-8840-f368d3264c38",
+        "ab059002-f22a-4038-ae6c-a2372ea3adbb"
+      ],
+      "settings": {
+        "display_type": "grid",
+        "heading": "",
+        "color": "#eda512",
+        "font_size": "font-medium",
+        "text_align": "align-center",
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "b4f89912-6587-454d-89d3-dcbbf4e72330": {
+      "type": "blog-posts",
+      "settings": {
+        "title": "Blog posts",
+        "blog": "education",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "view_all": true,
+        "blog_image_size": "square",
+        "divider": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "c8d8e259-dace-4b11-b538-78e71d45470f",
+    "6f9eeb5a-49cf-4410-916a-321b31c184b4",
+    "5420c73e-bda3-4ba7-8a2f-23de2bc23f0f",
+    "2b201e6a-8051-4c53-a5ad-99b8318417f8",
+    "5efec161-fd3d-49d6-a0ea-0c26344c1dc4",
+    "b4f89912-6587-454d-89d3-dcbbf4e72330"
   ]
 }
